@@ -94,3 +94,47 @@ D.A. Cheshkova,b*, K.F. Sheberstova, D.O. Sinitsync, V.A. Chertkovd
   doi: 10.1002/mrc.4689
 
  https://www.sciencedirect.com/science/article/abs/pii/S0066410319300419?via%3Dihub#preview-section-introduction
+
+
+# Quick run
+
+```
+
+echo "takes less than a second"
+
+cat data/ODCB/1/Input_Data.txt
+time bin/ANATOLIA data/ODCB/1
+grep "SimMode" data/ODCB/1/Input_Data.txt
+grep "InputParameters" data/ODCB/1/Input_Data.txt
+grep "OutputParameters" data/ODCB/1/Input_Data.txt
+echo -n "data/ODCB/1/"; grep "CalcProcNo" data/ODCB/1/Input_Data.txt | sed s/CalcProcNo//g | sed s/" "//g ; echo "/1r"
+echo "===================";
+
+echo "takes a couple of minute"
+
+cat data/Styrene/1/Input_Data.txt
+time bin/ANATOLIA data/Styrene/1
+grep "SimMode" data/Styrene/1/Input_Data.txt
+grep "InputParameters" data/Styrene/1/Input_Data.txt
+grep "OutputParameters" data/Styrene/1/Input_Data.txt
+grep "CalcProcNo" data/Styrene/1/Input_Data.txt
+echo "===================";
+
+cat data/THFCOOH/300/Input_Data.txt
+time bin/ANATOLIA data/THFCOOH/300
+grep "SimMode" data/THFCOOH/300/Input_Data.txt
+grep "InputParameters" data/THFCOOH/300/Input_Data.txt
+grep "OutputParameters" data/THFCOOH/300/Input_Data.txt
+grep "CalcProcNo" data/THFCOOH/300/Input_Data.txt
+
+echo "===================";
+
+cat data/THFCOOH/600/Input_Data.txt
+time bin/ANATOLIA data/THFCOOH/600
+grep "SimMode" data/THFCOOH/600/Input_Data.txt
+grep "InputParameters" data/THFCOOH/600/Input_Data.txt
+grep "OutputParameters" data/THFCOOH/600/Input_Data.txt
+grep "CalcProcNo" data/THFCOOH/600/Input_Data.txt
+echo "===================";
+
+```
