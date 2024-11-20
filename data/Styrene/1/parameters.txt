@@ -25,7 +25,7 @@
 25  Linewidth                    0.055772    +-0.000536
 26  Magnitude                1.629675e+08    +-8.147723e+05
 
-Analysis of STYRENE 1H NMR spectrum
+ Analysis of STYRENE 1H NMR spectrum
 
 Warning! Chemical shift no. 4 (1819.738003) does not fall into any of defined spectral intervals.
 Warning! Chemical shift no. 5 (1526.187320) does not fall into any of defined spectral intervals.

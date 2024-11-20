@@ -41,6 +41,8 @@ We copied the `parameter.txt` file into `parameter_start.txt` and changed `Outpu
 `data/THFCOOH/600/Input_Data.txt` accordingly.
 For consitency of the file name oupt, we changed the `OutputParameters` to parameter.txt in
 `data/THFCOOH/300/Input_Data.txt`
+A copy of `Input_Data.txt` as  `Input_Data_refinement.txt` was written in `data/Styrene/1/` for the optimization.
+
 To get the original version version:
 ```
 mkdir data
@@ -73,11 +75,22 @@ Note: we are missing the Input_Data.txt and parameter.txt for Naphtalene and Azo
 
 Many thanks to the authors for this great package!
 
+# The Input_Data.txt file
+
+From ref [1]:
+Typical decrease of the line broadening:
+3.0; 2.0; 1.0; 0.8; 0.6; 0.4; 0.2; 0.1; 0.0 Hz
+
+if SimMode is 1, it will only simulate (no optimization)
+
+The first broadening should correspond to twice the maximal uncertainty in J-coupling values. No indication with respect to the chemical shifts.
+
+
 # Reference
 
 https://github.com/dcheshkov/ANATOLIA/
 
-D.A. Cheshkov, K.F. Sheberstov, D.O. Sinitsyn, V.A. Chertkov, ANATOLIA: NMR
+[1]D.A. Cheshkov, K.F. Sheberstov, D.O. Sinitsyn, V.A. Chertkov, ANATOLIA: NMR
 software for spectral analysis of total lineshape. Magn. Reson. Chem., 2018,
 56, 449, DOI: 10.1002/mrc.4689.
 
@@ -119,6 +132,16 @@ grep "SimMode" data/Styrene/1/Input_Data.txt
 grep "InputParameters" data/Styrene/1/Input_Data.txt
 grep "OutputParameters" data/Styrene/1/Input_Data.txt
 grep "CalcProcNo" data/Styrene/1/Input_Data.txt
+echo "=====Refinement==============";
+cp data/Styrene/1/Input_Data.txt data/Styrene/1/Input_Data.txtCOPY
+cp data/Styrene/1/Input_Data_refinement.txt data/Styrene/1/Input_Data.txt
+grep "SimMode" data/Styrene/1/Input_Data.txt
+grep "InputParameters" data/Styrene/1/Input_Data.txt
+grep "OutputParameters" data/Styrene/1/Input_Data.txt
+grep "CalcProcNo" data/Styrene/1/Input_Data.txt
+time bin/ANATOLIA data/Styrene/1
+cp data/Styrene/1/Input_Data.txtCOPY data/Styrene/1/Input_Data.txt
+rm data/Styrene/1/Input_Data.txtCOPY
 echo "===================";
 
 cat data/THFCOOH/300/Input_Data.txt
