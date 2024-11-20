@@ -21,7 +21,7 @@ ExpBroadedProcNo		2
 CalcProcNo			3
 
 Optimization parameters
-InputParameters			parameters.txt
+InputParameters			parameters_start.txt
 OutputParameters		parameters.txt
 SpectraTextOutput		-
 LBs				0.0

@@ -1,4 +1,9 @@
-This allows to see the changes of version of Anatolia NMR software
+Copy for automatic run of the test samples of Anatolia
+ 
+Orinig of data:  https://github.com/dcheshkov/ANATOLIA/
+
+
+# Verions of anaotolia
 
 The last version is src/anatolia.cpp
 V 0.9 200?
@@ -6,9 +11,10 @@ V 1.0 2017
 V 1.1 2019
 V 1.2 2021
 
+# Compilation
+
 MacOS GSL instalation & ANATOLIA compilation commands:
-for  gsl version 2.8, but adjust if necessary
-We skiped the make install
+This is for gsl version 2.8. Adjust if necessary
 ```
 mkdir bin
 cd bin
@@ -25,12 +31,20 @@ g++ -std=c++11 ../src/anatolia.cpp ./gsl-2.8/.libs/libgsl.a ./gsl-2.8/cblas/.lib
 cd ..
 ```
 The binaray is bin/ANATOLIA
+Note: We skiped the make install and call the library directly at the compilation step
 
-load tests:
+
+# Update test data
+
+We recommend to use the data as in this repository because some files were modified to avoid overwriting and consistency of the results.
+We copied the `parameter.txt` file into `parameter_start.txt` and changed `OutputParameters` in
+`data/THFCOOH/600/Input_Data.txt` accordingly.
+For consitency of the file name oupt, we changed the `OutputParameters` to parameter.txt in
+`data/THFCOOH/300/Input_Data.txt`
+To get the original version version:
 ```
 mkdir data
 cd data
-echo "data/**/1r" >> ../.gitignore
 wget https://github.com/dcheshkov/ANATOLIA/archive/refs/heads/master.zip
 unzip master.zip
 cp -rp ANATOLIA-master/Examples/ODCB .
@@ -43,13 +57,17 @@ rm master.zip
 cd ..
 ```
 
+# Run the tests
 
-run tests ODCB:
-```
-cd demo
-../bin/ANATOLIA ../data/ODCB/1/
-```
+After compilation, run tests with:
 
+```zsh
+chmod +x demo/demo.zsh
+demo/demo.zsh
+```
+The results are in the `demo` folder.
+
+Note: we are missing the Input_Data.txt and parameter.txt for Naphtalene and Azobenzene.
 
 # Acknowledgements
 
@@ -57,6 +75,22 @@ Many thanks to the authors for this great package!
 
 # Reference
 
+https://github.com/dcheshkov/ANATOLIA/
+
 D.A. Cheshkov, K.F. Sheberstov, D.O. Sinitsyn, V.A. Chertkov, ANATOLIA: NMR
 software for spectral analysis of total lineshape. Magn. Reson. Chem., 2018,
 56, 449, DOI: 10.1002/mrc.4689.
+
+# Crude related information 
+
+arXiv:2209.03708  https://doi.org/10.48550/arXiv.2209.03708
+Total lineshape analysis of ALPHA-tetrahydrofuroic acid 1H NMR spectra
+
+Total lineshape analysis of a-tetrahydrofuroic acid 1H NMR spectra - http://doi.org/10.48550/arXiv.2209.03708
+Total line shape analysis of high-resolution NMR spectra -  http://doi.org/10.1016/bs.arnmr.2019.11.001
+
+ ANATOLIA: NMR software for spectral analysis of total lineshape
+D.A. Cheshkova,b*, K.F. Sheberstova, D.O. Sinitsync, V.A. Chertkovd
+  doi: 10.1002/mrc.4689
+
+ https://www.sciencedirect.com/science/article/abs/pii/S0066410319300419?via%3Dihub#preview-section-introduction

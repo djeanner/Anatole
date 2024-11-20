@@ -22,7 +22,7 @@ CalcProcNo			3
 
 Optimization parameters
 InputParameters			parameters_2.txt
-OutputParameters		parameters_3.txt
+OutputParameters		parameters.txt
 SpectraTextOutput		-
 LBs				3 2 1 0.5 0.1 0.0
 MagnitudeFromExpSpec		1
