@@ -1,9 +1,9 @@
 *************************************************************************
-***                        ANATOLIA V1.1                              ***
+***                        ANATOLIA V1.2                              ***
 ***              Program for total lineshape analysis                 ***
 ***                         of NMR spectra                            ***
 *************************************************************************
-***         (C) 2019 Dmitry Cheshkov, Dmitry Sinitsyn,                ***
+***         (C) 2021 Dmitry Cheshkov, Dmitry Sinitsyn,                ***
 ***                     Kirill Sheberstov                             ***
 *************************************************************************
 ***                     dcheshkov@gmail.com                           ***
@@ -15,17 +15,15 @@
 ***      Magn. Reson. Chem., 2018, 56, 449, DOI: 10.1002/mrc.4689.    ***
 *************************************************************************
 
-          V1.1 vs. V1.0 contains some improvements with respect
-         to performance and efficiency of calculating algorithm
-         and calculation of parameter correlation coefficients.
+      V1.2 vs. V1.0 & V1.1 contains some improvements with respect
+         to performance and efficiency of calculating algorithm.
            No changes were made to the format of input files.
 
-
             Working with Bruker NMR format (dataset) only.
- 
+
            Can be run in standalone mode or via AU programm
                    'anatolia' from Bruker TopSpin.
- 
+
               When using with TopSpin it should be located
                 in TopSpinHome/prog/anatolia directory.
  
