@@ -102,3 +102,112 @@ When publishing results obtained with this program, please cite:
 D.A. Cheshkov, K.F. Sheberstov, D.O. Sinitsyn, V.A. Chertkov, ANATOLIA: NMR
 software for spectral analysis of total lineshape. Magn. Reson. Chem., 2018,
 56, 449, DOI: 10.1002/mrc.4689.
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+Broadening:  0
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.971452e+12
+Iteration 2	RHO 1.0e-01	4.971452e+12
+Iteration 4	RHO 1.0e-02	4.971452e+12
+Iteration 7	RHO 1.0e-03	4.971452e+12
+Iteration 9	RHO 1.0e-04	4.971452e+12
+Iteration 12	RHO 1.0e-05	4.971452e+12
+Iteration 13	RHO 1.0e-06	4.971452e+12
+Iteration 16	RHO 1.0e-07	4.971452e+12
+Iteration 17	RHO 1.0e-08	4.971452e+12
+Iteration 20	RHO 1.0e-09	4.971452e+12
+Iteration 23	RHO 1.0e-10	4.971452e+12
+Iteration 26	RHO 1.0e-10	4.971452e+12
+Main optimization
+Iteration 1	RHO 1.0e+00	4.971452e+12
+Iteration 4	RHO 1.0e-01	4.971452e+12
+Iteration 34	RHO 1.0e-02	4.971452e+12
+Iteration 41	RHO 1.0e-03	4.971452e+12
+Iteration 70	RHO 1.0e-04	4.971452e+12
+Iteration 91	RHO 1.0e-05	4.971452e+12
+Iteration 108	RHO 1.0e-06	4.971452e+12
+Iteration 137	RHO 1.0e-07	4.971452e+12
+Iteration 188	RHO 1.0e-08	4.971452e+12
+Iteration 220	RHO 1.0e-09	4.971452e+12
+Iteration 250	RHO 1.0e-10	4.971452e+12
+Iteration 274	RHO 1.0e-10	4.971452e+12
+
+R-Factor: 4.24 %
+
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+When publishing results obtained with this program, please cite:
+D.A. Cheshkov, K.F. Sheberstov, D.O. Sinitsyn, V.A. Chertkov, ANATOLIA: NMR
+software for spectral analysis of total lineshape. Magn. Reson. Chem., 2018,
+56, 449, DOI: 10.1002/mrc.4689.
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+Broadening:  0
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.971452e+12
+Iteration 2	RHO 1.0e-01	4.971452e+12
+Iteration 4	RHO 1.0e-02	4.971452e+12
+Iteration 7	RHO 1.0e-03	4.971452e+12
+Iteration 9	RHO 1.0e-04	4.971452e+12
+Iteration 12	RHO 1.0e-05	4.971452e+12
+Iteration 13	RHO 1.0e-06	4.971452e+12
+Iteration 16	RHO 1.0e-07	4.971452e+12
+Iteration 17	RHO 1.0e-08	4.971452e+12
+Iteration 20	RHO 1.0e-09	4.971452e+12
+Iteration 23	RHO 1.0e-10	4.971452e+12
+Iteration 26	RHO 1.0e-10	4.971452e+12
+Main optimization
+Iteration 1	RHO 1.0e+00	4.971452e+12
+Iteration 4	RHO 1.0e-01	4.971452e+12
+Iteration 34	RHO 1.0e-02	4.971452e+12
+Iteration 41	RHO 1.0e-03	4.971452e+12
+Iteration 70	RHO 1.0e-04	4.971452e+12
+Iteration 91	RHO 1.0e-05	4.971452e+12
+Iteration 108	RHO 1.0e-06	4.971452e+12
+Iteration 137	RHO 1.0e-07	4.971452e+12
+Iteration 188	RHO 1.0e-08	4.971452e+12
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+Broadening:  0
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.971452e+12
+Iteration 2	RHO 1.0e-01	4.971452e+12
+Iteration 4	RHO 1.0e-02	4.971452e+12
+Iteration 7	RHO 1.0e-03	4.971452e+12
+Iteration 9	RHO 1.0e-04	4.971452e+12
+Iteration 12	RHO 1.0e-05	4.971452e+12
+Iteration 13	RHO 1.0e-06	4.971452e+12
+Iteration 16	RHO 1.0e-07	4.971452e+12
+Iteration 17	RHO 1.0e-08	4.971452e+12
+Iteration 20	RHO 1.0e-09	4.971452e+12
+Iteration 23	RHO 1.0e-10	4.971452e+12
+Iteration 26	RHO 1.0e-10	4.971452e+12
+Main optimization

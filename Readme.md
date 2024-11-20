@@ -107,7 +107,8 @@ time bin/ANATOLIA data/ODCB/1
 grep "SimMode" data/ODCB/1/Input_Data.txt
 grep "InputParameters" data/ODCB/1/Input_Data.txt
 grep "OutputParameters" data/ODCB/1/Input_Data.txt
-echo -n "data/ODCB/1/"; grep "CalcProcNo" data/ODCB/1/Input_Data.txt | sed s/CalcProcNo//g | sed s/" "//g ; echo "/1r"
+procOutNumber=$(grep "CalcProcNo" ../data/ODCB/1/Input_Data.txt | sed 's/CalcProcNo//g' | sed 's/" "//g' | sed 's/\t//g')
+echo "results in data/$DATASET/ODCB/1/$procOutNumber/1r"
 echo "===================";
 
 echo "takes a couple of minute"
