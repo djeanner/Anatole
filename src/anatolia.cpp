@@ -1,5 +1,5 @@
 /*****************************************************/
-/***                ANATOLIA V1.0                  ***/
+/***                ANATOLIA V1.1                  ***/
 /***      Free open-source software for total      ***/
 /***       lineshape analysis of NMR spectra       ***/
 /*****************************************************/
@@ -64,7 +64,7 @@ void exit_with_pause(void)
 	cin.getline(textline, 8);
 	exit(0);
 
-};
+}
 #else
 #define exit_ exit(0)
 #endif
@@ -74,16 +74,16 @@ void print_logo(ostream& ostr)
 
 	ostr
 		<< "*****************************************************" << endl
-		<< "***                ANATOLIA V1.0                  ***" << endl
+		<< "***                ANATOLIA V1.1                  ***" << endl
 		<< "***      Free open-source software for total      ***" << endl
 		<< "***       lineshape analysis of NMR spectra       ***" << endl
 		<< "*****************************************************" << endl
-		<< "***       Copyright 2017, Dmitry Cheshkov,        ***" << endl
+		<< "***       Copyright 2019, Dmitry Cheshkov,        ***" << endl
 		<< "***      Dmitry Sinitsyn, Kirill Sheberstov       ***" << endl
 		<< "*****************************************************" << endl
 		<< endl;
 
-};
+}
 
 void print_citation(ostream& ostr)
 {
@@ -91,28 +91,30 @@ void print_citation(ostream& ostr)
 	ostr
 		<< "When publishing results obtained with this program, please cite:" << endl
 		<< "D.A. Cheshkov, K.F. Sheberstov, D.O. Sinitsyn, V.A. Chertkov, ANATOLIA: NMR" << endl
-		<< "software for spectral analysis of total lineshape, Magn. Reson. Chem., 2017." << endl;
+		<< "software for spectral analysis of total lineshape. Magn. Reson. Chem., 2018," << endl
+		<< "56, 449, DOI: 10.1002/mrc.4689." << endl;
 
-};
+}
+
+int nSpins;
 
 int getbitsum(unsigned int number)
 {
-
-	int bits = 0;
-	for (int i = 0; i <= 8 * sizeof(unsigned int) - 1; i++)
-		if ((number & (1 << i)) > 0) { bits += 1; };
-	return(bits);
-
-};
+	int result = 0;
+	unsigned int mask = 1;
+	for (int i = 1; i <= nSpins; i++)
+	{
+		if (number & mask) result++;
+		mask *= 2;
+	}
+	return(result);
+}
 
 int getbit(unsigned int number, int position)
 {
-
-	int result = 0;
-	result = (number & (1 << (position - 1))) >> (position - 1);
-	return(result);
-
-};
+	if (number & (1 << (position - 1))) return(1);
+	return(0);
+}
 
 bool isunsignint(const char* text)
 {
@@ -122,7 +124,7 @@ bool isunsignint(const char* text)
 		res = res && isdigit(text[i]);
 	return(res);
 
-};
+}
 
 bool isunsignreal(const char* text)
 {
@@ -133,10 +135,10 @@ bool isunsignreal(const char* text)
 	{
 		if (text[i] == '.') point++;
 		res = res && (point < 2) && (isdigit(text[i]) || text[i] == '.');
-	};
+	}
 	return(res);
 
-};
+}
 
 bool isreal(const char* text)
 {
@@ -144,19 +146,17 @@ bool isreal(const char* text)
 	int j = (text[0] == '-') || (text[0] == '+') ? 1 : 0;
 	return isunsignreal(text + j);
 
-};
+}
 
 bool isemptyline(const char* text)
 {
 
 	bool res = true;
 	for (int i = 0; int(text[i]) != 0; i++)
-	{
 		res = res && isspace(text[i]);
-	};
 	return(res);
 
-};
+}
 
 #define BOBYQA_SUCCESS                 0 /* algorithm converged */
 #define BOBYQA_BAD_NPT                -1 /* NPT is not in the required interval */
@@ -174,7 +174,6 @@ int bobyqa(const long n, const long npt,
 class Hamiltonian
 {
 public:
-	int nSpins;
 	unsigned int nFunc;
 	int nBlocks;
 	double* Parameters;
@@ -188,6 +187,7 @@ public:
 	gsl_matrix** EVec;
 	gsl_vector** EVal;
 	gsl_eigen_symmv_workspace** W;
+	int*** OffDiagJ;
 	bool*** Perturbation;
 	int nFreqs;
 	int nFreqsFiltered;
@@ -202,8 +202,9 @@ public:
 	{
 		char textline[256];
 		istr >> textline >> textline;
-		if (!isunsignint(textline)) { cout << "Check the number of spins (Nspins)!" << endl; exit_; };
-		nSpins = stoi(textline);
+		if (!isunsignint(textline)) { cout << "Check the number of spins (Nspins)!" << endl; exit_; }
+		nSpins = atoi(textline);
+		if (nSpins > 8 * (int)sizeof(unsigned int)) { cout << "Number of spins (Nspins) exceeds the maximum value (" << 8 * sizeof(unsigned int) << ")!" << endl; exit_; }
 		istr.getline(textline, 256);
 		istr.getline(textline, 256); // Shifts indices
 
@@ -218,29 +219,29 @@ public:
 			for (int j = 0; j <= nSpins; j++)
 				Jcoup[i][j] = 0;
 			SpinsIz[i] = 0;
-		};
+		}
 
 		// Spin offset indices reading
 		for (int i = 1; i <= nSpins; i++)
 		{
 			istr >> textline;
-			if (!isunsignint(textline)) { cout << "Wrong input of spin " << i << " chemical shift index." << endl; exit_; };
-			Offs[i] = stoi(textline);
+			if (!isunsignint(textline)) { cout << "Wrong input of spin " << i << " chemical shift index." << endl; exit_; }
+			Offs[i] = atoi(textline);
 			if (nParams < Offs[i]) nParams = Offs[i];
-		};
+		}
 
 		istr.getline(textline, 256); // Rest of the line
 		istr.getline(textline, 256); // Coupling Indices
 
 		// Spin offset indices checking
-		if (Offs[1] != 1) { cout << "Spin 1 should have chemical shift index 1." << endl; exit_; };
+		if (Offs[1] != 1) { cout << "Spin 1 should have chemical shift index 1." << endl; exit_; }
 		int tmp = 1;
 		for (int i = 2; i <= nSpins; i++)
 		{
-			if (Offs[i] < tmp) { cout << "Wrong input of spin " << i << " chemical shift index." << endl; exit_; };
-			if (Offs[i] > tmp + 1) { cout << "Wrong input of spin " << i << " chemical shift index." << endl; exit_; };
+			if (Offs[i] < tmp) { cout << "Wrong input of spin " << i << " chemical shift index." << endl; exit_; }
+			if (Offs[i] > tmp + 1) { cout << "Wrong input of spin " << i << " chemical shift index." << endl; exit_; }
 			tmp = Offs[i];
-		};
+		}
 		tmp++;
 
 		// Coupling constant indices reading
@@ -248,21 +249,21 @@ public:
 			for (int j = i + 1; j <= nSpins; j++)
 			{
 				istr >> textline;
-				if (!isunsignint(textline)) { cout << "Wrong index for J-coupling constant " << i << "," << j << "." << endl; exit_; };
-				Jcoup[i][j] = stoi(textline);
+				if (!isunsignint(textline)) { cout << "Wrong index for J-coupling constant " << i << "," << j << "." << endl; exit_; }
+				Jcoup[i][j] = atoi(textline);
 				if (nParams < Jcoup[i][j]) nParams = Jcoup[i][j];
-			};
+			}
 		istr.getline(textline, 256); //  Rest of line
 
 		// Coupling constant indices checking
-		if (Jcoup[1][2] != tmp) { cout << "J-coupling constant 1,2 should have index " << tmp << " instead of " << Jcoup[1][2] << "." << endl; exit_; };
+		if (Jcoup[1][2] != tmp) { cout << "J-coupling constant 1,2 should have index " << tmp << " instead of " << Jcoup[1][2] << "." << endl; exit_; }
 		for (int i = 1; i <= nSpins; i++)
 			for (int j = i + 1; j <= nSpins; j++)
 			{
-				if (Jcoup[i][j] <= Offs[nSpins]) { cout << "Wrong index for J-coupling constant " << i << "," << j << "." << endl; exit_; };
-				if (Jcoup[i][j] > tmp + 1) { cout << "Wrong index for J-coupling constant " << i << "," << j << "." << endl; exit_; };
+				if (Jcoup[i][j] <= Offs[nSpins]) { cout << "Wrong index for J-coupling constant " << i << "," << j << "." << endl; exit_; }
+				if (Jcoup[i][j] > tmp + 1) { cout << "Wrong index for J-coupling constant " << i << "," << j << "." << endl; exit_; }
 				if (Jcoup[i][j] > tmp) tmp = Jcoup[i][j];
-			};
+			}
 
 		Parameters = new double[nParams + 1];
 		for (int i = 0; i <= nParams; i++)
@@ -297,24 +298,25 @@ public:
 			Intens[i] = 0;
 			FreqsFiltered[i] = 0;
 			IntensFiltered[i] = 0;
-		};
+		}
 
 		bFunc = new unsigned int*[nBlocks + 1]; bFunc[0] = NULL;
 		for (int i = 1; i <= nBlocks; i++)
 		{
-			int tmp = 1;
+			tmp = 1;
 			bFunc[i] = new unsigned int[BlockSize[i] + 1];
 			bFunc[i][0] = 0;
 			for (unsigned int j = 0; j <= nFunc - 1; j++)
-				if (getbitsum(j) + 1 == i) { bFunc[i][tmp] = j; tmp++; };
-		};
+				if (getbitsum(j) + 1 == i) { bFunc[i][tmp] = j; tmp++; }
+		}
 
 		Ham = new gsl_matrix*[nBlocks + 1];
 		EVec = new gsl_matrix*[nBlocks + 1];
 		EVal = new gsl_vector*[nBlocks + 1];
+		OffDiagJ = new int**[nBlocks + 1];
 		W = new gsl_eigen_symmv_workspace*[nBlocks + 1];
 		Ham[0] = NULL; EVec[0] = NULL; EVal[0] = NULL; W[0] = NULL;
-
+		OffDiagJ[0] = NULL;
 		for (int i = 1; i <= nBlocks; i++)
 		{
 			Ham[i] = gsl_matrix_alloc(BlockSize[i], BlockSize[i]);
@@ -322,7 +324,30 @@ public:
 			EVal[i] = gsl_vector_alloc(BlockSize[i]);
 			if (BlockSize[i] > 1) W[i] = gsl_eigen_symmv_alloc(BlockSize[i]);
 			else W[i] = NULL;
-		};
+			OffDiagJ[i] = new int*[BlockSize[i]];
+			for (int j = 0; j < BlockSize[i]; j++)
+			{
+				OffDiagJ[i][j] = new int[BlockSize[i]];
+				for (int k = 0; k < BlockSize[i]; k++)
+					OffDiagJ[i][j][k] = 0;
+			}
+		}
+
+		for (int i = 1; i <= nBlocks; i++)
+			for (int j = 0; j < BlockSize[i]; j++)
+				for (int k = 0; k < j; k++)
+				{
+					unsigned int bFdiff = bFunc[i][j + 1] ^ bFunc[i][k + 1];
+					if (getbitsum(bFdiff) == 2)
+					{
+						int location[2] = { 0, 0 };
+						tmp = 0;
+						for (int l = 1; l <= nSpins; l++)
+							if (getbit(bFdiff, nSpins - l + 1) == 1)
+								location[tmp++] = l;
+						OffDiagJ[i][j][k] = Jcoup[location[0]][location[1]];
+					}
+				}
 
 		Perturbation = new bool**[nBlocks];
 		Perturbation[0] = NULL;
@@ -334,8 +359,8 @@ public:
 			{
 				Perturbation[i][j] = new bool[BlockSize[i] + 1];
 				Perturbation[i][j][0] = false;
-			};
-		};
+			}
+		}
 
 		for (int i = 1; i <= nBlocks - 1; i++)
 			for (int j = 1; j <= BlockSize[i + 1]; j++)
@@ -345,33 +370,36 @@ public:
 				unsigned int bFippj = bFunc[i + 1][j];
 				for (int k = 1; k <= BlockSize[i]; k++)
 					Perturbij[k] = getbitsum(bFippj^bFi[k]) == 1;
-			};
+			}
 
 		perturb = new double[MaxBlockSize + 1];
 		for (int i = 0; i <= MaxBlockSize; i++)
 			perturb[i] = 0;
 
-	};
+	}
 
 	void Build(void)
 	{
-		int j_location[3] = { 0, 0, 0 };
-		unsigned int offdiag = 0;
 		int signk = 0;
 		double element = 0;
 		unsigned int bFij = 0;
 		unsigned int* bFi = NULL;
 		int bs = 0;
+		int bsj = 0;
 		gsl_matrix* Hami = NULL;
+		int** OffDiagJi = NULL;
+		int* OffDiagJij = NULL;
 
 		for (int i = 1; i <= nBlocks; i++)
 		{
 			bs = BlockSize[i];
 			bFi = bFunc[i];
 			Hami = Ham[i];
+			OffDiagJi = OffDiagJ[i];
 
 			for (int j = 0; j < bs; j++)
 			{
+				bsj = bs * j;
 				bFij = bFi[j + 1];
 				element = 0;
 
@@ -382,31 +410,20 @@ public:
 				{
 					signk = SpinsIz[k];
 					element += Parameters[Offs[k]] * signk;
-					for (int kk = k + 1; kk <= nSpins; kk++) element += 0.5*signk*SpinsIz[kk] * Parameters[Jcoup[k][kk]];
-				};
+					for (int l = k + 1; l <= nSpins; l++) element += 0.5*signk*SpinsIz[l] * Parameters[Jcoup[k][l]];
+				}
 
-				Hami->data[bs * j + j] = element;
-
+				Hami->data[bsj + j] = element;
+				OffDiagJij = OffDiagJi[j];
 				for (int k = 0; k < j; k++)
 				{
-					element = 0;
-					offdiag = bFij^bFi[k + 1];
-					if (getbitsum(offdiag) == 2)
-					{
-						int tmp = 1;
-						for (int kk = 1; kk <= nSpins; kk++)
-							if (getbit(offdiag, nSpins - kk + 1) == 1)
-								j_location[tmp++] = kk;
-						element = Parameters[Jcoup[j_location[1]][j_location[2]]];
-					};
+					int tmp = OffDiagJij[k];
+					Hami->data[bsj + k] = tmp == 0 ? 0 : Parameters[tmp];
+				}
+			}
+		}
 
-					Hami->data[bs * j + k] = element;
-
-				};
-			};
-		};
-
-	};
+	}
 
 	void FindEigensystem(void)
 	{
@@ -418,9 +435,9 @@ public:
 			{
 				EVal[i]->data[0] = Ham[i]->data[0];
 				EVec[i]->data[0] = 1;
-			};
+			}
 
-	};
+	}
 
 	void CalcFreqIntens(void)
 	{
@@ -451,7 +468,7 @@ public:
 					for (int ii = 1; ii <= bs; ii++)
 						if (Perturbik[ii])
 							perturb[k] += EVecCur->data[tmp + ii - 1];
-				};
+				}
 
 				for (int k = 1; k <= bs_next; k++)
 				{
@@ -465,9 +482,9 @@ public:
 					if (maxintens < intensity) maxintens = intensity;
 					Freqs[freqnum] = EValCur->data[j - 1] - EValNext->data[k - 1];
 					freqnum++;
-				};
-			};
-		};
+				}
+			}
+		}
 
 		threshold = IntensityThreshold * maxintens;
 		nFreqsFiltered = 0;
@@ -479,9 +496,9 @@ public:
 				nFreqsFiltered++;
 				FreqsFiltered[nFreqsFiltered] = 0.5 * Freqs[i];
 				IntensFiltered[nFreqsFiltered] = intensity;
-			};
-		};
-	};
+			}
+		}
+	}
 
 	void ComputeFreqIntens(void)
 	{
@@ -490,7 +507,7 @@ public:
 		FindEigensystem();
 		CalcFreqIntens();
 
-	};
+	}
 
 	void PrintSpinSystem(ostream& ostr, double SF)
 	{
@@ -508,12 +525,12 @@ public:
 			for (int j = 1; j <= nSpins; j++)
 				if (j <= i) ostr << setw(10) << ' ';
 				else ostr << setw(10) << right << Parameters[Jcoup[i][j]];
-				ostr << endl;
-		};
+			ostr << endl;
+		}
 
 		ostr.precision(defaultprecision);
 
-	};
+	}
 
 };
 
@@ -523,7 +540,6 @@ class Data
 public:
 	int nPoints;
 	double Magnitude;
-	double MagnitudeMultiplier;
 	double* Points;
 	char* Filename;
 
@@ -534,10 +550,9 @@ public:
 		strcpy(Filename, "");
 		nPoints = 0;
 		Magnitude = 0;
-		MagnitudeMultiplier = 1;
 		Points = NULL;
 
-	};
+	}
 
 	void Create(void)
 	{
@@ -547,9 +562,9 @@ public:
 			Points = new double[nPoints + 1];
 			for (int i = 0; i <= nPoints; i++)
 				Points[i] = 0;
-		};
+		}
 
-	};
+	}
 
 	void Clean(void)
 	{
@@ -560,19 +575,18 @@ public:
 			Points = NULL;
 			nPoints = 0;
 			Magnitude = 0;
-			MagnitudeMultiplier = 1;
-		};
+		}
 
-	};
+	}
 
 	void Rescale(int PivotPointIndex)
 	{
 
-		double rescaling = Magnitude * MagnitudeMultiplier / (PivotPointIndex == 0 ? CalcMagnitude() : Points[PivotPointIndex]);
+		double rescaling = Magnitude / (PivotPointIndex == 0 ? CalcMagnitude() : Points[PivotPointIndex]);
 		for (int i = 1; i <= nPoints; i++)
-			Points[i] = rescaling*Points[i];
+			Points[i] = rescaling * Points[i];
 
-	};
+	}
 
 	double CalcMagnitude(void)
 	{
@@ -582,7 +596,7 @@ public:
 			if (MaxIntens < abs(Points[i])) MaxIntens = abs(Points[i]);
 		return(MaxIntens);
 
-	};
+	}
 
 	void SaveSpecToFile(void)
 	{
@@ -594,10 +608,10 @@ public:
 		{
 			point = int(Points[i]);
 			ostr.write((char*)&point, 4);
-		};
+		}
 		ostr.close();
 
-	};
+	}
 
 	void LoadSpecFromFile(void)
 	{
@@ -606,9 +620,9 @@ public:
 
 		Clean();
 
-		if (int(Filename[0]) == 0) { cout << "Can't load spectrum, filename is empty!" << endl; exit_; };
+		if (int(Filename[0]) == 0) { cout << "Can't load spectrum, filename is empty!" << endl; exit_; }
 		ifstream istr(Filename, ios::in | ios::binary | ios::ate);
-		if (!istr) { cout << "File " << Filename << " does not exists!" << endl; exit_; };
+		if (!istr) { cout << "File " << Filename << " does not exists!" << endl; exit_; }
 
 		nPoints = (int)istr.tellg() / 4;
 		istr.seekg(0);
@@ -620,10 +634,10 @@ public:
 			istr.read((char*)&point, 4);
 			Points[i] = double(point);
 			if (Magnitude < abs(Points[i])) Magnitude = abs(Points[i]);
-		};
+		}
 		istr.close();
 
-	};
+	}
 
 	void ZeroData(void)
 	{
@@ -631,11 +645,11 @@ public:
 		for (int i = 0; i <= nPoints; i++)
 			Points[i] = 0;
 
-	};
+	}
 
 };
 
-class PreOptimization
+class Spectrum
 {
 
 public:
@@ -653,6 +667,8 @@ public:
 	double O1_h;
 	double BF;
 	double SR;
+	double Offset;
+	double FreqStep;
 	int nIntervals;
 	int* StartPoint;
 	int* EndPoint;
@@ -662,8 +678,10 @@ public:
 	double* FreqsOnIntervals;
 	double SumOfExpSquaresOnIntervals;
 	char* SpectraTextOutputFilename;
+	bool ScaleOpt;
+	bool FineCalc;
 
-	PreOptimization(Hamiltonian* Ham, ifstream& istr)
+	Spectrum(Hamiltonian* Ham, ifstream& istr)
 	{
 
 		Hami = Ham;
@@ -677,11 +695,15 @@ public:
 		O1_h = 0;
 		SW_h = 0;
 		SR = 0;
+		Offset = 0;
+		FreqStep = 0;
 		LineWidth = 0;
 		LB = 0;
 		SumOfExpSquaresOnIntervals = 0;
 		nIntervals = 0;
 		nPointsRated = 0;
+		ScaleOpt = false;
+		FineCalc = true;
 
 		StartPoint = NULL;
 		EndPoint = NULL;
@@ -695,7 +717,7 @@ public:
 		// Reading data from ACQUS
 		sprintf(textline, "%s/acqus", DatasetPath);
 		ifstream dataset(textline);
-		if (!dataset) { cout << "File ACQUS does not exists!" << endl; exit_; };
+		if (!dataset) { cout << "File ACQUS does not exists!" << endl; exit_; }
 		while (dataset)
 		{
 			dataset >> textline;
@@ -703,70 +725,73 @@ public:
 			if (strstr(textline, "$O1=") != NULL)   dataset >> O1_h;
 			if (strstr(textline, "$SW_h=") != NULL) dataset >> SW_h;
 			if (strstr(textline, "$SW_H=") != NULL) dataset >> SW_h;
-		};
+		}
 		dataset.close();
 
 		istr >> textline >> textline;
-		if (!isunsignint(textline)) { cout << "Wrong experimental spectrum processing number." << endl; exit_; };
-		ExpProcNo = stoi(textline);
+		if (!isunsignint(textline)) { cout << "Wrong experimental spectrum processing number." << endl; exit_; }
+		ExpProcNo = atoi(textline);
 		// Reading data from PROCS of experimental spectrum
 		sprintf(ExperimentalSpec.Filename, "%s/pdata/%i/procs", DatasetPath, ExpProcNo);
 		dataset.open(ExperimentalSpec.Filename);
-		if (!dataset) { cout << "File PROCS in processing number " << ExpProcNo << " does not exists!" << endl; exit_; };
+		if (!dataset) { cout << "File PROCS in processing number " << ExpProcNo << " does not exists!" << endl; exit_; }
 		sprintf(ExperimentalSpec.Filename, "%s/pdata/%i/1r", DatasetPath, ExpProcNo);
 		while (dataset)
 		{
 			dataset >> textline;
 			if (strstr(textline, "$SF=") != NULL) dataset >> SR;
 			if (strstr(textline, "$SI=") != NULL) dataset >> TheoreticalSpec.nPoints;
-		};
+		}
 		dataset.close();
 		SR -= BF; SR *= 1e6;
-		SR = double(int(SR * 1e4)) / 1e4;
+		//SR = double(int(SR * 1e4)) / 1e4;
+		Offset = O1_h + 0.5 * SW_h - SR;
+		FreqStep = SW_h / TheoreticalSpec.nPoints;
 
 		istr >> textline >> textline;
 		if (textline[0] == '-')
 			strcpy(ExperimentalSpecWithBroadening.Filename, "-");
 		else
 		{
-			if (!isunsignint(textline)) { cout << "Check the processing number for experimental spectrum with broadening." << endl; exit_; };
-			BrExpProcNo = stoi(textline);
+			if (!isunsignint(textline)) { cout << "Check the processing number for experimental spectrum with broadening." << endl; exit_; }
+			BrExpProcNo = atoi(textline);
 			sprintf(ExperimentalSpecWithBroadening.Filename, "%s/pdata/%i/1r", DatasetPath, BrExpProcNo);
-		};
+		}
 
 		istr >> textline >> textline;
 		if (textline[0] == '-')
 			strcpy(TheoreticalSpec.Filename, "-");
 		else
 		{
-			if (!isunsignint(textline)) { cout << "Check the processing number for theoretical spectrum." << endl; exit_; };
-			TheorProcNo = stoi(textline);
+			if (!isunsignint(textline)) { cout << "Check the processing number for theoretical spectrum." << endl; exit_; }
+			TheorProcNo = atoi(textline);
 			sprintf(TheoreticalSpec.Filename, "%s/pdata/%i/1r", DatasetPath, TheorProcNo);
-		};
+		}
 		istr.getline(textline, 256);   //  Rest of proc. no. line
 
 		ExperimentalSpecWithBroadening.nPoints = TheoreticalSpec.nPoints;
 
-	};
+	}
 
 	void LoadIntervals(void)
 	{
+
 		stringstream parse;
 		int position = 0;
 		bool ok = false;
 		char textline[256];
 		sprintf(textline, "%s/pdata/%i/integrals.txt", DatasetPath, ExpProcNo);
 		ifstream istr(textline);
-		if (!istr) { cout << "File integrals.txt does not exist in the processing folder with experimental spectrum!" << endl; exit_; };
+		if (!istr) { cout << "File integrals.txt does not exist in the processing folder with experimental spectrum!" << endl; exit_; }
 
 		nIntervals = 0;
 
 		while (istr)
 		{
-			istr.getline(textline, 256);  position++;
-			if (strstr(textline, "Integral") != NULL) { ok = true; break; };
-		};
-		if (!ok) { cout << "File integrals.txt in the processing folder with experimental spectrum is corrupted!" << endl; exit_; };
+			istr.getline(textline, 256); position++;
+			if (strstr(textline, "Integral") != NULL) { ok = true; break; }
+		}
+		if (!ok) { cout << "File integrals.txt in the processing folder with experimental spectrum is corrupted!" << endl; exit_; }
 
 		int i = 0;
 		istr.getline(textline, 256);
@@ -775,20 +800,20 @@ public:
 			i++;
 			parse << textline;
 			parse >> nIntervals;
-			if (nIntervals != i) { cout << "File integrals.txt in the processing folder with experimental spectrum is corrupted!" << endl; exit_; };
+			if (nIntervals != i) { cout << "File integrals.txt in the processing folder with experimental spectrum is corrupted!" << endl; exit_; }
 			parse.str(""); parse.clear();
 			istr.getline(textline, 256);
-		};
+		}
 
-		if (nIntervals < 1) { cout << "There is no defined intervals in the integrals.txt file for the experimental spectrum!" << endl; exit_; };
+		if (nIntervals < 1) { cout << "There is no defined intervals in the integrals.txt file for the experimental spectrum!" << endl; exit_; }
 
 		istr.clear(); istr.seekg(0);
-		for (i = 1; i <= position; i++) istr.getline(textline, 256);
+		for(i = 1; i <= position; i++) istr.getline(textline, 256);
 
 		int j = 0;
 		double StartPPM = 0, EndPPM = 0, IntVal = 0;
-		double PPMOffset = (O1_h - SR + 0.5 * SW_h) / (BF + SR*1e-6);
-		double PPMStep = SW_h / ((BF + SR*1e-6) * (ExperimentalSpec.nPoints - 1));
+		double PPMOffset = (O1_h - SR + 0.5 * SW_h) / (BF + SR * 1e-6);
+		double PPMStep = SW_h / ((BF + SR * 1e-6) * ExperimentalSpec.nPoints);
 
 		StartPoint = new int[nIntervals + 1];
 		EndPoint = new int[nIntervals + 1];
@@ -808,30 +833,28 @@ public:
 			EndPoint[i] = int((PPMOffset - EndPPM) / PPMStep) + 1;
 			if (EndPoint[i] < 1) EndPoint[i] = 1;
 			if (EndPoint[i] > ExperimentalSpec.nPoints) EndPoint[i] = ExperimentalSpec.nPoints;
-			if (EndPoint[i] - StartPoint[i] <= 2) { cout << "Spectrum interval " << i << " is too small. Please increase the number of points." << endl; exit_; };
+			if (EndPoint[i] - StartPoint[i] <= 2) { cout << "Spectrum interval " << i << " is too small. Please increase the number of points." << endl; exit_; }
 			nPointsRated += (EndPoint[i] - StartPoint[i] + 1);
-		};
+		}
 
 		istr.close();
 
 		ExpSpecPointsOnIntervals = new double[nPointsRated + 1];
 		TheorSpecPointsOnIntervals = new double[nPointsRated + 1];
 		FreqsOnIntervals = new double[nPointsRated + 1];
-		for (int i = 0; i <= nPointsRated; i++)
+		for (i = 0; i <= nPointsRated; i++)
 		{
 			ExpSpecPointsOnIntervals[i] = 0;
 			TheorSpecPointsOnIntervals[i] = 0;
 			FreqsOnIntervals[i] = 0;
-		};
+		}
 
-		double Offset = O1_h + 0.5 * SW_h - SR;
-		double FreqStep = SW_h / (TheoreticalSpec.nPoints - 1);
 		int n = 1;
 		for (int i = 1; i <= nIntervals; i++)
 			for (int j = StartPoint[i]; j <= EndPoint[i]; j++)
-				FreqsOnIntervals[n++] = Offset - FreqStep*(j - 1);
+				FreqsOnIntervals[n++] = Offset - FreqStep * (j - 1);
 
-	};
+	}
 
 	double GetIntervalStartFreq(int Inerval)
 	{
@@ -839,7 +862,7 @@ public:
 		if (Inerval < 1 || Inerval > nIntervals) return(0.0);
 		return(O1_h + 0.5 * SW_h - SR - (StartPoint[Inerval] - 1) * SW_h / (TheoreticalSpec.nPoints - 1));
 
-	};
+	}
 
 	double GetIntervalEndFreq(int Inerval)
 	{
@@ -847,7 +870,7 @@ public:
 		if (Inerval < 1 || Inerval > nIntervals) return(0.0);
 		return(O1_h + 0.5 * SW_h - SR - (EndPoint[Inerval] - 1) * SW_h / (TheoreticalSpec.nPoints - 1));
 
-	};
+	}
 
 	void CalcExpSpecMagnOnIntervals(void)
 	{
@@ -855,21 +878,21 @@ public:
 		if (nIntervals > 0)
 		{
 			ExperimentalSpec.Magnitude = 0;
-			ExperimentalSpec.MagnitudeMultiplier = 1;
 			for (int i = 1; i <= nIntervals; i++)
 				for (int j = StartPoint[i]; j <= EndPoint[i]; j++)
 					if (ExperimentalSpec.Magnitude < abs(ExperimentalSpec.Points[j])) ExperimentalSpec.Magnitude = abs(ExperimentalSpec.Points[j]);
-		};
+		}
 
-	};
+	}
 
 	void BroadOnIntervals(double LWBroad)
 	{
 
 		LB = LWBroad;
 		ExperimentalSpecWithBroadening.ZeroData();
+		int step = 1;
 
-		double Betta = 2 * SW_h / ((ExperimentalSpec.nPoints - 1) * LB); Betta *= Betta;
+		double Betta = 2 * FreqStep / LB; Betta *= Betta;
 		int nPoints = int(ceill(sqrt(199 / Betta)));
 		if (nPoints > 3)
 		{
@@ -885,86 +908,134 @@ public:
 					stopk = j + nPoints;  if (stopk > ExperimentalSpec.nPoints) stopk = ExperimentalSpec.nPoints;
 					for (int k = startk; k <= stopk; k++)
 						ExperimentalSpecWithBroadening.Points[j] += ExperimentalSpec.Points[k] * Points[abs(j - k)];
-				};
+				}
 			delete[] Points;
 			ExperimentalSpecWithBroadening.Rescale(0);
+			step = int(LB / (2 * FreqStep)); if ((step == 0) || FineCalc) step = 1;
 		}
 		else
 		{
+			LB = 0;
 			for (int i = 1; i <= nIntervals; i++)
 				for (int j = StartPoint[i]; j <= EndPoint[i]; j++)
 					ExperimentalSpecWithBroadening.Points[j] = ExperimentalSpec.Points[j];
-		};
+		}
 
 		SumOfExpSquaresOnIntervals = 0;
 		int n = 1;
 		double tmp = 0;
 		for (int i = 1; i <= nIntervals; i++)
-			for (int j = StartPoint[i]; j <= EndPoint[i]; j++)
+			for (int j = StartPoint[i]; j <= EndPoint[i]; j += step)
 			{
+				FreqsOnIntervals[n] = Offset - FreqStep * (j - 1);
 				tmp = ExperimentalSpecWithBroadening.Points[j];
 				ExpSpecPointsOnIntervals[n++] = tmp; tmp *= tmp;
 				SumOfExpSquaresOnIntervals += tmp;
-			};
+			}
+		nPointsRated = n - 1;
 
-	};
+	}
 
 	void CalcSpecOnIntervals(void)
 	{
 
-		double LW = (LineWidth + LB) / 2, tmp = 0, tmp1 = 0, CurrPointFreq = 0;
+		double LW = (abs(LineWidth) + LB) / 2, tmp = 0, tmp1 = 0, tmp2 = 0, CurrFreq = 0;
 		double sqLW = LW * LW;
+		double MaxIntense = 0;
+		int nFreqs = Hami->nFreqsFiltered;
+		double* Freqs = Hami->FreqsFiltered;
+		double* Intens = Hami->IntensFiltered;
 
-		for (int i = 1; i <= nPointsRated; i++)
+		if (FineCalc)
 		{
-			CurrPointFreq = FreqsOnIntervals[i];
-			tmp1 = 0;
-			for (int j = 1; j <= Hami->nFreqsFiltered; j++)
+			for (int i = 1; i <= nPointsRated; i++)
 			{
-				tmp = CurrPointFreq - Hami->FreqsFiltered[j]; tmp *= tmp;
-				tmp1 += Hami->IntensFiltered[j] * LW / (tmp + sqLW);
-			};
-			TheorSpecPointsOnIntervals[i] = tmp1;
-		};
+				CurrFreq = FreqsOnIntervals[i];
+				tmp1 = 0;
+				for (int j = 1; j <= nFreqs; j++)
+				{
+					tmp = CurrFreq - Freqs[j]; tmp *= tmp;
+					tmp1 += Intens[j] / (tmp + sqLW);
+				}
+				TheorSpecPointsOnIntervals[i] = tmp1;
+				if (MaxIntense < tmp1) MaxIntense = tmp1;
+			}
+		}
+		else
+		{
+			tmp2 = 25 * LW;
+			for (int i = 1; i <= nPointsRated; i++)
+			{
+				CurrFreq = FreqsOnIntervals[i];
+				tmp1 = 0;
+				for (int j = 1; j <= nFreqs; j++)
+				{
+					tmp = abs(CurrFreq - Freqs[j]);
+					if (tmp < tmp2)
+					{
+						tmp *= tmp;
+						tmp1 += Intens[j] / (tmp + sqLW);
+					}
+				}
+				TheorSpecPointsOnIntervals[i] = tmp1;
+				if (MaxIntense < tmp1) MaxIntense = tmp1;
+			}
+		}
 
 		//Rescale TheorSpec on intervals
-		tmp = 0;
-		for (int i = 1; i <= nPointsRated; i++)
-			if (tmp < abs(TheorSpecPointsOnIntervals[i])) tmp = abs(TheorSpecPointsOnIntervals[i]);
-		tmp1 = TheoreticalSpec.Magnitude * TheoreticalSpec.MagnitudeMultiplier / tmp;
-		for (int i = 1; i <= nPointsRated; i++)
-			TheorSpecPointsOnIntervals[i] *= tmp1;
+		if (ScaleOpt)
+		{
+			tmp1 = 0;
+			tmp2 = 0;
+			for (int i = 1; i <= nPointsRated; i++)
+			{
+				tmp = TheorSpecPointsOnIntervals[i];
+				tmp1 += ExpSpecPointsOnIntervals[i] * tmp;
+				tmp *= tmp;
+				tmp2 += tmp;
+			}
+			tmp = tmp1 / tmp2;
+			TheoreticalSpec.Magnitude = MaxIntense * tmp;
+		}
+		else
+			tmp = abs(TheoreticalSpec.Magnitude / MaxIntense);
 
-	};
+		for (int i = 1; i <= nPointsRated; i++)
+			TheorSpecPointsOnIntervals[i] *= tmp;
+
+	}
 
 	void CalcFullSpectrum(void)
 	{
 
-		double LW = (LineWidth + LB) / 2, Offset = O1_h + 0.5 * SW_h - SR;
-		double FreqStep = SW_h / (TheoreticalSpec.nPoints - 1);
+		int nFreqs = Hami->nFreqsFiltered;
+		double* Freqs = Hami->FreqsFiltered;
+		double* Intens = Hami->IntensFiltered;
+
+		double LW = (abs(LineWidth) + LB) / 2;
 		double tmp = 0, tmp1 = 0, sqLW = LW * LW, CurrFreq = 0;
 
 		for (int i = 1; i <= TheoreticalSpec.nPoints; i++)
 		{
-			CurrFreq = Offset - FreqStep*(i - 1);
+			CurrFreq = Offset - FreqStep * (i - 1);
 			tmp1 = 0;
-			for (int j = 1; j <= Hami->nFreqsFiltered; j++)
+			for (int j = 1; j <= nFreqs; j++)
 			{
-				tmp = CurrFreq - Hami->FreqsFiltered[j]; tmp *= tmp;
-				tmp1 += Hami->IntensFiltered[j] * LW / (tmp + sqLW);
-			};
+				tmp = CurrFreq - Freqs[j]; tmp *= tmp;
+				tmp1 += Intens[j] / (tmp + sqLW);
+			}
 			TheoreticalSpec.Points[i] = tmp1;
-		};
+		}
 
 		// Rescaling of the full spectrum taking into account spectral intervals.
 		int index = 0;
 		tmp = 0;
 		for (int i = 1; i <= nIntervals; i++)
 			for (int j = StartPoint[i]; j <= EndPoint[i]; j++)
-				if (tmp < TheoreticalSpec.Points[j]) { tmp = TheoreticalSpec.Points[j]; index = j; };
+				if (tmp < TheoreticalSpec.Points[j]) { tmp = TheoreticalSpec.Points[j]; index = j; }
 		TheoreticalSpec.Rescale(index);
 
-	};
+	}
 
 	void ComputeFullSpectrum(void)
 	{
@@ -972,7 +1043,7 @@ public:
 		Hami->ComputeFreqIntens();
 		CalcFullSpectrum();
 
-	};
+	}
 
 	void ComputeSpecOnIntervals(void)
 	{
@@ -980,7 +1051,7 @@ public:
 		Hami->ComputeFreqIntens();
 		CalcSpecOnIntervals();
 
-	};
+	}
 
 	double SumOfSquareDeviationsOnIntervals(void)
 	{
@@ -990,16 +1061,16 @@ public:
 		{
 			tmp = ExpSpecPointsOnIntervals[i] - TheorSpecPointsOnIntervals[i]; tmp *= tmp;
 			res += tmp;
-		};
+		}
 		return res;
-	};
+	}
 
 	double MeanSquareDeviation(Data Dat)
 	{
 
 		return (sqrt(SumOfSquareDeviationsOnIntervals() / nPointsRated));
 
-	};
+	}
 
 	double Badness(void)
 	{
@@ -1007,7 +1078,7 @@ public:
 		ComputeSpecOnIntervals();
 		return SumOfSquareDeviationsOnIntervals();
 
-	};
+	}
 
 	double BadnessScWd(void)
 	{
@@ -1015,7 +1086,7 @@ public:
 		CalcSpecOnIntervals();
 		return SumOfSquareDeviationsOnIntervals();
 
-	};
+	}
 
 	double CalcRFactor(void)
 	{
@@ -1025,7 +1096,27 @@ public:
 			rfactor = SumOfSquareDeviationsOnIntervals() / SumOfExpSquaresOnIntervals;
 		return(100 * sqrt(rfactor));
 
-	};
+	}
+
+	double CalcSpectraColleration(void)
+	{
+
+		double SumOfTheorSquaresOnIntervals = 0;
+
+		if (SumOfExpSquaresOnIntervals > 0)
+		{
+			double tmp = 0;
+			for (int i = 1; i <= nPointsRated; i++)
+			{
+				SumOfTheorSquaresOnIntervals += TheorSpecPointsOnIntervals[i] * TheorSpecPointsOnIntervals[i];
+				tmp += TheorSpecPointsOnIntervals[i] * ExpSpecPointsOnIntervals[i];
+			}
+			return tmp / sqrt(SumOfTheorSquaresOnIntervals * SumOfExpSquaresOnIntervals);
+		}
+
+		return 0;
+
+	}
 
 	void SaveSpecsOnIntervalsTXT(void)
 	{
@@ -1046,11 +1137,11 @@ public:
 			ostr << setw(16) << right << int(ExpSpecPointsOnIntervals[i]);
 			ostr << setw(16) << right << int(TheorSpecPointsOnIntervals[i]);
 			ostr << setw(16) << right << int(ExpSpecPointsOnIntervals[i]) - int(TheorSpecPointsOnIntervals[i]) << endl;
-		};
+		}
 
 		ostr.close();
 
-	};
+	}
 
 };
 
@@ -1065,18 +1156,18 @@ public:
 	char* OutputParameters;
 	double* Parameters;
 	double* ParameterErrors;
+	double** ParameterCorrelations;
 	double* LBs;
 	char** ParNames;
-	PreOptimization* PreOpt;
+	Spectrum* Spec;
 	bool ErrorsComputed;
-	int nPreOptParams;
-	int* PreOptParams;
+	bool LWPreOpt;
 
-	OptHamiltonian(PreOptimization* Pre)
+	OptHamiltonian(Spectrum* OptSpec)
 	{
 
-		PreOpt = Pre;
-		nParams = Pre->Hami->nParams + 2;
+		Spec = OptSpec;
+		nParams = OptSpec->Hami->nParams + 2;
 		nVarParams = 0;
 		nBroadenings = 0;
 		LBs = NULL;
@@ -1085,26 +1176,28 @@ public:
 		OutputParameters = new char[256];
 		Parameters = new double[nParams + 1];
 		ParameterErrors = new double[nParams + 1];
+		ParameterCorrelations = new double*[nParams + 1];
 		ParNames = new char*[nParams + 1];
 		VarParams = new int[nParams + 1];
 
 		ParNames[0] = NULL; Parameters[0] = 0;
-		ParameterErrors[0] = 0; VarParams[0] = 0;
+		ParameterErrors[0] = 0; ParameterCorrelations[0] = NULL;
+		VarParams[0] = 0;
 		for (int i = 1; i <= nParams; i++)
 		{
 			Parameters[i] = 0;
 			ParameterErrors[i] = 0;
+			ParameterCorrelations[i] = new double[nParams + 1];
+			for (int j = 0; j <= nParams; j++)
+				ParameterCorrelations[i][j] = 0;
 			VarParams[i] = 0;
 			ParNames[i] = new char[256];
 			strcpy(ParNames[i], "");
-		};
+		}
 
-		nPreOptParams = 0;
-		PreOptParams = new int[3];
-		for (int i = 0; i <= 2; i++)
-			PreOptParams[i] = 0;
+		LWPreOpt = false;
 
-	};
+	}
 
 	void LoadParameters(void)
 	{
@@ -1112,70 +1205,70 @@ public:
 		char textline[256];
 		int ParNum = 0;
 		ifstream istr(InputParameters);
-		if (!istr) { cout << "File " << InputParameters << " does not exists!" << endl; exit_; };
+		if (!istr) { cout << "File " << InputParameters << " does not exists!" << endl; exit_; }
 
 		for (int i = 1; i <= nParams - 2; i++)
 		{
 			istr >> textline;
-			if (!isunsignint(textline)) { cout << "Incorrect number of parameter " << i << "." << endl; exit_; };
-			ParNum = stoi(textline);
-			if (ParNum != i) { cout << "Incorrect number of parameter " << i << "." << endl; exit_; };
+			if (!isunsignint(textline)) { cout << "Incorrect number of parameter " << i << "." << endl; exit_; }
+			ParNum = atoi(textline);
+			if (ParNum != i) { cout << "Incorrect number of parameter " << i << "." << endl; exit_; }
 			istr >> ParNames[i];
 			istr >> textline;
-			if (!isreal(textline)) { cout << "Incorrect value of parameter " << i << "." << endl; exit_; };
-			Parameters[i] = stod(textline);
+			if (!isreal(textline)) { cout << "Incorrect value of parameter " << i << "." << endl; exit_; }
+			Parameters[i] = atof(textline);
 			istr.getline(textline, 256);
-		};
+		}
 
 		istr >> textline;
-		if (!isunsignint(textline)) { cout << "Incorrect number of parameter " << nParams - 1 << " (linewidth)." << endl; exit_; };
-		ParNum = stoi(textline);
-		if (ParNum != nParams - 1) { cout << "Incorrect number of parameter " << nParams - 1 << " (linewidth)." << endl; exit_; };
+		if (!isunsignint(textline)) { cout << "Incorrect number of parameter " << nParams - 1 << " (linewidth)." << endl; exit_; }
+		ParNum = atoi(textline);
+		if (ParNum != nParams - 1) { cout << "Incorrect number of parameter " << nParams - 1 << " (linewidth)." << endl; exit_; }
 		istr >> ParNames[nParams - 1];
 		istr >> textline;
-		if (!isunsignreal(textline)) { cout << "Incorrect value of parameter " << nParams - 1 << " (linewidth)." << endl; exit_; };
-		Parameters[nParams - 1] = stod(textline);
-		if (Parameters[nParams - 1] == 0) { cout << "Incorrect value of parameter " << nParams - 1 << " (linewidth)." << endl; exit_; };
+		if (!isunsignreal(textline)) { cout << "Incorrect value of parameter " << nParams - 1 << " (linewidth)." << endl; exit_; }
+		Parameters[nParams - 1] = atof(textline);
+		if (Parameters[nParams - 1] == 0) { cout << "Incorrect value of parameter " << nParams - 1 << " (linewidth)." << endl; exit_; }
 		istr.getline(textline, 256);
 
 		istr >> textline;
-		if (!isunsignint(textline)) { cout << "Incorrect number of parameter " << nParams << " (spectrum magnitude)." << endl; exit_; };
-		ParNum = stoi(textline);
-		if (ParNum != nParams) { cout << "Incorrect number of parameter " << nParams << " (spectrum magnitude)." << endl; exit_; };
+		if (!isunsignint(textline)) { cout << "Incorrect number of parameter " << nParams << " (spectrum magnitude)." << endl; exit_; }
+		ParNum = atoi(textline);
+		if (ParNum != nParams) { cout << "Incorrect number of parameter " << nParams << " (spectrum magnitude)." << endl; exit_; }
 		istr >> ParNames[nParams];
-		istr >> PreOpt->TheoreticalSpec.Magnitude;
-		if (istr.fail() || PreOpt->TheoreticalSpec.Magnitude < 0) { cout << "Incorrect value of parameter " << nParams << " (spectrum magnitude)." << endl; exit_; };
-		PreOpt->TheoreticalSpec.MagnitudeMultiplier = 1;
-		Parameters[nParams] = 1;
+
+		istr >> Parameters[nParams];
+		if (istr.fail() || Parameters[nParams] < 0) { cout << "Incorrect value of parameter " << nParams << " (spectrum magnitude)." << endl; exit_; }
+		Spec->TheoreticalSpec.Magnitude = Parameters[nParams];
 		istr.close();
 
-	};
+	}
 
 	void CheckSpinOffsets(ostream& ostr)
 	{
 
 		bool check = false;
-		int MaxOffs = PreOpt->Hami->Offs[PreOpt->Hami->nSpins];
+		int MaxOffs = Spec->Hami->Offs[nSpins];
 
 		for (int i = 1; i <= MaxOffs; i++)
 		{
 			check = false;
-			for (int j = 1; j <= PreOpt->nIntervals; j++)
-				if (Parameters[i] <= PreOpt->GetIntervalStartFreq(j) && Parameters[i] >= PreOpt->GetIntervalEndFreq(j)) check = true;
+			for (int j = 1; j <= Spec->nIntervals; j++)
+				if (Parameters[i] <= Spec->GetIntervalStartFreq(j) && Parameters[i] >= Spec->GetIntervalEndFreq(j)) check = true;
 			if (!check) ostr << "Warning! Chemical shift no. " << i << " (" << Parameters[i] << ") does not fall into any of defined spectral intervals." << endl;
-		};
+		}
 
-		for (int i = 1; i <= PreOpt->nIntervals; i++)
+		for (int i = 1; i <= Spec->nIntervals; i++)
 		{
 			check = false;
 			for (int j = 1; j <= MaxOffs; j++)
-				if (Parameters[j] <= PreOpt->GetIntervalStartFreq(i) && Parameters[j] >= PreOpt->GetIntervalEndFreq(i)) check = true;
+				if (Parameters[j] <= Spec->GetIntervalStartFreq(i) && Parameters[j] >= Spec->GetIntervalEndFreq(i)) check = true;
 			if (!check) ostr << "Warning! Spectral interval no. " << i << " does not contain any chemical shift." << endl;
-		};
+		}
 
 		if (!check) ostr << endl;
 
-	};
+	}
 
 	void CheckBroadSequence(ostream& ostr)
 	{
@@ -1185,7 +1278,7 @@ public:
 			if (LBs[i] >= LBs[i - 1]) printwarn = true;
 		if (printwarn) ostr << "Warning! The sequence of additional broadenings should monotonically decrease!" << endl << endl;
 
-	};
+	}
 
 	void LoadBroadenings(ifstream& istr)
 	{
@@ -1196,9 +1289,9 @@ public:
 
 		istr.getline(textline, 256);   //  LBs
 		parse << textline;
-		while (parse) { parse >> textline1;	nBroadenings++; };
+		while (parse) { parse >> textline1;	nBroadenings++; }
 		nBroadenings -= 2;
-		if (nBroadenings < 1) { cout << "Wrong number of broadenings (" << nBroadenings << "), should be at least 1." << endl; exit_; };
+		if (nBroadenings < 1) { cout << "Wrong number of broadenings (" << nBroadenings << "), should be at least 1." << endl; exit_; }
 		LBs = new double[nBroadenings + 1];
 		LBs[0] = 0;
 		parse.clear(); parse << textline;
@@ -1206,11 +1299,11 @@ public:
 		for (int i = 1; i <= nBroadenings; i++)
 		{
 			parse >> textline;
-			if (!isunsignreal(textline)) { cout << "Wrong value of broadening number " << i << "." << endl; exit_; };
-			LBs[i] = stod(textline);
-		};
+			if (!isunsignreal(textline)) { cout << "Wrong value of broadening number " << i << "." << endl; exit_; }
+			LBs[i] = atof(textline);
+		}
 
-	};
+	}
 
 	void LoadVarParameters(ifstream& istr)
 	{
@@ -1221,103 +1314,119 @@ public:
 		istr >> textline;
 		while (istr && i <= nParams)
 		{
-			if (!isunsignint(textline)) { cout << "Wrong index of varied parameter " << i << "." << endl; exit_; };
-			VarParams[i] = stoi(textline);
-			if (VarParams[i] > nParams) { cout << "Wrong index of varied parameter " << i << "." << endl; exit_; };
+			if (!isunsignint(textline)) { cout << "Wrong index of varied parameter " << i << "." << endl; exit_; }
+			VarParams[i] = atoi(textline);
+			if (VarParams[i] > nParams) { cout << "Wrong index of varied parameter " << i << "." << endl; exit_; }
 			i++;
 			istr >> textline;
-		};
+		}
 		nVarParams = i - 1;
 
-		if (nVarParams == 0) { cout << "There is no varied parameters!" << endl; exit_; };
+		if (nVarParams == 0) { cout << "There is no varied parameters!" << endl; exit_; }
 
 		for (i = 2; i <= nVarParams; i++)
-			if (VarParams[i] <= VarParams[i - 1]) { cout << "Wrong index of varied parameter " << i << "." << endl; exit_; };
+			if (VarParams[i] <= VarParams[i - 1]) { cout << "Wrong index of varied parameter " << i << "." << endl; exit_; }
 
-		nPreOptParams = 0;
-		bool preopt = false;
+		LWPreOpt = false;
 		for (i = 1; i <= nVarParams; i++)
-			if ((VarParams[i] != nParams - 1) & (VarParams[i] != nParams)) preopt = true;
-		if (preopt)
-		{
-			for (i = 1; i <= nVarParams; i++)
-			{
-				if (VarParams[i] == nParams - 1) { PreOptParams[++nPreOptParams] = nParams - 1; };
-				if (VarParams[i] == nParams) { PreOptParams[++nPreOptParams] = nParams; };
-			};
-		};
+			if ((VarParams[i] != nParams - 1) & (VarParams[i] != nParams)) LWPreOpt = true;
 
-	};
+		if (LWPreOpt)
+		{
+			LWPreOpt = false;
+			for (i = 1; i <= nVarParams; i++)
+				if (VarParams[i] == nParams - 1) LWPreOpt = true;
+		}
+
+		Spec->ScaleOpt = false;
+		if (VarParams[nVarParams] == nParams) { Spec->ScaleOpt = true; nVarParams--; }
+
+		if (nVarParams == 0) { cout << "Nothing to optimize!" << endl; exit_; }
+
+	}
 
 	void SetParametersToHamiltonian(void)
 	{
 
-		for (int i = 1; i <= nParams - 2; i++)
-			PreOpt->Hami->Parameters[i] = Parameters[i];
-		PreOpt->LineWidth = Parameters[nParams - 1];
-		PreOpt->TheoreticalSpec.MagnitudeMultiplier = Parameters[nParams];
+		double* HamParams = Spec->Hami->Parameters;
+		for (int i = 1; i <= nParams - 2; i++) HamParams[i] = Parameters[i];
+		Spec->LineWidth = Parameters[nParams - 1];
+		Spec->TheoreticalSpec.Magnitude = Parameters[nParams];
 
-	};
+	}
 
 	double Badness(void)
 	{
 
 		SetParametersToHamiltonian();
-		return PreOpt->Badness();
+		double Badn = Spec->Badness();
+		if (Spec->ScaleOpt) Parameters[nParams] = Spec->TheoreticalSpec.Magnitude;
+		return Badn;
 
-	};
+	}
 
-	void ComputeErrors()
+	void ComputeErrors(void)
 	{
 
 		ErrorsComputed = false;
+		bool ScaleOpt = Spec->ScaleOpt;
+		Spec->ScaleOpt = false;
+
 		double** TheorSpecDerivativesOnIntervals = new double*[nParams + 1];
 		TheorSpecDerivativesOnIntervals[0] = NULL;
-		gsl_matrix *DTD = gsl_matrix_alloc(nParams, nParams);
-
-		int nPoints = PreOpt->nPointsRated;
-
+		int nPoints = Spec->nPointsRated;
 		for (int i = 1; i <= nParams; i++)
 		{
 			TheorSpecDerivativesOnIntervals[i] = new double[nPoints + 1];
 			for (int j = 0; j <= nPoints; j++)
 				TheorSpecDerivativesOnIntervals[i][j] = 0;
-		};
+		}
 
-		double step = 1.0e-7;
 		double* Data = new double[nPoints + 1];
 		Data[0] = 0;
 
 		double Badn = Badness();
 
 		for (int i = 1; i <= nPoints; i++)
-			Data[i] = PreOpt->TheorSpecPointsOnIntervals[i];
-
-		for (int i = 1; i <= nParams; i++)
 		{
+			Data[i] = Spec->TheorSpecPointsOnIntervals[i];
+			TheorSpecDerivativesOnIntervals[nParams][i] = Spec->TheorSpecPointsOnIntervals[i];
+		}
+
+		for (int i = 1; i <= nParams - 1; i++)
+		{
+			double step = 1.0e-7;
 			double Par = Parameters[i];
 			Parameters[i] += step;
 			SetParametersToHamiltonian();
-			PreOpt->ComputeSpecOnIntervals();
+			Spec->ComputeSpecOnIntervals();
 			Parameters[i] = Par;
 			for (int j = 1; j <= nPoints; j++)
-				TheorSpecDerivativesOnIntervals[i][j] = (PreOpt->TheorSpecPointsOnIntervals[j] - Data[j]) / step;
-		};
+				TheorSpecDerivativesOnIntervals[i][j] = (Spec->TheorSpecPointsOnIntervals[j] - Data[j]) / step;
+		}
 
 		for (int i = 1; i <= nPoints; i++)
-			PreOpt->TheorSpecPointsOnIntervals[i] = Data[i];
+			Spec->TheorSpecPointsOnIntervals[i] = Data[i];
+		delete[] Data;
+
+		gsl_matrix *DTD = gsl_matrix_alloc(nParams, nParams);
 
 		for (int i = 1; i <= nParams; i++)
 			for (int j = i; j <= nParams; j++)
 			{
-				DTD->data[nParams*(i - 1) + j - 1] = 0;
+				double tmp = 0;
 				for (int k = 1; k <= nPoints; k++)
-					DTD->data[nParams*(i - 1) + j - 1] += TheorSpecDerivativesOnIntervals[i][k] * TheorSpecDerivativesOnIntervals[j][k];
-			};
+					tmp += TheorSpecDerivativesOnIntervals[i][k] * TheorSpecDerivativesOnIntervals[j][k];
+				DTD->data[nParams*(i - 1) + j - 1] = tmp;
+			}
 
 		for (int i = 0; i < nParams; i++)
 			for (int j = i + 1; j < nParams; j++)
 				DTD->data[nParams*j + i] = DTD->data[nParams*i + j];
+
+		for (int i = 1; i <= nParams; i++)
+			delete[] TheorSpecDerivativesOnIntervals[i];
+		delete[] TheorSpecDerivativesOnIntervals;
 
 		gsl_matrix *evec = gsl_matrix_alloc(nParams, nParams);
 		gsl_vector *eval = gsl_vector_alloc(nParams);
@@ -1325,35 +1434,37 @@ public:
 
 		gsl_eigen_symmv(DTD, eval, evec, w);
 		gsl_eigen_symmv_free(w);
-		gsl_matrix_free(DTD);
 
 		gsl_eigen_symmv_sort(eval, evec, GSL_EIGEN_SORT_ABS_ASC);
 
-		gsl_matrix *temp = gsl_matrix_alloc(nParams, nParams);
-
 		if (eval->data[0] > 1e-4)
 		{
+			gsl_matrix_set_all(DTD, 0);
+
 			for (int i = 0; i < nParams; i++)
 				for (int j = 0; j < nParams; j++)
-					temp->data[nParams*i + j] = evec->data[nParams*j + i] / eval->data[i];
+					for (int k = 0; k < nParams; k++)
+						DTD->data[nParams*i + j] += evec->data[nParams*i + k] * evec->data[nParams*j + k] / eval->data[k];
+
 			for (int i = 0; i < nParams; i++)
 			{
-				ParameterErrors[i + 1] = 0.;
-				for (int k = 0; k < nParams; k++)
-					ParameterErrors[i + 1] += evec->data[nParams*i + k] * temp->data[nParams*k + i];
-			};
-			for (int i = 1; i <= nParams; i++)
-				ParameterErrors[i] = sqrt(ParameterErrors[i] * Badn / (nPoints - nParams));
-			ParameterErrors[nParams] *= PreOpt->TheoreticalSpec.Magnitude;
+				ParameterErrors[i + 1] = sqrt(DTD->data[i*nParams + i] * Badn / (nPoints - nParams));
+				for (int j = 0; j <= i; j++)
+					ParameterCorrelations[i + 1][j + 1] = DTD->data[i*nParams + j] / sqrt(DTD->data[i*nParams + i] * DTD->data[j*nParams + j]);
+			}
+
+			ParameterErrors[nParams] *= Parameters[nParams];
 
 			ErrorsComputed = true;
-		};
+		}
 
 		gsl_matrix_free(evec);
-		gsl_matrix_free(temp);
 		gsl_vector_free(eval);
+		gsl_matrix_free(DTD);
 
-	};
+		Spec->ScaleOpt = ScaleOpt;
+
+	}
 
 	void SaveParameters(void)
 	{
@@ -1365,19 +1476,18 @@ public:
 		{
 			int tmp = (int)strlen(ParNames[i]);
 			if (parnamelen < tmp) parnamelen = tmp;
-		};
+		}
 		parnamelen += 4;
 
 		ostr << fixed;
 		for (int i = 1; i <= nParams; i++)
 		{
-			double Param = Parameters[i];
-			if (i == nParams) { ostr << scientific; Param *= PreOpt->TheoreticalSpec.Magnitude; };
+			if (i == nParams) { ostr << scientific; }
 			ostr << setw(4) << left << i << setw(parnamelen) << left << ParNames[i];
-			ostr << setw(13) << right << Param;
+			ostr << setw(13) << right << Parameters[i];
 			if (ErrorsComputed) ostr << setw(4) << ' ' << "+-" << ParameterErrors[i];
 			ostr << endl;
-		};
+		}
 		ostr << fixed;
 		if (!ErrorsComputed) ostr << "Errors are not calculated due to singularity of normal equations matrix!" << endl;
 		ostr << endl;
@@ -1386,22 +1496,37 @@ public:
 		CheckSpinOffsets(ostr);
 		CheckBroadSequence(ostr);
 
-		ostr << "Line Broadening: " << fixed << PreOpt->LB << endl;
-		ostr << "Theoretical spectrum linewidth: " << PreOpt->LB + Parameters[nParams - 1] << endl;
+		ostr << "Line Broadening: " << fixed << Spec->LB << endl;
+		ostr << "Theoretical spectrum linewidth: " << Spec->LB + Parameters[nParams - 1] << endl;
 		ostr << "RSS Value: " << scientific << Badness() << endl;
 		ostr.precision(2);
-		ostr << "R-Factor: " << fixed << PreOpt->CalcRFactor() << " %" << endl;
+		ostr << "R-Factor: " << fixed << Spec->CalcRFactor() << " %" << endl;
 		ostr.precision(defaultprecision);
+		ostr << "Spectra correlation coefficient: " << Spec->CalcSpectraColleration() << endl;
 		ostr << endl;
 
-		PreOpt->Hami->PrintSpinSystem(ostr, (PreOpt->BF + PreOpt->SR * 1e-6));
-
+		Spec->Hami->PrintSpinSystem(ostr, (Spec->BF + Spec->SR * 1e-6));
 		ostr << endl;
+
+		if (ErrorsComputed)
+		{
+			ostr << "Parameters correlation coefficients:" << endl;
+			for (int i = 1; i <= nParams; i++)
+			{
+				ostr << setw(3) << right << i << ' ';
+				for (int j = 1; j <= i; j++)
+					ostr << setw(10) << right << ParameterCorrelations[i][j];
+				ostr << endl;
+
+			}
+			ostr << endl;
+		}
+
 		print_logo(ostr);
 		print_citation(ostr);
 		ostr.close();
 
-	};
+	}
 
 };
 
@@ -1410,14 +1535,10 @@ OptHamiltonian* HamOpt = NULL;
 double GlobalBadnessScWd(const long n, const double* x, void* data)
 {
 
-	for (int i = 1; i <= n; i++)
-		HamOpt->Parameters[HamOpt->PreOptParams[i]] = x[i - 1];
+	HamOpt->Spec->LineWidth = x[0];
+	return HamOpt->Spec->BadnessScWd();
 
-	HamOpt->PreOpt->LineWidth = HamOpt->Parameters[HamOpt->nParams - 1];
-	HamOpt->PreOpt->TheoreticalSpec.MagnitudeMultiplier = HamOpt->Parameters[HamOpt->nParams];
-	return HamOpt->PreOpt->BadnessScWd();
-
-};
+}
 
 double GlobalBadness(const long n, const double* x, void* data)
 {
@@ -1449,82 +1570,79 @@ int main(int argc, char* argv[])
 	if (argc == 2)
 	{
 		strcpy(textline, argv[1]);
-		for (int i = 0; int(textline[i]) != 0; i++) if (textline[i] == '\\') textline[i] = char('/');
+		for (int i = 0; int(textline[i]) != 0; i++) if (textline[i] == '\\') textline[i] = '/';
 		n = (int)strlen(textline);
-		if ((textline[n - 1] != '/') & (n < 255)) { textline[n] = '/'; textline[n + 1] = 0; };
-		if (chdir(textline) != 0) { cout << "Failed to change working directory!" << endl; exit_; };
-	};
-	if (argc > 2) { cout << "Wrong command line argument!" << endl; exit_; };
+		if ((textline[n - 1] != '/') & (n < 255)) { textline[n] = '/'; textline[n + 1] = 0; }
+		if (chdir(textline) != 0) { cout << "Failed to change working directory!" << endl; exit_; }
+	}
+	if (argc > 2) { cout << "Wrong command line argument!" << endl; exit_; }
 
 	// Parsing input control file and initialize relevant data structures.
 	ifstream input("Input_Data.txt");
-	if (!input) { cout << "File Input_Data.txt does not exists!" << endl; exit_; };
+	if (!input) { cout << "File Input_Data.txt does not exists!" << endl; exit_; }
 	input.getline(Title, 256);      //  Title
 	input.getline(textline, 256);   //  Empty line
-	if (!isemptyline(textline)) { cout << "Empty line should follow the title!" << endl; exit_; };
+	if (!isemptyline(textline)) { cout << "Empty line should follow the title!" << endl; exit_; }
 	input >> textline >> SimMode;   //  Sim mode
-	if (input.fail()) { cout << "Wrong simulation mode value, sould be 0 or 1." << endl; exit_; };
+	if (input.fail()) { cout << "Wrong simulation mode value, sould be 0 or 1." << endl; exit_; }
 	input.getline(textline, 256);   //  Rest of sim mode line
 	input.getline(textline, 256);   //  Empty line
-	if (!isemptyline(textline)) { cout << "Empty line should follow the SimMode line!" << endl; exit_; };
+	if (!isemptyline(textline)) { cout << "Empty line should follow the SimMode line!" << endl; exit_; }
 	input.getline(textline, 256);   //  Spin System
 	Hamiltonian Hami(input);
 	input.getline(textline, 256);   //  Empty line
-	if (!isemptyline(textline)) { cout << "Empty line should follow the section with spin system description!" << endl; exit_; };
+	if (!isemptyline(textline)) { cout << "Empty line should follow the section with spin system description!" << endl; exit_; }
 	input.getline(textline, 256);   //  Spectra parameters
-	PreOptimization Pre(&Hami, input);
-	HamOpt = new OptHamiltonian(&Pre);
+	Spectrum Spec(&Hami, input);
+	HamOpt = new OptHamiltonian(&Spec);
 	input.getline(textline, 256);   //  Empty line
-	if (!isemptyline(textline)) { cout << "Empty line should follow the section with spectra parameters!" << endl; exit_; };
+	if (!isemptyline(textline)) { cout << "Empty line should follow the section with spectra parameters!" << endl; exit_; }
 	input.getline(textline, 256);   //  Optimization parameters
 	input >> textline >> HamOpt->InputParameters; // Input parameters filename
 	HamOpt->LoadParameters();       // Reading input parameters from file
-	Pre.TheoreticalSpec.Create();
+	Spec.TheoreticalSpec.Create();
 	input >> textline >> HamOpt->OutputParameters; // Output parameters filename
 	input.getline(textline, 256);   //  Rest of output parameters filename line
-	input >> textline >> Pre.SpectraTextOutputFilename; // Filename for spectra in ASCII text format
+	input >> textline >> Spec.SpectraTextOutputFilename; // Filename for spectra in ASCII text format
 	input.getline(textline, 256);   //  Rest of SpectraTextOutputFilename line
 	HamOpt->LoadBroadenings(input); //  Parsing of broadenings list
 	HamOpt->CheckBroadSequence(cout);
 	input >> textline >> MagnitudeFromExpSpec;   //  MagnitudeFromExpSpec
-	if (input.fail()) { cout << "Wrong MagnitudeFromExpSpec flag value, sould be 0 or 1." << endl; exit_; };
+	if (input.fail()) { cout << "Wrong MagnitudeFromExpSpec flag value, sould be 0 or 1." << endl; exit_; }
 	input.getline(textline, 256);   //  Rest of MagnitudeFromExpSpec line
-	Pre.ExperimentalSpec.LoadSpecFromFile();
-	if (Pre.ExperimentalSpec.nPoints != Pre.TheoreticalSpec.nPoints) { cout << "File with experimental spectrum is corrupted." << endl; exit_; };
-	Pre.LoadIntervals();            // Loading and computing of points intervals on the basis of intergal regions from integrals.txt.
+	Spec.ExperimentalSpec.LoadSpecFromFile();
+	if (Spec.ExperimentalSpec.nPoints != Spec.TheoreticalSpec.nPoints) { cout << "File with experimental spectrum is corrupted." << endl; exit_; }
+	Spec.LoadIntervals();            // Loading and computing of points intervals on the basis of intergal regions from integrals.txt.
 	HamOpt->CheckSpinOffsets(cout);
-
-	Pre.CalcExpSpecMagnOnIntervals();
-	Pre.ExperimentalSpecWithBroadening.Magnitude = Pre.ExperimentalSpec.Magnitude;
-	Pre.ExperimentalSpecWithBroadening.MagnitudeMultiplier = 1;
+	Spec.CalcExpSpecMagnOnIntervals();
+	Spec.ExperimentalSpecWithBroadening.Magnitude = Spec.ExperimentalSpec.Magnitude;
 
 	if (MagnitudeFromExpSpec)
 	{
-		Pre.TheoreticalSpec.Magnitude = Pre.ExperimentalSpec.Magnitude;
-		Pre.TheoreticalSpec.MagnitudeMultiplier = 1;
-		HamOpt->Parameters[HamOpt->nParams] = 1;
-	};
+		Spec.TheoreticalSpec.Magnitude = Spec.ExperimentalSpec.Magnitude;
+		HamOpt->Parameters[HamOpt->nParams] = Spec.ExperimentalSpec.Magnitude;
+	}
 
-	Pre.ExperimentalSpecWithBroadening.Create();
+	Spec.ExperimentalSpecWithBroadening.Create();
 
 	if (SimMode)
 	{
 		HamOpt->SetParametersToHamiltonian();
 		Hami.ComputeFreqIntens();
-		Pre.BroadOnIntervals(HamOpt->LBs[1]);
-		Pre.ExperimentalSpecWithBroadening.SaveSpecToFile();
-		Pre.CalcSpecOnIntervals();
-		Pre.SaveSpecsOnIntervalsTXT();
-		Pre.LB = 0;
-		Pre.CalcFullSpectrum();
-		Pre.TheoreticalSpec.SaveSpecToFile();
+		Spec.BroadOnIntervals(HamOpt->LBs[1]);
+		Spec.ExperimentalSpecWithBroadening.SaveSpecToFile();
+		Spec.CalcSpecOnIntervals();
+		Spec.SaveSpecsOnIntervalsTXT();
+		Spec.LB = 0;
+		Spec.CalcFullSpectrum();
+		Spec.TheoreticalSpec.SaveSpecToFile();
 		print_citation(cout);
 		input.close();
 		exit_;
-	};
+	}
 
 	input.getline(textline, 256);   //  Empty line
-	if (!isemptyline(textline)) { cout << "Empty line should follow the section with optimization parameters!" << endl; exit_; };
+	if (!isemptyline(textline)) { cout << "Empty line should follow the section with optimization parameters!" << endl; exit_; }
 	input.getline(textline, 256);   //  List of optimized parameters
 	HamOpt->LoadVarParameters(input);
 	input.close();
@@ -1539,7 +1657,7 @@ int main(int argc, char* argv[])
 		Params[i] = 0;
 		ParamsLB[i] = 0;
 		ParamsUB[i] = 0;
-	};
+	}
 
 	int npt = 2 * n + 1;
 	double* WS = new double[(npt + 5)*(npt + n) + 3 * n*(n + 5) / 2];
@@ -1547,92 +1665,65 @@ int main(int argc, char* argv[])
 		WS[i] = 0;
 
 	n = HamOpt->nVarParams;
-	int npre = HamOpt->nPreOptParams;
+	npt = 2 * n + 1;
+	Spec.FineCalc = false;
 
 	for (int k = 1; k <= HamOpt->nBroadenings; k++)
 	{
 
-		Pre.BroadOnIntervals(HamOpt->LBs[k]);
+		if (k == HamOpt->nBroadenings) Spec.FineCalc = true;
+		Spec.BroadOnIntervals(HamOpt->LBs[k]);
 
 		cout << "Broadening:  " << HamOpt->LBs[k] << endl;
 
-		// Scale and/or Linewidth preoptimization
-		if (npre > 0)
+		if (HamOpt->LWPreOpt)
 		{
-			if (npre == 2) cout << "Scale & Linewidth preoptimization" << endl;
-			else if (HamOpt->PreOptParams[1] == HamOpt->nParams - 1) cout << "Linewidth preoptimization" << endl;
-			else cout << "Scale preoptimization" << endl;
+
+			cout << "Spectrum linewidth preoptimization" << endl;
 
 			HamOpt->SetParametersToHamiltonian();
 			Hami.ComputeFreqIntens();
 
-			for (int i = 0; i < npre; i++)
-			{
-				Params[i] = HamOpt->Parameters[HamOpt->PreOptParams[i + 1]];
-				if (HamOpt->PreOptParams[i + 1] == HamOpt->nParams - 1)
-				{
-					ParamsLB[i] = -100;
-					ParamsUB[i] = +100;
-				};
-				if (HamOpt->PreOptParams[i + 1] == HamOpt->nParams)
-				{
-					ParamsLB[i] = -1.0e20;
-					ParamsUB[i] = +1.0e20;
-				};
-			};
+			Params[0] = HamOpt->Parameters[HamOpt->nParams - 1];
+			ParamsLB[0] = -100;
+			ParamsUB[0] = +100;
 
-			npt = 2 * npre + 1;
-
-			bobyqa(npre, npt, GlobalBadnessScWd, NULL, Params, ParamsLB, ParamsUB, 10.0, 1e-10, WS);
-
-			for (int i = 0; i < npre; i++)
-				HamOpt->Parameters[HamOpt->PreOptParams[i + 1]] = Params[i];
-
-			if (HamOpt->Parameters[HamOpt->nParams - 1] < 0 && HamOpt->Parameters[HamOpt->nParams] < 0)
-			{
-				HamOpt->Parameters[HamOpt->nParams - 1] *= -1; HamOpt->Parameters[HamOpt->nParams] *= -1;
-			};
-
-			Pre.TheoreticalSpec.Magnitude *= HamOpt->Parameters[HamOpt->nParams];
-			HamOpt->Parameters[HamOpt->nParams] = 1;
+			bobyqa(1, 3, GlobalBadnessScWd, NULL, Params, ParamsLB, ParamsUB, 10, 1e-10, WS);
+			HamOpt->Parameters[HamOpt->nParams - 1] = abs(Params[0]);
+			if (Spec.ScaleOpt) HamOpt->Parameters[HamOpt->nParams] = Spec.TheoreticalSpec.Magnitude;
 
 			cout << "Main optimization" << endl;
 
-		};
+		}
 
 		for (int i = 0; i < n; i++)
 		{
 			Params[i] = HamOpt->Parameters[HamOpt->VarParams[i + 1]];
 			ParamsLB[i] = Params[i] - 100;
 			ParamsUB[i] = Params[i] + 100;
-		};
-
-		npt = 2 * n + 1;
+		}
 
 		bobyqa(n, npt, GlobalBadness, NULL, Params, ParamsLB, ParamsUB, 10.0, 1e-10, WS);
 
 		for (int i = 0; i < n; i++)
 			HamOpt->Parameters[HamOpt->VarParams[i + 1]] = Params[i];
 
-		if (HamOpt->Parameters[HamOpt->nParams - 1] < 0 && HamOpt->Parameters[HamOpt->nParams] < 0)
-		{
-			HamOpt->Parameters[HamOpt->nParams - 1] *= -1; HamOpt->Parameters[HamOpt->nParams] *= -1;
-		};
-
 		cout << endl;
-	};
+	}
+
+	if (HamOpt->Parameters[HamOpt->nParams - 1] < 0) HamOpt->Parameters[HamOpt->nParams - 1] *= -1;
+	if (HamOpt->Parameters[HamOpt->nParams] < 0) HamOpt->Parameters[HamOpt->nParams] *= -1;
 
 	cout << setprecision(2) << fixed
-		<< "R-Factor: " << Pre.CalcRFactor() << " %" << endl
+		<< "R-Factor: " << Spec.CalcRFactor() << " %" << endl
 		<< setprecision(defaultprecision);
 
-	Pre.SaveSpecsOnIntervalsTXT();
+	Spec.SaveSpecsOnIntervalsTXT();
 	HamOpt->SetParametersToHamiltonian();
-	Pre.ComputeFullSpectrum();
-	Pre.TheoreticalSpec.SaveSpecToFile();
-	Pre.ExperimentalSpecWithBroadening.SaveSpecToFile();
+	Spec.ComputeFullSpectrum();
+	Spec.TheoreticalSpec.SaveSpecToFile();
+	Spec.ExperimentalSpecWithBroadening.SaveSpecToFile();
 	HamOpt->ComputeErrors();
-	HamOpt->SetParametersToHamiltonian();
 	HamOpt->SaveParameters();
 
 	cout << endl;
@@ -1641,8 +1732,7 @@ int main(int argc, char* argv[])
 
 	exit_;
 
-};
-
+}
 
 /*
 * BOBYQA
@@ -1728,7 +1818,7 @@ void prelim(const long n, const long npt,
 	fbeg = zero;
 	ipt = 0;
 	jpt = 0;
-	rhosq = rhobeg*rhobeg;
+	rhosq = rhobeg * rhobeg;
 	recip = one / rhosq;
 	np = n + 1;
 
@@ -1741,7 +1831,7 @@ void prelim(const long n, const long npt,
 			BMAT(i, j) = zero;
 		}
 	}
-	i1 = n*np / 2;
+	i1 = n * np / 2;
 	LOOP(ih, i1) {
 		hq[ih] = zero;
 	}
@@ -1770,11 +1860,11 @@ void prelim(const long n, const long npt,
 				stepa = XPT(*nf - n, nfx);
 				stepb = -rhobeg;
 				if (sl[nfx] == zero) {
-					stepb = two*rhobeg;
+					stepb = two * rhobeg;
 					stepb = MIN(stepb, su[nfx]);
 				}
 				if (su[nfx] == zero) {
-					stepb = -two*rhobeg;
+					stepb = -two * rhobeg;
 					stepb = MAX(stepb, sl[nfx]);
 				}
 				XPT(*nf, nfx) = stepb;
@@ -1782,7 +1872,7 @@ void prelim(const long n, const long npt,
 		}
 		else {
 			itemp = (nfm - np) / n;
-			jpt = nfm - itemp*n - n;
+			jpt = nfm - itemp * n - n;
 			ipt = jpt + itemp;
 			if (ipt > n) {
 				itemp = jpt;
@@ -1820,15 +1910,15 @@ void prelim(const long n, const long npt,
 				if (npt < *nf + n) {
 					BMAT(1, nfm) = -one / stepa;
 					BMAT(*nf, nfm) = one / stepa;
-					BMAT(npt + nfm, nfm) = -half*rhosq;
+					BMAT(npt + nfm, nfm) = -half * rhosq;
 				}
 			}
 			else if (*nf >= n + 2) {
-				ih = nfx*(nfx + 1) / 2;
+				ih = nfx * (nfx + 1) / 2;
 				temp = (f - fbeg) / stepb;
 				diff = stepb - stepa;
-				hq[ih] = two*(temp - gopt[nfx]) / diff;
-				gopt[nfx] = (gopt[nfx] * stepb - temp*stepa) / diff;
+				hq[ih] = two * (temp - gopt[nfx]) / diff;
+				gopt[nfx] = (gopt[nfx] * stepb - temp * stepa) / diff;
 				if (stepa*stepb < zero) {
 					if (f < fval[*nf - n]) {
 						fval[*nf] = fval[*nf - n];
@@ -1849,7 +1939,7 @@ void prelim(const long n, const long npt,
 			}
 		}
 		else {
-			ih = ipt*(ipt - 1) / 2 + jpt;
+			ih = ipt * (ipt - 1) / 2 + jpt;
 			ZMAT(1, nfx) = recip;
 			ZMAT(*nf, nfx) = recip;
 			ZMAT(ipt + 1, nfx) = -recip;
@@ -1900,11 +1990,11 @@ void altmov(const long n, const long npt, double xpt[],
 	LOOP(j, i1) {
 		temp = ZMAT(knew, j);
 		LOOP(k, npt) {
-			hcol[k] += temp*ZMAT(k, j);
+			hcol[k] += temp * ZMAT(k, j);
 		}
 	}
 	*alpha = hcol[knew];
-	ha = half*(*alpha);
+	ha = half * (*alpha);
 
 	LOOP(i, n) {
 		glag[i] = BMAT(knew, i);
@@ -1916,7 +2006,7 @@ void altmov(const long n, const long npt, double xpt[],
 		}
 		temp = hcol[k] * temp;
 		LOOP(i, n) {
-			glag[i] += temp*XPT(k, i);
+			glag[i] += temp * XPT(k, i);
 		}
 	}
 
@@ -1930,7 +2020,7 @@ void altmov(const long n, const long npt, double xpt[],
 		LOOP(i, n) {
 			temp = XPT(k, i) - xopt[i];
 			dderiv += glag[i] * temp;
-			distsq += temp*temp;
+			distsq += temp * temp;
 		}
 		subd = adelt / sqrt(distsq);
 		slbd = -subd;
@@ -1967,19 +2057,19 @@ void altmov(const long n, const long npt, double xpt[],
 		if (k == knew) {
 			diff = dderiv - one;
 			step = slbd;
-			vlag = slbd*(dderiv - slbd*diff);
+			vlag = slbd * (dderiv - slbd * diff);
 			isbd = ilbd;
-			temp = subd*(dderiv - subd*diff);
+			temp = subd * (dderiv - subd * diff);
 			if (abs(temp) > abs(vlag)) {
 				step = subd;
 				vlag = temp;
 				isbd = iubd;
 			}
-			tempd = half*dderiv;
-			tempa = tempd - diff*slbd;
-			tempb = tempd - diff*subd;
+			tempd = half * dderiv;
+			tempa = tempd - diff * slbd;
+			tempb = tempd - diff * subd;
 			if (tempa*tempb < zero) {
-				temp = tempd*tempd / diff;
+				temp = tempd * tempd / diff;
 				if (abs(temp) > abs(vlag)) {
 					step = tempd / diff;
 					vlag = temp;
@@ -1989,9 +2079,9 @@ void altmov(const long n, const long npt, double xpt[],
 		}
 		else {
 			step = slbd;
-			vlag = slbd*(one - slbd);
+			vlag = slbd * (one - slbd);
 			isbd = ilbd;
-			temp = subd*(one - subd);
+			temp = subd * (one - subd);
 			if (abs(temp) > abs(vlag)) {
 				step = subd;
 				vlag = temp;
@@ -2007,8 +2097,8 @@ void altmov(const long n, const long npt, double xpt[],
 			vlag *= dderiv;
 		}
 
-		temp = step*(one - step)*distsq;
-		predsq = vlag*vlag*(vlag*vlag + ha*temp*temp);
+		temp = step * (one - step)*distsq;
+		predsq = vlag * vlag*(vlag*vlag + ha * temp*temp);
 		if (predsq > presav) {
 			presav = predsq;
 			ksav = k;
@@ -2018,7 +2108,7 @@ void altmov(const long n, const long npt, double xpt[],
 	}
 
 	LOOP(i, n) {
-		temp = xopt[i] + stpsav*(XPT(ksav, i) - xopt[i]);
+		temp = xopt[i] + stpsav * (XPT(ksav, i) - xopt[i]);
 		temp = MIN(temp, su[i]);
 		xnew[i] = MAX(temp, sl[i]);
 	}
@@ -2051,14 +2141,14 @@ void altmov(const long n, const long npt, double xpt[],
 		}
 
 		do {
-			temp = adelt*adelt - wfixsq;
+			temp = adelt * adelt - wfixsq;
 			if (temp <= zero) break;
 			wsqsav = wfixsq;
 			step = sqrt(temp / ggfree);
 			ggfree = zero;
 			LOOP(i, n) {
 				if (w[i] == bigstp) {
-					temp = xopt[i] - step*glag[i];
+					temp = xopt[i] - step * glag[i];
 					if (temp <= sl[i]) {
 						w[i] = sl[i] - xopt[i];
 						wfixsq += w[i] * w[i];
@@ -2077,7 +2167,7 @@ void altmov(const long n, const long npt, double xpt[],
 		gw = zero;
 		LOOP(i, n) {
 			if (w[i] == bigstp) {
-				w[i] = -step*glag[i];
+				w[i] = -step * glag[i];
 				temp = xopt[i] + w[i];
 				temp = MIN(temp, su[i]);
 				xalt[i] = MAX(temp, sl[i]);
@@ -2105,19 +2195,19 @@ void altmov(const long n, const long npt, double xpt[],
 		if (iflag == 1) {
 			curv = -curv;
 		}
-		if (curv > -gw && curv < -one_plus_sqrt2*gw) {
+		if (curv > -gw && curv < -one_plus_sqrt2 * gw) {
 			scale = -gw / curv;
 			LOOP(i, n) {
-				temp = xopt[i] + scale*w[i];
+				temp = xopt[i] + scale * w[i];
 				temp = MIN(temp, su[i]);
 				xalt[i] = MAX(temp, sl[i]);
 			}
-			temp = half*gw*scale;
-			*cauchy = temp*temp;
+			temp = half * gw*scale;
+			*cauchy = temp * temp;
 		}
 		else {
-			temp = gw + half*curv;
-			*cauchy = temp*temp;
+			temp = gw + half * curv;
+			*cauchy = temp * temp;
 		}
 
 		if (iflag != 0) {
@@ -2201,7 +2291,7 @@ void trsbox(const long n, const long npt, double* xpt,
 		d[i] = zero;
 		gnew[i] = gopt[i];
 	}
-	delsq = delta*delta;
+	delsq = delta * delta;
 	qred = zero;
 	*crvmin = onemin;
 
@@ -2217,7 +2307,7 @@ L30:
 			s[i] = -gnew[i];
 		}
 		else {
-			s[i] = beta*s[i] - gnew[i];
+			s[i] = beta * s[i] - gnew[i];
 		}
 		stepsq += s[i] * s[i];
 	}
@@ -2228,7 +2318,7 @@ L30:
 		gredsq = stepsq;
 		itermax = iterc + n - nact;
 	}
-	if (gredsq*delsq <= qred*1e-4*qred) {
+	if (gredsq*delsq <= qred * 1e-4*qred) {
 		goto L190;
 	}
 	goto L210;
@@ -2246,7 +2336,7 @@ L50:
 	if (resid <= zero) {
 		goto L90;
 	}
-	temp = sqrt(stepsq*resid + ds*ds);
+	temp = sqrt(stepsq*resid + ds * ds);
 	if (ds < zero) {
 		blen = (temp - ds) / stepsq;
 	}
@@ -2289,13 +2379,13 @@ L50:
 		ggsav = gredsq;
 		gredsq = zero;
 		LOOP(i, n) {
-			gnew[i] += stplen*hs[i];
+			gnew[i] += stplen * hs[i];
 			if (xbdi[i] == zero) {
 				gredsq += gnew[i] * gnew[i];
 			}
-			d[i] += stplen*s[i];
+			d[i] += stplen * s[i];
 		}
-		sdec = stplen*(ggsav - half*stplen*shs);
+		sdec = stplen * (ggsav - half * stplen*shs);
 		sdec = MAX(sdec, zero);
 		qred += sdec;
 	}
@@ -2315,7 +2405,7 @@ L50:
 		if (iterc == itermax) {
 			goto L190;
 		}
-		if (sdec <= qred*0.01) {
+		if (sdec <= qred * 0.01) {
 			goto L190;
 		}
 		beta = gredsq / ggsav;
@@ -2345,14 +2435,14 @@ L100:
 	goto L210;
 L120:
 	++iterc;
-	temp = gredsq*dredsq - dredg*dredg;
-	if (temp <= qred*1e-4*qred) {
+	temp = gredsq * dredsq - dredg * dredg;
+	if (temp <= qred * 1e-4*qred) {
 		goto L190;
 	}
 	temp = sqrt(temp);
 	LOOP(i, n) {
 		if (xbdi[i] == zero) {
-			s[i] = (dredg*d[i] - dredsq*gnew[i]) / temp;
+			s[i] = (dredg*d[i] - dredsq * gnew[i]) / temp;
 		}
 		else {
 			s[i] = zero;
@@ -2377,7 +2467,7 @@ L120:
 			}
 			ssq = d[i] * d[i] + s[i] * s[i];
 			temp = xopt[i] - sl[i];
-			temp = ssq - temp*temp;
+			temp = ssq - temp * temp;
 			if (temp > zero) {
 				temp = sqrt(temp) - s[i];
 				if (angbd*temp > tempa) {
@@ -2387,7 +2477,7 @@ L120:
 				}
 			}
 			temp = su[i] - xopt[i];
-			temp = ssq - temp*temp;
+			temp = ssq - temp * temp;
 			if (temp > zero) {
 				temp = sqrt(temp) + s[i];
 				if (angbd*temp > tempb) {
@@ -2415,10 +2505,10 @@ L150:
 	redsav = zero;
 	iu = (long)(angbd*17.0 + 3.1);
 	LOOP(i, iu) {
-		angt = angbd*(double)i / (double)iu;
-		sth = (angt + angt) / (one + angt*angt);
-		temp = shs + angt*(angt*dhd - dhs - dhs);
-		rednew = sth*(angt*dredg - sredg - half*sth*temp);
+		angt = angbd * (double)i / (double)iu;
+		sth = (angt + angt) / (one + angt * angt);
+		temp = shs + angt * (angt*dhd - dhs - dhs);
+		rednew = sth * (angt*dredg - sredg - half * sth*temp);
 		if (rednew > redmax) {
 			redmax = rednew;
 			isav = i;
@@ -2434,25 +2524,25 @@ L150:
 	}
 	if (isav < iu) {
 		temp = (rdnext - rdprev) / (redmax + redmax - rdprev - rdnext);
-		angt = angbd*((double)isav + half*temp) / (double)iu;
+		angt = angbd * ((double)isav + half * temp) / (double)iu;
 	}
-	cth = (one - angt*angt) / (one + angt*angt);
-	sth = (angt + angt) / (one + angt*angt);
-	temp = shs + angt*(angt*dhd - dhs - dhs);
-	sdec = sth*(angt*dredg - sredg - half*sth*temp);
+	cth = (one - angt * angt) / (one + angt * angt);
+	sth = (angt + angt) / (one + angt * angt);
+	temp = shs + angt * (angt*dhd - dhs - dhs);
+	sdec = sth * (angt*dredg - sredg - half * sth*temp);
 	if (sdec <= zero) {
 		goto L190;
 	}
 	dredg = zero;
 	gredsq = zero;
 	LOOP(i, n) {
-		gnew[i] = gnew[i] + (cth - one)*hred[i] + sth*hs[i];
+		gnew[i] = gnew[i] + (cth - one)*hred[i] + sth * hs[i];
 		if (xbdi[i] == zero) {
-			d[i] = cth*d[i] + sth*s[i];
+			d[i] = cth * d[i] + sth * s[i];
 			dredg += d[i] * gnew[i];
 			gredsq += gnew[i] * gnew[i];
 		}
-		hred[i] = cth*hred[i] + sth*hs[i];
+		hred[i] = cth * hred[i] + sth * hs[i];
 	}
 	qred += sdec;
 	if (iact > 0 && isav == iu) {
@@ -2499,7 +2589,7 @@ L210:
 			}
 			temp *= pq[k];
 			LOOP(i, n) {
-				hs[i] += temp*XPT(k, i);
+				hs[i] += temp * XPT(k, i);
 			}
 		}
 	}
@@ -2541,12 +2631,12 @@ void update(const long n, const long npt, double* bmat,
 		if (abs(ZMAT(knew, j)) > ztest) {
 			tempa = ZMAT(knew, 1);
 			tempb = ZMAT(knew, j);
-			temp = sqrt(tempa*tempa + tempb*tempb);
+			temp = sqrt(tempa*tempa + tempb * tempb);
 			tempa /= temp;
 			tempb /= temp;
 			LOOP(i, npt) {
-				temp = tempa*ZMAT(i, 1) + tempb*ZMAT(i, j);
-				ZMAT(i, j) = tempa*ZMAT(i, j) - tempb*ZMAT(i, 1);
+				temp = tempa * ZMAT(i, 1) + tempb * ZMAT(i, j);
+				ZMAT(i, j) = tempa * ZMAT(i, j) - tempb * ZMAT(i, 1);
 				ZMAT(i, 1) = temp;
 			}
 		}
@@ -2562,15 +2652,15 @@ void update(const long n, const long npt, double* bmat,
 	tempb = ZMAT(knew, 1) / temp;
 	tempa = tau / temp;
 	LOOP(i, npt) {
-		ZMAT(i, 1) = tempa*ZMAT(i, 1) - tempb*vlag[i];
+		ZMAT(i, 1) = tempa * ZMAT(i, 1) - tempb * vlag[i];
 	}
 	LOOP(j, n) {
 		jp = npt + j;
 		w[jp] = BMAT(knew, j);
-		tempa = (alpha*vlag[jp] - tau*w[jp]) / denom;
-		tempb = (-beta*w[jp] - tau*vlag[jp]) / denom;
+		tempa = (alpha*vlag[jp] - tau * w[jp]) / denom;
+		tempb = (-beta * w[jp] - tau * vlag[jp]) / denom;
 		LOOP(i, jp) {
-			BMAT(i, j) = BMAT(i, j) + tempa*vlag[i] + tempb*w[i];
+			BMAT(i, j) = BMAT(i, j) + tempa * vlag[i] + tempb * w[i];
 			if (i > npt) {
 				BMAT(jp, i - npt) = BMAT(i, j);
 			}
@@ -2596,6 +2686,10 @@ void rescue(const long n, const long npt,
 	long i, ih, ihp, ihq, ip, iq, iw, j, jp, jpn, k, knew, kold, kpt,
 		np, nptm, nrem;
 
+	xp = 0;
+	xq = 0;
+	ihp = 0;
+	ihq = 0;
 	zmat -= 1 + npt;
 	xpt -= 1 + npt;
 	xl -= 1;
@@ -2635,7 +2729,7 @@ void rescue(const long n, const long npt,
 	}
 	ih = 0;
 	LOOP(j, n) {
-		w[j] = half*sumpq*xopt[j];
+		w[j] = half * sumpq*xopt[j];
 		LOOP(k, npt) {
 			w[j] += pq[k] * XPT(k, j);
 		}
@@ -2657,7 +2751,7 @@ void rescue(const long n, const long npt,
 			PTSAUX(2, j) = temp;
 		}
 		if (abs(PTSAUX(2, j)) < half*abs(PTSAUX(1, j))) {
-			PTSAUX(2, j) = half*PTSAUX(1, j);
+			PTSAUX(2, j) = half * PTSAUX(1, j);
 		}
 		LOOP(i, ndim) {
 			BMAT(i, j) = zero;
@@ -2682,13 +2776,13 @@ void rescue(const long n, const long npt,
 		else {
 			BMAT(1, j) = -one / PTSAUX(1, j);
 			BMAT(jp, j) = one / PTSAUX(1, j);
-			BMAT(j + npt, j) = -half*(PTSAUX(1, j)*PTSAUX(1, j));
+			BMAT(j + npt, j) = -half * (PTSAUX(1, j)*PTSAUX(1, j));
 		}
 	}
 	if (npt >= n + np) {
 		for (k = 2 * np; k <= npt; ++k) {
 			iw = (long)(((double)(k - np) - half) / (double)n);
-			ip = k - np - iw*n;
+			ip = k - np - iw * n;
 			iq = ip + iw;
 			if (iq > n) {
 				iq -= n;
@@ -2771,7 +2865,7 @@ L120:
 				sum += w[npt + iq] * PTSAUX(iw, iq);
 			}
 		}
-		w[k] = half*sum*sum;
+		w[k] = half * sum*sum;
 	}
 	LOOP(k, npt) {
 		sum = zero;
@@ -2786,9 +2880,9 @@ L120:
 		LOOP(k, npt) {
 			sum += ZMAT(k, j)*w[k];
 		}
-		beta -= sum*sum;
+		beta -= sum * sum;
 		LOOP(k, npt) {
-			vlag[k] += sum*ZMAT(k, j);
+			vlag[k] += sum * ZMAT(k, j);
 		}
 	}
 	bsum = zero;
@@ -2799,15 +2893,15 @@ L120:
 			sum += BMAT(k, j)*w[k];
 		}
 		jp = j + npt;
-		bsum += sum*w[jp];
+		bsum += sum * w[jp];
 		for (ip = npt + 1; ip <= ndim; ++ip) {
 			sum += BMAT(ip, j)*w[ip];
 		}
-		bsum += sum*w[jp];
+		bsum += sum * w[jp];
 		vlag[jp] = sum;
 		distsq += XPT(knew, j)*XPT(knew, j);
 	}
-	beta = half*distsq*distsq + beta - bsum;
+	beta = half * distsq*distsq + beta - bsum;
 	vlag[*kopt] += one;
 	denom = zero;
 	vlmxsq = zero;
@@ -2817,7 +2911,7 @@ L120:
 			LOOP(j, nptm) {
 				hdiag += ZMAT(k, j)*ZMAT(k, j);
 			}
-			den = beta*hdiag + vlag[k] * vlag[k];
+			den = beta * hdiag + vlag[k] * vlag[k];
 			if (den > denom) {
 				kold = k;
 				denom = den;
@@ -2826,7 +2920,7 @@ L120:
 		temp = vlag[k] * vlag[k];
 		vlmxsq = MAX(vlmxsq, temp);
 	}
-	if (denom <= vlmxsq*0.01) {
+	if (denom <= vlmxsq * 0.01) {
 		w[ndim + knew] = -w[ndim + knew] - winc;
 		goto L120;
 	}
@@ -2843,7 +2937,7 @@ L260:
 			temp = pq[kpt] * w[j];
 			LOOP(i, j) {
 				++ih;
-				hq[ih] += temp*w[i];
+				hq[ih] += temp * w[i];
 			}
 		}
 		pq[kpt] = zero;
@@ -2864,26 +2958,26 @@ L260:
 
 		vquad = fbase;
 		if (ip > 0) {
-			ihp = (ip + ip*ip) / 2;
-			vquad += xp*(gopt[ip] + half*xp*hq[ihp]);
+			ihp = (ip + ip * ip) / 2;
+			vquad += xp * (gopt[ip] + half * xp*hq[ihp]);
 		}
 		if (iq > 0) {
-			ihq = (iq + iq*iq) / 2;
-			vquad += xq*(gopt[iq] + half*xq*hq[ihq]);
+			ihq = (iq + iq * iq) / 2;
+			vquad += xq * (gopt[iq] + half * xq*hq[ihq]);
 			if (ip > 0) {
 				iw = MAX(ihp, ihq) - (ip >= iq ? ip - iq : iq - ip);
-				vquad += xp*xq*hq[iw];
+				vquad += xp * xq*hq[iw];
 			}
 		}
 		LOOP(k, npt) {
 			temp = zero;
 			if (ip > 0) {
-				temp += xp*XPT(k, ip);
+				temp += xp * XPT(k, ip);
 			}
 			if (iq > 0) {
-				temp += xq*XPT(k, iq);
+				temp += xq * XPT(k, iq);
 			}
-			vquad += half*pq[k] * temp*temp;
+			vquad += half * pq[k] * temp*temp;
 		}
 
 		LOOP(i, n) {
@@ -2906,14 +3000,14 @@ L260:
 		diff = f - vquad;
 
 		LOOP(i, n) {
-			gopt[i] += diff*BMAT(kpt, i);
+			gopt[i] += diff * BMAT(kpt, i);
 		}
 		LOOP(k, npt) {
 			sum = zero;
 			LOOP(j, nptm) {
 				sum += ZMAT(k, j)*ZMAT(kpt, j);
 			}
-			temp = diff*sum;
+			temp = diff * sum;
 			if (ptsid[k] == zero) {
 				pq[k] += temp;
 			}
@@ -2922,15 +3016,15 @@ L260:
 				iq = (long)((double)np*ptsid[k] - (double)(ip*np));
 				ihq = (iq*iq + iq) / 2;
 				if (ip == 0) {
-					hq[ihq] += temp*(PTSAUX(2, iq)*PTSAUX(2, iq));
+					hq[ihq] += temp * (PTSAUX(2, iq)*PTSAUX(2, iq));
 				}
 				else {
 					ihp = (ip*ip + ip) / 2;
-					hq[ihp] += temp*(PTSAUX(1, ip)*PTSAUX(1, ip));
+					hq[ihp] += temp * (PTSAUX(1, ip)*PTSAUX(1, ip));
 					if (iq > 0) {
-						hq[ihq] += temp*(PTSAUX(1, iq)*PTSAUX(1, iq));
+						hq[ihq] += temp * (PTSAUX(1, iq)*PTSAUX(1, iq));
 						iw = MAX(ihp, ihq) - (ip >= iq ? ip - iq : iq - ip);
-						hq[iw] += temp*PTSAUX(1, ip)*PTSAUX(1, iq);
+						hq[iw] += temp * PTSAUX(1, ip)*PTSAUX(1, iq);
 					}
 				}
 			}
@@ -2967,6 +3061,7 @@ int bobyqb(const long n, const long npt,
 	int status = BOBYQA_SUCCESS;
 	const char* reason = NULL;
 	int iter = 0;
+	beta = 0;
 	x -= 1;
 	xl -= 1;
 	xu -= 1;
@@ -2996,7 +3091,7 @@ int bobyqb(const long n, const long npt,
 	knew = 0;
 	np = n + 1;
 	nptm = npt - np;
-	nh = n*np / 2;
+	nh = n * np / 2;
 
 	prelim(n, npt, objfun, data, &x[1], &xl[1], &xu[1], rhobeg, &xbase[1],
 		&XPT(1, 1), &fval[1], &gopt[1], &hq[1], &pq[1], &BMAT(1, 1),
@@ -3038,7 +3133,7 @@ L20:
 				}
 				temp = pq[k] * temp;
 				LOOP(i, n) {
-					gopt[i] += temp*XPT(k, i);
+					gopt[i] += temp * XPT(k, i);
 				}
 			}
 		}
@@ -3053,14 +3148,14 @@ L60:
 	dnorm = MIN(dnorm, delta);
 	if (dnorm < half*rho) {
 		ntrits = -1;
-		tempa = ten*rho;
-		distsq = tempa*tempa;
+		tempa = ten * rho;
+		distsq = tempa * tempa;
 		if (nf <= nfsav + 2) {
 			goto L650;
 		}
 		errbig = MAX(diffa, diffb);
 		errbig = MAX(errbig, diffc);
-		frhosq = rho*0.125*rho;
+		frhosq = rho * 0.125*rho;
 		if (crvmin > zero && errbig > frhosq*crvmin) {
 			goto L650;
 		}
@@ -3074,11 +3169,11 @@ L60:
 				bdtest = -w[j];
 			}
 			if (bdtest < bdtol) {
-				curv = hq[(j + j*j) / 2];
+				curv = hq[(j + j * j) / 2];
 				LOOP(k, npt) {
 					curv += pq[k] * (XPT(k, j)*XPT(k, j));
 				}
-				bdtest += half*curv*rho;
+				bdtest += half * curv*rho;
 				if (bdtest < bdtol) {
 					goto L650;
 				}
@@ -3088,20 +3183,20 @@ L60:
 	}
 	++ntrits;
 L90:
-	if (dsq <= xoptsq*0.001) {
-		fracsq = xoptsq*0.25;
+	if (dsq <= xoptsq * 0.001) {
+		fracsq = xoptsq * 0.25;
 		sumpq = zero;
 		LOOP(k, npt) {
 			sumpq += pq[k];
-			sum = -half*xoptsq;
+			sum = -half * xoptsq;
 			LOOP(i, n) {
 				sum += XPT(k, i)*xopt[i];
 			}
 			w[npt + k] = sum;
-			temp = fracsq - half*sum;
+			temp = fracsq - half * sum;
 			LOOP(i, n) {
 				w[i] = BMAT(k, i);
-				vlag[i] = sum*XPT(k, i) + temp*xopt[i];
+				vlag[i] = sum * XPT(k, i) + temp * xopt[i];
 				ip = npt + i;
 				LOOP(j, i) {
 					BMAT(ip, j) = BMAT(ip, j) + w[i] * vlag[j] + vlag[i] * w[j];
@@ -3118,27 +3213,27 @@ L90:
 				sumw += vlag[k];
 			}
 			LOOP(j, n) {
-				sum = (fracsq*sumz - half*sumw)*xopt[j];
+				sum = (fracsq*sumz - half * sumw)*xopt[j];
 				LOOP(k, npt) {
 					sum += vlag[k] * XPT(k, j);
 				}
 				w[j] = sum;
 				LOOP(k, npt) {
-					BMAT(k, j) = BMAT(k, j) + sum*ZMAT(k, jj);
+					BMAT(k, j) = BMAT(k, j) + sum * ZMAT(k, jj);
 				}
 			}
 			LOOP(i, n) {
 				ip = i + npt;
 				temp = w[i];
 				LOOP(j, i) {
-					BMAT(ip, j) = BMAT(ip, j) + temp*w[j];
+					BMAT(ip, j) = BMAT(ip, j) + temp * w[j];
 				}
 			}
 		}
 
 		ih = 0;
 		LOOP(j, n) {
-			w[j] = -half*sumpq*xopt[j];
+			w[j] = -half * sumpq*xopt[j];
 			LOOP(k, npt) {
 				w[j] += pq[k] * XPT(k, j);
 				XPT(k, j) = XPT(k, j) - xopt[j];
@@ -3205,7 +3300,7 @@ L230:
 			sumb += XPT(k, j)*xopt[j];
 			sum += BMAT(k, j)*d[j];
 		}
-		w[k] = suma*(half*suma + sumb);
+		w[k] = suma * (half*suma + sumb);
 		vlag[k] = sum;
 		w[npt + k] = suma;
 	}
@@ -3215,9 +3310,9 @@ L230:
 		LOOP(k, npt) {
 			sum += ZMAT(k, jj)*w[k];
 		}
-		beta -= sum*sum;
+		beta -= sum * sum;
 		LOOP(k, npt) {
-			vlag[k] += sum*ZMAT(k, jj);
+			vlag[k] += sum * ZMAT(k, jj);
 		}
 	}
 	dsq = zero;
@@ -3229,19 +3324,19 @@ L230:
 		LOOP(k, npt) {
 			sum += w[k] * BMAT(k, j);
 		}
-		bsum += sum*d[j];
+		bsum += sum * d[j];
 		jp = npt + j;
 		LOOP(i, n) {
 			sum += BMAT(jp, i)*d[i];
 		}
 		vlag[jp] = sum;
-		bsum += sum*d[j];
+		bsum += sum * d[j];
 		dx += d[j] * xopt[j];
 	}
-	beta = dx*dx + dsq*(xoptsq + dx + dx + half*dsq) + beta - bsum;
+	beta = dx * dx + dsq * (xoptsq + dx + dx + half * dsq) + beta - bsum;
 	vlag[kopt] += one;
 	if (ntrits == 0) {
-		denom = vlag[knew] * vlag[knew] + alpha*beta;
+		denom = vlag[knew] * vlag[knew] + alpha * beta;
 		if (denom < cauchy && cauchy > zero) {
 			LOOP(i, n) {
 				xnew[i] = xalt[i];
@@ -3250,7 +3345,7 @@ L230:
 			cauchy = zero;
 			goto L230;
 		}
-		if (denom <= half*(vlag[knew] * vlag[knew])) {
+		if (denom <= half * (vlag[knew] * vlag[knew])) {
 			if (nf > nresc) {
 				goto L190;
 			}
@@ -3259,7 +3354,7 @@ L230:
 
 	}
 	else {
-		delsq = delta*delta;
+		delsq = delta * delta;
 		scaden = zero;
 		biglsq = zero;
 		knew = 0;
@@ -3269,24 +3364,24 @@ L230:
 			LOOP(jj, nptm) {
 				hdiag += ZMAT(k, jj)*ZMAT(k, jj);
 			}
-			den = beta*hdiag + vlag[k] * vlag[k];
+			den = beta * hdiag + vlag[k] * vlag[k];
 			distsq = zero;
 			LOOP(j, n) {
 				tempa = XPT(k, j) - xopt[j];
-				distsq += tempa*tempa;
+				distsq += tempa * tempa;
 			}
 			temp = distsq / delsq;
-			temp = temp*temp;
+			temp = temp * temp;
 			temp = MAX(one, temp);
 			if (temp*den > scaden) {
-				scaden = temp*den;
+				scaden = temp * den;
 				knew = k;
 				denom = den;
 			}
 			temp *= vlag[k] * vlag[k];
 			biglsq = MAX(biglsq, temp);
 		}
-		if (scaden <= half*biglsq) {
+		if (scaden <= half * biglsq) {
 			if (nf > nresc) {
 				goto L190;
 			}
@@ -3320,13 +3415,13 @@ L360:
 			++ih;
 			temp = d[i] * d[j];
 			if (i == j) {
-				temp = half*temp;
+				temp = half * temp;
 			}
 			vquad += hq[ih] * temp;
 		}
 	}
 	LOOP(k, npt) {
-		vquad += half*pq[k] * (w[npt + k] * w[npt + k]);
+		vquad += half * pq[k] * (w[npt + k] * w[npt + k]);
 	}
 	diff = f - fopt - vquad;
 	diffc = diffb;
@@ -3353,13 +3448,13 @@ L360:
 			delta *= half;
 			delta = MAX(delta, tempa);
 		}
-		if (delta <= rho*1.5) {
+		if (delta <= rho * 1.5) {
 			delta = rho;
 		}
 		if (f < fopt) {
 			ksav = knew;
 			densav = denom;
-			delsq = delta*delta;
+			delsq = delta * delta;
 			scaden = zero;
 			biglsq = zero;
 			knew = 0;
@@ -3368,24 +3463,24 @@ L360:
 				LOOP(jj, nptm) {
 					hdiag += ZMAT(k, jj)*ZMAT(k, jj);
 				}
-				den = beta*hdiag + vlag[k] * vlag[k];
+				den = beta * hdiag + vlag[k] * vlag[k];
 				distsq = zero;
 				LOOP(j, n) {
 					temp = XPT(k, j) - xnew[j];
-					distsq += temp*temp;
+					distsq += temp * temp;
 				}
 				temp = distsq / delsq;
-				temp = temp*temp;
+				temp = temp * temp;
 				temp = MAX(one, temp);
 				if (temp*den > scaden) {
-					scaden = temp*den;
+					scaden = temp * den;
 					knew = k;
 					denom = den;
 				}
 				temp *= (vlag[k] * vlag[k]);
 				biglsq = MAX(biglsq, temp);
 			}
-			if (scaden <= half*biglsq) {
+			if (scaden <= half * biglsq) {
 				knew = ksav;
 				denom = densav;
 			}
@@ -3397,16 +3492,16 @@ L360:
 	pqold = pq[knew];
 	pq[knew] = zero;
 	LOOP(i, n) {
-		temp = pqold*XPT(knew, i);
+		temp = pqold * XPT(knew, i);
 		LOOP(j, i) {
 			++ih;
-			hq[ih] += temp*XPT(knew, j);
+			hq[ih] += temp * XPT(knew, j);
 		}
 	}
 	LOOP(jj, nptm) {
-		temp = diff*ZMAT(knew, jj);
+		temp = diff * ZMAT(knew, jj);
 		LOOP(k, npt) {
-			pq[k] += temp*ZMAT(k, jj);
+			pq[k] += temp * ZMAT(k, jj);
 		}
 	}
 	fval[knew] = f;
@@ -3423,13 +3518,13 @@ L360:
 		LOOP(j, n) {
 			sumb += XPT(k, j)*xopt[j];
 		}
-		temp = suma*sumb;
+		temp = suma * sumb;
 		LOOP(i, n) {
-			w[i] += temp*XPT(k, i);
+			w[i] += temp * XPT(k, i);
 		}
 	}
 	LOOP(i, n) {
-		gopt[i] += diff*w[i];
+		gopt[i] += diff * w[i];
 	}
 	if (f < fopt) {
 		kopt = knew;
@@ -3453,7 +3548,7 @@ L360:
 			}
 			temp = pq[k] * temp;
 			LOOP(i, n) {
-				gopt[i] += temp*XPT(k, i);
+				gopt[i] += temp * XPT(k, i);
 			}
 		}
 	}
@@ -3468,7 +3563,7 @@ L360:
 				sum += ZMAT(k, j)*vlag[k];
 			}
 			LOOP(k, npt) {
-				w[k] += sum*ZMAT(k, j);
+				w[k] += sum * ZMAT(k, j);
 			}
 		}
 		LOOP(k, npt) {
@@ -3477,7 +3572,7 @@ L360:
 				sum += XPT(k, j)*xopt[j];
 			}
 			w[k + npt] = w[k];
-			w[k] = sum*w[k];
+			w[k] = sum * w[k];
 		}
 		gqsq = zero;
 		gisq = zero;
@@ -3488,19 +3583,19 @@ L360:
 			}
 			if (xopt[i] == sl[i]) {
 				tempa = MIN(zero, gopt[i]);
-				gqsq += tempa*tempa;
+				gqsq += tempa * tempa;
 				tempa = MIN(zero, sum);
-				gisq += tempa*tempa;
+				gisq += tempa * tempa;
 			}
 			else if (xopt[i] == su[i]) {
 				tempa = MAX(zero, gopt[i]);
-				gqsq += tempa*tempa;
+				gqsq += tempa * tempa;
 				tempa = MAX(zero, sum);
-				gisq += tempa*tempa;
+				gisq += tempa * tempa;
 			}
 			else {
 				gqsq += gopt[i] * gopt[i];
-				gisq += sum*sum;
+				gisq += sum * sum;
 			}
 			vlag[npt + i] = sum;
 		}
@@ -3527,13 +3622,13 @@ L360:
 	if (ntrits == 0) {
 		goto L60;
 	}
-	if (f <= fopt + tenth*vquad) {
+	if (f <= fopt + tenth * vquad) {
 		goto L60;
 	}
-	tempa = two*delta;
-	tempb = ten*rho;
-	tempa = tempa*tempa;
-	tempb = tempb*tempb;
+	tempa = two * delta;
+	tempb = ten * rho;
+	tempa = tempa * tempa;
+	tempb = tempb * tempb;
 	distsq = MAX(tempa, tempb);
 L650:
 	knew = 0;
@@ -3541,7 +3636,7 @@ L650:
 		sum = zero;
 		LOOP(j, n) {
 			tempa = XPT(k, j) - xopt[j];
-			sum += tempa*tempa;
+			sum += tempa * tempa;
 		}
 		if (sum > distsq) {
 			knew = k;
@@ -3551,18 +3646,18 @@ L650:
 	if (knew > 0) {
 		dist = sqrt(distsq);
 		if (ntrits == -1) {
-			tempa = tenth*delta;
-			tempb = half*dist;
+			tempa = tenth * delta;
+			tempb = half * dist;
 			delta = MIN(tempa, tempb);
-			if (delta <= rho*1.5) {
+			if (delta <= rho * 1.5) {
 				delta = rho;
 			}
 		}
 		ntrits = 0;
-		adelt = tenth*dist;
+		adelt = tenth * dist;
 		adelt = MIN(adelt, delta);
 		adelt = MAX(adelt, rho);
-		dsq = adelt*adelt;
+		dsq = adelt * adelt;
 		goto L90;
 	}
 	if (ntrits == -1) {
@@ -3576,7 +3671,7 @@ L650:
 	}
 L680:
 	if (rho > rhoend) {
-		delta = half*rho;
+		delta = half * rho;
 		ratio = rho / rhoend;
 		if (ratio <= 16.0) {
 			rho = rhoend;
@@ -3585,7 +3680,7 @@ L680:
 			rho = sqrt(ratio)*rhoend;
 		}
 		else {
-			rho = tenth*rho;
+			rho = tenth * rho;
 		}
 		delta = MAX(delta, rho);
 
@@ -3618,7 +3713,8 @@ done:
 
 	cout << "Iteration " << iter << "\tRHO " << setprecision(1)
 		<< scientific << rho << setprecision(defaultprecision)
-		<< "\t" << (double)fval[kopt] << defaultfloat << endl;
+		<< "\t" << (double)fval[kopt] << endl;// defaultfloat << endl;
+	cout.unsetf(ios_base::floatfield);
 
 	if (status == BOBYQA_SUCCESS) {
 		xbase[1] = f;
@@ -3671,14 +3767,14 @@ int bobyqa(const long n, const long npt,
 	ndim = npt + n;
 	ixb = 1;
 	ixp = ixb + n;
-	ifv = ixp + n*npt;
+	ifv = ixp + n * npt;
 	ixo = ifv + npt;
 	igo = ixo + n;
 	ihq = igo + n;
-	ipq = ihq + n*np / 2;
+	ipq = ihq + n * np / 2;
 	ibmat = ipq + npt;
-	izmat = ibmat + ndim*n;
-	isl = izmat + npt*(npt - np);
+	izmat = ibmat + ndim * n;
+	isl = izmat + npt * (npt - np);
 	isu = isl + n;
 	ixn = isu + n;
 	ixa = ixn + n;
