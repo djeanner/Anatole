@@ -12,7 +12,7 @@ We skiped the make install
 ```
 mkdir bin
 cd bin
-echo "bin" >> ../.gitignore
+echo "bin/" >> ../.gitignore
 curl -O ftp://ftp.gnu.org/gnu/gsl/gsl-latest.tar.gz
 gzip -dc gsl-latest.tar.gz | tar xvf -
 cd gsl-2.8 
