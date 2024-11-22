@@ -161,9 +161,9 @@ Note that exp numbers in the Input_Data files may cause spectrum overlap. Not al
 
 The alternation of the signs does not necessary finds the best combination if the minimum is not correct after the first step.
 
-From the best combination we got almost the right set of signs (only a very small coupling has the sign different from the final best set). Here the "cheat" was only a change J{5-6} from 0.153164 to -0.23 and then it found a better match. But this value had to be set manually, in our hands (possibly not the case for the authors of the paper).
+From the best combination we got almost the right set of signs (only a very small coupling has the sign different from the final best set). Here the "cheat" was only a change J{5-6} from 0.153164 to -0.23, interchanges 6J3,4-7 with 6J3,4-8 (respectively 0.02 and 0.04 Hz), and then it found a better match. But this value had to be set manually, in our hands (possibly not the case for the authors of the paper). Could see if inverting 7J5-7 with 7J5-8 respectively 0.29 and 0.23 Hz.
 
-It may be that some coupling constants are still not absolutely perfect (value/sign). Some are either difficult or impossible to determine (if they do not manifest themselves in the spectrum).
+It may be that some coupling constants are still not absolutely perfect (value/sign). Some are either difficult or impossible to determine (if they do not manifest themselves in the spectrum). 
 
 # Acknowledgements
 
