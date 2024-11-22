@@ -1,6 +1,8 @@
-The sepctrum 4 (best match after changing signs) is better than 3 (result of the main optimization).
+# Comparison of the experimental and simulated spectra obtained with Anatolia
 
-The experimental is visually identical to the experimental spectrum.
+The spectrum #4 (best match after changing signs) is better than #3 (result of the main optimization).
+
+The experimental is visually identical to the spectrum #7, the one with the best fit.
 
 ##  Full Spectra
 
