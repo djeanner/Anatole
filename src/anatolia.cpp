@@ -1,3 +1,4 @@
+// This was modified by DJ to test all combinations of signs at the end and save the best one
 /*****************************************************/
 /***                ANATOLIA V1.2                  ***/
 /***      Free open-source software for total      ***/
@@ -85,10 +86,20 @@ void exit_with_pause(void)
 #define exit_ exit(0)
 #endif
 
+long long int fact(const int input) {
+	const long long int max = static_cast<long long int>(input);
+	long long int a = 1;
+	for (long long int i = 1; i <= max; i++) {
+		a *= i;
+	}
+	return a;
+}
+
 void print_logo(ostream& ostr)
 {
 
 	ostr
+		<< "Modified by DJ to test all combinations" << endl
 		<< "*****************************************************" << endl
 		<< "***                ANATOLIA V1.2                  ***" << endl
 		<< "***      Free open-source software for total      ***" << endl
@@ -189,12 +200,14 @@ public:
 	double Magnitude;
 	double* Points;
 	char* Filename;
+	char* refinementFilename;
 
 	Data(void)
 	{
-
 		Filename = new char[256];
+		refinementFilename = new char[256];
 		strcpy(Filename, "");
+		strcpy(refinementFilename, "");
 		nPoints = 0;
 		Magnitude = 0;
 		Points = NULL;
@@ -243,12 +256,13 @@ public:
 
 	}
 
-	void SaveSpecToFile(void)
+	void SaveSpecToFile(bool refinement = false)
 	{
 
 		if (Filename[0] == '-') return;
 		int point = 0;
-		ofstream ostr(Filename, ios::out | ios::binary);
+		char* trueFilename = refinement ? refinementFilename: Filename;
+		ofstream ostr(trueFilename, ios::out | ios::binary);
 		for (int i = 1; i <= nPoints; i++)
 		{
 			point = int(Points[i]);
@@ -396,6 +410,7 @@ public:
 			if (!isunsignint(textline)) { cout << "Check the processing number for theoretical spectrum." << endl; exit_; }
 			TheorProcNo = atoi(textline);
 			sprintf(TheoreticalSpec.Filename, "%s/pdata/%i/1r", DatasetPath, TheorProcNo);
+			sprintf(TheoreticalSpec.refinementFilename, "%s/pdata/%i/1r", DatasetPath, TheorProcNo + 1);
 		}
 		istr.getline(textline, 256); // Rest of proc. no. line
 		istr.getline(textline, 256); // Empty line
@@ -1436,11 +1451,17 @@ public:
 
 	}
 
-	void SaveParameters(void)
+	void SaveParameters(const bool refine = false)
 	{
 
 		int parnamelen = 0;
-		ofstream ostr(OutputParameters);
+		char* trueOutputParameters = new char[256];
+		if (refine) {
+        	strcpy(trueOutputParameters, "allCombiTested_");
+		}
+		strcat(trueOutputParameters, OutputParameters);
+		
+		ofstream ostr(trueOutputParameters);
 
 		for (int i = 1; i <= nSSParams + 1; i++)
 		{
@@ -1733,11 +1754,145 @@ int main(int argc, char* argv[])
 	HamOpt->SaveParameters();
 
 	cout << endl;
+	
+
+	if (true) {
+		const bool considerThatLargeCouplingHaveCorrectSign = true;
+		const double initialRfactor = Spec->CalcRFactor();
+		const double minJvalConsiderSignIsCorrect = 5.0;
+		double bestRfactor = Spec->CalcRFactor();
+		int bestCombi = 0; // neutral value 0 will be used in the end if nothing is better
+		const int number_of_chemicalShifts =  Offs[nSpins];
+		const int numberRelevantVariablesAllJ = HamOpt->nVarParams - 1 - number_of_chemicalShifts;
+		cerr << ">>>>>> Number of J coupling " << numberRelevantVariablesAllJ << endl;
+
+		int* indicesTested = NULL;
+		indicesTested = new int[(uint_t)numberRelevantVariablesAllJ];// may be slightly larger than necessary
+
+		int counter = 0;
+		if (considerThatLargeCouplingHaveCorrectSign) {
+			for (int i = 0; i <= numberRelevantVariablesAllJ - 1; i++) {
+				const int index = i + 1 + number_of_chemicalShifts;
+				if (SSParams[index] < minJvalConsiderSignIsCorrect) { // No abs - consider only positive coupling are know...
+					indicesTested[counter] = index;
+					counter++;
+				}
+			}
+		} else {
+			for (int i = 0; i <= numberRelevantVariablesAllJ - 1; i++) {
+				const int index = i + 1 + number_of_chemicalShifts;
+				indicesTested[counter] = index;
+				counter++;
+			}
+		}
+		const int numberRelevantVariables = counter;
+
+		const int maxExplore = 20;
+		const int trueMaxExplore = (maxExplore < numberRelevantVariables) ? maxExplore : numberRelevantVariables;
+		int totalCombinations = (int)pow(2, numberRelevantVariables);
+		cerr << ">>>>>> Number of tested J coupling (J coupling with values > " << minJvalConsiderSignIsCorrect << ") " << numberRelevantVariables << endl;
+		cerr << ">>>>>> Number of combinations for step 0 :                  1 of " << pow(2, numberRelevantVariables) << endl;
+		for (int numberOfSwitchedValues = 1; numberOfSwitchedValues <= trueMaxExplore; numberOfSwitchedValues++) {
+			const long long int trueNumberCombiForThisNumberOfSwitchedValues = (fact(numberRelevantVariables) / (fact(numberRelevantVariables - numberOfSwitchedValues) * fact(numberOfSwitchedValues)));
+			cerr << ">>>>>> Number of combinations for step " << numberOfSwitchedValues << " : " << (numberRelevantVariables) << "! / (" << (numberRelevantVariables - numberOfSwitchedValues)  << "! * " << (numberOfSwitchedValues) << "!) = ";
+			cerr << trueNumberCombiForThisNumberOfSwitchedValues << " of " << pow(2, numberRelevantVariables) << endl;
+			const long long int maxNumber = 10000;
+			if (trueNumberCombiForThisNumberOfSwitchedValues > maxNumber) {
+				cerr << ">>>>>> Skip this step because the number of combinations  " << trueNumberCombiForThisNumberOfSwitchedValues << " > " << maxNumber << endl;
+				cout << ">>>>>> Skip this step because the number of combinations  " << trueNumberCombiForThisNumberOfSwitchedValues << " > " << maxNumber << endl;
+				continue;
+			} else {
+				cerr << ">>>>>> Run step because the number of combinations  " << trueNumberCombiForThisNumberOfSwitchedValues << " <= " << maxNumber << endl;
+				cout << ">>>>>> Run step because the number of combinations  " << trueNumberCombiForThisNumberOfSwitchedValues << " <= " << maxNumber << endl;
+			}
+			int counterCalcThisStep = 0;
+			for (int comb = 0; comb <= totalCombinations; comb++) { // loop of all tested combinations "=" if for final
+				const int combination = (comb == totalCombinations && numberOfSwitchedValues == trueMaxExplore) ? bestCombi : comb;
+				//const int combination = (comb == totalCombinations && numberOfSwitchedValues == trueMaxExplore) ? 7 : comb;
+				
+				// set signs (similar copy below)
+				int curNumberOfSwitchedValues = 0;
+		        for (int i = 0; i <= numberRelevantVariables - 1; i++) {
+					const int index = indicesTested[i];// i + 1 + number_of_chemicalShifts;
+		            if (combination & (1 << i)) {
+						curNumberOfSwitchedValues++;
+						
+					} 
+				}
+
+				const bool finalforBest = (comb == totalCombinations) && (numberOfSwitchedValues == trueMaxExplore);
+				if ((curNumberOfSwitchedValues == numberOfSwitchedValues) || finalforBest) {
+					counterCalcThisStep ++;
+					string values = " J's: ";
+					string binRepres = "";
+			        for (int i = 0; i <= numberRelevantVariables - 1; i++) {
+						const int index = indicesTested[i];// i + 1 + number_of_chemicalShifts;
+			            if (combination & (1 << i)) {
+							// Switch the two values
+			                SSParams[index] = - SSParams[index]; // + 1 because no order 0
+							HamOpt->VarParams[index] = - HamOpt->VarParams[index]; // + 1 because no order 0
+							binRepres += "1";
+						} else {
+							binRepres += "0";
+						}
+						values += std::to_string(HamOpt->VarParams[index]) + " ";
+					}
+	                if (finalforBest) {
+						Spec->ExperimentalSpecWithBroadening.SaveSpecToFile();
+					}
+					Hami->ComputeFreqIntens();
+					Spec->CalcSpecOnIntervals();
+					if (finalforBest) {
+						Spec->SaveSpecsOnIntervalsTXT();
+					}
+					Spec->LB = 0;
+					Spec->CalcFullSpectrum();
+
+					const double rFactor = Spec->CalcRFactor();
+					cerr << binRepres << " " << rFactor << " " << bestRfactor << " " << counterCalcThisStep  << " of " << trueNumberCombiForThisNumberOfSwitchedValues;
+					//cerr << " " << values;
+					cerr << endl;
+
+					if (finalforBest) {
+						// final save
+						cout << rFactor << " is final smallest <= " << bestRfactor << " " << combination  << "/" << totalCombinations << " " << binRepres << " " << values << endl;
+						cerr << rFactor << " is final smallest <= " << bestRfactor << " " << combination  << "/" << totalCombinations << " " << binRepres << " " << values << endl;
+					
+						Spec->TheoreticalSpec.SaveSpecToFile(true);
+						HamOpt->SaveParameters(true);
+						cerr <<  "Saved files Final" << endl;
+					}
+
+					if (initialRfactor > rFactor) { 
+						cerr << rFactor << " then initial < " << initialRfactor << " " << combination  << "/" << totalCombinations << " " << binRepres << " " << values << endl;
+						cout << rFactor << " then initial < " << initialRfactor << " " << combination  << "/" << totalCombinations << " " << binRepres << " " << values << endl;
+					}
+					if (bestRfactor > rFactor) { 
+						cout << rFactor << " is temporary smallest < " << bestRfactor << " " << combination  << "/" << totalCombinations << " " << binRepres << " " << values << endl;
+						cerr << rFactor << " is temporary smallest < " << bestRfactor << " " << combination  << "/" << totalCombinations << " " << binRepres << " " << values << endl;
+						bestRfactor = rFactor;
+						bestCombi = combination;
+						// intermediate save in case break search...
+						Spec->TheoreticalSpec.SaveSpecToFile();
+						HamOpt->SaveParameters(true);
+						cerr <<  "Saved intermediate files" << endl;
+					}
+					// set signs back (copy of above code)
+			        for (int i = 0; i <= numberRelevantVariables - 1; i++) {
+						const int index = indicesTested[i];// i + 1 + number_of_chemicalShifts;
+			            if (combination & (1 << i)) {
+			                SSParams[index] = - SSParams[index]; // + 1 because no order 0
+							HamOpt->VarParams[index] = - HamOpt->VarParams[index]; // + 1 because no order 0
+						}
+					}
+				}
+			}
+		}
+	}
 	print_logo(cout);
 	print_citation(cout);
-
 	exit_;
-
+	
 }
 
 /*

@@ -2,7 +2,9 @@
 
 We explored and extendent (preliminary tests only) the Anatolia software by Cheshkova,  Sheberstova, Sinitsync, and Chertkovd.
 
-In particular we worked on reproducing the results for the styrene spectrum presented in [1].
+In particular we worked on reproducing the results for the styrene spectrum presented in [1] and analyse the trick of changing the signs of all the coupling to fine-tune the fitting of the simulated spectrum over the experimental one.
+
+
 
 Ref:
 [1] "ANATOLIA: NMR software for spectral analysis of total lineshape", D.A. Cheshkova,b*, K.F. Sheberstova, D.O. Sinitsync, V.A. Chertkovd, doi: 10.1002/mrc.4689
@@ -17,6 +19,11 @@ V 1.2 2021 src/anatolia1.2.cpp
 V 1.2 2021 src/anatolia1.2plus.cpp // new version
 ```
 The last version is src/anatolia.cpp and following its history shows its evolution.
+The modification to test all combinations are [there](src/anatolia1.2plus.cpp)
+```
+V 1.2 2024 src/anatolia1.2plus.cpp // modified version by D. Jeannerat
+```
+Look at the [changes](https://github.com/djeanner/Anatole/commits/main/src/anatolia.cpp) :
 
 # Compilation
 
