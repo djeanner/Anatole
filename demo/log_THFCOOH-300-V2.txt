@@ -1,0 +1,5847 @@
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+Broadening:  3
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	9.153015e+10
+Iteration 2	RHO 1.0e-01	9.153015e+10
+Iteration 4	RHO 1.0e-02	9.153015e+10
+Iteration 6	RHO 1.0e-03	9.132662e+10
+Iteration 8	RHO 1.0e-04	9.131160e+10
+Iteration 12	RHO 1.0e-05	9.131078e+10
+Iteration 19	RHO 1.0e-06	9.131016e+10
+Iteration 23	RHO 1.0e-07	9.131012e+10
+Iteration 28	RHO 1.0e-08	9.131011e+10
+Iteration 41	RHO 1.0e-09	9.131011e+10
+Iteration 48	RHO 1.0e-10	9.131011e+10
+Iteration 51	RHO 1.0e-10	9.131011e+10
+Main optimization
+Iteration 1	RHO 1.0e+00	9.131011e+10
+Iteration 4	RHO 1.0e-01	9.131011e+10
+Iteration 45	RHO 1.0e-02	8.750194e+10
+Iteration 118	RHO 1.0e-03	7.899438e+10
+Iteration 160	RHO 1.0e-04	7.887713e+10
+Iteration 212	RHO 1.0e-05	7.885345e+10
+Iteration 270	RHO 1.0e-06	7.884852e+10
+Iteration 330	RHO 1.0e-07	7.884800e+10
+Iteration 376	RHO 1.0e-08	7.884798e+10
+Iteration 423	RHO 1.0e-09	7.884797e+10
+Iteration 477	RHO 1.0e-10	7.884797e+10
+Iteration 529	RHO 1.0e-10	7.884797e+10
+
+Broadening:  2
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	1.539296e+11
+Iteration 2	RHO 1.0e-01	1.539296e+11
+Iteration 4	RHO 1.0e-02	1.539296e+11
+Iteration 7	RHO 1.0e-03	1.457168e+11
+Iteration 11	RHO 1.0e-04	1.456952e+11
+Iteration 16	RHO 1.0e-05	1.456834e+11
+Iteration 21	RHO 1.0e-06	1.456832e+11
+Iteration 34	RHO 1.0e-07	1.456831e+11
+Iteration 37	RHO 1.0e-08	1.456831e+11
+Iteration 48	RHO 1.0e-09	1.456831e+11
+Iteration 54	RHO 1.0e-10	1.456831e+11
+Iteration 57	RHO 1.0e-10	1.456831e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	1.456831e+11
+Iteration 4	RHO 1.0e-01	1.456831e+11
+Iteration 49	RHO 1.0e-02	1.213336e+11
+Iteration 174	RHO 1.0e-03	9.297076e+10
+Iteration 246	RHO 1.0e-04	9.223680e+10
+Iteration 297	RHO 1.0e-05	9.220520e+10
+Iteration 381	RHO 1.0e-06	9.219454e+10
+Iteration 460	RHO 1.0e-07	9.219333e+10
+Iteration 504	RHO 1.0e-08	9.219328e+10
+Iteration 594	RHO 1.0e-09	9.219327e+10
+Iteration 652	RHO 1.0e-10	9.219327e+10
+Iteration 718	RHO 1.0e-10	9.219327e+10
+
+Broadening:  1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.511311e+11
+Iteration 2	RHO 1.0e-01	4.511311e+11
+Iteration 4	RHO 1.0e-02	4.511311e+11
+Iteration 7	RHO 1.0e-03	4.309708e+11
+Iteration 11	RHO 1.0e-04	4.307478e+11
+Iteration 13	RHO 1.0e-05	4.307349e+11
+Iteration 15	RHO 1.0e-06	4.307320e+11
+Iteration 17	RHO 1.0e-07	4.307317e+11
+Iteration 20	RHO 1.0e-08	4.307317e+11
+Iteration 25	RHO 1.0e-09	4.307316e+11
+Iteration 32	RHO 1.0e-10	4.307316e+11
+Iteration 35	RHO 1.0e-10	4.307316e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.307316e+11
+Iteration 4	RHO 1.0e-01	4.307316e+11
+Iteration 46	RHO 1.0e-02	3.539925e+11
+Iteration 247	RHO 1.0e-03	1.941372e+11
+Iteration 612	RHO 1.0e-04	1.825979e+11
+Iteration 690	RHO 1.0e-05	1.825516e+11
+Iteration 733	RHO 1.0e-06	1.825498e+11
+Iteration 774	RHO 1.0e-07	1.825496e+11
+Iteration 823	RHO 1.0e-08	1.825496e+11
+Iteration 864	RHO 1.0e-09	1.825496e+11
+Iteration 902	RHO 1.0e-10	1.825496e+11
+Iteration 947	RHO 1.0e-10	1.825496e+11
+
+Broadening:  0.5
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	5.585614e+11
+Iteration 2	RHO 1.0e-01	5.585614e+11
+Iteration 4	RHO 1.0e-02	5.585614e+11
+Iteration 7	RHO 1.0e-03	4.998758e+11
+Iteration 11	RHO 1.0e-04	4.969156e+11
+Iteration 14	RHO 1.0e-05	4.968965e+11
+Iteration 17	RHO 1.0e-06	4.968930e+11
+Iteration 20	RHO 1.0e-07	4.968911e+11
+Iteration 23	RHO 1.0e-08	4.968911e+11
+Iteration 34	RHO 1.0e-09	4.968910e+11
+Iteration 39	RHO 1.0e-10	4.968910e+11
+Iteration 50	RHO 1.0e-10	4.968910e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.968910e+11
+Iteration 4	RHO 1.0e-01	4.968910e+11
+Iteration 34	RHO 1.0e-02	4.968910e+11
+Iteration 106	RHO 1.0e-03	4.292578e+11
+Iteration 213	RHO 1.0e-04	4.250754e+11
+Iteration 267	RHO 1.0e-05	4.249328e+11
+Iteration 324	RHO 1.0e-06	4.248883e+11
+Iteration 377	RHO 1.0e-07	4.248858e+11
+Iteration 435	RHO 1.0e-08	4.248856e+11
+Iteration 479	RHO 1.0e-09	4.248856e+11
+Iteration 532	RHO 1.0e-10	4.248856e+11
+Iteration 577	RHO 1.0e-10	4.248856e+11
+
+Broadening:  0.1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.323331e+12
+Iteration 2	RHO 1.0e-01	4.323331e+12
+Iteration 4	RHO 1.0e-02	4.323331e+12
+Iteration 5	RHO 1.0e-03	4.323331e+12
+Iteration 12	RHO 1.0e-04	3.940278e+12
+Iteration 16	RHO 1.0e-05	3.939771e+12
+Iteration 17	RHO 1.0e-06	3.939771e+12
+Iteration 20	RHO 1.0e-07	3.939771e+12
+Iteration 31	RHO 1.0e-08	3.939759e+12
+Iteration 46	RHO 1.0e-09	3.939757e+12
+Iteration 49	RHO 1.0e-10	3.939757e+12
+Iteration 54	RHO 1.0e-10	3.939757e+12
+Main optimization
+Iteration 1	RHO 1.0e+00	3.939757e+12
+Iteration 4	RHO 1.0e-01	3.939757e+12
+Iteration 34	RHO 1.0e-02	3.939757e+12
+Iteration 85	RHO 1.0e-03	3.029798e+12
+Iteration 219	RHO 1.0e-04	2.906180e+12
+Iteration 257	RHO 1.0e-05	2.906063e+12
+Iteration 293	RHO 1.0e-06	2.906036e+12
+Iteration 332	RHO 1.0e-07	2.906033e+12
+Iteration 367	RHO 1.0e-08	2.906033e+12
+Iteration 403	RHO 1.0e-09	2.906033e+12
+Iteration 437	RHO 1.0e-10	2.906033e+12
+Iteration 463	RHO 1.0e-10	2.906033e+12
+
+Broadening:  0
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	2.510274e+13
+Iteration 2	RHO 1.0e-01	2.510274e+13
+Iteration 4	RHO 1.0e-02	2.510274e+13
+Iteration 9	RHO 1.0e-03	2.462785e+13
+Iteration 11	RHO 1.0e-04	2.461139e+13
+Iteration 15	RHO 1.0e-05	2.461021e+13
+Iteration 18	RHO 1.0e-06	2.461019e+13
+Iteration 20	RHO 1.0e-07	2.461019e+13
+Iteration 22	RHO 1.0e-08	2.461019e+13
+Iteration 26	RHO 1.0e-09	2.461019e+13
+Iteration 27	RHO 1.0e-10	2.461019e+13
+Iteration 30	RHO 1.0e-10	2.461019e+13
+Main optimization
+Iteration 1	RHO 1.0e+00	2.461019e+13
+Iteration 4	RHO 1.0e-01	2.461019e+13
+Iteration 34	RHO 1.0e-02	2.461019e+13
+Iteration 65	RHO 1.0e-03	2.328053e+13
+Iteration 103	RHO 1.0e-04	2.287176e+13
+Iteration 311	RHO 1.0e-05	2.278101e+13
+Iteration 436	RHO 1.0e-06	2.278082e+13
+Iteration 510	RHO 1.0e-07	2.278082e+13
+Iteration 552	RHO 1.0e-08	2.278082e+13
+Iteration 583	RHO 1.0e-09	2.278082e+13
+Iteration 608	RHO 1.0e-10	2.278082e+13
+Iteration 638	RHO 1.0e-10	2.278082e+13
+
+R-Factor: 4.77 %
+
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+When publishing results obtained with this program, please cite:
+D.A. Cheshkov, K.F. Sheberstov, D.O. Sinitsyn, V.A. Chertkov, ANATOLIA: NMR
+software for spectral analysis of total lineshape. Magn. Reson. Chem., 2018,
+56, 449, DOI: 10.1002/mrc.4689.
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+Broadening:  3
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	9.153015e+10
+Iteration 2	RHO 1.0e-01	9.153015e+10
+Iteration 4	RHO 1.0e-02	9.153015e+10
+Iteration 6	RHO 1.0e-03	9.132662e+10
+Iteration 8	RHO 1.0e-04	9.131160e+10
+Iteration 12	RHO 1.0e-05	9.131078e+10
+Iteration 19	RHO 1.0e-06	9.131016e+10
+Iteration 23	RHO 1.0e-07	9.131012e+10
+Iteration 28	RHO 1.0e-08	9.131011e+10
+Iteration 41	RHO 1.0e-09	9.131011e+10
+Iteration 48	RHO 1.0e-10	9.131011e+10
+Iteration 51	RHO 1.0e-10	9.131011e+10
+Main optimization
+Iteration 1	RHO 1.0e+00	9.131011e+10
+Iteration 4	RHO 1.0e-01	9.131011e+10
+Iteration 45	RHO 1.0e-02	8.750194e+10
+Iteration 118	RHO 1.0e-03	7.899438e+10
+Iteration 160	RHO 1.0e-04	7.887713e+10
+Iteration 212	RHO 1.0e-05	7.885345e+10
+Iteration 270	RHO 1.0e-06	7.884852e+10
+Iteration 330	RHO 1.0e-07	7.884800e+10
+Iteration 376	RHO 1.0e-08	7.884798e+10
+Iteration 423	RHO 1.0e-09	7.884797e+10
+Iteration 477	RHO 1.0e-10	7.884797e+10
+Iteration 529	RHO 1.0e-10	7.884797e+10
+
+Broadening:  2
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	1.539296e+11
+Iteration 2	RHO 1.0e-01	1.539296e+11
+Iteration 4	RHO 1.0e-02	1.539296e+11
+Iteration 7	RHO 1.0e-03	1.457168e+11
+Iteration 11	RHO 1.0e-04	1.456952e+11
+Iteration 16	RHO 1.0e-05	1.456834e+11
+Iteration 21	RHO 1.0e-06	1.456832e+11
+Iteration 34	RHO 1.0e-07	1.456831e+11
+Iteration 37	RHO 1.0e-08	1.456831e+11
+Iteration 48	RHO 1.0e-09	1.456831e+11
+Iteration 54	RHO 1.0e-10	1.456831e+11
+Iteration 57	RHO 1.0e-10	1.456831e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	1.456831e+11
+Iteration 4	RHO 1.0e-01	1.456831e+11
+Iteration 49	RHO 1.0e-02	1.213336e+11
+Iteration 174	RHO 1.0e-03	9.297076e+10
+Iteration 246	RHO 1.0e-04	9.223680e+10
+Iteration 297	RHO 1.0e-05	9.220520e+10
+Iteration 381	RHO 1.0e-06	9.219454e+10
+Iteration 460	RHO 1.0e-07	9.219333e+10
+Iteration 504	RHO 1.0e-08	9.219328e+10
+Iteration 594	RHO 1.0e-09	9.219327e+10
+Iteration 652	RHO 1.0e-10	9.219327e+10
+Iteration 718	RHO 1.0e-10	9.219327e+10
+
+Broadening:  1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.511311e+11
+Iteration 2	RHO 1.0e-01	4.511311e+11
+Iteration 4	RHO 1.0e-02	4.511311e+11
+Iteration 7	RHO 1.0e-03	4.309708e+11
+Iteration 11	RHO 1.0e-04	4.307478e+11
+Iteration 13	RHO 1.0e-05	4.307349e+11
+Iteration 15	RHO 1.0e-06	4.307320e+11
+Iteration 17	RHO 1.0e-07	4.307317e+11
+Iteration 20	RHO 1.0e-08	4.307317e+11
+Iteration 25	RHO 1.0e-09	4.307316e+11
+Iteration 32	RHO 1.0e-10	4.307316e+11
+Iteration 35	RHO 1.0e-10	4.307316e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.307316e+11
+Iteration 4	RHO 1.0e-01	4.307316e+11
+Iteration 46	RHO 1.0e-02	3.539925e+11
+Iteration 247	RHO 1.0e-03	1.941372e+11
+Iteration 612	RHO 1.0e-04	1.825979e+11
+Iteration 690	RHO 1.0e-05	1.825516e+11
+Iteration 733	RHO 1.0e-06	1.825498e+11
+Iteration 774	RHO 1.0e-07	1.825496e+11
+Iteration 823	RHO 1.0e-08	1.825496e+11
+Iteration 864	RHO 1.0e-09	1.825496e+11
+Iteration 902	RHO 1.0e-10	1.825496e+11
+Iteration 947	RHO 1.0e-10	1.825496e+11
+
+Broadening:  0.5
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	5.585614e+11
+Iteration 2	RHO 1.0e-01	5.585614e+11
+Iteration 4	RHO 1.0e-02	5.585614e+11
+Iteration 7	RHO 1.0e-03	4.998758e+11
+Iteration 11	RHO 1.0e-04	4.969156e+11
+Iteration 14	RHO 1.0e-05	4.968965e+11
+Iteration 17	RHO 1.0e-06	4.968930e+11
+Iteration 20	RHO 1.0e-07	4.968911e+11
+Iteration 23	RHO 1.0e-08	4.968911e+11
+Iteration 34	RHO 1.0e-09	4.968910e+11
+Iteration 39	RHO 1.0e-10	4.968910e+11
+Iteration 50	RHO 1.0e-10	4.968910e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.968910e+11
+Iteration 4	RHO 1.0e-01	4.968910e+11
+Iteration 34	RHO 1.0e-02	4.968910e+11
+Iteration 106	RHO 1.0e-03	4.292578e+11
+Iteration 213	RHO 1.0e-04	4.250754e+11
+Iteration 267	RHO 1.0e-05	4.249328e+11
+Iteration 324	RHO 1.0e-06	4.248883e+11
+Iteration 377	RHO 1.0e-07	4.248858e+11
+Iteration 435	RHO 1.0e-08	4.248856e+11
+Iteration 479	RHO 1.0e-09	4.248856e+11
+Iteration 532	RHO 1.0e-10	4.248856e+11
+Iteration 577	RHO 1.0e-10	4.248856e+11
+
+Broadening:  0.1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.323331e+12
+Iteration 2	RHO 1.0e-01	4.323331e+12
+Iteration 4	RHO 1.0e-02	4.323331e+12
+Iteration 5	RHO 1.0e-03	4.323331e+12
+Iteration 12	RHO 1.0e-04	3.940278e+12
+Iteration 16	RHO 1.0e-05	3.939771e+12
+Iteration 17	RHO 1.0e-06	3.939771e+12
+Iteration 20	RHO 1.0e-07	3.939771e+12
+Iteration 31	RHO 1.0e-08	3.939759e+12
+Iteration 46	RHO 1.0e-09	3.939757e+12
+Iteration 49	RHO 1.0e-10	3.939757e+12
+Iteration 54	RHO 1.0e-10	3.939757e+12
+Main optimization
+Iteration 1	RHO 1.0e+00	3.939757e+12
+Iteration 4	RHO 1.0e-01	3.939757e+12
+Iteration 34	RHO 1.0e-02	3.939757e+12
+Iteration 85	RHO 1.0e-03	3.029798e+12
+Iteration 219	RHO 1.0e-04	2.906180e+12
+Iteration 257	RHO 1.0e-05	2.906063e+12
+Iteration 293	RHO 1.0e-06	2.906036e+12
+Iteration 332	RHO 1.0e-07	2.906033e+12
+Iteration 367	RHO 1.0e-08	2.906033e+12
+Iteration 403	RHO 1.0e-09	2.906033e+12
+Iteration 437	RHO 1.0e-10	2.906033e+12
+Iteration 463	RHO 1.0e-10	2.906033e+12
+
+Broadening:  0
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	2.510274e+13
+Iteration 2	RHO 1.0e-01	2.510274e+13
+Iteration 4	RHO 1.0e-02	2.510274e+13
+Iteration 9	RHO 1.0e-03	2.462785e+13
+Iteration 11	RHO 1.0e-04	2.461139e+13
+Iteration 15	RHO 1.0e-05	2.461021e+13
+Iteration 18	RHO 1.0e-06	2.461019e+13
+Iteration 20	RHO 1.0e-07	2.461019e+13
+Iteration 22	RHO 1.0e-08	2.461019e+13
+Iteration 26	RHO 1.0e-09	2.461019e+13
+Iteration 27	RHO 1.0e-10	2.461019e+13
+Iteration 30	RHO 1.0e-10	2.461019e+13
+Main optimization
+Iteration 1	RHO 1.0e+00	2.461019e+13
+Iteration 4	RHO 1.0e-01	2.461019e+13
+Iteration 34	RHO 1.0e-02	2.461019e+13
+Iteration 65	RHO 1.0e-03	2.328053e+13
+Iteration 103	RHO 1.0e-04	2.287176e+13
+Iteration 311	RHO 1.0e-05	2.278101e+13
+Iteration 436	RHO 1.0e-06	2.278082e+13
+Iteration 510	RHO 1.0e-07	2.278082e+13
+Iteration 552	RHO 1.0e-08	2.278082e+13
+Iteration 583	RHO 1.0e-09	2.278082e+13
+Iteration 608	RHO 1.0e-10	2.278082e+13
+Iteration 638	RHO 1.0e-10	2.278082e+13
+
+R-Factor: 4.77 %
+
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+When publishing results obtained with this program, please cite:
+D.A. Cheshkov, K.F. Sheberstov, D.O. Sinitsyn, V.A. Chertkov, ANATOLIA: NMR
+software for spectral analysis of total lineshape. Magn. Reson. Chem., 2018,
+56, 449, DOI: 10.1002/mrc.4689.
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+Broadening:  3
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	9.153015e+10
+Iteration 2	RHO 1.0e-01	9.153015e+10
+Iteration 4	RHO 1.0e-02	9.153015e+10
+Iteration 6	RHO 1.0e-03	9.132662e+10
+Iteration 8	RHO 1.0e-04	9.131160e+10
+Iteration 12	RHO 1.0e-05	9.131078e+10
+Iteration 19	RHO 1.0e-06	9.131016e+10
+Iteration 23	RHO 1.0e-07	9.131012e+10
+Iteration 28	RHO 1.0e-08	9.131011e+10
+Iteration 41	RHO 1.0e-09	9.131011e+10
+Iteration 48	RHO 1.0e-10	9.131011e+10
+Iteration 51	RHO 1.0e-10	9.131011e+10
+Main optimization
+Iteration 1	RHO 1.0e+00	9.131011e+10
+Iteration 4	RHO 1.0e-01	9.131011e+10
+Iteration 45	RHO 1.0e-02	8.750194e+10
+Iteration 118	RHO 1.0e-03	7.899438e+10
+Iteration 160	RHO 1.0e-04	7.887713e+10
+Iteration 212	RHO 1.0e-05	7.885345e+10
+Iteration 270	RHO 1.0e-06	7.884852e+10
+Iteration 330	RHO 1.0e-07	7.884800e+10
+Iteration 376	RHO 1.0e-08	7.884798e+10
+Iteration 423	RHO 1.0e-09	7.884797e+10
+Iteration 477	RHO 1.0e-10	7.884797e+10
+Iteration 529	RHO 1.0e-10	7.884797e+10
+
+Broadening:  2
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	1.539296e+11
+Iteration 2	RHO 1.0e-01	1.539296e+11
+Iteration 4	RHO 1.0e-02	1.539296e+11
+Iteration 7	RHO 1.0e-03	1.457168e+11
+Iteration 11	RHO 1.0e-04	1.456952e+11
+Iteration 16	RHO 1.0e-05	1.456834e+11
+Iteration 21	RHO 1.0e-06	1.456832e+11
+Iteration 34	RHO 1.0e-07	1.456831e+11
+Iteration 37	RHO 1.0e-08	1.456831e+11
+Iteration 48	RHO 1.0e-09	1.456831e+11
+Iteration 54	RHO 1.0e-10	1.456831e+11
+Iteration 57	RHO 1.0e-10	1.456831e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	1.456831e+11
+Iteration 4	RHO 1.0e-01	1.456831e+11
+Iteration 49	RHO 1.0e-02	1.213336e+11
+Iteration 174	RHO 1.0e-03	9.297076e+10
+Iteration 246	RHO 1.0e-04	9.223680e+10
+Iteration 297	RHO 1.0e-05	9.220520e+10
+Iteration 381	RHO 1.0e-06	9.219454e+10
+Iteration 460	RHO 1.0e-07	9.219333e+10
+Iteration 504	RHO 1.0e-08	9.219328e+10
+Iteration 594	RHO 1.0e-09	9.219327e+10
+Iteration 652	RHO 1.0e-10	9.219327e+10
+Iteration 718	RHO 1.0e-10	9.219327e+10
+
+Broadening:  1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.511311e+11
+Iteration 2	RHO 1.0e-01	4.511311e+11
+Iteration 4	RHO 1.0e-02	4.511311e+11
+Iteration 7	RHO 1.0e-03	4.309708e+11
+Iteration 11	RHO 1.0e-04	4.307478e+11
+Iteration 13	RHO 1.0e-05	4.307349e+11
+Iteration 15	RHO 1.0e-06	4.307320e+11
+Iteration 17	RHO 1.0e-07	4.307317e+11
+Iteration 20	RHO 1.0e-08	4.307317e+11
+Iteration 25	RHO 1.0e-09	4.307316e+11
+Iteration 32	RHO 1.0e-10	4.307316e+11
+Iteration 35	RHO 1.0e-10	4.307316e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.307316e+11
+Iteration 4	RHO 1.0e-01	4.307316e+11
+Iteration 46	RHO 1.0e-02	3.539925e+11
+Iteration 247	RHO 1.0e-03	1.941372e+11
+Iteration 612	RHO 1.0e-04	1.825979e+11
+Iteration 690	RHO 1.0e-05	1.825516e+11
+Iteration 733	RHO 1.0e-06	1.825498e+11
+Iteration 774	RHO 1.0e-07	1.825496e+11
+Iteration 823	RHO 1.0e-08	1.825496e+11
+Iteration 864	RHO 1.0e-09	1.825496e+11
+Iteration 902	RHO 1.0e-10	1.825496e+11
+Iteration 947	RHO 1.0e-10	1.825496e+11
+
+Broadening:  0.5
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	5.585614e+11
+Iteration 2	RHO 1.0e-01	5.585614e+11
+Iteration 4	RHO 1.0e-02	5.585614e+11
+Iteration 7	RHO 1.0e-03	4.998758e+11
+Iteration 11	RHO 1.0e-04	4.969156e+11
+Iteration 14	RHO 1.0e-05	4.968965e+11
+Iteration 17	RHO 1.0e-06	4.968930e+11
+Iteration 20	RHO 1.0e-07	4.968911e+11
+Iteration 23	RHO 1.0e-08	4.968911e+11
+Iteration 34	RHO 1.0e-09	4.968910e+11
+Iteration 39	RHO 1.0e-10	4.968910e+11
+Iteration 50	RHO 1.0e-10	4.968910e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.968910e+11
+Iteration 4	RHO 1.0e-01	4.968910e+11
+Iteration 34	RHO 1.0e-02	4.968910e+11
+Iteration 106	RHO 1.0e-03	4.292578e+11
+Iteration 213	RHO 1.0e-04	4.250754e+11
+Iteration 267	RHO 1.0e-05	4.249328e+11
+Iteration 324	RHO 1.0e-06	4.248883e+11
+Iteration 377	RHO 1.0e-07	4.248858e+11
+Iteration 435	RHO 1.0e-08	4.248856e+11
+Iteration 479	RHO 1.0e-09	4.248856e+11
+Iteration 532	RHO 1.0e-10	4.248856e+11
+Iteration 577	RHO 1.0e-10	4.248856e+11
+
+Broadening:  0.1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.323331e+12
+Iteration 2	RHO 1.0e-01	4.323331e+12
+Iteration 4	RHO 1.0e-02	4.323331e+12
+Iteration 5	RHO 1.0e-03	4.323331e+12
+Iteration 12	RHO 1.0e-04	3.940278e+12
+Iteration 16	RHO 1.0e-05	3.939771e+12
+Iteration 17	RHO 1.0e-06	3.939771e+12
+Iteration 20	RHO 1.0e-07	3.939771e+12
+Iteration 31	RHO 1.0e-08	3.939759e+12
+Iteration 46	RHO 1.0e-09	3.939757e+12
+Iteration 49	RHO 1.0e-10	3.939757e+12
+Iteration 54	RHO 1.0e-10	3.939757e+12
+Main optimization
+Iteration 1	RHO 1.0e+00	3.939757e+12
+Iteration 4	RHO 1.0e-01	3.939757e+12
+Iteration 34	RHO 1.0e-02	3.939757e+12
+Iteration 85	RHO 1.0e-03	3.029798e+12
+Iteration 219	RHO 1.0e-04	2.906180e+12
+Iteration 257	RHO 1.0e-05	2.906063e+12
+Iteration 293	RHO 1.0e-06	2.906036e+12
+Iteration 332	RHO 1.0e-07	2.906033e+12
+Iteration 367	RHO 1.0e-08	2.906033e+12
+Iteration 403	RHO 1.0e-09	2.906033e+12
+Iteration 437	RHO 1.0e-10	2.906033e+12
+Iteration 463	RHO 1.0e-10	2.906033e+12
+
+Broadening:  0
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	2.510274e+13
+Iteration 2	RHO 1.0e-01	2.510274e+13
+Iteration 4	RHO 1.0e-02	2.510274e+13
+Iteration 9	RHO 1.0e-03	2.462785e+13
+Iteration 11	RHO 1.0e-04	2.461139e+13
+Iteration 15	RHO 1.0e-05	2.461021e+13
+Iteration 18	RHO 1.0e-06	2.461019e+13
+Iteration 20	RHO 1.0e-07	2.461019e+13
+Iteration 22	RHO 1.0e-08	2.461019e+13
+Iteration 26	RHO 1.0e-09	2.461019e+13
+Iteration 27	RHO 1.0e-10	2.461019e+13
+Iteration 30	RHO 1.0e-10	2.461019e+13
+Main optimization
+Iteration 1	RHO 1.0e+00	2.461019e+13
+Iteration 4	RHO 1.0e-01	2.461019e+13
+Iteration 34	RHO 1.0e-02	2.461019e+13
+Iteration 65	RHO 1.0e-03	2.328053e+13
+Iteration 103	RHO 1.0e-04	2.287176e+13
+Iteration 311	RHO 1.0e-05	2.278101e+13
+Iteration 436	RHO 1.0e-06	2.278082e+13
+Iteration 510	RHO 1.0e-07	2.278082e+13
+Iteration 552	RHO 1.0e-08	2.278082e+13
+Iteration 583	RHO 1.0e-09	2.278082e+13
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+Broadening:  3
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	9.153015e+10
+Iteration 2	RHO 1.0e-01	9.153015e+10
+Iteration 4	RHO 1.0e-02	9.153015e+10
+Iteration 6	RHO 1.0e-03	9.132662e+10
+Iteration 8	RHO 1.0e-04	9.131160e+10
+Iteration 12	RHO 1.0e-05	9.131078e+10
+Iteration 19	RHO 1.0e-06	9.131016e+10
+Iteration 23	RHO 1.0e-07	9.131012e+10
+Iteration 28	RHO 1.0e-08	9.131011e+10
+Iteration 41	RHO 1.0e-09	9.131011e+10
+Iteration 48	RHO 1.0e-10	9.131011e+10
+Iteration 51	RHO 1.0e-10	9.131011e+10
+Main optimization
+Iteration 1	RHO 1.0e+00	9.131011e+10
+Iteration 4	RHO 1.0e-01	9.131011e+10
+Iteration 45	RHO 1.0e-02	8.750194e+10
+Iteration 118	RHO 1.0e-03	7.899438e+10
+Iteration 160	RHO 1.0e-04	7.887713e+10
+Iteration 212	RHO 1.0e-05	7.885345e+10
+Iteration 270	RHO 1.0e-06	7.884852e+10
+Iteration 330	RHO 1.0e-07	7.884800e+10
+Iteration 376	RHO 1.0e-08	7.884798e+10
+Iteration 423	RHO 1.0e-09	7.884797e+10
+Iteration 477	RHO 1.0e-10	7.884797e+10
+Iteration 529	RHO 1.0e-10	7.884797e+10
+
+Broadening:  2
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	1.539296e+11
+Iteration 2	RHO 1.0e-01	1.539296e+11
+Iteration 4	RHO 1.0e-02	1.539296e+11
+Iteration 7	RHO 1.0e-03	1.457168e+11
+Iteration 11	RHO 1.0e-04	1.456952e+11
+Iteration 16	RHO 1.0e-05	1.456834e+11
+Iteration 21	RHO 1.0e-06	1.456832e+11
+Iteration 34	RHO 1.0e-07	1.456831e+11
+Iteration 37	RHO 1.0e-08	1.456831e+11
+Iteration 48	RHO 1.0e-09	1.456831e+11
+Iteration 54	RHO 1.0e-10	1.456831e+11
+Iteration 57	RHO 1.0e-10	1.456831e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	1.456831e+11
+Iteration 4	RHO 1.0e-01	1.456831e+11
+Iteration 49	RHO 1.0e-02	1.213336e+11
+Iteration 174	RHO 1.0e-03	9.297076e+10
+Iteration 246	RHO 1.0e-04	9.223680e+10
+Iteration 297	RHO 1.0e-05	9.220520e+10
+Iteration 381	RHO 1.0e-06	9.219454e+10
+Iteration 460	RHO 1.0e-07	9.219333e+10
+Iteration 504	RHO 1.0e-08	9.219328e+10
+Iteration 594	RHO 1.0e-09	9.219327e+10
+Iteration 652	RHO 1.0e-10	9.219327e+10
+Iteration 718	RHO 1.0e-10	9.219327e+10
+
+Broadening:  1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.511311e+11
+Iteration 2	RHO 1.0e-01	4.511311e+11
+Iteration 4	RHO 1.0e-02	4.511311e+11
+Iteration 7	RHO 1.0e-03	4.309708e+11
+Iteration 11	RHO 1.0e-04	4.307478e+11
+Iteration 13	RHO 1.0e-05	4.307349e+11
+Iteration 15	RHO 1.0e-06	4.307320e+11
+Iteration 17	RHO 1.0e-07	4.307317e+11
+Iteration 20	RHO 1.0e-08	4.307317e+11
+Iteration 25	RHO 1.0e-09	4.307316e+11
+Iteration 32	RHO 1.0e-10	4.307316e+11
+Iteration 35	RHO 1.0e-10	4.307316e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.307316e+11
+Iteration 4	RHO 1.0e-01	4.307316e+11
+Iteration 46	RHO 1.0e-02	3.539925e+11
+Iteration 247	RHO 1.0e-03	1.941372e+11
+Iteration 612	RHO 1.0e-04	1.825979e+11
+Iteration 690	RHO 1.0e-05	1.825516e+11
+Iteration 733	RHO 1.0e-06	1.825498e+11
+Iteration 774	RHO 1.0e-07	1.825496e+11
+Iteration 823	RHO 1.0e-08	1.825496e+11
+Iteration 864	RHO 1.0e-09	1.825496e+11
+Iteration 902	RHO 1.0e-10	1.825496e+11
+Iteration 947	RHO 1.0e-10	1.825496e+11
+
+Broadening:  0.5
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	5.585614e+11
+Iteration 2	RHO 1.0e-01	5.585614e+11
+Iteration 4	RHO 1.0e-02	5.585614e+11
+Iteration 7	RHO 1.0e-03	4.998758e+11
+Iteration 11	RHO 1.0e-04	4.969156e+11
+Iteration 14	RHO 1.0e-05	4.968965e+11
+Iteration 17	RHO 1.0e-06	4.968930e+11
+Iteration 20	RHO 1.0e-07	4.968911e+11
+Iteration 23	RHO 1.0e-08	4.968911e+11
+Iteration 34	RHO 1.0e-09	4.968910e+11
+Iteration 39	RHO 1.0e-10	4.968910e+11
+Iteration 50	RHO 1.0e-10	4.968910e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.968910e+11
+Iteration 4	RHO 1.0e-01	4.968910e+11
+Iteration 34	RHO 1.0e-02	4.968910e+11
+Iteration 106	RHO 1.0e-03	4.292578e+11
+Iteration 213	RHO 1.0e-04	4.250754e+11
+Iteration 267	RHO 1.0e-05	4.249328e+11
+Iteration 324	RHO 1.0e-06	4.248883e+11
+Iteration 377	RHO 1.0e-07	4.248858e+11
+Iteration 435	RHO 1.0e-08	4.248856e+11
+Iteration 479	RHO 1.0e-09	4.248856e+11
+Iteration 532	RHO 1.0e-10	4.248856e+11
+Iteration 577	RHO 1.0e-10	4.248856e+11
+
+Broadening:  0.1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.323331e+12
+Iteration 2	RHO 1.0e-01	4.323331e+12
+Iteration 4	RHO 1.0e-02	4.323331e+12
+Iteration 5	RHO 1.0e-03	4.323331e+12
+Iteration 12	RHO 1.0e-04	3.940278e+12
+Iteration 16	RHO 1.0e-05	3.939771e+12
+Iteration 17	RHO 1.0e-06	3.939771e+12
+Iteration 20	RHO 1.0e-07	3.939771e+12
+Iteration 31	RHO 1.0e-08	3.939759e+12
+Iteration 46	RHO 1.0e-09	3.939757e+12
+Iteration 49	RHO 1.0e-10	3.939757e+12
+Iteration 54	RHO 1.0e-10	3.939757e+12
+Main optimization
+Iteration 1	RHO 1.0e+00	3.939757e+12
+Iteration 4	RHO 1.0e-01	3.939757e+12
+Iteration 34	RHO 1.0e-02	3.939757e+12
+Iteration 85	RHO 1.0e-03	3.029798e+12
+Iteration 219	RHO 1.0e-04	2.906180e+12
+Iteration 257	RHO 1.0e-05	2.906063e+12
+Iteration 293	RHO 1.0e-06	2.906036e+12
+Iteration 332	RHO 1.0e-07	2.906033e+12
+Iteration 367	RHO 1.0e-08	2.906033e+12
+Iteration 403	RHO 1.0e-09	2.906033e+12
+Iteration 437	RHO 1.0e-10	2.906033e+12
+Iteration 463	RHO 1.0e-10	2.906033e+12
+
+Broadening:  0
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	2.510274e+13
+Iteration 2	RHO 1.0e-01	2.510274e+13
+Iteration 4	RHO 1.0e-02	2.510274e+13
+Iteration 9	RHO 1.0e-03	2.462785e+13
+Iteration 11	RHO 1.0e-04	2.461139e+13
+Iteration 15	RHO 1.0e-05	2.461021e+13
+Iteration 18	RHO 1.0e-06	2.461019e+13
+Iteration 20	RHO 1.0e-07	2.461019e+13
+Iteration 22	RHO 1.0e-08	2.461019e+13
+Iteration 26	RHO 1.0e-09	2.461019e+13
+Iteration 27	RHO 1.0e-10	2.461019e+13
+Iteration 30	RHO 1.0e-10	2.461019e+13
+Main optimization
+Iteration 1	RHO 1.0e+00	2.461019e+13
+Iteration 4	RHO 1.0e-01	2.461019e+13
+Iteration 34	RHO 1.0e-02	2.461019e+13
+Iteration 65	RHO 1.0e-03	2.328053e+13
+Iteration 103	RHO 1.0e-04	2.287176e+13
+Iteration 311	RHO 1.0e-05	2.278101e+13
+Iteration 436	RHO 1.0e-06	2.278082e+13
+Iteration 510	RHO 1.0e-07	2.278082e+13
+Iteration 552	RHO 1.0e-08	2.278082e+13
+Iteration 583	RHO 1.0e-09	2.278082e+13
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+Broadening:  3
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	9.153015e+10
+Iteration 2	RHO 1.0e-01	9.153015e+10
+Iteration 4	RHO 1.0e-02	9.153015e+10
+Iteration 6	RHO 1.0e-03	9.132662e+10
+Iteration 8	RHO 1.0e-04	9.131160e+10
+Iteration 12	RHO 1.0e-05	9.131078e+10
+Iteration 19	RHO 1.0e-06	9.131016e+10
+Iteration 23	RHO 1.0e-07	9.131012e+10
+Iteration 28	RHO 1.0e-08	9.131011e+10
+Iteration 41	RHO 1.0e-09	9.131011e+10
+Iteration 48	RHO 1.0e-10	9.131011e+10
+Iteration 51	RHO 1.0e-10	9.131011e+10
+Main optimization
+Iteration 1	RHO 1.0e+00	9.131011e+10
+Iteration 4	RHO 1.0e-01	9.131011e+10
+Iteration 45	RHO 1.0e-02	8.750194e+10
+Iteration 118	RHO 1.0e-03	7.899438e+10
+Iteration 160	RHO 1.0e-04	7.887713e+10
+Iteration 212	RHO 1.0e-05	7.885345e+10
+Iteration 270	RHO 1.0e-06	7.884852e+10
+Iteration 330	RHO 1.0e-07	7.884800e+10
+Iteration 376	RHO 1.0e-08	7.884798e+10
+Iteration 423	RHO 1.0e-09	7.884797e+10
+Iteration 477	RHO 1.0e-10	7.884797e+10
+Iteration 529	RHO 1.0e-10	7.884797e+10
+
+Broadening:  2
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	1.539296e+11
+Iteration 2	RHO 1.0e-01	1.539296e+11
+Iteration 4	RHO 1.0e-02	1.539296e+11
+Iteration 7	RHO 1.0e-03	1.457168e+11
+Iteration 11	RHO 1.0e-04	1.456952e+11
+Iteration 16	RHO 1.0e-05	1.456834e+11
+Iteration 21	RHO 1.0e-06	1.456832e+11
+Iteration 34	RHO 1.0e-07	1.456831e+11
+Iteration 37	RHO 1.0e-08	1.456831e+11
+Iteration 48	RHO 1.0e-09	1.456831e+11
+Iteration 54	RHO 1.0e-10	1.456831e+11
+Iteration 57	RHO 1.0e-10	1.456831e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	1.456831e+11
+Iteration 4	RHO 1.0e-01	1.456831e+11
+Iteration 49	RHO 1.0e-02	1.213336e+11
+Iteration 174	RHO 1.0e-03	9.297076e+10
+Iteration 246	RHO 1.0e-04	9.223680e+10
+Iteration 297	RHO 1.0e-05	9.220520e+10
+Iteration 381	RHO 1.0e-06	9.219454e+10
+Iteration 460	RHO 1.0e-07	9.219333e+10
+Iteration 504	RHO 1.0e-08	9.219328e+10
+Iteration 594	RHO 1.0e-09	9.219327e+10
+Iteration 652	RHO 1.0e-10	9.219327e+10
+Iteration 718	RHO 1.0e-10	9.219327e+10
+
+Broadening:  1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.511311e+11
+Iteration 2	RHO 1.0e-01	4.511311e+11
+Iteration 4	RHO 1.0e-02	4.511311e+11
+Iteration 7	RHO 1.0e-03	4.309708e+11
+Iteration 11	RHO 1.0e-04	4.307478e+11
+Iteration 13	RHO 1.0e-05	4.307349e+11
+Iteration 15	RHO 1.0e-06	4.307320e+11
+Iteration 17	RHO 1.0e-07	4.307317e+11
+Iteration 20	RHO 1.0e-08	4.307317e+11
+Iteration 25	RHO 1.0e-09	4.307316e+11
+Iteration 32	RHO 1.0e-10	4.307316e+11
+Iteration 35	RHO 1.0e-10	4.307316e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.307316e+11
+Iteration 4	RHO 1.0e-01	4.307316e+11
+Iteration 46	RHO 1.0e-02	3.539925e+11
+Iteration 247	RHO 1.0e-03	1.941372e+11
+Iteration 612	RHO 1.0e-04	1.825979e+11
+Iteration 690	RHO 1.0e-05	1.825516e+11
+Iteration 733	RHO 1.0e-06	1.825498e+11
+Iteration 774	RHO 1.0e-07	1.825496e+11
+Iteration 823	RHO 1.0e-08	1.825496e+11
+Iteration 864	RHO 1.0e-09	1.825496e+11
+Iteration 902	RHO 1.0e-10	1.825496e+11
+Iteration 947	RHO 1.0e-10	1.825496e+11
+
+Broadening:  0.5
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	5.585614e+11
+Iteration 2	RHO 1.0e-01	5.585614e+11
+Iteration 4	RHO 1.0e-02	5.585614e+11
+Iteration 7	RHO 1.0e-03	4.998758e+11
+Iteration 11	RHO 1.0e-04	4.969156e+11
+Iteration 14	RHO 1.0e-05	4.968965e+11
+Iteration 17	RHO 1.0e-06	4.968930e+11
+Iteration 20	RHO 1.0e-07	4.968911e+11
+Iteration 23	RHO 1.0e-08	4.968911e+11
+Iteration 34	RHO 1.0e-09	4.968910e+11
+Iteration 39	RHO 1.0e-10	4.968910e+11
+Iteration 50	RHO 1.0e-10	4.968910e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.968910e+11
+Iteration 4	RHO 1.0e-01	4.968910e+11
+Iteration 34	RHO 1.0e-02	4.968910e+11
+Iteration 106	RHO 1.0e-03	4.292578e+11
+Iteration 213	RHO 1.0e-04	4.250754e+11
+Iteration 267	RHO 1.0e-05	4.249328e+11
+Iteration 324	RHO 1.0e-06	4.248883e+11
+Iteration 377	RHO 1.0e-07	4.248858e+11
+Iteration 435	RHO 1.0e-08	4.248856e+11
+Iteration 479	RHO 1.0e-09	4.248856e+11
+Iteration 532	RHO 1.0e-10	4.248856e+11
+Iteration 577	RHO 1.0e-10	4.248856e+11
+
+Broadening:  0.1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.323331e+12
+Iteration 2	RHO 1.0e-01	4.323331e+12
+Iteration 4	RHO 1.0e-02	4.323331e+12
+Iteration 5	RHO 1.0e-03	4.323331e+12
+Iteration 12	RHO 1.0e-04	3.940278e+12
+Iteration 16	RHO 1.0e-05	3.939771e+12
+Iteration 17	RHO 1.0e-06	3.939771e+12
+Iteration 20	RHO 1.0e-07	3.939771e+12
+Iteration 31	RHO 1.0e-08	3.939759e+12
+Iteration 46	RHO 1.0e-09	3.939757e+12
+Iteration 49	RHO 1.0e-10	3.939757e+12
+Iteration 54	RHO 1.0e-10	3.939757e+12
+Main optimization
+Iteration 1	RHO 1.0e+00	3.939757e+12
+Iteration 4	RHO 1.0e-01	3.939757e+12
+Iteration 34	RHO 1.0e-02	3.939757e+12
+Iteration 85	RHO 1.0e-03	3.029798e+12
+Iteration 219	RHO 1.0e-04	2.906180e+12
+Iteration 257	RHO 1.0e-05	2.906063e+12
+Iteration 293	RHO 1.0e-06	2.906036e+12
+Iteration 332	RHO 1.0e-07	2.906033e+12
+Iteration 367	RHO 1.0e-08	2.906033e+12
+Iteration 403	RHO 1.0e-09	2.906033e+12
+Iteration 437	RHO 1.0e-10	2.906033e+12
+Iteration 463	RHO 1.0e-10	2.906033e+12
+
+Broadening:  0
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	2.510274e+13
+Iteration 2	RHO 1.0e-01	2.510274e+13
+Iteration 4	RHO 1.0e-02	2.510274e+13
+Iteration 9	RHO 1.0e-03	2.462785e+13
+Iteration 11	RHO 1.0e-04	2.461139e+13
+Iteration 15	RHO 1.0e-05	2.461021e+13
+Iteration 18	RHO 1.0e-06	2.461019e+13
+Iteration 20	RHO 1.0e-07	2.461019e+13
+Iteration 22	RHO 1.0e-08	2.461019e+13
+Iteration 26	RHO 1.0e-09	2.461019e+13
+Iteration 27	RHO 1.0e-10	2.461019e+13
+Iteration 30	RHO 1.0e-10	2.461019e+13
+Main optimization
+Iteration 1	RHO 1.0e+00	2.461019e+13
+Iteration 4	RHO 1.0e-01	2.461019e+13
+Iteration 34	RHO 1.0e-02	2.461019e+13
+Iteration 65	RHO 1.0e-03	2.328053e+13
+Iteration 103	RHO 1.0e-04	2.287176e+13
+Iteration 311	RHO 1.0e-05	2.278101e+13
+Iteration 436	RHO 1.0e-06	2.278082e+13
+Iteration 510	RHO 1.0e-07	2.278082e+13
+Iteration 552	RHO 1.0e-08	2.278082e+13
+Iteration 583	RHO 1.0e-09	2.278082e+13
+Iteration 608	RHO 1.0e-10	2.278082e+13
+Iteration 638	RHO 1.0e-10	2.278082e+13
+
+R-Factor: 4.77 %
+
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+When publishing results obtained with this program, please cite:
+D.A. Cheshkov, K.F. Sheberstov, D.O. Sinitsyn, V.A. Chertkov, ANATOLIA: NMR
+software for spectral analysis of total lineshape. Magn. Reson. Chem., 2018,
+56, 449, DOI: 10.1002/mrc.4689.
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+Broadening:  3
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	9.153015e+10
+Iteration 2	RHO 1.0e-01	9.153015e+10
+Iteration 4	RHO 1.0e-02	9.153015e+10
+Iteration 6	RHO 1.0e-03	9.132662e+10
+Iteration 8	RHO 1.0e-04	9.131160e+10
+Iteration 12	RHO 1.0e-05	9.131078e+10
+Iteration 19	RHO 1.0e-06	9.131016e+10
+Iteration 23	RHO 1.0e-07	9.131012e+10
+Iteration 28	RHO 1.0e-08	9.131011e+10
+Iteration 41	RHO 1.0e-09	9.131011e+10
+Iteration 48	RHO 1.0e-10	9.131011e+10
+Iteration 51	RHO 1.0e-10	9.131011e+10
+Main optimization
+Iteration 1	RHO 1.0e+00	9.131011e+10
+Iteration 4	RHO 1.0e-01	9.131011e+10
+Iteration 45	RHO 1.0e-02	8.750194e+10
+Iteration 118	RHO 1.0e-03	7.899438e+10
+Iteration 160	RHO 1.0e-04	7.887713e+10
+Iteration 212	RHO 1.0e-05	7.885345e+10
+Iteration 270	RHO 1.0e-06	7.884852e+10
+Iteration 330	RHO 1.0e-07	7.884800e+10
+Iteration 376	RHO 1.0e-08	7.884798e+10
+Iteration 423	RHO 1.0e-09	7.884797e+10
+Iteration 477	RHO 1.0e-10	7.884797e+10
+Iteration 529	RHO 1.0e-10	7.884797e+10
+
+Broadening:  2
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	1.539296e+11
+Iteration 2	RHO 1.0e-01	1.539296e+11
+Iteration 4	RHO 1.0e-02	1.539296e+11
+Iteration 7	RHO 1.0e-03	1.457168e+11
+Iteration 11	RHO 1.0e-04	1.456952e+11
+Iteration 16	RHO 1.0e-05	1.456834e+11
+Iteration 21	RHO 1.0e-06	1.456832e+11
+Iteration 34	RHO 1.0e-07	1.456831e+11
+Iteration 37	RHO 1.0e-08	1.456831e+11
+Iteration 48	RHO 1.0e-09	1.456831e+11
+Iteration 54	RHO 1.0e-10	1.456831e+11
+Iteration 57	RHO 1.0e-10	1.456831e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	1.456831e+11
+Iteration 4	RHO 1.0e-01	1.456831e+11
+Iteration 49	RHO 1.0e-02	1.213336e+11
+Iteration 174	RHO 1.0e-03	9.297076e+10
+Iteration 246	RHO 1.0e-04	9.223680e+10
+Iteration 297	RHO 1.0e-05	9.220520e+10
+Iteration 381	RHO 1.0e-06	9.219454e+10
+Iteration 460	RHO 1.0e-07	9.219333e+10
+Iteration 504	RHO 1.0e-08	9.219328e+10
+Iteration 594	RHO 1.0e-09	9.219327e+10
+Iteration 652	RHO 1.0e-10	9.219327e+10
+Iteration 718	RHO 1.0e-10	9.219327e+10
+
+Broadening:  1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.511311e+11
+Iteration 2	RHO 1.0e-01	4.511311e+11
+Iteration 4	RHO 1.0e-02	4.511311e+11
+Iteration 7	RHO 1.0e-03	4.309708e+11
+Iteration 11	RHO 1.0e-04	4.307478e+11
+Iteration 13	RHO 1.0e-05	4.307349e+11
+Iteration 15	RHO 1.0e-06	4.307320e+11
+Iteration 17	RHO 1.0e-07	4.307317e+11
+Iteration 20	RHO 1.0e-08	4.307317e+11
+Iteration 25	RHO 1.0e-09	4.307316e+11
+Iteration 32	RHO 1.0e-10	4.307316e+11
+Iteration 35	RHO 1.0e-10	4.307316e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.307316e+11
+Iteration 4	RHO 1.0e-01	4.307316e+11
+Iteration 46	RHO 1.0e-02	3.539925e+11
+Iteration 247	RHO 1.0e-03	1.941372e+11
+Iteration 612	RHO 1.0e-04	1.825979e+11
+Iteration 690	RHO 1.0e-05	1.825516e+11
+Iteration 733	RHO 1.0e-06	1.825498e+11
+Iteration 774	RHO 1.0e-07	1.825496e+11
+Iteration 823	RHO 1.0e-08	1.825496e+11
+Iteration 864	RHO 1.0e-09	1.825496e+11
+Iteration 902	RHO 1.0e-10	1.825496e+11
+Iteration 947	RHO 1.0e-10	1.825496e+11
+
+Broadening:  0.5
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	5.585614e+11
+Iteration 2	RHO 1.0e-01	5.585614e+11
+Iteration 4	RHO 1.0e-02	5.585614e+11
+Iteration 7	RHO 1.0e-03	4.998758e+11
+Iteration 11	RHO 1.0e-04	4.969156e+11
+Iteration 14	RHO 1.0e-05	4.968965e+11
+Iteration 17	RHO 1.0e-06	4.968930e+11
+Iteration 20	RHO 1.0e-07	4.968911e+11
+Iteration 23	RHO 1.0e-08	4.968911e+11
+Iteration 34	RHO 1.0e-09	4.968910e+11
+Iteration 39	RHO 1.0e-10	4.968910e+11
+Iteration 50	RHO 1.0e-10	4.968910e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.968910e+11
+Iteration 4	RHO 1.0e-01	4.968910e+11
+Iteration 34	RHO 1.0e-02	4.968910e+11
+Iteration 106	RHO 1.0e-03	4.292578e+11
+Iteration 213	RHO 1.0e-04	4.250754e+11
+Iteration 267	RHO 1.0e-05	4.249328e+11
+Iteration 324	RHO 1.0e-06	4.248883e+11
+Iteration 377	RHO 1.0e-07	4.248858e+11
+Iteration 435	RHO 1.0e-08	4.248856e+11
+Iteration 479	RHO 1.0e-09	4.248856e+11
+Iteration 532	RHO 1.0e-10	4.248856e+11
+Iteration 577	RHO 1.0e-10	4.248856e+11
+
+Broadening:  0.1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.323331e+12
+Iteration 2	RHO 1.0e-01	4.323331e+12
+Iteration 4	RHO 1.0e-02	4.323331e+12
+Iteration 5	RHO 1.0e-03	4.323331e+12
+Iteration 12	RHO 1.0e-04	3.940278e+12
+Iteration 16	RHO 1.0e-05	3.939771e+12
+Iteration 17	RHO 1.0e-06	3.939771e+12
+Iteration 20	RHO 1.0e-07	3.939771e+12
+Iteration 31	RHO 1.0e-08	3.939759e+12
+Iteration 46	RHO 1.0e-09	3.939757e+12
+Iteration 49	RHO 1.0e-10	3.939757e+12
+Iteration 54	RHO 1.0e-10	3.939757e+12
+Main optimization
+Iteration 1	RHO 1.0e+00	3.939757e+12
+Iteration 4	RHO 1.0e-01	3.939757e+12
+Iteration 34	RHO 1.0e-02	3.939757e+12
+Iteration 85	RHO 1.0e-03	3.029798e+12
+Iteration 219	RHO 1.0e-04	2.906180e+12
+Iteration 257	RHO 1.0e-05	2.906063e+12
+Iteration 293	RHO 1.0e-06	2.906036e+12
+Iteration 332	RHO 1.0e-07	2.906033e+12
+Iteration 367	RHO 1.0e-08	2.906033e+12
+Iteration 403	RHO 1.0e-09	2.906033e+12
+Iteration 437	RHO 1.0e-10	2.906033e+12
+Iteration 463	RHO 1.0e-10	2.906033e+12
+
+Broadening:  0
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	2.510274e+13
+Iteration 2	RHO 1.0e-01	2.510274e+13
+Iteration 4	RHO 1.0e-02	2.510274e+13
+Iteration 9	RHO 1.0e-03	2.462785e+13
+Iteration 11	RHO 1.0e-04	2.461139e+13
+Iteration 15	RHO 1.0e-05	2.461021e+13
+Iteration 18	RHO 1.0e-06	2.461019e+13
+Iteration 20	RHO 1.0e-07	2.461019e+13
+Iteration 22	RHO 1.0e-08	2.461019e+13
+Iteration 26	RHO 1.0e-09	2.461019e+13
+Iteration 27	RHO 1.0e-10	2.461019e+13
+Iteration 30	RHO 1.0e-10	2.461019e+13
+Main optimization
+Iteration 1	RHO 1.0e+00	2.461019e+13
+Iteration 4	RHO 1.0e-01	2.461019e+13
+Iteration 34	RHO 1.0e-02	2.461019e+13
+Iteration 65	RHO 1.0e-03	2.328053e+13
+Iteration 103	RHO 1.0e-04	2.287176e+13
+Iteration 311	RHO 1.0e-05	2.278101e+13
+Iteration 436	RHO 1.0e-06	2.278082e+13
+Iteration 510	RHO 1.0e-07	2.278082e+13
+Iteration 552	RHO 1.0e-08	2.278082e+13
+Iteration 583	RHO 1.0e-09	2.278082e+13
+Iteration 608	RHO 1.0e-10	2.278082e+13
+Iteration 638	RHO 1.0e-10	2.278082e+13
+
+R-Factor: 4.77 %
+
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+When publishing results obtained with this program, please cite:
+D.A. Cheshkov, K.F. Sheberstov, D.O. Sinitsyn, V.A. Chertkov, ANATOLIA: NMR
+software for spectral analysis of total lineshape. Magn. Reson. Chem., 2018,
+56, 449, DOI: 10.1002/mrc.4689.
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+Broadening:  3
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	9.153015e+10
+Iteration 2	RHO 1.0e-01	9.153015e+10
+Iteration 4	RHO 1.0e-02	9.153015e+10
+Iteration 6	RHO 1.0e-03	9.132662e+10
+Iteration 8	RHO 1.0e-04	9.131160e+10
+Iteration 12	RHO 1.0e-05	9.131078e+10
+Iteration 19	RHO 1.0e-06	9.131016e+10
+Iteration 23	RHO 1.0e-07	9.131012e+10
+Iteration 28	RHO 1.0e-08	9.131011e+10
+Iteration 41	RHO 1.0e-09	9.131011e+10
+Iteration 48	RHO 1.0e-10	9.131011e+10
+Iteration 51	RHO 1.0e-10	9.131011e+10
+Main optimization
+Iteration 1	RHO 1.0e+00	9.131011e+10
+Iteration 4	RHO 1.0e-01	9.131011e+10
+Iteration 45	RHO 1.0e-02	8.750194e+10
+Iteration 118	RHO 1.0e-03	7.899438e+10
+Iteration 160	RHO 1.0e-04	7.887713e+10
+Iteration 212	RHO 1.0e-05	7.885345e+10
+Iteration 270	RHO 1.0e-06	7.884852e+10
+Iteration 330	RHO 1.0e-07	7.884800e+10
+Iteration 376	RHO 1.0e-08	7.884798e+10
+Iteration 423	RHO 1.0e-09	7.884797e+10
+Iteration 477	RHO 1.0e-10	7.884797e+10
+Iteration 529	RHO 1.0e-10	7.884797e+10
+
+Broadening:  2
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	1.539296e+11
+Iteration 2	RHO 1.0e-01	1.539296e+11
+Iteration 4	RHO 1.0e-02	1.539296e+11
+Iteration 7	RHO 1.0e-03	1.457168e+11
+Iteration 11	RHO 1.0e-04	1.456952e+11
+Iteration 16	RHO 1.0e-05	1.456834e+11
+Iteration 21	RHO 1.0e-06	1.456832e+11
+Iteration 34	RHO 1.0e-07	1.456831e+11
+Iteration 37	RHO 1.0e-08	1.456831e+11
+Iteration 48	RHO 1.0e-09	1.456831e+11
+Iteration 54	RHO 1.0e-10	1.456831e+11
+Iteration 57	RHO 1.0e-10	1.456831e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	1.456831e+11
+Iteration 4	RHO 1.0e-01	1.456831e+11
+Iteration 49	RHO 1.0e-02	1.213336e+11
+Iteration 174	RHO 1.0e-03	9.297076e+10
+Iteration 246	RHO 1.0e-04	9.223680e+10
+Iteration 297	RHO 1.0e-05	9.220520e+10
+Iteration 381	RHO 1.0e-06	9.219454e+10
+Iteration 460	RHO 1.0e-07	9.219333e+10
+Iteration 504	RHO 1.0e-08	9.219328e+10
+Iteration 594	RHO 1.0e-09	9.219327e+10
+Iteration 652	RHO 1.0e-10	9.219327e+10
+Iteration 718	RHO 1.0e-10	9.219327e+10
+
+Broadening:  1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.511311e+11
+Iteration 2	RHO 1.0e-01	4.511311e+11
+Iteration 4	RHO 1.0e-02	4.511311e+11
+Iteration 7	RHO 1.0e-03	4.309708e+11
+Iteration 11	RHO 1.0e-04	4.307478e+11
+Iteration 13	RHO 1.0e-05	4.307349e+11
+Iteration 15	RHO 1.0e-06	4.307320e+11
+Iteration 17	RHO 1.0e-07	4.307317e+11
+Iteration 20	RHO 1.0e-08	4.307317e+11
+Iteration 25	RHO 1.0e-09	4.307316e+11
+Iteration 32	RHO 1.0e-10	4.307316e+11
+Iteration 35	RHO 1.0e-10	4.307316e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.307316e+11
+Iteration 4	RHO 1.0e-01	4.307316e+11
+Iteration 46	RHO 1.0e-02	3.539925e+11
+Iteration 247	RHO 1.0e-03	1.941372e+11
+Iteration 612	RHO 1.0e-04	1.825979e+11
+Iteration 690	RHO 1.0e-05	1.825516e+11
+Iteration 733	RHO 1.0e-06	1.825498e+11
+Iteration 774	RHO 1.0e-07	1.825496e+11
+Iteration 823	RHO 1.0e-08	1.825496e+11
+Iteration 864	RHO 1.0e-09	1.825496e+11
+Iteration 902	RHO 1.0e-10	1.825496e+11
+Iteration 947	RHO 1.0e-10	1.825496e+11
+
+Broadening:  0.5
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	5.585614e+11
+Iteration 2	RHO 1.0e-01	5.585614e+11
+Iteration 4	RHO 1.0e-02	5.585614e+11
+Iteration 7	RHO 1.0e-03	4.998758e+11
+Iteration 11	RHO 1.0e-04	4.969156e+11
+Iteration 14	RHO 1.0e-05	4.968965e+11
+Iteration 17	RHO 1.0e-06	4.968930e+11
+Iteration 20	RHO 1.0e-07	4.968911e+11
+Iteration 23	RHO 1.0e-08	4.968911e+11
+Iteration 34	RHO 1.0e-09	4.968910e+11
+Iteration 39	RHO 1.0e-10	4.968910e+11
+Iteration 50	RHO 1.0e-10	4.968910e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.968910e+11
+Iteration 4	RHO 1.0e-01	4.968910e+11
+Iteration 34	RHO 1.0e-02	4.968910e+11
+Iteration 106	RHO 1.0e-03	4.292578e+11
+Iteration 213	RHO 1.0e-04	4.250754e+11
+Iteration 267	RHO 1.0e-05	4.249328e+11
+Iteration 324	RHO 1.0e-06	4.248883e+11
+Iteration 377	RHO 1.0e-07	4.248858e+11
+Iteration 435	RHO 1.0e-08	4.248856e+11
+Iteration 479	RHO 1.0e-09	4.248856e+11
+Iteration 532	RHO 1.0e-10	4.248856e+11
+Iteration 577	RHO 1.0e-10	4.248856e+11
+
+Broadening:  0.1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.323331e+12
+Iteration 2	RHO 1.0e-01	4.323331e+12
+Iteration 4	RHO 1.0e-02	4.323331e+12
+Iteration 5	RHO 1.0e-03	4.323331e+12
+Iteration 12	RHO 1.0e-04	3.940278e+12
+Iteration 16	RHO 1.0e-05	3.939771e+12
+Iteration 17	RHO 1.0e-06	3.939771e+12
+Iteration 20	RHO 1.0e-07	3.939771e+12
+Iteration 31	RHO 1.0e-08	3.939759e+12
+Iteration 46	RHO 1.0e-09	3.939757e+12
+Iteration 49	RHO 1.0e-10	3.939757e+12
+Iteration 54	RHO 1.0e-10	3.939757e+12
+Main optimization
+Iteration 1	RHO 1.0e+00	3.939757e+12
+Iteration 4	RHO 1.0e-01	3.939757e+12
+Iteration 34	RHO 1.0e-02	3.939757e+12
+Iteration 85	RHO 1.0e-03	3.029798e+12
+Iteration 219	RHO 1.0e-04	2.906180e+12
+Iteration 257	RHO 1.0e-05	2.906063e+12
+Iteration 293	RHO 1.0e-06	2.906036e+12
+Iteration 332	RHO 1.0e-07	2.906033e+12
+Iteration 367	RHO 1.0e-08	2.906033e+12
+Iteration 403	RHO 1.0e-09	2.906033e+12
+Iteration 437	RHO 1.0e-10	2.906033e+12
+Iteration 463	RHO 1.0e-10	2.906033e+12
+
+Broadening:  0
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	2.510274e+13
+Iteration 2	RHO 1.0e-01	2.510274e+13
+Iteration 4	RHO 1.0e-02	2.510274e+13
+Iteration 9	RHO 1.0e-03	2.462785e+13
+Iteration 11	RHO 1.0e-04	2.461139e+13
+Iteration 15	RHO 1.0e-05	2.461021e+13
+Iteration 18	RHO 1.0e-06	2.461019e+13
+Iteration 20	RHO 1.0e-07	2.461019e+13
+Iteration 22	RHO 1.0e-08	2.461019e+13
+Iteration 26	RHO 1.0e-09	2.461019e+13
+Iteration 27	RHO 1.0e-10	2.461019e+13
+Iteration 30	RHO 1.0e-10	2.461019e+13
+Main optimization
+Iteration 1	RHO 1.0e+00	2.461019e+13
+Iteration 4	RHO 1.0e-01	2.461019e+13
+Iteration 34	RHO 1.0e-02	2.461019e+13
+Iteration 65	RHO 1.0e-03	2.328053e+13
+Iteration 103	RHO 1.0e-04	2.287176e+13
+Iteration 311	RHO 1.0e-05	2.278101e+13
+Iteration 436	RHO 1.0e-06	2.278082e+13
+Iteration 510	RHO 1.0e-07	2.278082e+13
+Iteration 552	RHO 1.0e-08	2.278082e+13
+Iteration 583	RHO 1.0e-09	2.278082e+13
+Iteration 608	RHO 1.0e-10	2.278082e+13
+Iteration 638	RHO 1.0e-10	2.278082e+13
+
+R-Factor: 4.77 %
+
+4.769970 4.769970
+4.769970 4.769970
+4.769970 4.769970
+4.769970 4.769970
+41.609408 4.769970
+4.769970 4.769970
+41.609408 4.769970
+4.769970 4.769970
+49.712395 4.769970
+4.769970 4.769970
+49.712395 4.769970
+4.769970 4.769970
+64.590135 4.769970
+4.769970 4.769970
+64.590135 4.769970
+4.769970 4.769970
+48.387311 4.769970
+4.769970 4.769970
+48.387311 4.769970
+4.769970 4.769970
+63.606740 4.769970
+4.769970 4.769970
+63.606740 4.769970
+4.769970 4.769970
+53.124893 4.769970
+4.769970 4.769970
+53.124893 4.769970
+4.769970 4.769970
+67.376601 4.769970
+4.769970 4.769970
+67.376601 4.769970
+4.769970 4.769970
+51.695507 4.769970
+4.769970 4.769970
+51.695507 4.769970
+4.769970 4.769970
+65.619350 4.769970
+4.769970 4.769970
+65.619350 4.769970
+4.769970 4.769970
+76.023474 4.769970
+4.769970 4.769970
+76.023474 4.769970
+4.769970 4.769970
+85.561354 4.769970
+4.769970 4.769970
+85.561354 4.769970
+4.769970 4.769970
+69.215442 4.769970
+4.769970 4.769970
+69.215442 4.769970
+4.769970 4.769970
+80.279356 4.769970
+4.769970 4.769970
+80.279356 4.769970
+4.769970 4.769970
+73.629974 4.769970
+4.769970 4.769970
+73.629974 4.769970
+4.769970 4.769970
+83.969531 4.769970
+4.769970 4.769970
+83.969531 4.769970
+4.769970 4.769970
+65.582393 4.769970
+4.769970 4.769970
+65.582393 4.769970
+4.769970 4.769970
+75.113277 4.769970
+4.769970 4.769970
+75.113277 4.769970
+4.769970 4.769970
+78.032876 4.769970
+4.769970 4.769970
+78.032876 4.769970
+4.769970 4.769970
+86.197888 4.769970
+4.769970 4.769970
+86.197888 4.769970
+4.769970 4.769970
+80.196362 4.769970
+4.769970 4.769970
+80.196362 4.769970
+4.769970 4.769970
+88.164726 4.769970
+4.769970 4.769970
+88.164726 4.769970
+4.769970 4.769970
+82.052024 4.769970
+4.769970 4.769970
+82.052024 4.769970
+4.769970 4.769970
+89.847525 4.769970
+4.769970 4.769970
+89.847525 4.769970
+4.769970 4.769970
+77.486295 4.769970
+4.769970 4.769970
+77.486295 4.769970
+4.769970 4.769970
+84.818737 4.769970
+4.769970 4.769970
+84.818737 4.769970
+4.769970 4.769970
+87.504474 4.769970
+4.769970 4.769970
+87.504474 4.769970
+4.769970 4.769970
+94.143199 4.769970
+4.769970 4.769970
+94.143199 4.769970
+4.769970 4.769970
+89.098916 4.769970
+4.769970 4.769970
+89.098916 4.769970
+4.769970 4.769970
+95.717402 4.769970
+4.769970 4.769970
+95.717402 4.769970
+4.769970 4.769970
+89.776857 4.769970
+4.769970 4.769970
+89.776857 4.769970
+4.769970 4.769970
+96.251112 4.769970
+4.769970 4.769970
+96.251112 4.769970
+4.769970 4.769970
+85.126511 4.769970
+4.769970 4.769970
+85.126511 4.769970
+4.769970 4.769970
+92.758783 4.769970
+4.769970 4.769970
+92.758783 4.769970
+4.769970 4.769970
+91.952578 4.769970
+4.769970 4.769970
+91.952578 4.769970
+4.769970 4.769970
+107.806640 4.769970
+4.769970 4.769970
+107.806640 4.769970
+4.769970 4.769970
+90.967867 4.769970
+4.769970 4.769970
+90.967867 4.769970
+4.769970 4.769970
+112.123095 4.769970
+4.769970 4.769970
+112.123095 4.769970
+4.769970 4.769970
+91.793044 4.769970
+4.769970 4.769970
+91.793044 4.769970
+4.769970 4.769970
+108.682594 4.769970
+4.769970 4.769970
+108.682594 4.769970
+4.769970 4.769970
+92.305802 4.769970
+4.769970 4.769970
+92.305802 4.769970
+4.769970 4.769970
+101.275781 4.769970
+4.769970 4.769970
+101.275781 4.769970
+4.769970 4.769970
+98.270238 4.769970
+4.769970 4.769970
+98.270238 4.769970
+4.769970 4.769970
+106.116785 4.769970
+4.769970 4.769970
+106.116785 4.769970
+4.769970 4.769970
+97.192030 4.769970
+4.769970 4.769970
+97.192030 4.769970
+4.769970 4.769970
+104.600575 4.769970
+4.769970 4.769970
+104.600575 4.769970
+4.769970 4.769970
+97.124956 4.769970
+4.769970 4.769970
+97.124956 4.769970
+4.769970 4.769970
+104.444891 4.769970
+4.769970 4.769970
+104.444891 4.769970
+4.769970 4.769970
+118.213208 4.769970
+4.769970 4.769970
+118.213208 4.769970
+4.769970 4.769970
+121.739902 4.769970
+4.769970 4.769970
+121.739902 4.769970
+4.769970 4.769970
+118.734258 4.769970
+4.769970 4.769970
+118.734258 4.769970
+4.769970 4.769970
+137.714353 4.769970
+4.769970 4.769970
+137.714353 4.769970
+4.769970 4.769970
+118.451390 4.769970
+4.769970 4.769970
+118.451390 4.769970
+4.769970 4.769970
+136.205168 4.769970
+4.769970 4.769970
+136.205168 4.769970
+4.769970 4.769970
+112.992730 4.769970
+4.769970 4.769970
+112.992730 4.769970
+4.769970 4.769970
+124.792014 4.769970
+4.769970 4.769970
+124.792014 4.769970
+4.769970 4.769970
+107.735243 4.769970
+4.769970 4.769970
+107.735243 4.769970
+4.769970 4.769970
+118.195382 4.769970
+4.769970 4.769970
+118.195382 4.769970
+4.769970 4.769970
+109.707256 4.769970
+4.769970 4.769970
+109.707256 4.769970
+4.769970 4.769970
+125.022609 4.769970
+4.769970 4.769970
+125.022609 4.769970
+4.769970 4.769970
+108.988987 4.769970
+4.769970 4.769970
+108.988987 4.769970
+4.769970 4.769970
+124.649891 4.769970
+4.769970 4.769970
+124.649891 4.769970
+4.769970 4.769970
+104.668010 4.769970
+4.769970 4.769970
+104.668010 4.769970
+4.769970 4.769970
+121.314959 4.769970
+4.769970 4.769970
+121.314959 4.769970
+4.769970 4.769970
+114.800289 4.769970
+4.769970 4.769970
+114.800289 4.769970
+4.769970 4.769970
+121.202445 4.769970
+4.769970 4.769970
+121.202445 4.769970
+4.769970 4.769970
+114.868965 4.769970
+4.769970 4.769970
+114.868965 4.769970
+4.769970 4.769970
+121.833043 4.769970
+4.769970 4.769970
+121.833043 4.769970
+4.769970 4.769970
+114.109388 4.769970
+4.769970 4.769970
+114.109388 4.769970
+4.769970 4.769970
+122.069871 4.769970
+4.769970 4.769970
+122.069871 4.769970
+4.769970 4.769970
+111.077235 4.769970
+4.769970 4.769970
+111.077235 4.769970
+4.769970 4.769970
+118.320564 4.769970
+4.769970 4.769970
+118.320564 4.769970
+4.769970 4.769970
+95.247385 4.769970
+4.769970 4.769970
+95.247385 4.769970
+4.769970 4.769970
+100.118097 4.769970
+4.769970 4.769970
+100.118097 4.769970
+4.769970 4.769970
+100.082071 4.769970
+4.769970 4.769970
+100.082071 4.769970
+4.769970 4.769970
+104.070927 4.769970
+4.769970 4.769970
+104.070927 4.769970
+4.769970 4.769970
+99.479537 4.769970
+4.769970 4.769970
+99.479537 4.769970
+4.769970 4.769970
+103.827525 4.769970
+4.769970 4.769970
+103.827525 4.769970
+4.769970 4.769970
+99.195896 4.769970
+4.769970 4.769970
+99.195896 4.769970
+4.769970 4.769970
+103.808637 4.769970
+4.769970 4.769970
+103.808637 4.769970
+4.769970 4.769970
+90.815538 4.769970
+4.769970 4.769970
+90.815538 4.769970
+4.769970 4.769970
+94.033340 4.769970
+4.769970 4.769970
+94.033340 4.769970
+4.769970 4.769970
+97.181107 4.769970
+4.769970 4.769970
+97.181107 4.769970
+4.769970 4.769970
+102.359172 4.769970
+4.769970 4.769970
+102.359172 4.769970
+4.769970 4.769970
+96.764452 4.769970
+4.769970 4.769970
+96.764452 4.769970
+4.769970 4.769970
+116.442556 4.769970
+4.769970 4.769970
+116.442556 4.769970
+4.769970 4.769970
+96.467599 4.769970
+4.769970 4.769970
+96.467599 4.769970
+4.769970 4.769970
+136.466432 4.769970
+4.769970 4.769970
+136.466432 4.769970
+4.769970 4.769970
+84.277574 4.769970
+4.769970 4.769970
+84.277574 4.769970
+4.769970 4.769970
+88.507271 4.769970
+4.769970 4.769970
+88.507271 4.769970
+4.769970 4.769970
+88.818286 4.769970
+4.769970 4.769970
+88.818286 4.769970
+4.769970 4.769970
+95.550122 4.769970
+4.769970 4.769970
+95.550122 4.769970
+4.769970 4.769970
+88.863086 4.769970
+4.769970 4.769970
+88.863086 4.769970
+4.769970 4.769970
+99.278188 4.769970
+4.769970 4.769970
+99.278188 4.769970
+4.769970 4.769970
+89.390086 4.769970
+4.769970 4.769970
+89.390086 4.769970
+4.769970 4.769970
+105.867378 4.769970
+4.769970 4.769970
+105.867378 4.769970
+4.769970 4.769970
+94.500092 4.769970
+4.769970 4.769970
+94.500092 4.769970
+4.769970 4.769970
+97.300004 4.769970
+4.769970 4.769970
+97.300004 4.769970
+4.769970 4.769970
+117.431561 4.769970
+4.769970 4.769970
+117.431561 4.769970
+4.769970 4.769970
+113.937235 4.769970
+4.769970 4.769970
+113.937235 4.769970
+4.769970 4.769970
+120.505706 4.769970
+4.769970 4.769970
+120.505706 4.769970
+4.769970 4.769970
+116.959895 4.769970
+4.769970 4.769970
+116.959895 4.769970
+4.769970 4.769970
+111.574283 4.769970
+4.769970 4.769970
+111.574283 4.769970
+4.769970 4.769970
+108.026583 4.769970
+4.769970 4.769970
+108.026583 4.769970
+4.769970 4.769970
+86.709591 4.769970
+4.769970 4.769970
+86.709591 4.769970
+4.769970 4.769970
+90.399403 4.769970
+4.769970 4.769970
+90.399403 4.769970
+4.769970 4.769970
+107.165883 4.769970
+4.769970 4.769970
+107.165883 4.769970
+4.769970 4.769970
+109.409283 4.769970
+4.769970 4.769970
+109.409283 4.769970
+4.769970 4.769970
+110.699082 4.769970
+4.769970 4.769970
+110.699082 4.769970
+4.769970 4.769970
+109.288977 4.769970
+4.769970 4.769970
+109.288977 4.769970
+4.769970 4.769970
+101.097100 4.769970
+4.769970 4.769970
+101.097100 4.769970
+4.769970 4.769970
+100.408159 4.769970
+4.769970 4.769970
+100.408159 4.769970
+4.769970 4.769970
+100.484087 4.769970
+4.769970 4.769970
+100.484087 4.769970
+4.769970 4.769970
+100.254814 4.769970
+4.769970 4.769970
+100.254814 4.769970
+4.769970 4.769970
+108.714382 4.769970
+4.769970 4.769970
+108.714382 4.769970
+4.769970 4.769970
+118.970064 4.769970
+4.769970 4.769970
+118.970064 4.769970
+4.769970 4.769970
+107.406288 4.769970
+4.769970 4.769970
+107.406288 4.769970
+4.769970 4.769970
+112.857872 4.769970
+4.769970 4.769970
+112.857872 4.769970
+4.769970 4.769970
+102.419628 4.769970
+4.769970 4.769970
+102.419628 4.769970
+4.769970 4.769970
+123.152625 4.769970
+4.769970 4.769970
+123.152625 4.769970
+4.769970 4.769970
+94.283082 4.769970
+4.769970 4.769970
+94.283082 4.769970
+4.769970 4.769970
+95.891825 4.769970
+4.769970 4.769970
+95.891825 4.769970
+4.769970 4.769970
+105.063967 4.769970
+4.769970 4.769970
+105.063967 4.769970
+4.769970 4.769970
+112.340271 4.769970
+4.769970 4.769970
+112.340271 4.769970
+4.769970 4.769970
+103.000473 4.769970
+4.769970 4.769970
+103.000473 4.769970
+4.769970 4.769970
+108.473228 4.769970
+4.769970 4.769970
+108.473228 4.769970
+4.769970 4.769970
+99.072274 4.769970
+4.769970 4.769970
+99.072274 4.769970
+4.769970 4.769970
+558.487787 4.769970
+4.769970 4.769970
+558.487787 4.769970
+4.769970 4.769970
+17.537160 4.769970
+4.769970 4.769970
+17.537160 4.769970
+4.769970 4.769970
+43.730198 4.769970
+4.769970 4.769970
+43.730198 4.769970
+4.769970 4.769970
+50.772955 4.769970
+4.769970 4.769970
+50.772955 4.769970
+4.769970 4.769970
+64.590148 4.769970
+4.769970 4.769970
+64.590148 4.769970
+4.769970 4.769970
+47.934868 4.769970
+4.769970 4.769970
+47.934868 4.769970
+4.769970 4.769970
+62.525965 4.769970
+4.769970 4.769970
+62.525965 4.769970
+4.769970 4.769970
+54.054363 4.769970
+4.769970 4.769970
+54.054363 4.769970
+4.769970 4.769970
+67.376400 4.769970
+4.769970 4.769970
+67.376400 4.769970
+4.769970 4.769970
+53.541834 4.769970
+4.769970 4.769970
+53.541834 4.769970
+4.769970 4.769970
+66.592294 4.769970
+4.769970 4.769970
+66.592294 4.769970
+4.769970 4.769970
+76.496567 4.769970
+4.769970 4.769970
+76.496567 4.769970
+4.769970 4.769970
+85.561095 4.769970
+4.769970 4.769970
+85.561095 4.769970
+4.769970 4.769970
+68.441088 4.769970
+4.769970 4.769970
+68.441088 4.769970
+4.769970 4.769970
+79.232371 4.769970
+4.769970 4.769970
+79.232371 4.769970
+4.769970 4.769970
+74.069042 4.769970
+4.769970 4.769970
+74.069042 4.769970
+4.769970 4.769970
+83.968751 4.769970
+4.769970 4.769970
+83.968751 4.769970
+4.769970 4.769970
+65.626030 4.769970
+4.769970 4.769970
+65.626030 4.769970
+4.769970 4.769970
+75.142861 4.769970
+4.769970 4.769970
+75.142861 4.769970
+4.769970 4.769970
+78.041579 4.769970
+4.769970 4.769970
+78.041579 4.769970
+4.769970 4.769970
+86.197893 4.769970
+4.769970 4.769970
+86.197893 4.769970
+4.769970 4.769970
+80.188433 4.769970
+4.769970 4.769970
+80.188433 4.769970
+4.769970 4.769970
+88.149197 4.769970
+4.769970 4.769970
+88.149197 4.769970
+4.769970 4.769970
+82.063774 4.769970
+4.769970 4.769970
+82.063774 4.769970
+4.769970 4.769970
+89.849201 4.769970
+4.769970 4.769970
+89.849201 4.769970
+4.769970 4.769970
+77.556634 4.769970
+4.769970 4.769970
+77.556634 4.769970
+4.769970 4.769970
+84.862036 4.769970
+4.769970 4.769970
+84.862036 4.769970
+4.769970 4.769970
+87.507989 4.769970
+4.769970 4.769970
+87.507989 4.769970
+4.769970 4.769970
+94.142949 4.769970
+4.769970 4.769970
+94.142949 4.769970
+4.769970 4.769970
+89.084835 4.769970
+4.769970 4.769970
+89.084835 4.769970
+4.769970 4.769970
+95.701851 4.769970
+4.769970 4.769970
+95.701851 4.769970
+4.769970 4.769970
+89.797870 4.769970
+4.769970 4.769970
+89.797870 4.769970
+4.769970 4.769970
+96.252193 4.769970
+4.769970 4.769970
+96.252193 4.769970
+4.769970 4.769970
+85.619131 4.769970
+4.769970 4.769970
+85.619131 4.769970
+4.769970 4.769970
+92.750255 4.769970
+4.769970 4.769970
+92.750255 4.769970
+4.769970 4.769970
+92.169501 4.769970
+4.769970 4.769970
+92.169501 4.769970
+4.769970 4.769970
+107.806525 4.769970
+4.769970 4.769970
+107.806525 4.769970
+4.769970 4.769970
+91.010411 4.769970
+4.769970 4.769970
+91.010411 4.769970
+4.769970 4.769970
+111.935888 4.769970
+4.769970 4.769970
+111.935888 4.769970
+4.769970 4.769970
+91.974700 4.769970
+4.769970 4.769970
+91.974700 4.769970
+4.769970 4.769970
+108.672405 4.769970
+4.769970 4.769970
+108.672405 4.769970
+4.769970 4.769970
+91.031893 4.769970
+4.769970 4.769970
+91.031893 4.769970
+4.769970 4.769970
+96.425779 4.769970
+4.769970 4.769970
+96.425779 4.769970
+4.769970 4.769970
+96.698850 4.769970
+4.769970 4.769970
+96.698850 4.769970
+4.769970 4.769970
+106.116798 4.769970
+4.769970 4.769970
+106.116798 4.769970
+4.769970 4.769970
+95.646953 4.769970
+4.769970 4.769970
+95.646953 4.769970
+4.769970 4.769970
+104.574777 4.769970
+4.769970 4.769970
+104.574777 4.769970
+4.769970 4.769970
+96.060207 4.769970
+4.769970 4.769970
+96.060207 4.769970
+4.769970 4.769970
+104.436090 4.769970
+4.769970 4.769970
+104.436090 4.769970
+4.769970 4.769970
+118.260406 4.769970
+4.769970 4.769970
+118.260406 4.769970
+4.769970 4.769970
+121.573346 4.769970
+4.769970 4.769970
+121.573346 4.769970
+4.769970 4.769970
+118.740257 4.769970
+4.769970 4.769970
+118.740257 4.769970
+4.769970 4.769970
+137.714129 4.769970
+4.769970 4.769970
+137.714129 4.769970
+4.769970 4.769970
+118.088176 4.769970
+4.769970 4.769970
+118.088176 4.769970
+4.769970 4.769970
+141.180993 4.769970
+4.769970 4.769970
+141.180993 4.769970
+4.769970 4.769970
+112.916639 4.769970
+4.769970 4.769970
+112.916639 4.769970
+4.769970 4.769970
+124.777306 4.769970
+4.769970 4.769970
+124.777306 4.769970
+4.769970 4.769970
+109.998934 4.769970
+4.769970 4.769970
+109.998934 4.769970
+4.769970 4.769970
+115.689193 4.769970
+4.769970 4.769970
+115.689193 4.769970
+4.769970 4.769970
+110.869122 4.769970
+4.769970 4.769970
+110.869122 4.769970
+4.769970 4.769970
+125.022586 4.769970
+4.769970 4.769970
+125.022586 4.769970
+4.769970 4.769970
+109.751495 4.769970
+4.769970 4.769970
+109.751495 4.769970
+4.769970 4.769970
+127.904665 4.769970
+4.769970 4.769970
+127.904665 4.769970
+4.769970 4.769970
+105.353789 4.769970
+4.769970 4.769970
+105.353789 4.769970
+4.769970 4.769970
+121.412004 4.769970
+4.769970 4.769970
+121.412004 4.769970
+4.769970 4.769970
+117.951433 4.769970
+4.769970 4.769970
+117.951433 4.769970
+4.769970 4.769970
+120.858205 4.769970
+4.769970 4.769970
+120.858205 4.769970
+4.769970 4.769970
+118.457163 4.769970
+4.769970 4.769970
+118.457163 4.769970
+4.769970 4.769970
+121.833201 4.769970
+4.769970 4.769970
+121.833201 4.769970
+4.769970 4.769970
+117.107791 4.769970
+4.769970 4.769970
+117.107791 4.769970
+4.769970 4.769970
+121.429102 4.769970
+4.769970 4.769970
+121.429102 4.769970
+4.769970 4.769970
+114.442043 4.769970
+4.769970 4.769970
+114.442043 4.769970
+4.769970 4.769970
+118.308367 4.769970
+4.769970 4.769970
+118.308367 4.769970
+4.769970 4.769970
+95.163336 4.769970
+4.769970 4.769970
+95.163336 4.769970
+4.769970 4.769970
+99.925639 4.769970
+4.769970 4.769970
+99.925639 4.769970
+4.769970 4.769970
+100.120440 4.769970
+4.769970 4.769970
+100.120440 4.769970
+4.769970 4.769970
+104.070988 4.769970
+4.769970 4.769970
+104.070988 4.769970
+4.769970 4.769970
+99.076624 4.769970
+4.769970 4.769970
+99.076624 4.769970
+4.769970 4.769970
+103.398661 4.769970
+4.769970 4.769970
+103.398661 4.769970
+4.769970 4.769970
+99.299386 4.769970
+4.769970 4.769970
+99.299386 4.769970
+4.769970 4.769970
+103.804245 4.769970
+4.769970 4.769970
+103.804245 4.769970
+4.769970 4.769970
+91.299829 4.769970
+4.769970 4.769970
+91.299829 4.769970
+4.769970 4.769970
+94.325082 4.769970
+4.769970 4.769970
+94.325082 4.769970
+4.769970 4.769970
+94.997774 4.769970
+4.769970 4.769970
+94.997774 4.769970
+4.769970 4.769970
+102.358854 4.769970
+4.769970 4.769970
+102.358854 4.769970
+4.769970 4.769970
+94.622678 4.769970
+4.769970 4.769970
+94.622678 4.769970
+4.769970 4.769970
+108.245131 4.769970
+4.769970 4.769970
+108.245131 4.769970
+4.769970 4.769970
+95.164223 4.769970
+4.769970 4.769970
+95.164223 4.769970
+4.769970 4.769970
+136.430563 4.769970
+4.769970 4.769970
+136.430563 4.769970
+4.769970 4.769970
+83.670614 4.769970
+4.769970 4.769970
+83.670614 4.769970
+4.769970 4.769970
+88.680361 4.769970
+4.769970 4.769970
+88.680361 4.769970
+4.769970 4.769970
+88.278510 4.769970
+4.769970 4.769970
+88.278510 4.769970
+4.769970 4.769970
+95.550059 4.769970
+4.769970 4.769970
+95.550059 4.769970
+4.769970 4.769970
+88.188620 4.769970
+4.769970 4.769970
+88.188620 4.769970
+4.769970 4.769970
+98.520195 4.769970
+4.769970 4.769970
+98.520195 4.769970
+4.769970 4.769970
+89.123330 4.769970
+4.769970 4.769970
+89.123330 4.769970
+4.769970 4.769970
+105.879014 4.769970
+4.769970 4.769970
+105.879014 4.769970
+4.769970 4.769970
+91.992723 4.769970
+4.769970 4.769970
+91.992723 4.769970
+4.769970 4.769970
+95.464336 4.769970
+4.769970 4.769970
+95.464336 4.769970
+4.769970 4.769970
+117.436261 4.769970
+4.769970 4.769970
+117.436261 4.769970
+4.769970 4.769970
+113.937284 4.769970
+4.769970 4.769970
+113.937284 4.769970
+4.769970 4.769970
+118.582075 4.769970
+4.769970 4.769970
+118.582075 4.769970
+4.769970 4.769970
+116.569427 4.769970
+4.769970 4.769970
+116.569427 4.769970
+4.769970 4.769970
+111.063704 4.769970
+4.769970 4.769970
+111.063704 4.769970
+4.769970 4.769970
+108.026890 4.769970
+4.769970 4.769970
+108.026890 4.769970
+4.769970 4.769970
+85.386482 4.769970
+4.769970 4.769970
+85.386482 4.769970
+4.769970 4.769970
+89.542761 4.769970
+4.769970 4.769970
+89.542761 4.769970
+4.769970 4.769970
+107.215278 4.769970
+4.769970 4.769970
+107.215278 4.769970
+4.769970 4.769970
+109.409305 4.769970
+4.769970 4.769970
+109.409305 4.769970
+4.769970 4.769970
+107.569460 4.769970
+4.769970 4.769970
+107.569460 4.769970
+4.769970 4.769970
+106.819551 4.769970
+4.769970 4.769970
+106.819551 4.769970
+4.769970 4.769970
+101.038277 4.769970
+4.769970 4.769970
+101.038277 4.769970
+4.769970 4.769970
+100.413049 4.769970
+4.769970 4.769970
+100.413049 4.769970
+4.769970 4.769970
+86.280805 4.769970
+4.769970 4.769970
+86.280805 4.769970
+4.769970 4.769970
+91.265112 4.769970
+4.769970 4.769970
+91.265112 4.769970
+4.769970 4.769970
+98.559147 4.769970
+4.769970 4.769970
+98.559147 4.769970
+4.769970 4.769970
+118.970107 4.769970
+4.769970 4.769970
+118.970107 4.769970
+4.769970 4.769970
+96.539158 4.769970
+4.769970 4.769970
+96.539158 4.769970
+4.769970 4.769970
+105.327007 4.769970
+4.769970 4.769970
+105.327007 4.769970
+4.769970 4.769970
+96.350005 4.769970
+4.769970 4.769970
+96.350005 4.769970
+4.769970 4.769970
+123.118494 4.769970
+4.769970 4.769970
+123.118494 4.769970
+4.769970 4.769970
+86.611771 4.769970
+4.769970 4.769970
+86.611771 4.769970
+4.769970 4.769970
+92.399420 4.769970
+4.769970 4.769970
+92.399420 4.769970
+4.769970 4.769970
+97.694247 4.769970
+4.769970 4.769970
+97.694247 4.769970
+4.769970 4.769970
+112.340295 4.769970
+4.769970 4.769970
+112.340295 4.769970
+4.769970 4.769970
+95.373364 4.769970
+4.769970 4.769970
+95.373364 4.769970
+4.769970 4.769970
+104.521675 4.769970
+4.769970 4.769970
+104.521675 4.769970
+4.769970 4.769970
+95.537668 4.769970
+4.769970 4.769970
+95.537668 4.769970
+4.769970 4.769970
+558.487008 4.769970
+4.769970 4.769970
+558.487008 4.769970
+4.769970 4.769970
+16.210240 4.769970
+4.769970 4.769970
+16.210240 4.769970
+4.769970 4.769970
+43.167141 4.769970
+4.769970 4.769970
+43.167141 4.769970
+4.769970 4.769970
+50.311905 4.769970
+4.769970 4.769970
+50.311905 4.769970
+4.769970 4.769970
+64.194342 4.769970
+4.769970 4.769970
+64.194342 4.769970
+4.769970 4.769970
+49.406647 4.769970
+4.769970 4.769970
+49.406647 4.769970
+4.769970 4.769970
+63.606737 4.769970
+4.769970 4.769970
+63.606737 4.769970
+4.769970 4.769970
+54.095362 4.769970
+4.769970 4.769970
+54.095362 4.769970
+4.769970 4.769970
+67.376817 4.769970
+4.769970 4.769970
+67.376817 4.769970
+4.769970 4.769970
+53.366458 4.769970
+4.769970 4.769970
+53.366458 4.769970
+4.769970 4.769970
+66.485041 4.769970
+4.769970 4.769970
+66.485041 4.769970
+4.769970 4.769970
+76.296305 4.769970
+4.769970 4.769970
+76.296305 4.769970
+4.769970 4.769970
+85.397752 4.769970
+4.769970 4.769970
+85.397752 4.769970
+4.769970 4.769970
+69.641494 4.769970
+4.769970 4.769970
+69.641494 4.769970
+4.769970 4.769970
+80.279470 4.769970
+4.769970 4.769970
+80.279470 4.769970
+4.769970 4.769970
+74.045502 4.769970
+4.769970 4.769970
+74.045502 4.769970
+4.769970 4.769970
+83.970021 4.769970
+4.769970 4.769970
+83.970021 4.769970
+4.769970 4.769970
+65.655147 4.769970
+4.769970 4.769970
+65.655147 4.769970
+4.769970 4.769970
+75.167400 4.769970
+4.769970 4.769970
+75.167400 4.769970
+4.769970 4.769970
+78.070376 4.769970
+4.769970 4.769970
+78.070376 4.769970
+4.769970 4.769970
+86.220026 4.769970
+4.769970 4.769970
+86.220026 4.769970
+4.769970 4.769970
+80.209597 4.769970
+4.769970 4.769970
+80.209597 4.769970
+4.769970 4.769970
+88.164679 4.769970
+4.769970 4.769970
+88.164679 4.769970
+4.769970 4.769970
+82.059870 4.769970
+4.769970 4.769970
+82.059870 4.769970
+4.769970 4.769970
+89.845977 4.769970
+4.769970 4.769970
+89.845977 4.769970
+4.769970 4.769970
+77.629730 4.769970
+4.769970 4.769970
+77.629730 4.769970
+4.769970 4.769970
+84.924825 4.769970
+4.769970 4.769970
+84.924825 4.769970
+4.769970 4.769970
+87.553292 4.769970
+4.769970 4.769970
+87.553292 4.769970
+4.769970 4.769970
+94.179356 4.769970
+4.769970 4.769970
+94.179356 4.769970
+4.769970 4.769970
+89.109173 4.769970
+4.769970 4.769970
+89.109173 4.769970
+4.769970 4.769970
+95.717043 4.769970
+4.769970 4.769970
+95.717043 4.769970
+4.769970 4.769970
+89.795203 4.769970
+4.769970 4.769970
+89.795203 4.769970
+4.769970 4.769970
+96.249614 4.769970
+4.769970 4.769970
+96.249614 4.769970
+4.769970 4.769970
+85.322160 4.769970
+4.769970 4.769970
+85.322160 4.769970
+4.769970 4.769970
+93.365647 4.769970
+4.769970 4.769970
+93.365647 4.769970
+4.769970 4.769970
+91.592709 4.769970
+4.769970 4.769970
+91.592709 4.769970
+4.769970 4.769970
+112.644764 4.769970
+4.769970 4.769970
+112.644764 4.769970
+4.769970 4.769970
+91.252038 4.769970
+4.769970 4.769970
+91.252038 4.769970
+4.769970 4.769970
+112.122907 4.769970
+4.769970 4.769970
+112.122907 4.769970
+4.769970 4.769970
+91.969526 4.769970
+4.769970 4.769970
+91.969526 4.769970
+4.769970 4.769970
+108.692641 4.769970
+4.769970 4.769970
+108.692641 4.769970
+4.769970 4.769970
+90.170989 4.769970
+4.769970 4.769970
+90.170989 4.769970
+4.769970 4.769970
+102.056881 4.769970
+4.769970 4.769970
+102.056881 4.769970
+4.769970 4.769970
+95.469926 4.769970
+4.769970 4.769970
+95.469926 4.769970
+4.769970 4.769970
+105.324077 4.769970
+4.769970 4.769970
+105.324077 4.769970
+4.769970 4.769970
+95.160000 4.769970
+4.769970 4.769970
+95.160000 4.769970
+4.769970 4.769970
+104.600687 4.769970
+4.769970 4.769970
+104.600687 4.769970
+4.769970 4.769970
+95.643695 4.769970
+4.769970 4.769970
+95.643695 4.769970
+4.769970 4.769970
+104.454059 4.769970
+4.769970 4.769970
+104.454059 4.769970
+4.769970 4.769970
+118.621863 4.769970
+4.769970 4.769970
+118.621863 4.769970
+4.769970 4.769970
+116.227698 4.769970
+4.769970 4.769970
+116.227698 4.769970
+4.769970 4.769970
+118.554709 4.769970
+4.769970 4.769970
+118.554709 4.769970
+4.769970 4.769970
+132.831056 4.769970
+4.769970 4.769970
+132.831056 4.769970
+4.769970 4.769970
+118.681740 4.769970
+4.769970 4.769970
+118.681740 4.769970
+4.769970 4.769970
+136.205199 4.769970
+4.769970 4.769970
+136.205199 4.769970
+4.769970 4.769970
+112.893475 4.769970
+4.769970 4.769970
+112.893475 4.769970
+4.769970 4.769970
+124.819835 4.769970
+4.769970 4.769970
+124.819835 4.769970
+4.769970 4.769970
+110.353057 4.769970
+4.769970 4.769970
+110.353057 4.769970
+4.769970 4.769970
+113.321985 4.769970
+4.769970 4.769970
+113.321985 4.769970
+4.769970 4.769970
+110.313508 4.769970
+4.769970 4.769970
+110.313508 4.769970
+4.769970 4.769970
+123.774451 4.769970
+4.769970 4.769970
+123.774451 4.769970
+4.769970 4.769970
+110.040356 4.769970
+4.769970 4.769970
+110.040356 4.769970
+4.769970 4.769970
+124.649963 4.769970
+4.769970 4.769970
+124.649963 4.769970
+4.769970 4.769970
+105.180577 4.769970
+4.769970 4.769970
+105.180577 4.769970
+4.769970 4.769970
+121.377846 4.769970
+4.769970 4.769970
+121.377846 4.769970
+4.769970 4.769970
+118.364350 4.769970
+4.769970 4.769970
+118.364350 4.769970
+4.769970 4.769970
+119.279349 4.769970
+4.769970 4.769970
+119.279349 4.769970
+4.769970 4.769970
+118.128932 4.769970
+4.769970 4.769970
+118.128932 4.769970
+4.769970 4.769970
+121.688476 4.769970
+4.769970 4.769970
+121.688476 4.769970
+4.769970 4.769970
+117.472006 4.769970
+4.769970 4.769970
+117.472006 4.769970
+4.769970 4.769970
+122.070189 4.769970
+4.769970 4.769970
+122.070189 4.769970
+4.769970 4.769970
+114.514118 4.769970
+4.769970 4.769970
+114.514118 4.769970
+4.769970 4.769970
+118.328278 4.769970
+4.769970 4.769970
+118.328278 4.769970
+4.769970 4.769970
+95.408892 4.769970
+4.769970 4.769970
+95.408892 4.769970
+4.769970 4.769970
+100.338198 4.769970
+4.769970 4.769970
+100.338198 4.769970
+4.769970 4.769970
+99.847790 4.769970
+4.769970 4.769970
+99.847790 4.769970
+4.769970 4.769970
+103.987228 4.769970
+4.769970 4.769970
+103.987228 4.769970
+4.769970 4.769970
+99.327674 4.769970
+4.769970 4.769970
+99.327674 4.769970
+4.769970 4.769970
+103.827593 4.769970
+4.769970 4.769970
+103.827593 4.769970
+4.769970 4.769970
+99.128428 4.769970
+4.769970 4.769970
+99.128428 4.769970
+4.769970 4.769970
+103.812054 4.769970
+4.769970 4.769970
+103.812054 4.769970
+4.769970 4.769970
+90.942808 4.769970
+4.769970 4.769970
+90.942808 4.769970
+4.769970 4.769970
+99.512717 4.769970
+4.769970 4.769970
+99.512717 4.769970
+4.769970 4.769970
+93.755187 4.769970
+4.769970 4.769970
+93.755187 4.769970
+4.769970 4.769970
+110.932241 4.769970
+4.769970 4.769970
+110.932241 4.769970
+4.769970 4.769970
+94.163102 4.769970
+4.769970 4.769970
+94.163102 4.769970
+4.769970 4.769970
+116.442782 4.769970
+4.769970 4.769970
+116.442782 4.769970
+4.769970 4.769970
+94.748355 4.769970
+4.769970 4.769970
+94.748355 4.769970
+4.769970 4.769970
+136.500519 4.769970
+4.769970 4.769970
+136.500519 4.769970
+4.769970 4.769970
+83.107069 4.769970
+4.769970 4.769970
+83.107069 4.769970
+4.769970 4.769970
+93.662255 4.769970
+4.769970 4.769970
+93.662255 4.769970
+4.769970 4.769970
+87.382511 4.769970
+4.769970 4.769970
+87.382511 4.769970
+4.769970 4.769970
+102.215151 4.769970
+4.769970 4.769970
+102.215151 4.769970
+4.769970 4.769970
+88.307722 4.769970
+4.769970 4.769970
+88.307722 4.769970
+4.769970 4.769970
+99.278303 4.769970
+4.769970 4.769970
+99.278303 4.769970
+4.769970 4.769970
+89.052683 4.769970
+4.769970 4.769970
+89.052683 4.769970
+4.769970 4.769970
+105.856450 4.769970
+4.769970 4.769970
+105.856450 4.769970
+4.769970 4.769970
+94.343017 4.769970
+4.769970 4.769970
+94.343017 4.769970
+4.769970 4.769970
+97.132636 4.769970
+4.769970 4.769970
+97.132636 4.769970
+4.769970 4.769970
+117.475397 4.769970
+4.769970 4.769970
+117.475397 4.769970
+4.769970 4.769970
+113.961664 4.769970
+4.769970 4.769970
+113.961664 4.769970
+4.769970 4.769970
+120.523401 4.769970
+4.769970 4.769970
+120.523401 4.769970
+4.769970 4.769970
+116.959956 4.769970
+4.769970 4.769970
+116.959956 4.769970
+4.769970 4.769970
+111.150829 4.769970
+4.769970 4.769970
+111.150829 4.769970
+4.769970 4.769970
+108.026718 4.769970
+4.769970 4.769970
+108.026718 4.769970
+4.769970 4.769970
+86.904200 4.769970
+4.769970 4.769970
+86.904200 4.769970
+4.769970 4.769970
+90.490383 4.769970
+4.769970 4.769970
+90.490383 4.769970
+4.769970 4.769970
+107.264791 4.769970
+4.769970 4.769970
+107.264791 4.769970
+4.769970 4.769970
+108.944297 4.769970
+4.769970 4.769970
+108.944297 4.769970
+4.769970 4.769970
+110.811290 4.769970
+4.769970 4.769970
+110.811290 4.769970
+4.769970 4.769970
+109.288913 4.769970
+4.769970 4.769970
+109.288913 4.769970
+4.769970 4.769970
+101.048556 4.769970
+4.769970 4.769970
+101.048556 4.769970
+4.769970 4.769970
+100.403514 4.769970
+4.769970 4.769970
+100.403514 4.769970
+4.769970 4.769970
+88.023981 4.769970
+4.769970 4.769970
+88.023981 4.769970
+4.769970 4.769970
+101.206199 4.769970
+4.769970 4.769970
+101.206199 4.769970
+4.769970 4.769970
+97.552220 4.769970
+4.769970 4.769970
+97.552220 4.769970
+4.769970 4.769970
+113.662234 4.769970
+4.769970 4.769970
+113.662234 4.769970
+4.769970 4.769970
+97.320618 4.769970
+4.769970 4.769970
+97.320618 4.769970
+4.769970 4.769970
+112.857924 4.769970
+4.769970 4.769970
+112.857924 4.769970
+4.769970 4.769970
+96.121595 4.769970
+4.769970 4.769970
+96.121595 4.769970
+4.769970 4.769970
+123.184818 4.769970
+4.769970 4.769970
+123.184818 4.769970
+4.769970 4.769970
+86.287845 4.769970
+4.769970 4.769970
+86.287845 4.769970
+4.769970 4.769970
+98.763873 4.769970
+4.769970 4.769970
+98.763873 4.769970
+4.769970 4.769970
+97.036544 4.769970
+4.769970 4.769970
+97.036544 4.769970
+4.769970 4.769970
+110.298487 4.769970
+4.769970 4.769970
+110.298487 4.769970
+4.769970 4.769970
+96.322395 4.769970
+4.769970 4.769970
+96.322395 4.769970
+4.769970 4.769970
+108.473217 4.769970
+4.769970 4.769970
+108.473217 4.769970
+4.769970 4.769970
+95.584966 4.769970
+4.769970 4.769970
+95.584966 4.769970
+4.769970 4.769970
+558.487749 4.769970
+4.769970 4.769970
+558.487749 4.769970
+4.769970 4.769970
+20.884066 4.769970
+4.769970 4.769970
+20.884066 4.769970
+4.769970 4.769970
+45.248726 4.769970
+4.769970 4.769970
+45.248726 4.769970
+4.769970 4.769970
+50.227861 4.769970
+4.769970 4.769970
+50.227861 4.769970
+4.769970 4.769970
+64.194341 4.769970
+4.769970 4.769970
+64.194341 4.769970
+4.769970 4.769970
+47.851912 4.769970
+4.769970 4.769970
+47.851912 4.769970
+4.769970 4.769970
+62.525951 4.769970
+4.769970 4.769970
+62.525951 4.769970
+4.769970 4.769970
+54.005786 4.769970
+4.769970 4.769970
+54.005786 4.769970
+4.769970 4.769970
+67.376607 4.769970
+4.769970 4.769970
+67.376607 4.769970
+4.769970 4.769970
+54.835496 4.769970
+4.769970 4.769970
+54.835496 4.769970
+4.769970 4.769970
+67.482615 4.769970
+4.769970 4.769970
+67.482615 4.769970
+4.769970 4.769970
+76.540430 4.769970
+4.769970 4.769970
+76.540430 4.769970
+4.769970 4.769970
+85.397482 4.769970
+4.769970 4.769970
+85.397482 4.769970
+4.769970 4.769970
+68.569244 4.769970
+4.769970 4.769970
+68.569244 4.769970
+4.769970 4.769970
+79.232471 4.769970
+4.769970 4.769970
+79.232471 4.769970
+4.769970 4.769970
+74.227800 4.769970
+4.769970 4.769970
+74.227800 4.769970
+4.769970 4.769970
+83.969678 4.769970
+4.769970 4.769970
+83.969678 4.769970
+4.769970 4.769970
+65.668450 4.769970
+4.769970 4.769970
+65.668450 4.769970
+4.769970 4.769970
+75.175153 4.769970
+4.769970 4.769970
+75.175153 4.769970
+4.769970 4.769970
+78.070802 4.769970
+4.769970 4.769970
+78.070802 4.769970
+4.769970 4.769970
+86.220032 4.769970
+4.769970 4.769970
+86.220032 4.769970
+4.769970 4.769970
+80.192595 4.769970
+4.769970 4.769970
+80.192595 4.769970
+4.769970 4.769970
+88.149151 4.769970
+4.769970 4.769970
+88.149151 4.769970
+4.769970 4.769970
+82.064944 4.769970
+4.769970 4.769970
+82.064944 4.769970
+4.769970 4.769970
+89.847554 4.769970
+4.769970 4.769970
+89.847554 4.769970
+4.769970 4.769970
+77.557785 4.769970
+4.769970 4.769970
+77.557785 4.769970
+4.769970 4.769970
+84.885386 4.769970
+4.769970 4.769970
+84.885386 4.769970
+4.769970 4.769970
+87.544876 4.769970
+4.769970 4.769970
+87.544876 4.769970
+4.769970 4.769970
+94.179105 4.769970
+4.769970 4.769970
+94.179105 4.769970
+4.769970 4.769970
+89.082523 4.769970
+4.769970 4.769970
+89.082523 4.769970
+4.769970 4.769970
+95.701487 4.769970
+4.769970 4.769970
+95.701487 4.769970
+4.769970 4.769970
+89.778622 4.769970
+4.769970 4.769970
+89.778622 4.769970
+4.769970 4.769970
+96.250794 4.769970
+4.769970 4.769970
+96.250794 4.769970
+4.769970 4.769970
+83.171678 4.769970
+4.769970 4.769970
+83.171678 4.769970
+4.769970 4.769970
+92.860767 4.769970
+4.769970 4.769970
+92.860767 4.769970
+4.769970 4.769970
+89.545849 4.769970
+4.769970 4.769970
+89.545849 4.769970
+4.769970 4.769970
+112.644925 4.769970
+4.769970 4.769970
+112.644925 4.769970
+4.769970 4.769970
+89.118298 4.769970
+4.769970 4.769970
+89.118298 4.769970
+4.769970 4.769970
+111.935706 4.769970
+4.769970 4.769970
+111.935706 4.769970
+4.769970 4.769970
+90.617656 4.769970
+4.769970 4.769970
+90.617656 4.769970
+4.769970 4.769970
+108.682110 4.769970
+4.769970 4.769970
+108.682110 4.769970
+4.769970 4.769970
+88.225468 4.769970
+4.769970 4.769970
+88.225468 4.769970
+4.769970 4.769970
+96.581695 4.769970
+4.769970 4.769970
+96.581695 4.769970
+4.769970 4.769970
+93.841259 4.769970
+4.769970 4.769970
+93.841259 4.769970
+4.769970 4.769970
+105.324065 4.769970
+4.769970 4.769970
+105.324065 4.769970
+4.769970 4.769970
+93.558858 4.769970
+4.769970 4.769970
+93.558858 4.769970
+4.769970 4.769970
+104.574892 4.769970
+4.769970 4.769970
+104.574892 4.769970
+4.769970 4.769970
+94.470005 4.769970
+4.769970 4.769970
+94.470005 4.769970
+4.769970 4.769970
+104.444625 4.769970
+4.769970 4.769970
+104.444625 4.769970
+4.769970 4.769970
+101.958580 4.769970
+4.769970 4.769970
+101.958580 4.769970
+4.769970 4.769970
+115.175788 4.769970
+4.769970 4.769970
+115.175788 4.769970
+4.769970 4.769970
+105.372680 4.769970
+4.769970 4.769970
+105.372680 4.769970
+4.769970 4.769970
+132.830896 4.769970
+4.769970 4.769970
+132.830896 4.769970
+4.769970 4.769970
+105.085931 4.769970
+4.769970 4.769970
+105.085931 4.769970
+4.769970 4.769970
+141.181381 4.769970
+4.769970 4.769970
+141.181381 4.769970
+4.769970 4.769970
+103.497004 4.769970
+4.769970 4.769970
+103.497004 4.769970
+4.769970 4.769970
+124.790856 4.769970
+4.769970 4.769970
+124.790856 4.769970
+4.769970 4.769970
+102.859153 4.769970
+4.769970 4.769970
+102.859153 4.769970
+4.769970 4.769970
+112.346055 4.769970
+4.769970 4.769970
+112.346055 4.769970
+4.769970 4.769970
+105.360697 4.769970
+4.769970 4.769970
+105.360697 4.769970
+4.769970 4.769970
+123.774861 4.769970
+4.769970 4.769970
+123.774861 4.769970
+4.769970 4.769970
+104.697507 4.769970
+4.769970 4.769970
+104.697507 4.769970
+4.769970 4.769970
+127.904908 4.769970
+4.769970 4.769970
+127.904908 4.769970
+4.769970 4.769970
+101.654725 4.769970
+4.769970 4.769970
+101.654725 4.769970
+4.769970 4.769970
+121.320826 4.769970
+4.769970 4.769970
+121.320826 4.769970
+4.769970 4.769970
+111.518889 4.769970
+4.769970 4.769970
+111.518889 4.769970
+4.769970 4.769970
+120.184909 4.769970
+4.769970 4.769970
+120.184909 4.769970
+4.769970 4.769970
+112.473479 4.769970
+4.769970 4.769970
+112.473479 4.769970
+4.769970 4.769970
+121.688610 4.769970
+4.769970 4.769970
+121.688610 4.769970
+4.769970 4.769970
+111.263484 4.769970
+4.769970 4.769970
+111.263484 4.769970
+4.769970 4.769970
+121.429401 4.769970
+4.769970 4.769970
+121.429401 4.769970
+4.769970 4.769970
+109.195365 4.769970
+4.769970 4.769970
+109.195365 4.769970
+4.769970 4.769970
+118.320357 4.769970
+4.769970 4.769970
+118.320357 4.769970
+4.769970 4.769970
+95.119689 4.769970
+4.769970 4.769970
+95.119689 4.769970
+4.769970 4.769970
+100.019704 4.769970
+4.769970 4.769970
+100.019704 4.769970
+4.769970 4.769970
+99.962479 4.769970
+4.769970 4.769970
+99.962479 4.769970
+4.769970 4.769970
+103.987281 4.769970
+4.769970 4.769970
+103.987281 4.769970
+4.769970 4.769970
+99.000630 4.769970
+4.769970 4.769970
+99.000630 4.769970
+4.769970 4.769970
+103.398724 4.769970
+4.769970 4.769970
+103.398724 4.769970
+4.769970 4.769970
+99.147486 4.769970
+4.769970 4.769970
+99.147486 4.769970
+4.769970 4.769970
+103.808204 4.769970
+4.769970 4.769970
+103.808204 4.769970
+4.769970 4.769970
+88.523388 4.769970
+4.769970 4.769970
+88.523388 4.769970
+4.769970 4.769970
+99.441947 4.769970
+4.769970 4.769970
+99.441947 4.769970
+4.769970 4.769970
+92.432936 4.769970
+4.769970 4.769970
+92.432936 4.769970
+4.769970 4.769970
+110.932091 4.769970
+4.769970 4.769970
+110.932091 4.769970
+4.769970 4.769970
+92.845643 4.769970
+4.769970 4.769970
+92.845643 4.769970
+4.769970 4.769970
+108.245138 4.769970
+4.769970 4.769970
+108.245138 4.769970
+4.769970 4.769970
+93.849888 4.769970
+4.769970 4.769970
+93.849888 4.769970
+4.769970 4.769970
+136.465738 4.769970
+4.769970 4.769970
+136.465738 4.769970
+4.769970 4.769970
+81.900185 4.769970
+4.769970 4.769970
+81.900185 4.769970
+4.769970 4.769970
+93.685966 4.769970
+4.769970 4.769970
+93.685966 4.769970
+4.769970 4.769970
+86.917614 4.769970
+4.769970 4.769970
+86.917614 4.769970
+4.769970 4.769970
+102.215187 4.769970
+4.769970 4.769970
+102.215187 4.769970
+4.769970 4.769970
+87.676373 4.769970
+4.769970 4.769970
+87.676373 4.769970
+4.769970 4.769970
+98.520320 4.769970
+4.769970 4.769970
+98.520320 4.769970
+4.769970 4.769970
+89.136249 4.769970
+4.769970 4.769970
+89.136249 4.769970
+4.769970 4.769970
+105.868537 4.769970
+4.769970 4.769970
+105.868537 4.769970
+4.769970 4.769970
+91.969778 4.769970
+4.769970 4.769970
+91.969778 4.769970
+4.769970 4.769970
+95.475096 4.769970
+4.769970 4.769970
+95.475096 4.769970
+4.769970 4.769970
+117.460955 4.769970
+4.769970 4.769970
+117.460955 4.769970
+4.769970 4.769970
+113.961701 4.769970
+4.769970 4.769970
+113.961701 4.769970
+4.769970 4.769970
+118.582752 4.769970
+4.769970 4.769970
+118.582752 4.769970
+4.769970 4.769970
+116.569524 4.769970
+4.769970 4.769970
+116.569524 4.769970
+4.769970 4.769970
+111.659354 4.769970
+4.769970 4.769970
+111.659354 4.769970
+4.769970 4.769970
+108.026597 4.769970
+4.769970 4.769970
+108.026597 4.769970
+4.769970 4.769970
+85.039686 4.769970
+4.769970 4.769970
+85.039686 4.769970
+4.769970 4.769970
+89.342621 4.769970
+4.769970 4.769970
+89.342621 4.769970
+4.769970 4.769970
+107.645631 4.769970
+4.769970 4.769970
+107.645631 4.769970
+4.769970 4.769970
+108.944338 4.769970
+4.769970 4.769970
+108.944338 4.769970
+4.769970 4.769970
+107.558815 4.769970
+4.769970 4.769970
+107.558815 4.769970
+4.769970 4.769970
+106.819587 4.769970
+4.769970 4.769970
+106.819587 4.769970
+4.769970 4.769970
+101.392883 4.769970
+4.769970 4.769970
+101.392883 4.769970
+4.769970 4.769970
+100.408400 4.769970
+4.769970 4.769970
+100.408400 4.769970
+4.769970 4.769970
+86.910109 4.769970
+4.769970 4.769970
+86.910109 4.769970
+4.769970 4.769970
+91.283046 4.769970
+4.769970 4.769970
+91.283046 4.769970
+4.769970 4.769970
+101.740956 4.769970
+4.769970 4.769970
+101.740956 4.769970
+4.769970 4.769970
+113.662262 4.769970
+4.769970 4.769970
+113.662262 4.769970
+4.769970 4.769970
+100.349869 4.769970
+4.769970 4.769970
+100.349869 4.769970
+4.769970 4.769970
+105.326983 4.769970
+4.769970 4.769970
+105.326983 4.769970
+4.769970 4.769970
+98.898154 4.769970
+4.769970 4.769970
+98.898154 4.769970
+4.769970 4.769970
+123.151060 4.769970
+4.769970 4.769970
+123.151060 4.769970
+4.769970 4.769970
+88.594908 4.769970
+4.769970 4.769970
+88.594908 4.769970
+4.769970 4.769970
+92.129561 4.769970
+4.769970 4.769970
+92.129561 4.769970
+4.769970 4.769970
+98.654802 4.769970
+4.769970 4.769970
+98.654802 4.769970
+4.769970 4.769970
+110.298779 4.769970
+4.769970 4.769970
+110.298779 4.769970
+4.769970 4.769970
+97.062083 4.769970
+4.769970 4.769970
+97.062083 4.769970
+4.769970 4.769970
+104.521635 4.769970
+4.769970 4.769970
+104.521635 4.769970
+4.769970 4.769970
+96.821038 4.769970
+4.769970 4.769970
+96.821038 4.769970
+4.769970 4.769970
+558.487798 4.769970
+4.769970 4.769970
+558.487798 4.769970
+4.769970 4.769970
+28.818884 4.769970
+4.769970 4.769970
+28.818884 4.769970
+4.769970 4.769970
+44.502469 4.769970
+4.769970 4.769970
+44.502469 4.769970
+4.769970 4.769970
+57.117537 4.769970
+4.769970 4.769970
+57.117537 4.769970
+4.769970 4.769970
+66.359264 4.769970
+4.769970 4.769970
+66.359264 4.769970
+4.769970 4.769970
+55.541161 4.769970
+4.769970 4.769970
+55.541161 4.769970
+4.769970 4.769970
+65.348409 4.769970
+4.769970 4.769970
+65.348409 4.769970
+4.769970 4.769970
+59.894752 4.769970
+4.769970 4.769970
+59.894752 4.769970
+4.769970 4.769970
+68.983447 4.769970
+4.769970 4.769970
+68.983447 4.769970
+4.769970 4.769970
+56.269663 4.769970
+4.769970 4.769970
+56.269663 4.769970
+4.769970 4.769970
+65.612074 4.769970
+4.769970 4.769970
+65.612074 4.769970
+4.769970 4.769970
+79.635183 4.769970
+4.769970 4.769970
+79.635183 4.769970
+4.769970 4.769970
+85.562445 4.769970
+4.769970 4.769970
+85.562445 4.769970
+4.769970 4.769970
+72.480439 4.769970
+4.769970 4.769970
+72.480439 4.769970
+4.769970 4.769970
+80.273724 4.769970
+4.769970 4.769970
+80.273724 4.769970
+4.769970 4.769970
+76.938570 4.769970
+4.769970 4.769970
+76.938570 4.769970
+4.769970 4.769970
+83.963851 4.769970
+4.769970 4.769970
+83.963851 4.769970
+4.769970 4.769970
+65.423870 4.769970
+4.769970 4.769970
+65.423870 4.769970
+4.769970 4.769970
+75.010890 4.769970
+4.769970 4.769970
+75.010890 4.769970
+4.769970 4.769970
+77.655605 4.769970
+4.769970 4.769970
+77.655605 4.769970
+4.769970 4.769970
+85.893235 4.769970
+4.769970 4.769970
+85.893235 4.769970
+4.769970 4.769970
+80.500831 4.769970
+4.769970 4.769970
+80.500831 4.769970
+4.769970 4.769970
+88.458762 4.769970
+4.769970 4.769970
+88.458762 4.769970
+4.769970 4.769970
+81.924087 4.769970
+4.769970 4.769970
+81.924087 4.769970
+4.769970 4.769970
+89.764157 4.769970
+4.769970 4.769970
+89.764157 4.769970
+4.769970 4.769970
+76.933347 4.769970
+4.769970 4.769970
+76.933347 4.769970
+4.769970 4.769970
+84.830164 4.769970
+4.769970 4.769970
+84.830164 4.769970
+4.769970 4.769970
+86.974115 4.769970
+4.769970 4.769970
+86.974115 4.769970
+4.769970 4.769970
+94.110511 4.769970
+4.769970 4.769970
+94.110511 4.769970
+4.769970 4.769970
+88.641295 4.769970
+4.769970 4.769970
+88.641295 4.769970
+4.769970 4.769970
+95.732679 4.769970
+4.769970 4.769970
+95.732679 4.769970
+4.769970 4.769970
+89.282157 4.769970
+4.769970 4.769970
+89.282157 4.769970
+4.769970 4.769970
+96.239272 4.769970
+4.769970 4.769970
+96.239272 4.769970
+4.769970 4.769970
+88.727893 4.769970
+4.769970 4.769970
+88.727893 4.769970
+4.769970 4.769970
+92.796791 4.769970
+4.769970 4.769970
+92.796791 4.769970
+4.769970 4.769970
+99.765012 4.769970
+4.769970 4.769970
+99.765012 4.769970
+4.769970 4.769970
+108.169469 4.769970
+4.769970 4.769970
+108.169469 4.769970
+4.769970 4.769970
+98.635411 4.769970
+4.769970 4.769970
+98.635411 4.769970
+4.769970 4.769970
+114.783717 4.769970
+4.769970 4.769970
+114.783717 4.769970
+4.769970 4.769970
+98.254217 4.769970
+4.769970 4.769970
+98.254217 4.769970
+4.769970 4.769970
+116.981961 4.769970
+4.769970 4.769970
+116.981961 4.769970
+4.769970 4.769970
+96.802353 4.769970
+4.769970 4.769970
+96.802353 4.769970
+4.769970 4.769970
+101.381969 4.769970
+4.769970 4.769970
+101.381969 4.769970
+4.769970 4.769970
+102.123481 4.769970
+4.769970 4.769970
+102.123481 4.769970
+4.769970 4.769970
+106.063250 4.769970
+4.769970 4.769970
+106.063250 4.769970
+4.769970 4.769970
+101.019027 4.769970
+4.769970 4.769970
+101.019027 4.769970
+4.769970 4.769970
+104.547961 4.769970
+4.769970 4.769970
+104.547961 4.769970
+4.769970 4.769970
+100.438102 4.769970
+4.769970 4.769970
+100.438102 4.769970
+4.769970 4.769970
+104.408572 4.769970
+4.769970 4.769970
+104.408572 4.769970
+4.769970 4.769970
+118.134979 4.769970
+4.769970 4.769970
+118.134979 4.769970
+4.769970 4.769970
+122.185918 4.769970
+4.769970 4.769970
+122.185918 4.769970
+4.769970 4.769970
+118.472446 4.769970
+4.769970 4.769970
+118.472446 4.769970
+4.769970 4.769970
+139.375604 4.769970
+4.769970 4.769970
+139.375604 4.769970
+4.769970 4.769970
+118.194264 4.769970
+4.769970 4.769970
+118.194264 4.769970
+4.769970 4.769970
+136.748657 4.769970
+4.769970 4.769970
+136.748657 4.769970
+4.769970 4.769970
+112.537963 4.769970
+4.769970 4.769970
+112.537963 4.769970
+4.769970 4.769970
+127.941787 4.769970
+4.769970 4.769970
+127.941787 4.769970
+4.769970 4.769970
+109.750001 4.769970
+4.769970 4.769970
+109.750001 4.769970
+4.769970 4.769970
+118.044197 4.769970
+4.769970 4.769970
+118.044197 4.769970
+4.769970 4.769970
+110.751753 4.769970
+4.769970 4.769970
+110.751753 4.769970
+4.769970 4.769970
+124.562153 4.769970
+4.769970 4.769970
+124.562153 4.769970
+4.769970 4.769970
+110.020281 4.769970
+4.769970 4.769970
+110.020281 4.769970
+4.769970 4.769970
+124.775703 4.769970
+4.769970 4.769970
+124.775703 4.769970
+4.769970 4.769970
+104.054277 4.769970
+4.769970 4.769970
+104.054277 4.769970
+4.769970 4.769970
+121.712988 4.769970
+4.769970 4.769970
+121.712988 4.769970
+4.769970 4.769970
+120.491635 4.769970
+4.769970 4.769970
+120.491635 4.769970
+4.769970 4.769970
+116.679874 4.769970
+4.769970 4.769970
+116.679874 4.769970
+4.769970 4.769970
+121.986727 4.769970
+4.769970 4.769970
+121.986727 4.769970
+4.769970 4.769970
+118.172037 4.769970
+4.769970 4.769970
+118.172037 4.769970
+4.769970 4.769970
+122.719415 4.769970
+4.769970 4.769970
+122.719415 4.769970
+4.769970 4.769970
+118.430357 4.769970
+4.769970 4.769970
+118.430357 4.769970
+4.769970 4.769970
+120.383590 4.769970
+4.769970 4.769970
+120.383590 4.769970
+4.769970 4.769970
+116.001017 4.769970
+4.769970 4.769970
+116.001017 4.769970
+4.769970 4.769970
+96.793393 4.769970
+4.769970 4.769970
+96.793393 4.769970
+4.769970 4.769970
+100.145914 4.769970
+4.769970 4.769970
+100.145914 4.769970
+4.769970 4.769970
+101.463625 4.769970
+4.769970 4.769970
+101.463625 4.769970
+4.769970 4.769970
+104.001702 4.769970
+4.769970 4.769970
+104.001702 4.769970
+4.769970 4.769970
+100.956111 4.769970
+4.769970 4.769970
+100.956111 4.769970
+4.769970 4.769970
+103.785002 4.769970
+4.769970 4.769970
+103.785002 4.769970
+4.769970 4.769970
+100.627390 4.769970
+4.769970 4.769970
+100.627390 4.769970
+4.769970 4.769970
+103.816441 4.769970
+4.769970 4.769970
+103.816441 4.769970
+4.769970 4.769970
+88.393211 4.769970
+4.769970 4.769970
+88.393211 4.769970
+4.769970 4.769970
+93.687808 4.769970
+4.769970 4.769970
+93.687808 4.769970
+4.769970 4.769970
+94.971498 4.769970
+4.769970 4.769970
+94.971498 4.769970
+4.769970 4.769970
+101.841603 4.769970
+4.769970 4.769970
+101.841603 4.769970
+4.769970 4.769970
+94.545658 4.769970
+4.769970 4.769970
+94.545658 4.769970
+4.769970 4.769970
+116.070826 4.769970
+4.769970 4.769970
+116.070826 4.769970
+4.769970 4.769970
+94.295167 4.769970
+4.769970 4.769970
+94.295167 4.769970
+4.769970 4.769970
+136.623605 4.769970
+4.769970 4.769970
+136.623605 4.769970
+4.769970 4.769970
+82.612705 4.769970
+4.769970 4.769970
+82.612705 4.769970
+4.769970 4.769970
+88.669511 4.769970
+4.769970 4.769970
+88.669511 4.769970
+4.769970 4.769970
+89.100194 4.769970
+4.769970 4.769970
+89.100194 4.769970
+4.769970 4.769970
+95.688619 4.769970
+4.769970 4.769970
+95.688619 4.769970
+4.769970 4.769970
+89.062863 4.769970
+4.769970 4.769970
+89.062863 4.769970
+4.769970 4.769970
+99.312585 4.769970
+4.769970 4.769970
+99.312585 4.769970
+4.769970 4.769970
+88.775105 4.769970
+4.769970 4.769970
+88.775105 4.769970
+4.769970 4.769970
+106.260017 4.769970
+4.769970 4.769970
+106.260017 4.769970
+4.769970 4.769970
+94.545589 4.769970
+4.769970 4.769970
+94.545589 4.769970
+4.769970 4.769970
+97.871553 4.769970
+4.769970 4.769970
+97.871553 4.769970
+4.769970 4.769970
+115.923691 4.769970
+4.769970 4.769970
+115.923691 4.769970
+4.769970 4.769970
+113.901434 4.769970
+4.769970 4.769970
+113.901434 4.769970
+4.769970 4.769970
+118.744653 4.769970
+4.769970 4.769970
+118.744653 4.769970
+4.769970 4.769970
+116.745257 4.769970
+4.769970 4.769970
+116.745257 4.769970
+4.769970 4.769970
+109.057062 4.769970
+4.769970 4.769970
+109.057062 4.769970
+4.769970 4.769970
+107.569009 4.769970
+4.769970 4.769970
+107.569009 4.769970
+4.769970 4.769970
+86.441528 4.769970
+4.769970 4.769970
+86.441528 4.769970
+4.769970 4.769970
+90.362756 4.769970
+4.769970 4.769970
+90.362756 4.769970
+4.769970 4.769970
+111.543785 4.769970
+4.769970 4.769970
+111.543785 4.769970
+4.769970 4.769970
+109.769578 4.769970
+4.769970 4.769970
+109.769578 4.769970
+4.769970 4.769970
+111.134197 4.769970
+4.769970 4.769970
+111.134197 4.769970
+4.769970 4.769970
+109.186381 4.769970
+4.769970 4.769970
+109.186381 4.769970
+4.769970 4.769970
+103.815467 4.769970
+4.769970 4.769970
+103.815467 4.769970
+4.769970 4.769970
+100.475017 4.769970
+4.769970 4.769970
+100.475017 4.769970
+4.769970 4.769970
+96.265183 4.769970
+4.769970 4.769970
+96.265183 4.769970
+4.769970 4.769970
+99.871900 4.769970
+4.769970 4.769970
+99.871900 4.769970
+4.769970 4.769970
+104.652233 4.769970
+4.769970 4.769970
+104.652233 4.769970
+4.769970 4.769970
+118.500444 4.769970
+4.769970 4.769970
+118.500444 4.769970
+4.769970 4.769970
+103.313564 4.769970
+4.769970 4.769970
+103.313564 4.769970
+4.769970 4.769970
+112.396486 4.769970
+4.769970 4.769970
+112.396486 4.769970
+4.769970 4.769970
+98.525922 4.769970
+4.769970 4.769970
+98.525922 4.769970
+4.769970 4.769970
+122.008971 4.769970
+4.769970 4.769970
+122.008971 4.769970
+4.769970 4.769970
+91.894212 4.769970
+4.769970 4.769970
+91.894212 4.769970
+4.769970 4.769970
+95.956536 4.769970
+4.769970 4.769970
+95.956536 4.769970
+4.769970 4.769970
+102.645735 4.769970
+4.769970 4.769970
+102.645735 4.769970
+4.769970 4.769970
+112.493001 4.769970
+4.769970 4.769970
+112.493001 4.769970
+4.769970 4.769970
+100.494347 4.769970
+4.769970 4.769970
+100.494347 4.769970
+4.769970 4.769970
+108.525906 4.769970
+4.769970 4.769970
+108.525906 4.769970
+4.769970 4.769970
+96.593088 4.769970
+4.769970 4.769970
+96.593088 4.769970
+4.769970 4.769970
+558.486523 4.769970
+4.769970 4.769970
+558.486523 4.769970
+4.769970 4.769970
+32.242436 4.769970
+4.769970 4.769970
+32.242436 4.769970
+4.769970 4.769970
+46.501211 4.769970
+4.769970 4.769970
+46.501211 4.769970
+4.769970 4.769970
+57.344127 4.769970
+4.769970 4.769970
+57.344127 4.769970
+4.769970 4.769970
+66.359248 4.769970
+4.769970 4.769970
+66.359248 4.769970
+4.769970 4.769970
+54.551267 4.769970
+4.769970 4.769970
+54.551267 4.769970
+4.769970 4.769970
+64.332680 4.769970
+4.769970 4.769970
+64.332680 4.769970
+4.769970 4.769970
+60.084217 4.769970
+4.769970 4.769970
+60.084217 4.769970
+4.769970 4.769970
+68.983826 4.769970
+4.769970 4.769970
+68.983826 4.769970
+4.769970 4.769970
+57.724268 4.769970
+4.769970 4.769970
+57.724268 4.769970
+4.769970 4.769970
+66.584890 4.769970
+4.769970 4.769970
+66.584890 4.769970
+4.769970 4.769970
+79.855277 4.769970
+4.769970 4.769970
+79.855277 4.769970
+4.769970 4.769970
+85.562195 4.769970
+4.769970 4.769970
+85.562195 4.769970
+4.769970 4.769970
+71.514965 4.769970
+4.769970 4.769970
+71.514965 4.769970
+4.769970 4.769970
+79.227070 4.769970
+4.769970 4.769970
+79.227070 4.769970
+4.769970 4.769970
+77.172154 4.769970
+4.769970 4.769970
+77.172154 4.769970
+4.769970 4.769970
+83.963099 4.769970
+4.769970 4.769970
+83.963099 4.769970
+4.769970 4.769970
+65.442343 4.769970
+4.769970 4.769970
+65.442343 4.769970
+4.769970 4.769970
+75.026134 4.769970
+4.769970 4.769970
+75.026134 4.769970
+4.769970 4.769970
+77.659838 4.769970
+4.769970 4.769970
+77.659838 4.769970
+4.769970 4.769970
+85.893242 4.769970
+4.769970 4.769970
+85.893242 4.769970
+4.769970 4.769970
+80.499312 4.769970
+4.769970 4.769970
+80.499312 4.769970
+4.769970 4.769970
+88.452729 4.769970
+4.769970 4.769970
+88.452729 4.769970
+4.769970 4.769970
+81.930956 4.769970
+4.769970 4.769970
+81.930956 4.769970
+4.769970 4.769970
+89.766157 4.769970
+4.769970 4.769970
+89.766157 4.769970
+4.769970 4.769970
+76.977192 4.769970
+4.769970 4.769970
+76.977192 4.769970
+4.769970 4.769970
+84.875969 4.769970
+4.769970 4.769970
+84.875969 4.769970
+4.769970 4.769970
+86.962769 4.769970
+4.769970 4.769970
+86.962769 4.769970
+4.769970 4.769970
+94.110222 4.769970
+4.769970 4.769970
+94.110222 4.769970
+4.769970 4.769970
+88.615678 4.769970
+4.769970 4.769970
+88.615678 4.769970
+4.769970 4.769970
+95.720775 4.769970
+4.769970 4.769970
+95.720775 4.769970
+4.769970 4.769970
+89.280139 4.769970
+4.769970 4.769970
+89.280139 4.769970
+4.769970 4.769970
+96.240330 4.769970
+4.769970 4.769970
+96.240330 4.769970
+4.769970 4.769970
+89.588538 4.769970
+4.769970 4.769970
+89.588538 4.769970
+4.769970 4.769970
+Modified by DJ to test all combinations
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+Broadening:  3
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	9.153015e+10
+Iteration 2	RHO 1.0e-01	9.153015e+10
+Iteration 4	RHO 1.0e-02	9.153015e+10
+Iteration 6	RHO 1.0e-03	9.132662e+10
+Iteration 8	RHO 1.0e-04	9.131160e+10
+Iteration 12	RHO 1.0e-05	9.131078e+10
+Iteration 19	RHO 1.0e-06	9.131016e+10
+Iteration 23	RHO 1.0e-07	9.131012e+10
+Iteration 28	RHO 1.0e-08	9.131011e+10
+Iteration 41	RHO 1.0e-09	9.131011e+10
+Iteration 48	RHO 1.0e-10	9.131011e+10
+Iteration 51	RHO 1.0e-10	9.131011e+10
+Main optimization
+Iteration 1	RHO 1.0e+00	9.131011e+10
+Iteration 4	RHO 1.0e-01	9.131011e+10
+Iteration 45	RHO 1.0e-02	8.750194e+10
+Iteration 118	RHO 1.0e-03	7.899438e+10
+Iteration 160	RHO 1.0e-04	7.887713e+10
+Iteration 212	RHO 1.0e-05	7.885345e+10
+Iteration 270	RHO 1.0e-06	7.884852e+10
+Iteration 330	RHO 1.0e-07	7.884800e+10
+Iteration 376	RHO 1.0e-08	7.884798e+10
+Iteration 423	RHO 1.0e-09	7.884797e+10
+Iteration 477	RHO 1.0e-10	7.884797e+10
+Iteration 529	RHO 1.0e-10	7.884797e+10
+
+Broadening:  2
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	1.539296e+11
+Iteration 2	RHO 1.0e-01	1.539296e+11
+Iteration 4	RHO 1.0e-02	1.539296e+11
+Iteration 7	RHO 1.0e-03	1.457168e+11
+Iteration 11	RHO 1.0e-04	1.456952e+11
+Iteration 16	RHO 1.0e-05	1.456834e+11
+Iteration 21	RHO 1.0e-06	1.456832e+11
+Iteration 34	RHO 1.0e-07	1.456831e+11
+Iteration 37	RHO 1.0e-08	1.456831e+11
+Iteration 48	RHO 1.0e-09	1.456831e+11
+Iteration 54	RHO 1.0e-10	1.456831e+11
+Iteration 57	RHO 1.0e-10	1.456831e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	1.456831e+11
+Iteration 4	RHO 1.0e-01	1.456831e+11
+Iteration 49	RHO 1.0e-02	1.213336e+11
+Iteration 174	RHO 1.0e-03	9.297076e+10
+Iteration 246	RHO 1.0e-04	9.223680e+10
+Iteration 297	RHO 1.0e-05	9.220520e+10
+Iteration 381	RHO 1.0e-06	9.219454e+10
+Iteration 460	RHO 1.0e-07	9.219333e+10
+Iteration 504	RHO 1.0e-08	9.219328e+10
+Iteration 594	RHO 1.0e-09	9.219327e+10
+Iteration 652	RHO 1.0e-10	9.219327e+10
+Iteration 718	RHO 1.0e-10	9.219327e+10
+
+Broadening:  1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.511311e+11
+Iteration 2	RHO 1.0e-01	4.511311e+11
+Iteration 4	RHO 1.0e-02	4.511311e+11
+Iteration 7	RHO 1.0e-03	4.309708e+11
+Iteration 11	RHO 1.0e-04	4.307478e+11
+Iteration 13	RHO 1.0e-05	4.307349e+11
+Iteration 15	RHO 1.0e-06	4.307320e+11
+Iteration 17	RHO 1.0e-07	4.307317e+11
+Iteration 20	RHO 1.0e-08	4.307317e+11
+Iteration 25	RHO 1.0e-09	4.307316e+11
+Iteration 32	RHO 1.0e-10	4.307316e+11
+Iteration 35	RHO 1.0e-10	4.307316e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.307316e+11
+Iteration 4	RHO 1.0e-01	4.307316e+11
+Iteration 46	RHO 1.0e-02	3.539925e+11
+Iteration 247	RHO 1.0e-03	1.941372e+11
+Iteration 612	RHO 1.0e-04	1.825979e+11
+Iteration 690	RHO 1.0e-05	1.825516e+11
+Iteration 733	RHO 1.0e-06	1.825498e+11
+Iteration 774	RHO 1.0e-07	1.825496e+11
+Iteration 823	RHO 1.0e-08	1.825496e+11
+Iteration 864	RHO 1.0e-09	1.825496e+11
+Iteration 902	RHO 1.0e-10	1.825496e+11
+Iteration 947	RHO 1.0e-10	1.825496e+11
+
+Broadening:  0.5
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	5.585614e+11
+Iteration 2	RHO 1.0e-01	5.585614e+11
+Iteration 4	RHO 1.0e-02	5.585614e+11
+Iteration 7	RHO 1.0e-03	4.998758e+11
+Iteration 11	RHO 1.0e-04	4.969156e+11
+Iteration 14	RHO 1.0e-05	4.968965e+11
+Iteration 17	RHO 1.0e-06	4.968930e+11
+Iteration 20	RHO 1.0e-07	4.968911e+11
+Iteration 23	RHO 1.0e-08	4.968911e+11
+Iteration 34	RHO 1.0e-09	4.968910e+11
+Iteration 39	RHO 1.0e-10	4.968910e+11
+Iteration 50	RHO 1.0e-10	4.968910e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.968910e+11
+Iteration 4	RHO 1.0e-01	4.968910e+11
+Iteration 34	RHO 1.0e-02	4.968910e+11
+Iteration 106	RHO 1.0e-03	4.292578e+11
+Iteration 213	RHO 1.0e-04	4.250754e+11
+Iteration 267	RHO 1.0e-05	4.249328e+11
+Iteration 324	RHO 1.0e-06	4.248883e+11
+Iteration 377	RHO 1.0e-07	4.248858e+11
+Iteration 435	RHO 1.0e-08	4.248856e+11
+Iteration 479	RHO 1.0e-09	4.248856e+11
+Iteration 532	RHO 1.0e-10	4.248856e+11
+Iteration 577	RHO 1.0e-10	4.248856e+11
+
+Broadening:  0.1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.323331e+12
+Iteration 2	RHO 1.0e-01	4.323331e+12
+Iteration 4	RHO 1.0e-02	4.323331e+12
+Iteration 5	RHO 1.0e-03	4.323331e+12
+Iteration 12	RHO 1.0e-04	3.940278e+12
+Iteration 16	RHO 1.0e-05	3.939771e+12
+Iteration 17	RHO 1.0e-06	3.939771e+12
+Iteration 20	RHO 1.0e-07	3.939771e+12
+Iteration 31	RHO 1.0e-08	3.939759e+12
+Iteration 46	RHO 1.0e-09	3.939757e+12
+Iteration 49	RHO 1.0e-10	3.939757e+12
+Iteration 54	RHO 1.0e-10	3.939757e+12
+Main optimization
+Iteration 1	RHO 1.0e+00	3.939757e+12
+Iteration 4	RHO 1.0e-01	3.939757e+12
+Iteration 34	RHO 1.0e-02	3.939757e+12
+Iteration 85	RHO 1.0e-03	3.029798e+12
+Iteration 219	RHO 1.0e-04	2.906180e+12
+Iteration 257	RHO 1.0e-05	2.906063e+12
+Iteration 293	RHO 1.0e-06	2.906036e+12
+Iteration 332	RHO 1.0e-07	2.906033e+12
+Iteration 367	RHO 1.0e-08	2.906033e+12
+Iteration 403	RHO 1.0e-09	2.906033e+12
+Iteration 437	RHO 1.0e-10	2.906033e+12
+Iteration 463	RHO 1.0e-10	2.906033e+12
+
+Broadening:  0
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	2.510274e+13
+Iteration 2	RHO 1.0e-01	2.510274e+13
+Iteration 4	RHO 1.0e-02	2.510274e+13
+Iteration 9	RHO 1.0e-03	2.462785e+13
+Iteration 11	RHO 1.0e-04	2.461139e+13
+Iteration 15	RHO 1.0e-05	2.461021e+13
+Iteration 18	RHO 1.0e-06	2.461019e+13
+Iteration 20	RHO 1.0e-07	2.461019e+13
+Iteration 22	RHO 1.0e-08	2.461019e+13
+Iteration 26	RHO 1.0e-09	2.461019e+13
+Iteration 27	RHO 1.0e-10	2.461019e+13
+Iteration 30	RHO 1.0e-10	2.461019e+13
+Main optimization
+Iteration 1	RHO 1.0e+00	2.461019e+13
+Iteration 4	RHO 1.0e-01	2.461019e+13
+Iteration 34	RHO 1.0e-02	2.461019e+13
+Iteration 65	RHO 1.0e-03	2.328053e+13
+Iteration 103	RHO 1.0e-04	2.287176e+13
+Iteration 311	RHO 1.0e-05	2.278101e+13
+Iteration 436	RHO 1.0e-06	2.278082e+13
+Iteration 510	RHO 1.0e-07	2.278082e+13
+Iteration 552	RHO 1.0e-08	2.278082e+13
+Iteration 583	RHO 1.0e-09	2.278082e+13
+Iteration 608	RHO 1.0e-10	2.278082e+13
+Iteration 638	RHO 1.0e-10	2.278082e+13
+
+R-Factor: 4.77 %
+
+4.769970 4.769970
+4.769970 4.769970
+4.769970 4.769970
+4.769970 4.769970
+41.609408 4.769970
+4.769970 4.769970
+41.609408 4.769970
+4.769970 4.769970
+49.712395 4.769970
+4.769970 4.769970
+49.712395 4.769970
+4.769970 4.769970
+64.590135 4.769970
+4.769970 4.769970
+64.590135 4.769970
+4.769970 4.769970
+48.387311 4.769970
+4.769970 4.769970
+48.387311 4.769970
+4.769970 4.769970
+63.606740 4.769970
+4.769970 4.769970
+63.606740 4.769970
+4.769970 4.769970
+53.124893 4.769970
+4.769970 4.769970
+53.124893 4.769970
+4.769970 4.769970
+67.376601 4.769970
+4.769970 4.769970
+67.376601 4.769970
+4.769970 4.769970
+51.695507 4.769970
+4.769970 4.769970
+51.695507 4.769970
+4.769970 4.769970
+65.619350 4.769970
+4.769970 4.769970
+65.619350 4.769970
+4.769970 4.769970
+76.023474 4.769970
+4.769970 4.769970
+76.023474 4.769970
+4.769970 4.769970
+85.561354 4.769970
+4.769970 4.769970
+85.561354 4.769970
+4.769970 4.769970
+69.215442 4.769970
+4.769970 4.769970
+69.215442 4.769970
+4.769970 4.769970
+80.279356 4.769970
+4.769970 4.769970
+80.279356 4.769970
+4.769970 4.769970
+73.629974 4.769970
+4.769970 4.769970
+73.629974 4.769970
+4.769970 4.769970
+83.969531 4.769970
+4.769970 4.769970
+83.969531 4.769970
+4.769970 4.769970
+65.582393 4.769970
+4.769970 4.769970
+65.582393 4.769970
+4.769970 4.769970
+75.113277 4.769970
+4.769970 4.769970
+75.113277 4.769970
+4.769970 4.769970
+78.032876 4.769970
+4.769970 4.769970
+78.032876 4.769970
+4.769970 4.769970
+86.197888 4.769970
+4.769970 4.769970
+86.197888 4.769970
+4.769970 4.769970
+80.196362 4.769970
+4.769970 4.769970
+80.196362 4.769970
+4.769970 4.769970
+88.164726 4.769970
+4.769970 4.769970
+88.164726 4.769970
+4.769970 4.769970
+82.052024 4.769970
+4.769970 4.769970
+82.052024 4.769970
+4.769970 4.769970
+89.847525 4.769970
+4.769970 4.769970
+89.847525 4.769970
+4.769970 4.769970
+77.486295 4.769970
+4.769970 4.769970
+77.486295 4.769970
+4.769970 4.769970
+84.818737 4.769970
+4.769970 4.769970
+84.818737 4.769970
+4.769970 4.769970
+87.504474 4.769970
+4.769970 4.769970
+87.504474 4.769970
+4.769970 4.769970
+94.143199 4.769970
+4.769970 4.769970
+94.143199 4.769970
+4.769970 4.769970
+89.098916 4.769970
+4.769970 4.769970
+89.098916 4.769970
+4.769970 4.769970
+95.717402 4.769970
+4.769970 4.769970
+95.717402 4.769970
+4.769970 4.769970
+89.776857 4.769970
+4.769970 4.769970
+89.776857 4.769970
+4.769970 4.769970
+96.251112 4.769970
+4.769970 4.769970
+96.251112 4.769970
+4.769970 4.769970
+85.126511 4.769970
+4.769970 4.769970
+85.126511 4.769970
+4.769970 4.769970
+92.758783 4.769970
+4.769970 4.769970
+92.758783 4.769970
+4.769970 4.769970
+91.952578 4.769970
+4.769970 4.769970
+91.952578 4.769970
+4.769970 4.769970
+107.806640 4.769970
+4.769970 4.769970
+107.806640 4.769970
+4.769970 4.769970
+90.967867 4.769970
+4.769970 4.769970
+90.967867 4.769970
+4.769970 4.769970
+112.123095 4.769970
+4.769970 4.769970
+112.123095 4.769970
+4.769970 4.769970
+91.793044 4.769970
+4.769970 4.769970
+91.793044 4.769970
+4.769970 4.769970
+108.682594 4.769970
+4.769970 4.769970
+108.682594 4.769970
+4.769970 4.769970
+92.305802 4.769970
+4.769970 4.769970
+92.305802 4.769970
+4.769970 4.769970
+101.275781 4.769970
+4.769970 4.769970
+101.275781 4.769970
+4.769970 4.769970
+98.270238 4.769970
+4.769970 4.769970
+98.270238 4.769970
+4.769970 4.769970
+106.116785 4.769970
+4.769970 4.769970
+106.116785 4.769970
+4.769970 4.769970
+97.192030 4.769970
+4.769970 4.769970
+97.192030 4.769970
+4.769970 4.769970
+104.600575 4.769970
+4.769970 4.769970
+104.600575 4.769970
+4.769970 4.769970
+97.124956 4.769970
+4.769970 4.769970
+97.124956 4.769970
+4.769970 4.769970
+104.444891 4.769970
+4.769970 4.769970
+104.444891 4.769970
+4.769970 4.769970
+118.213208 4.769970
+4.769970 4.769970
+118.213208 4.769970
+4.769970 4.769970
+121.739902 4.769970
+4.769970 4.769970
+121.739902 4.769970
+4.769970 4.769970
+118.734258 4.769970
+4.769970 4.769970
+118.734258 4.769970
+4.769970 4.769970
+137.714353 4.769970
+4.769970 4.769970
+137.714353 4.769970
+4.769970 4.769970
+118.451390 4.769970
+4.769970 4.769970
+118.451390 4.769970
+4.769970 4.769970
+136.205168 4.769970
+4.769970 4.769970
+136.205168 4.769970
+4.769970 4.769970
+112.992730 4.769970
+4.769970 4.769970
+112.992730 4.769970
+4.769970 4.769970
+124.792014 4.769970
+4.769970 4.769970
+124.792014 4.769970
+4.769970 4.769970
+107.735243 4.769970
+4.769970 4.769970
+107.735243 4.769970
+4.769970 4.769970
+118.195382 4.769970
+4.769970 4.769970
+118.195382 4.769970
+4.769970 4.769970
+109.707256 4.769970
+4.769970 4.769970
+109.707256 4.769970
+4.769970 4.769970
+125.022609 4.769970
+4.769970 4.769970
+125.022609 4.769970
+4.769970 4.769970
+108.988987 4.769970
+4.769970 4.769970
+108.988987 4.769970
+4.769970 4.769970
+124.649891 4.769970
+4.769970 4.769970
+124.649891 4.769970
+4.769970 4.769970
+104.668010 4.769970
+4.769970 4.769970
+104.668010 4.769970
+4.769970 4.769970
+121.314959 4.769970
+4.769970 4.769970
+121.314959 4.769970
+4.769970 4.769970
+114.800289 4.769970
+4.769970 4.769970
+114.800289 4.769970
+4.769970 4.769970
+121.202445 4.769970
+4.769970 4.769970
+121.202445 4.769970
+4.769970 4.769970
+114.868965 4.769970
+4.769970 4.769970
+114.868965 4.769970
+4.769970 4.769970
+121.833043 4.769970
+4.769970 4.769970
+121.833043 4.769970
+4.769970 4.769970
+114.109388 4.769970
+4.769970 4.769970
+114.109388 4.769970
+4.769970 4.769970
+122.069871 4.769970
+4.769970 4.769970
+122.069871 4.769970
+4.769970 4.769970
+111.077235 4.769970
+4.769970 4.769970
+111.077235 4.769970
+4.769970 4.769970
+118.320564 4.769970
+4.769970 4.769970
+118.320564 4.769970
+4.769970 4.769970
+95.247385 4.769970
+4.769970 4.769970
+95.247385 4.769970
+4.769970 4.769970
+100.118097 4.769970
+4.769970 4.769970
+100.118097 4.769970
+4.769970 4.769970
+100.082071 4.769970
+4.769970 4.769970
+100.082071 4.769970
+4.769970 4.769970
+104.070927 4.769970
+4.769970 4.769970
+104.070927 4.769970
+4.769970 4.769970
+99.479537 4.769970
+4.769970 4.769970
+99.479537 4.769970
+4.769970 4.769970
+103.827525 4.769970
+4.769970 4.769970
+103.827525 4.769970
+4.769970 4.769970
+99.195896 4.769970
+4.769970 4.769970
+99.195896 4.769970
+4.769970 4.769970
+103.808637 4.769970
+4.769970 4.769970
+103.808637 4.769970
+4.769970 4.769970
+90.815538 4.769970
+4.769970 4.769970
+90.815538 4.769970
+4.769970 4.769970
+94.033340 4.769970
+4.769970 4.769970
+94.033340 4.769970
+4.769970 4.769970
+97.181107 4.769970
+4.769970 4.769970
+97.181107 4.769970
+4.769970 4.769970
+102.359172 4.769970
+4.769970 4.769970
+102.359172 4.769970
+4.769970 4.769970
+96.764452 4.769970
+4.769970 4.769970
+96.764452 4.769970
+4.769970 4.769970
+116.442556 4.769970
+4.769970 4.769970
+116.442556 4.769970
+4.769970 4.769970
+96.467599 4.769970
+4.769970 4.769970
+96.467599 4.769970
+4.769970 4.769970
+136.466432 4.769970
+4.769970 4.769970
+136.466432 4.769970
+4.769970 4.769970
+84.277574 4.769970
+4.769970 4.769970
+84.277574 4.769970
+4.769970 4.769970
+88.507271 4.769970
+4.769970 4.769970
+88.507271 4.769970
+4.769970 4.769970
+88.818286 4.769970
+4.769970 4.769970
+88.818286 4.769970
+4.769970 4.769970
+95.550122 4.769970
+4.769970 4.769970
+95.550122 4.769970
+4.769970 4.769970
+88.863086 4.769970
+4.769970 4.769970
+88.863086 4.769970
+4.769970 4.769970
+99.278188 4.769970
+4.769970 4.769970
+99.278188 4.769970
+4.769970 4.769970
+89.390086 4.769970
+4.769970 4.769970
+89.390086 4.769970
+4.769970 4.769970
+105.867378 4.769970
+4.769970 4.769970
+105.867378 4.769970
+4.769970 4.769970
+94.500092 4.769970
+4.769970 4.769970
+94.500092 4.769970
+4.769970 4.769970
+97.300004 4.769970
+4.769970 4.769970
+97.300004 4.769970
+4.769970 4.769970
+117.431561 4.769970
+4.769970 4.769970
+117.431561 4.769970
+4.769970 4.769970
+113.937235 4.769970
+4.769970 4.769970
+113.937235 4.769970
+4.769970 4.769970
+120.505706 4.769970
+4.769970 4.769970
+120.505706 4.769970
+4.769970 4.769970
+116.959895 4.769970
+4.769970 4.769970
+116.959895 4.769970
+4.769970 4.769970
+111.574283 4.769970
+4.769970 4.769970
+111.574283 4.769970
+4.769970 4.769970
+108.026583 4.769970
+4.769970 4.769970
+108.026583 4.769970
+4.769970 4.769970
+86.709591 4.769970
+4.769970 4.769970
+86.709591 4.769970
+4.769970 4.769970
+90.399403 4.769970
+4.769970 4.769970
+90.399403 4.769970
+4.769970 4.769970
+107.165883 4.769970
+4.769970 4.769970
+107.165883 4.769970
+4.769970 4.769970
+109.409283 4.769970
+4.769970 4.769970
+109.409283 4.769970
+4.769970 4.769970
+110.699082 4.769970
+4.769970 4.769970
+110.699082 4.769970
+4.769970 4.769970
+109.288977 4.769970
+4.769970 4.769970
+109.288977 4.769970
+4.769970 4.769970
+101.097100 4.769970
+4.769970 4.769970
+101.097100 4.769970
+4.769970 4.769970
+100.408159 4.769970
+4.769970 4.769970
+100.408159 4.769970
+4.769970 4.769970
+100.484087 4.769970
+4.769970 4.769970
+100.484087 4.769970
+4.769970 4.769970
+100.254814 4.769970
+4.769970 4.769970
+100.254814 4.769970
+4.769970 4.769970
+108.714382 4.769970
+4.769970 4.769970
+108.714382 4.769970
+4.769970 4.769970
+118.970064 4.769970
+4.769970 4.769970
+118.970064 4.769970
+4.769970 4.769970
+107.406288 4.769970
+4.769970 4.769970
+107.406288 4.769970
+4.769970 4.769970
+112.857872 4.769970
+4.769970 4.769970
+112.857872 4.769970
+4.769970 4.769970
+102.419628 4.769970
+4.769970 4.769970
+102.419628 4.769970
+4.769970 4.769970
+123.152625 4.769970
+4.769970 4.769970
+123.152625 4.769970
+4.769970 4.769970
+94.283082 4.769970
+4.769970 4.769970
+94.283082 4.769970
+4.769970 4.769970
+95.891825 4.769970
+4.769970 4.769970
+95.891825 4.769970
+4.769970 4.769970
+105.063967 4.769970
+4.769970 4.769970
+105.063967 4.769970
+4.769970 4.769970
+112.340271 4.769970
+4.769970 4.769970
+112.340271 4.769970
+4.769970 4.769970
+103.000473 4.769970
+4.769970 4.769970
+103.000473 4.769970
+4.769970 4.769970
+108.473228 4.769970
+4.769970 4.769970
+108.473228 4.769970
+4.769970 4.769970
+99.072274 4.769970
+4.769970 4.769970
+99.072274 4.769970
+4.769970 4.769970
+558.487787 4.769970
+4.769970 4.769970
+558.487787 4.769970
+4.769970 4.769970
+17.537160 4.769970
+4.769970 4.769970
+17.537160 4.769970
+4.769970 4.769970
+43.730198 4.769970
+4.769970 4.769970
+43.730198 4.769970
+4.769970 4.769970
+50.772955 4.769970
+4.769970 4.769970
+50.772955 4.769970
+4.769970 4.769970
+64.590148 4.769970
+4.769970 4.769970
+64.590148 4.769970
+4.769970 4.769970
+47.934868 4.769970
+4.769970 4.769970
+47.934868 4.769970
+4.769970 4.769970
+62.525965 4.769970
+4.769970 4.769970
+62.525965 4.769970
+4.769970 4.769970
+54.054363 4.769970
+4.769970 4.769970
+54.054363 4.769970
+4.769970 4.769970
+67.376400 4.769970
+4.769970 4.769970
+67.376400 4.769970
+4.769970 4.769970
+53.541834 4.769970
+4.769970 4.769970
+53.541834 4.769970
+4.769970 4.769970
+66.592294 4.769970
+4.769970 4.769970
+66.592294 4.769970
+4.769970 4.769970
+76.496567 4.769970
+4.769970 4.769970
+76.496567 4.769970
+4.769970 4.769970
+85.561095 4.769970
+4.769970 4.769970
+85.561095 4.769970
+4.769970 4.769970
+68.441088 4.769970
+4.769970 4.769970
+68.441088 4.769970
+4.769970 4.769970
+79.232371 4.769970
+4.769970 4.769970
+79.232371 4.769970
+4.769970 4.769970
+74.069042 4.769970
+4.769970 4.769970
+74.069042 4.769970
+4.769970 4.769970
+83.968751 4.769970
+4.769970 4.769970
+83.968751 4.769970
+4.769970 4.769970
+65.626030 4.769970
+4.769970 4.769970
+65.626030 4.769970
+4.769970 4.769970
+75.142861 4.769970
+4.769970 4.769970
+75.142861 4.769970
+4.769970 4.769970
+78.041579 4.769970
+4.769970 4.769970
+78.041579 4.769970
+4.769970 4.769970
+86.197893 4.769970
+4.769970 4.769970
+86.197893 4.769970
+4.769970 4.769970
+80.188433 4.769970
+4.769970 4.769970
+80.188433 4.769970
+4.769970 4.769970
+88.149197 4.769970
+4.769970 4.769970
+88.149197 4.769970
+4.769970 4.769970
+82.063774 4.769970
+4.769970 4.769970
+82.063774 4.769970
+4.769970 4.769970
+89.849201 4.769970
+4.769970 4.769970
+89.849201 4.769970
+4.769970 4.769970
+77.556634 4.769970
+4.769970 4.769970
+77.556634 4.769970
+4.769970 4.769970
+84.862036 4.769970
+4.769970 4.769970
+84.862036 4.769970
+4.769970 4.769970
+87.507989 4.769970
+4.769970 4.769970
+87.507989 4.769970
+4.769970 4.769970
+94.142949 4.769970
+4.769970 4.769970
+94.142949 4.769970
+4.769970 4.769970
+89.084835 4.769970
+4.769970 4.769970
+89.084835 4.769970
+4.769970 4.769970
+95.701851 4.769970
+4.769970 4.769970
+95.701851 4.769970
+4.769970 4.769970
+89.797870 4.769970
+4.769970 4.769970
+89.797870 4.769970
+4.769970 4.769970
+96.252193 4.769970
+4.769970 4.769970
+96.252193 4.769970
+4.769970 4.769970
+85.619131 4.769970
+4.769970 4.769970
+85.619131 4.769970
+4.769970 4.769970
+92.750255 4.769970
+4.769970 4.769970
+92.750255 4.769970
+4.769970 4.769970
+92.169501 4.769970
+4.769970 4.769970
+92.169501 4.769970
+4.769970 4.769970
+107.806525 4.769970
+4.769970 4.769970
+107.806525 4.769970
+4.769970 4.769970
+91.010411 4.769970
+4.769970 4.769970
+91.010411 4.769970
+4.769970 4.769970
+111.935888 4.769970
+4.769970 4.769970
+111.935888 4.769970
+4.769970 4.769970
+91.974700 4.769970
+4.769970 4.769970
+91.974700 4.769970
+4.769970 4.769970
+108.672405 4.769970
+4.769970 4.769970
+108.672405 4.769970
+4.769970 4.769970
+91.031893 4.769970
+4.769970 4.769970
+91.031893 4.769970
+4.769970 4.769970
+96.425779 4.769970
+4.769970 4.769970
+96.425779 4.769970
+4.769970 4.769970
+96.698850 4.769970
+4.769970 4.769970
+96.698850 4.769970
+4.769970 4.769970
+106.116798 4.769970
+4.769970 4.769970
+106.116798 4.769970
+4.769970 4.769970
+95.646953 4.769970
+4.769970 4.769970
+95.646953 4.769970
+4.769970 4.769970
+104.574777 4.769970
+4.769970 4.769970
+104.574777 4.769970
+4.769970 4.769970
+96.060207 4.769970
+4.769970 4.769970
+96.060207 4.769970
+4.769970 4.769970
+104.436090 4.769970
+4.769970 4.769970
+104.436090 4.769970
+4.769970 4.769970
+118.260406 4.769970
+4.769970 4.769970
+118.260406 4.769970
+4.769970 4.769970
+121.573346 4.769970
+4.769970 4.769970
+121.573346 4.769970
+4.769970 4.769970
+118.740257 4.769970
+4.769970 4.769970
+118.740257 4.769970
+4.769970 4.769970
+137.714129 4.769970
+4.769970 4.769970
+137.714129 4.769970
+4.769970 4.769970
+118.088176 4.769970
+4.769970 4.769970
+118.088176 4.769970
+4.769970 4.769970
+141.180993 4.769970
+4.769970 4.769970
+141.180993 4.769970
+4.769970 4.769970
+112.916639 4.769970
+4.769970 4.769970
+112.916639 4.769970
+4.769970 4.769970
+124.777306 4.769970
+4.769970 4.769970
+124.777306 4.769970
+4.769970 4.769970
+109.998934 4.769970
+4.769970 4.769970
+109.998934 4.769970
+4.769970 4.769970
+115.689193 4.769970
+4.769970 4.769970
+115.689193 4.769970
+4.769970 4.769970
+110.869122 4.769970
+4.769970 4.769970
+110.869122 4.769970
+4.769970 4.769970
+125.022586 4.769970
+4.769970 4.769970
+125.022586 4.769970
+4.769970 4.769970
+109.751495 4.769970
+4.769970 4.769970
+109.751495 4.769970
+4.769970 4.769970
+127.904665 4.769970
+4.769970 4.769970
+127.904665 4.769970
+4.769970 4.769970
+105.353789 4.769970
+4.769970 4.769970
+105.353789 4.769970
+4.769970 4.769970
+121.412004 4.769970
+4.769970 4.769970
+121.412004 4.769970
+4.769970 4.769970
+117.951433 4.769970
+4.769970 4.769970
+117.951433 4.769970
+4.769970 4.769970
+120.858205 4.769970
+4.769970 4.769970
+120.858205 4.769970
+4.769970 4.769970
+118.457163 4.769970
+4.769970 4.769970
+118.457163 4.769970
+4.769970 4.769970
+121.833201 4.769970
+4.769970 4.769970
+121.833201 4.769970
+4.769970 4.769970
+117.107791 4.769970
+4.769970 4.769970
+117.107791 4.769970
+4.769970 4.769970
+121.429102 4.769970
+4.769970 4.769970
+121.429102 4.769970
+4.769970 4.769970
+114.442043 4.769970
+4.769970 4.769970
+114.442043 4.769970
+4.769970 4.769970
+118.308367 4.769970
+4.769970 4.769970
+118.308367 4.769970
+4.769970 4.769970
+95.163336 4.769970
+4.769970 4.769970
+95.163336 4.769970
+4.769970 4.769970
+99.925639 4.769970
+4.769970 4.769970
+99.925639 4.769970
+4.769970 4.769970
+100.120440 4.769970
+4.769970 4.769970
+100.120440 4.769970
+4.769970 4.769970
+104.070988 4.769970
+4.769970 4.769970
+104.070988 4.769970
+4.769970 4.769970
+99.076624 4.769970
+4.769970 4.769970
+99.076624 4.769970
+4.769970 4.769970
+103.398661 4.769970
+4.769970 4.769970
+103.398661 4.769970
+4.769970 4.769970
+99.299386 4.769970
+4.769970 4.769970
+99.299386 4.769970
+4.769970 4.769970
+103.804245 4.769970
+4.769970 4.769970
+103.804245 4.769970
+4.769970 4.769970
+91.299829 4.769970
+4.769970 4.769970
+91.299829 4.769970
+4.769970 4.769970
+94.325082 4.769970
+4.769970 4.769970
+94.325082 4.769970
+4.769970 4.769970
+94.997774 4.769970
+4.769970 4.769970
+94.997774 4.769970
+4.769970 4.769970
+102.358854 4.769970
+4.769970 4.769970
+102.358854 4.769970
+4.769970 4.769970
+94.622678 4.769970
+4.769970 4.769970
+94.622678 4.769970
+4.769970 4.769970
+108.245131 4.769970
+4.769970 4.769970
+108.245131 4.769970
+4.769970 4.769970
+95.164223 4.769970
+4.769970 4.769970
+95.164223 4.769970
+4.769970 4.769970
+136.430563 4.769970
+4.769970 4.769970
+136.430563 4.769970
+4.769970 4.769970
+83.670614 4.769970
+4.769970 4.769970
+83.670614 4.769970
+4.769970 4.769970
+88.680361 4.769970
+4.769970 4.769970
+88.680361 4.769970
+4.769970 4.769970
+88.278510 4.769970
+4.769970 4.769970
+88.278510 4.769970
+4.769970 4.769970
+95.550059 4.769970
+4.769970 4.769970
+95.550059 4.769970
+4.769970 4.769970
+88.188620 4.769970
+4.769970 4.769970
+88.188620 4.769970
+4.769970 4.769970
+98.520195 4.769970
+4.769970 4.769970
+98.520195 4.769970
+4.769970 4.769970
+89.123330 4.769970
+4.769970 4.769970
+Modified by DJ to test all combinations
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+Broadening:  3
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	9.153015e+10
+Iteration 2	RHO 1.0e-01	9.153015e+10
+Iteration 4	RHO 1.0e-02	9.153015e+10
+Iteration 6	RHO 1.0e-03	9.132662e+10
+Iteration 8	RHO 1.0e-04	9.131160e+10
+Iteration 12	RHO 1.0e-05	9.131078e+10
+Iteration 19	RHO 1.0e-06	9.131016e+10
+Iteration 23	RHO 1.0e-07	9.131012e+10
+Iteration 28	RHO 1.0e-08	9.131011e+10
+Iteration 41	RHO 1.0e-09	9.131011e+10
+Iteration 48	RHO 1.0e-10	9.131011e+10
+Iteration 51	RHO 1.0e-10	9.131011e+10
+Main optimization
+Iteration 1	RHO 1.0e+00	9.131011e+10
+Iteration 4	RHO 1.0e-01	9.131011e+10
+Iteration 45	RHO 1.0e-02	8.750194e+10
+Iteration 118	RHO 1.0e-03	7.899438e+10
+Iteration 160	RHO 1.0e-04	7.887713e+10
+Iteration 212	RHO 1.0e-05	7.885345e+10
+Iteration 270	RHO 1.0e-06	7.884852e+10
+Iteration 330	RHO 1.0e-07	7.884800e+10
+Iteration 376	RHO 1.0e-08	7.884798e+10
+Iteration 423	RHO 1.0e-09	7.884797e+10
+Iteration 477	RHO 1.0e-10	7.884797e+10
+Iteration 529	RHO 1.0e-10	7.884797e+10
+
+Broadening:  2
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	1.539296e+11
+Iteration 2	RHO 1.0e-01	1.539296e+11
+Iteration 4	RHO 1.0e-02	1.539296e+11
+Iteration 7	RHO 1.0e-03	1.457168e+11
+Iteration 11	RHO 1.0e-04	1.456952e+11
+Iteration 16	RHO 1.0e-05	1.456834e+11
+Iteration 21	RHO 1.0e-06	1.456832e+11
+Iteration 34	RHO 1.0e-07	1.456831e+11
+Iteration 37	RHO 1.0e-08	1.456831e+11
+Iteration 48	RHO 1.0e-09	1.456831e+11
+Iteration 54	RHO 1.0e-10	1.456831e+11
+Iteration 57	RHO 1.0e-10	1.456831e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	1.456831e+11
+Iteration 4	RHO 1.0e-01	1.456831e+11
+Iteration 49	RHO 1.0e-02	1.213336e+11
+Iteration 174	RHO 1.0e-03	9.297076e+10
+Iteration 246	RHO 1.0e-04	9.223680e+10
+Iteration 297	RHO 1.0e-05	9.220520e+10
+Iteration 381	RHO 1.0e-06	9.219454e+10
+Iteration 460	RHO 1.0e-07	9.219333e+10
+Iteration 504	RHO 1.0e-08	9.219328e+10
+Iteration 594	RHO 1.0e-09	9.219327e+10
+Iteration 652	RHO 1.0e-10	9.219327e+10
+Iteration 718	RHO 1.0e-10	9.219327e+10
+
+Broadening:  1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.511311e+11
+Iteration 2	RHO 1.0e-01	4.511311e+11
+Iteration 4	RHO 1.0e-02	4.511311e+11
+Iteration 7	RHO 1.0e-03	4.309708e+11
+Iteration 11	RHO 1.0e-04	4.307478e+11
+Iteration 13	RHO 1.0e-05	4.307349e+11
+Iteration 15	RHO 1.0e-06	4.307320e+11
+Iteration 17	RHO 1.0e-07	4.307317e+11
+Iteration 20	RHO 1.0e-08	4.307317e+11
+Iteration 25	RHO 1.0e-09	4.307316e+11
+Iteration 32	RHO 1.0e-10	4.307316e+11
+Iteration 35	RHO 1.0e-10	4.307316e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.307316e+11
+Iteration 4	RHO 1.0e-01	4.307316e+11
+Iteration 46	RHO 1.0e-02	3.539925e+11
+Iteration 247	RHO 1.0e-03	1.941372e+11
+Iteration 612	RHO 1.0e-04	1.825979e+11
+Iteration 690	RHO 1.0e-05	1.825516e+11
+Iteration 733	RHO 1.0e-06	1.825498e+11
+Iteration 774	RHO 1.0e-07	1.825496e+11
+Iteration 823	RHO 1.0e-08	1.825496e+11
+Iteration 864	RHO 1.0e-09	1.825496e+11
+Iteration 902	RHO 1.0e-10	1.825496e+11
+Iteration 947	RHO 1.0e-10	1.825496e+11
+
+Broadening:  0.5
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	5.585614e+11
+Iteration 2	RHO 1.0e-01	5.585614e+11
+Iteration 4	RHO 1.0e-02	5.585614e+11
+Iteration 7	RHO 1.0e-03	4.998758e+11
+Iteration 11	RHO 1.0e-04	4.969156e+11
+Iteration 14	RHO 1.0e-05	4.968965e+11
+Iteration 17	RHO 1.0e-06	4.968930e+11
+Iteration 20	RHO 1.0e-07	4.968911e+11
+Iteration 23	RHO 1.0e-08	4.968911e+11
+Iteration 34	RHO 1.0e-09	4.968910e+11
+Iteration 39	RHO 1.0e-10	4.968910e+11
+Iteration 50	RHO 1.0e-10	4.968910e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.968910e+11
+Iteration 4	RHO 1.0e-01	4.968910e+11
+Iteration 34	RHO 1.0e-02	4.968910e+11
+Iteration 106	RHO 1.0e-03	4.292578e+11
+Iteration 213	RHO 1.0e-04	4.250754e+11
+Iteration 267	RHO 1.0e-05	4.249328e+11
+Iteration 324	RHO 1.0e-06	4.248883e+11
+Iteration 377	RHO 1.0e-07	4.248858e+11
+Iteration 435	RHO 1.0e-08	4.248856e+11
+Iteration 479	RHO 1.0e-09	4.248856e+11
+Iteration 532	RHO 1.0e-10	4.248856e+11
+Iteration 577	RHO 1.0e-10	4.248856e+11
+
+Broadening:  0.1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.323331e+12
+Iteration 2	RHO 1.0e-01	4.323331e+12
+Iteration 4	RHO 1.0e-02	4.323331e+12
+Iteration 5	RHO 1.0e-03	4.323331e+12
+Iteration 12	RHO 1.0e-04	3.940278e+12
+Iteration 16	RHO 1.0e-05	3.939771e+12
+Iteration 17	RHO 1.0e-06	3.939771e+12
+Iteration 20	RHO 1.0e-07	3.939771e+12
+Iteration 31	RHO 1.0e-08	3.939759e+12
+Iteration 46	RHO 1.0e-09	3.939757e+12
+Iteration 49	RHO 1.0e-10	3.939757e+12
+Iteration 54	RHO 1.0e-10	3.939757e+12
+Main optimization
+Iteration 1	RHO 1.0e+00	3.939757e+12
+Iteration 4	RHO 1.0e-01	3.939757e+12
+Iteration 34	RHO 1.0e-02	3.939757e+12
+Iteration 85	RHO 1.0e-03	3.029798e+12
+Iteration 219	RHO 1.0e-04	2.906180e+12
+Iteration 257	RHO 1.0e-05	2.906063e+12
+Iteration 293	RHO 1.0e-06	2.906036e+12
+Iteration 332	RHO 1.0e-07	2.906033e+12
+Iteration 367	RHO 1.0e-08	2.906033e+12
+Iteration 403	RHO 1.0e-09	2.906033e+12
+Iteration 437	RHO 1.0e-10	2.906033e+12
+Iteration 463	RHO 1.0e-10	2.906033e+12
+
+Broadening:  0
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	2.510274e+13
+Iteration 2	RHO 1.0e-01	2.510274e+13
+Iteration 4	RHO 1.0e-02	2.510274e+13
+Iteration 9	RHO 1.0e-03	2.462785e+13
+Iteration 11	RHO 1.0e-04	2.461139e+13
+Iteration 15	RHO 1.0e-05	2.461021e+13
+Iteration 18	RHO 1.0e-06	2.461019e+13
+Iteration 20	RHO 1.0e-07	2.461019e+13
+Iteration 22	RHO 1.0e-08	2.461019e+13
+Iteration 26	RHO 1.0e-09	2.461019e+13
+Iteration 27	RHO 1.0e-10	2.461019e+13
+Iteration 30	RHO 1.0e-10	2.461019e+13
+Main optimization
+Iteration 1	RHO 1.0e+00	2.461019e+13
+Iteration 4	RHO 1.0e-01	2.461019e+13
+Iteration 34	RHO 1.0e-02	2.461019e+13
+Iteration 65	RHO 1.0e-03	2.328053e+13
+Iteration 103	RHO 1.0e-04	2.287176e+13
+Iteration 311	RHO 1.0e-05	2.278101e+13
+Iteration 436	RHO 1.0e-06	2.278082e+13
+Iteration 510	RHO 1.0e-07	2.278082e+13
+Iteration 552	RHO 1.0e-08	2.278082e+13
+Iteration 583	RHO 1.0e-09	2.278082e+13
+Iteration 608	RHO 1.0e-10	2.278082e+13
+Iteration 638	RHO 1.0e-10	2.278082e+13
+
+R-Factor: 4.77 %
+
+Modified by DJ to test all combinations
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+Broadening:  3
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	9.153015e+10
+Iteration 2	RHO 1.0e-01	9.153015e+10
+Iteration 4	RHO 1.0e-02	9.153015e+10
+Iteration 6	RHO 1.0e-03	9.132662e+10
+Iteration 8	RHO 1.0e-04	9.131160e+10
+Iteration 12	RHO 1.0e-05	9.131078e+10
+Iteration 19	RHO 1.0e-06	9.131016e+10
+Iteration 23	RHO 1.0e-07	9.131012e+10
+Iteration 28	RHO 1.0e-08	9.131011e+10
+Iteration 41	RHO 1.0e-09	9.131011e+10
+Iteration 48	RHO 1.0e-10	9.131011e+10
+Iteration 51	RHO 1.0e-10	9.131011e+10
+Main optimization
+Iteration 1	RHO 1.0e+00	9.131011e+10
+Iteration 4	RHO 1.0e-01	9.131011e+10
+Iteration 45	RHO 1.0e-02	8.750194e+10
+Iteration 118	RHO 1.0e-03	7.899438e+10
+Iteration 160	RHO 1.0e-04	7.887713e+10
+Iteration 212	RHO 1.0e-05	7.885345e+10
+Iteration 270	RHO 1.0e-06	7.884852e+10
+Iteration 330	RHO 1.0e-07	7.884800e+10
+Iteration 376	RHO 1.0e-08	7.884798e+10
+Iteration 423	RHO 1.0e-09	7.884797e+10
+Iteration 477	RHO 1.0e-10	7.884797e+10
+Iteration 529	RHO 1.0e-10	7.884797e+10
+
+Broadening:  2
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	1.539296e+11
+Iteration 2	RHO 1.0e-01	1.539296e+11
+Iteration 4	RHO 1.0e-02	1.539296e+11
+Iteration 7	RHO 1.0e-03	1.457168e+11
+Iteration 11	RHO 1.0e-04	1.456952e+11
+Iteration 16	RHO 1.0e-05	1.456834e+11
+Iteration 21	RHO 1.0e-06	1.456832e+11
+Iteration 34	RHO 1.0e-07	1.456831e+11
+Iteration 37	RHO 1.0e-08	1.456831e+11
+Iteration 48	RHO 1.0e-09	1.456831e+11
+Iteration 54	RHO 1.0e-10	1.456831e+11
+Iteration 57	RHO 1.0e-10	1.456831e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	1.456831e+11
+Iteration 4	RHO 1.0e-01	1.456831e+11
+Iteration 49	RHO 1.0e-02	1.213336e+11
+Iteration 174	RHO 1.0e-03	9.297076e+10
+Iteration 246	RHO 1.0e-04	9.223680e+10
+Iteration 297	RHO 1.0e-05	9.220520e+10
+Iteration 381	RHO 1.0e-06	9.219454e+10
+Iteration 460	RHO 1.0e-07	9.219333e+10
+Iteration 504	RHO 1.0e-08	9.219328e+10
+Iteration 594	RHO 1.0e-09	9.219327e+10
+Iteration 652	RHO 1.0e-10	9.219327e+10
+Iteration 718	RHO 1.0e-10	9.219327e+10
+
+Broadening:  1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.511311e+11
+Iteration 2	RHO 1.0e-01	4.511311e+11
+Iteration 4	RHO 1.0e-02	4.511311e+11
+Iteration 7	RHO 1.0e-03	4.309708e+11
+Iteration 11	RHO 1.0e-04	4.307478e+11
+Iteration 13	RHO 1.0e-05	4.307349e+11
+Iteration 15	RHO 1.0e-06	4.307320e+11
+Iteration 17	RHO 1.0e-07	4.307317e+11
+Iteration 20	RHO 1.0e-08	4.307317e+11
+Iteration 25	RHO 1.0e-09	4.307316e+11
+Iteration 32	RHO 1.0e-10	4.307316e+11
+Iteration 35	RHO 1.0e-10	4.307316e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.307316e+11
+Iteration 4	RHO 1.0e-01	4.307316e+11
+Iteration 46	RHO 1.0e-02	3.539925e+11
+Iteration 247	RHO 1.0e-03	1.941372e+11
+Iteration 612	RHO 1.0e-04	1.825979e+11
+Iteration 690	RHO 1.0e-05	1.825516e+11
+Iteration 733	RHO 1.0e-06	1.825498e+11
+Iteration 774	RHO 1.0e-07	1.825496e+11
+Iteration 823	RHO 1.0e-08	1.825496e+11
+Iteration 864	RHO 1.0e-09	1.825496e+11
+Iteration 902	RHO 1.0e-10	1.825496e+11
+Iteration 947	RHO 1.0e-10	1.825496e+11
+
+Broadening:  0.5
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	5.585614e+11
+Iteration 2	RHO 1.0e-01	5.585614e+11
+Iteration 4	RHO 1.0e-02	5.585614e+11
+Iteration 7	RHO 1.0e-03	4.998758e+11
+Iteration 11	RHO 1.0e-04	4.969156e+11
+Iteration 14	RHO 1.0e-05	4.968965e+11
+Iteration 17	RHO 1.0e-06	4.968930e+11
+Iteration 20	RHO 1.0e-07	4.968911e+11
+Iteration 23	RHO 1.0e-08	4.968911e+11
+Iteration 34	RHO 1.0e-09	4.968910e+11
+Iteration 39	RHO 1.0e-10	4.968910e+11
+Iteration 50	RHO 1.0e-10	4.968910e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.968910e+11
+Iteration 4	RHO 1.0e-01	4.968910e+11
+Iteration 34	RHO 1.0e-02	4.968910e+11
+Iteration 106	RHO 1.0e-03	4.292578e+11
+Iteration 213	RHO 1.0e-04	4.250754e+11
+Iteration 267	RHO 1.0e-05	4.249328e+11
+Iteration 324	RHO 1.0e-06	4.248883e+11
+Iteration 377	RHO 1.0e-07	4.248858e+11
+Iteration 435	RHO 1.0e-08	4.248856e+11
+Iteration 479	RHO 1.0e-09	4.248856e+11
+Iteration 532	RHO 1.0e-10	4.248856e+11
+Iteration 577	RHO 1.0e-10	4.248856e+11
+
+Broadening:  0.1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.323331e+12
+Iteration 2	RHO 1.0e-01	4.323331e+12
+Iteration 4	RHO 1.0e-02	4.323331e+12
+Iteration 5	RHO 1.0e-03	4.323331e+12
+Iteration 12	RHO 1.0e-04	3.940278e+12
+Iteration 16	RHO 1.0e-05	3.939771e+12
+Iteration 17	RHO 1.0e-06	3.939771e+12
+Iteration 20	RHO 1.0e-07	3.939771e+12
+Iteration 31	RHO 1.0e-08	3.939759e+12
+Iteration 46	RHO 1.0e-09	3.939757e+12
+Iteration 49	RHO 1.0e-10	3.939757e+12
+Iteration 54	RHO 1.0e-10	3.939757e+12
+Main optimization
+Iteration 1	RHO 1.0e+00	3.939757e+12
+Iteration 4	RHO 1.0e-01	3.939757e+12
+Iteration 34	RHO 1.0e-02	3.939757e+12
+Iteration 85	RHO 1.0e-03	3.029798e+12
+Iteration 219	RHO 1.0e-04	2.906180e+12
+Iteration 257	RHO 1.0e-05	2.906063e+12
+Iteration 293	RHO 1.0e-06	2.906036e+12
+Iteration 332	RHO 1.0e-07	2.906033e+12
+Iteration 367	RHO 1.0e-08	2.906033e+12
+Iteration 403	RHO 1.0e-09	2.906033e+12
+Iteration 437	RHO 1.0e-10	2.906033e+12
+Iteration 463	RHO 1.0e-10	2.906033e+12
+
+Broadening:  0
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	2.510274e+13
+Iteration 2	RHO 1.0e-01	2.510274e+13
+Iteration 4	RHO 1.0e-02	2.510274e+13
+Iteration 9	RHO 1.0e-03	2.462785e+13
+Iteration 11	RHO 1.0e-04	2.461139e+13
+Iteration 15	RHO 1.0e-05	2.461021e+13
+Iteration 18	RHO 1.0e-06	2.461019e+13
+Iteration 20	RHO 1.0e-07	2.461019e+13
+Iteration 22	RHO 1.0e-08	2.461019e+13
+Iteration 26	RHO 1.0e-09	2.461019e+13
+Iteration 27	RHO 1.0e-10	2.461019e+13
+Iteration 30	RHO 1.0e-10	2.461019e+13
+Main optimization
+Iteration 1	RHO 1.0e+00	2.461019e+13
+Iteration 4	RHO 1.0e-01	2.461019e+13
+Iteration 34	RHO 1.0e-02	2.461019e+13
+Iteration 65	RHO 1.0e-03	2.328053e+13
+Iteration 103	RHO 1.0e-04	2.287176e+13
+Iteration 311	RHO 1.0e-05	2.278101e+13
+Iteration 436	RHO 1.0e-06	2.278082e+13
+Iteration 510	RHO 1.0e-07	2.278082e+13
+Iteration 552	RHO 1.0e-08	2.278082e+13
+Iteration 583	RHO 1.0e-09	2.278082e+13
+Iteration 608	RHO 1.0e-10	2.278082e+13
+Iteration 638	RHO 1.0e-10	2.278082e+13
+
+R-Factor: 4.77 %
+
+Modified by DJ to test all combinations
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+Broadening:  3
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	9.153015e+10
+Iteration 2	RHO 1.0e-01	9.153015e+10
+Iteration 4	RHO 1.0e-02	9.153015e+10
+Iteration 6	RHO 1.0e-03	9.132662e+10
+Iteration 8	RHO 1.0e-04	9.131160e+10
+Iteration 12	RHO 1.0e-05	9.131078e+10
+Iteration 19	RHO 1.0e-06	9.131016e+10
+Iteration 23	RHO 1.0e-07	9.131012e+10
+Iteration 28	RHO 1.0e-08	9.131011e+10
+Iteration 41	RHO 1.0e-09	9.131011e+10
+Iteration 48	RHO 1.0e-10	9.131011e+10
+Iteration 51	RHO 1.0e-10	9.131011e+10
+Main optimization
+Iteration 1	RHO 1.0e+00	9.131011e+10
+Iteration 4	RHO 1.0e-01	9.131011e+10
+Iteration 45	RHO 1.0e-02	8.750194e+10
+Iteration 118	RHO 1.0e-03	7.899438e+10
+Iteration 160	RHO 1.0e-04	7.887713e+10
+Iteration 212	RHO 1.0e-05	7.885345e+10
+Iteration 270	RHO 1.0e-06	7.884852e+10
+Iteration 330	RHO 1.0e-07	7.884800e+10
+Iteration 376	RHO 1.0e-08	7.884798e+10
+Iteration 423	RHO 1.0e-09	7.884797e+10
+Iteration 477	RHO 1.0e-10	7.884797e+10
+Iteration 529	RHO 1.0e-10	7.884797e+10
+
+Broadening:  2
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	1.539296e+11
+Iteration 2	RHO 1.0e-01	1.539296e+11
+Iteration 4	RHO 1.0e-02	1.539296e+11
+Iteration 7	RHO 1.0e-03	1.457168e+11
+Iteration 11	RHO 1.0e-04	1.456952e+11
+Iteration 16	RHO 1.0e-05	1.456834e+11
+Iteration 21	RHO 1.0e-06	1.456832e+11
+Iteration 34	RHO 1.0e-07	1.456831e+11
+Iteration 37	RHO 1.0e-08	1.456831e+11
+Iteration 48	RHO 1.0e-09	1.456831e+11
+Iteration 54	RHO 1.0e-10	1.456831e+11
+Iteration 57	RHO 1.0e-10	1.456831e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	1.456831e+11
+Iteration 4	RHO 1.0e-01	1.456831e+11
+Iteration 49	RHO 1.0e-02	1.213336e+11
+Modified by DJ to test all combinations
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+Broadening:  3
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	9.153015e+10
+Iteration 2	RHO 1.0e-01	9.153015e+10
+Iteration 4	RHO 1.0e-02	9.153015e+10
+Iteration 6	RHO 1.0e-03	9.132662e+10
+Iteration 8	RHO 1.0e-04	9.131160e+10
+Iteration 12	RHO 1.0e-05	9.131078e+10
+Iteration 19	RHO 1.0e-06	9.131016e+10
+Iteration 23	RHO 1.0e-07	9.131012e+10
+Iteration 28	RHO 1.0e-08	9.131011e+10
+Iteration 41	RHO 1.0e-09	9.131011e+10
+Iteration 48	RHO 1.0e-10	9.131011e+10
+Iteration 51	RHO 1.0e-10	9.131011e+10
+Main optimization
+Iteration 1	RHO 1.0e+00	9.131011e+10
+Iteration 4	RHO 1.0e-01	9.131011e+10
+Iteration 45	RHO 1.0e-02	8.750194e+10
+Iteration 118	RHO 1.0e-03	7.899438e+10
+Iteration 160	RHO 1.0e-04	7.887713e+10
+Iteration 212	RHO 1.0e-05	7.885345e+10
+Iteration 270	RHO 1.0e-06	7.884852e+10
+Iteration 330	RHO 1.0e-07	7.884800e+10
+Iteration 376	RHO 1.0e-08	7.884798e+10
+Iteration 423	RHO 1.0e-09	7.884797e+10
+Iteration 477	RHO 1.0e-10	7.884797e+10
+Iteration 529	RHO 1.0e-10	7.884797e+10
+
+Broadening:  2
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	1.539296e+11
+Iteration 2	RHO 1.0e-01	1.539296e+11
+Iteration 4	RHO 1.0e-02	1.539296e+11
+Iteration 7	RHO 1.0e-03	1.457168e+11
+Iteration 11	RHO 1.0e-04	1.456952e+11
+Iteration 16	RHO 1.0e-05	1.456834e+11
+Iteration 21	RHO 1.0e-06	1.456832e+11
+Iteration 34	RHO 1.0e-07	1.456831e+11
+Iteration 37	RHO 1.0e-08	1.456831e+11
+Iteration 48	RHO 1.0e-09	1.456831e+11
+Iteration 54	RHO 1.0e-10	1.456831e+11
+Iteration 57	RHO 1.0e-10	1.456831e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	1.456831e+11
+Iteration 4	RHO 1.0e-01	1.456831e+11
+Iteration 49	RHO 1.0e-02	1.213336e+11
+Iteration 174	RHO 1.0e-03	9.297076e+10
+Iteration 246	RHO 1.0e-04	9.223680e+10
+Iteration 297	RHO 1.0e-05	9.220520e+10
+Iteration 381	RHO 1.0e-06	9.219454e+10
+Iteration 460	RHO 1.0e-07	9.219333e+10
+Iteration 504	RHO 1.0e-08	9.219328e+10
+Iteration 594	RHO 1.0e-09	9.219327e+10
+Iteration 652	RHO 1.0e-10	9.219327e+10
+Iteration 718	RHO 1.0e-10	9.219327e+10
+
+Broadening:  1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.511311e+11
+Iteration 2	RHO 1.0e-01	4.511311e+11
+Iteration 4	RHO 1.0e-02	4.511311e+11
+Iteration 7	RHO 1.0e-03	4.309708e+11
+Iteration 11	RHO 1.0e-04	4.307478e+11
+Iteration 13	RHO 1.0e-05	4.307349e+11
+Iteration 15	RHO 1.0e-06	4.307320e+11
+Iteration 17	RHO 1.0e-07	4.307317e+11
+Iteration 20	RHO 1.0e-08	4.307317e+11
+Iteration 25	RHO 1.0e-09	4.307316e+11
+Iteration 32	RHO 1.0e-10	4.307316e+11
+Iteration 35	RHO 1.0e-10	4.307316e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.307316e+11
+Iteration 4	RHO 1.0e-01	4.307316e+11
+Iteration 46	RHO 1.0e-02	3.539925e+11
+Iteration 247	RHO 1.0e-03	1.941372e+11
+Iteration 612	RHO 1.0e-04	1.825979e+11
+Iteration 690	RHO 1.0e-05	1.825516e+11
+Iteration 733	RHO 1.0e-06	1.825498e+11
+Iteration 774	RHO 1.0e-07	1.825496e+11
+Iteration 823	RHO 1.0e-08	1.825496e+11
+Iteration 864	RHO 1.0e-09	1.825496e+11
+Iteration 902	RHO 1.0e-10	1.825496e+11
+Iteration 947	RHO 1.0e-10	1.825496e+11
+
+Broadening:  0.5
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	5.585614e+11
+Iteration 2	RHO 1.0e-01	5.585614e+11
+Iteration 4	RHO 1.0e-02	5.585614e+11
+Iteration 7	RHO 1.0e-03	4.998758e+11
+Iteration 11	RHO 1.0e-04	4.969156e+11
+Iteration 14	RHO 1.0e-05	4.968965e+11
+Iteration 17	RHO 1.0e-06	4.968930e+11
+Iteration 20	RHO 1.0e-07	4.968911e+11
+Iteration 23	RHO 1.0e-08	4.968911e+11
+Iteration 34	RHO 1.0e-09	4.968910e+11
+Iteration 39	RHO 1.0e-10	4.968910e+11
+Iteration 50	RHO 1.0e-10	4.968910e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.968910e+11
+Iteration 4	RHO 1.0e-01	4.968910e+11
+Iteration 34	RHO 1.0e-02	4.968910e+11
+Iteration 106	RHO 1.0e-03	4.292578e+11
+Iteration 213	RHO 1.0e-04	4.250754e+11
+Iteration 267	RHO 1.0e-05	4.249328e+11
+Iteration 324	RHO 1.0e-06	4.248883e+11
+Iteration 377	RHO 1.0e-07	4.248858e+11
+Iteration 435	RHO 1.0e-08	4.248856e+11
+Iteration 479	RHO 1.0e-09	4.248856e+11
+Iteration 532	RHO 1.0e-10	4.248856e+11
+Iteration 577	RHO 1.0e-10	4.248856e+11
+
+Broadening:  0.1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.323331e+12
+Iteration 2	RHO 1.0e-01	4.323331e+12
+Iteration 4	RHO 1.0e-02	4.323331e+12
+Iteration 5	RHO 1.0e-03	4.323331e+12
+Iteration 12	RHO 1.0e-04	3.940278e+12
+Iteration 16	RHO 1.0e-05	3.939771e+12
+Iteration 17	RHO 1.0e-06	3.939771e+12
+Iteration 20	RHO 1.0e-07	3.939771e+12
+Iteration 31	RHO 1.0e-08	3.939759e+12
+Iteration 46	RHO 1.0e-09	3.939757e+12
+Iteration 49	RHO 1.0e-10	3.939757e+12
+Iteration 54	RHO 1.0e-10	3.939757e+12
+Main optimization
+Iteration 1	RHO 1.0e+00	3.939757e+12
+Iteration 4	RHO 1.0e-01	3.939757e+12
+Iteration 34	RHO 1.0e-02	3.939757e+12
+Iteration 85	RHO 1.0e-03	3.029798e+12
+Iteration 219	RHO 1.0e-04	2.906180e+12
+Iteration 257	RHO 1.0e-05	2.906063e+12
+Iteration 293	RHO 1.0e-06	2.906036e+12
+Iteration 332	RHO 1.0e-07	2.906033e+12
+Iteration 367	RHO 1.0e-08	2.906033e+12
+Iteration 403	RHO 1.0e-09	2.906033e+12
+Iteration 437	RHO 1.0e-10	2.906033e+12
+Iteration 463	RHO 1.0e-10	2.906033e+12
+
+Broadening:  0
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	2.510274e+13
+Iteration 2	RHO 1.0e-01	2.510274e+13
+Iteration 4	RHO 1.0e-02	2.510274e+13
+Iteration 9	RHO 1.0e-03	2.462785e+13
+Iteration 11	RHO 1.0e-04	2.461139e+13
+Iteration 15	RHO 1.0e-05	2.461021e+13
+Iteration 18	RHO 1.0e-06	2.461019e+13
+Iteration 20	RHO 1.0e-07	2.461019e+13
+Iteration 22	RHO 1.0e-08	2.461019e+13
+Iteration 26	RHO 1.0e-09	2.461019e+13
+Iteration 27	RHO 1.0e-10	2.461019e+13
+Iteration 30	RHO 1.0e-10	2.461019e+13
+Main optimization
+Iteration 1	RHO 1.0e+00	2.461019e+13
+Iteration 4	RHO 1.0e-01	2.461019e+13
+Iteration 34	RHO 1.0e-02	2.461019e+13
+Iteration 65	RHO 1.0e-03	2.328053e+13
+Iteration 103	RHO 1.0e-04	2.287176e+13
+Iteration 311	RHO 1.0e-05	2.278101e+13
+Iteration 436	RHO 1.0e-06	2.278082e+13
+Iteration 510	RHO 1.0e-07	2.278082e+13
+Iteration 552	RHO 1.0e-08	2.278082e+13
+Iteration 583	RHO 1.0e-09	2.278082e+13
+Iteration 608	RHO 1.0e-10	2.278082e+13
+Iteration 638	RHO 1.0e-10	2.278082e+13
+
+R-Factor: 4.77 %
+
+Modified by DJ to test all combinations
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+When publishing results obtained with this program, please cite:
+D.A. Cheshkov, K.F. Sheberstov, D.O. Sinitsyn, V.A. Chertkov, ANATOLIA: NMR
+software for spectral analysis of total lineshape. Magn. Reson. Chem., 2018,
+56, 449, DOI: 10.1002/mrc.4689.
+Modified by DJ to test all combinations
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+Broadening:  3
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	9.153015e+10
+Iteration 2	RHO 1.0e-01	9.153015e+10
+Iteration 4	RHO 1.0e-02	9.153015e+10
+Iteration 6	RHO 1.0e-03	9.132662e+10
+Iteration 8	RHO 1.0e-04	9.131160e+10
+Iteration 12	RHO 1.0e-05	9.131078e+10
+Iteration 19	RHO 1.0e-06	9.131016e+10
+Iteration 23	RHO 1.0e-07	9.131012e+10
+Iteration 28	RHO 1.0e-08	9.131011e+10
+Iteration 41	RHO 1.0e-09	9.131011e+10
+Iteration 48	RHO 1.0e-10	9.131011e+10
+Iteration 51	RHO 1.0e-10	9.131011e+10
+Main optimization
+Iteration 1	RHO 1.0e+00	9.131011e+10
+Iteration 4	RHO 1.0e-01	9.131011e+10
+Iteration 45	RHO 1.0e-02	8.750194e+10
+Iteration 118	RHO 1.0e-03	7.899438e+10
+Iteration 160	RHO 1.0e-04	7.887713e+10
+Iteration 212	RHO 1.0e-05	7.885345e+10
+Iteration 270	RHO 1.0e-06	7.884852e+10
+Iteration 330	RHO 1.0e-07	7.884800e+10
+Iteration 376	RHO 1.0e-08	7.884798e+10
+Iteration 423	RHO 1.0e-09	7.884797e+10
+Iteration 477	RHO 1.0e-10	7.884797e+10
+Iteration 529	RHO 1.0e-10	7.884797e+10
+
+Broadening:  2
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	1.539296e+11
+Iteration 2	RHO 1.0e-01	1.539296e+11
+Iteration 4	RHO 1.0e-02	1.539296e+11
+Iteration 7	RHO 1.0e-03	1.457168e+11
+Iteration 11	RHO 1.0e-04	1.456952e+11
+Iteration 16	RHO 1.0e-05	1.456834e+11
+Iteration 21	RHO 1.0e-06	1.456832e+11
+Iteration 34	RHO 1.0e-07	1.456831e+11
+Iteration 37	RHO 1.0e-08	1.456831e+11
+Iteration 48	RHO 1.0e-09	1.456831e+11
+Iteration 54	RHO 1.0e-10	1.456831e+11
+Iteration 57	RHO 1.0e-10	1.456831e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	1.456831e+11
+Iteration 4	RHO 1.0e-01	1.456831e+11
+Iteration 49	RHO 1.0e-02	1.213336e+11
+Iteration 174	RHO 1.0e-03	9.297076e+10
+Iteration 246	RHO 1.0e-04	9.223680e+10
+Iteration 297	RHO 1.0e-05	9.220520e+10
+Iteration 381	RHO 1.0e-06	9.219454e+10
+Iteration 460	RHO 1.0e-07	9.219333e+10
+Iteration 504	RHO 1.0e-08	9.219328e+10
+Iteration 594	RHO 1.0e-09	9.219327e+10
+Iteration 652	RHO 1.0e-10	9.219327e+10
+Iteration 718	RHO 1.0e-10	9.219327e+10
+
+Broadening:  1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.511311e+11
+Iteration 2	RHO 1.0e-01	4.511311e+11
+Iteration 4	RHO 1.0e-02	4.511311e+11
+Iteration 7	RHO 1.0e-03	4.309708e+11
+Iteration 11	RHO 1.0e-04	4.307478e+11
+Iteration 13	RHO 1.0e-05	4.307349e+11
+Iteration 15	RHO 1.0e-06	4.307320e+11
+Iteration 17	RHO 1.0e-07	4.307317e+11
+Iteration 20	RHO 1.0e-08	4.307317e+11
+Iteration 25	RHO 1.0e-09	4.307316e+11
+Iteration 32	RHO 1.0e-10	4.307316e+11
+Iteration 35	RHO 1.0e-10	4.307316e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.307316e+11
+Iteration 4	RHO 1.0e-01	4.307316e+11
+Iteration 46	RHO 1.0e-02	3.539925e+11
+Iteration 247	RHO 1.0e-03	1.941372e+11
+Iteration 612	RHO 1.0e-04	1.825979e+11
+Iteration 690	RHO 1.0e-05	1.825516e+11
+Iteration 733	RHO 1.0e-06	1.825498e+11
+Iteration 774	RHO 1.0e-07	1.825496e+11
+Iteration 823	RHO 1.0e-08	1.825496e+11
+Iteration 864	RHO 1.0e-09	1.825496e+11
+Iteration 902	RHO 1.0e-10	1.825496e+11
+Iteration 947	RHO 1.0e-10	1.825496e+11
+
+Broadening:  0.5
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	5.585614e+11
+Iteration 2	RHO 1.0e-01	5.585614e+11
+Iteration 4	RHO 1.0e-02	5.585614e+11
+Iteration 7	RHO 1.0e-03	4.998758e+11
+Iteration 11	RHO 1.0e-04	4.969156e+11
+Iteration 14	RHO 1.0e-05	4.968965e+11
+Iteration 17	RHO 1.0e-06	4.968930e+11
+Iteration 20	RHO 1.0e-07	4.968911e+11
+Iteration 23	RHO 1.0e-08	4.968911e+11
+Iteration 34	RHO 1.0e-09	4.968910e+11
+Iteration 39	RHO 1.0e-10	4.968910e+11
+Iteration 50	RHO 1.0e-10	4.968910e+11
+Main optimization
+Iteration 1	RHO 1.0e+00	4.968910e+11
+Iteration 4	RHO 1.0e-01	4.968910e+11
+Iteration 34	RHO 1.0e-02	4.968910e+11
+Iteration 106	RHO 1.0e-03	4.292578e+11
+Iteration 213	RHO 1.0e-04	4.250754e+11
+Iteration 267	RHO 1.0e-05	4.249328e+11
+Iteration 324	RHO 1.0e-06	4.248883e+11
+Iteration 377	RHO 1.0e-07	4.248858e+11
+Iteration 435	RHO 1.0e-08	4.248856e+11
+Iteration 479	RHO 1.0e-09	4.248856e+11
+Iteration 532	RHO 1.0e-10	4.248856e+11
+Iteration 577	RHO 1.0e-10	4.248856e+11
+
+Broadening:  0.1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.323331e+12
+Iteration 2	RHO 1.0e-01	4.323331e+12
+Iteration 4	RHO 1.0e-02	4.323331e+12
+Iteration 5	RHO 1.0e-03	4.323331e+12
+Iteration 12	RHO 1.0e-04	3.940278e+12
+Iteration 16	RHO 1.0e-05	3.939771e+12
+Iteration 17	RHO 1.0e-06	3.939771e+12
+Iteration 20	RHO 1.0e-07	3.939771e+12
+Iteration 31	RHO 1.0e-08	3.939759e+12
+Iteration 46	RHO 1.0e-09	3.939757e+12
+Iteration 49	RHO 1.0e-10	3.939757e+12
+Iteration 54	RHO 1.0e-10	3.939757e+12
+Main optimization
+Iteration 1	RHO 1.0e+00	3.939757e+12
+Iteration 4	RHO 1.0e-01	3.939757e+12
+Iteration 34	RHO 1.0e-02	3.939757e+12
+Iteration 85	RHO 1.0e-03	3.029798e+12
+Iteration 219	RHO 1.0e-04	2.906180e+12
+Iteration 257	RHO 1.0e-05	2.906063e+12
+Iteration 293	RHO 1.0e-06	2.906036e+12
+Iteration 332	RHO 1.0e-07	2.906033e+12
+Iteration 367	RHO 1.0e-08	2.906033e+12
+Iteration 403	RHO 1.0e-09	2.906033e+12
+Iteration 437	RHO 1.0e-10	2.906033e+12
+Iteration 463	RHO 1.0e-10	2.906033e+12
+
+Broadening:  0
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	2.510274e+13
+Iteration 2	RHO 1.0e-01	2.510274e+13
+Iteration 4	RHO 1.0e-02	2.510274e+13
+Iteration 9	RHO 1.0e-03	2.462785e+13
+Iteration 11	RHO 1.0e-04	2.461139e+13
+Iteration 15	RHO 1.0e-05	2.461021e+13
+Iteration 18	RHO 1.0e-06	2.461019e+13
+Iteration 20	RHO 1.0e-07	2.461019e+13
+Iteration 22	RHO 1.0e-08	2.461019e+13
+Iteration 26	RHO 1.0e-09	2.461019e+13
+Iteration 27	RHO 1.0e-10	2.461019e+13
+Iteration 30	RHO 1.0e-10	2.461019e+13
+Main optimization
+Iteration 1	RHO 1.0e+00	2.461019e+13
+Iteration 4	RHO 1.0e-01	2.461019e+13
+Iteration 34	RHO 1.0e-02	2.461019e+13
+Iteration 65	RHO 1.0e-03	2.328053e+13
+Iteration 103	RHO 1.0e-04	2.287176e+13
+Iteration 311	RHO 1.0e-05	2.278101e+13
+Iteration 436	RHO 1.0e-06	2.278082e+13
+Iteration 510	RHO 1.0e-07	2.278082e+13
+Iteration 552	RHO 1.0e-08	2.278082e+13
+Iteration 583	RHO 1.0e-09	2.278082e+13
+Iteration 608	RHO 1.0e-10	2.278082e+13
+Iteration 638	RHO 1.0e-10	2.278082e+13
+
+R-Factor: 4.77 %
+

@@ -1,8 +1,18 @@
 #!/bin/zsh
+Version=${1:-1}
+VersionComplementText=""
+echo "version : $Version"
+LogTimeTxt=("logTime.txt")
+# Check if Version is set to 1
+if [[ $Version -gt 1 ]]; then
+  LogTimeTxt=("logTime_v$Version.txt")
+  VersionComplementText="_v$Version"
+fi
+echo "LogTime : $LogTimeTxt"
 
 DATASETS2=("ODCB")
 DATASETS=("ODCB" "THFCOOH" "Styrene" "Naphtalene" "Azobenzene")
-echo > logTime.txt
+echo > $LogTimeTxt
 # Loop through each dataset and copy its folder
 for DATASET in "${DATASETS[@]}"; do
   if [[ "$DATASET" == "THFCOOH" ]]; then
@@ -12,14 +22,18 @@ for DATASET in "${DATASETS[@]}"; do
   fi
 
   for ACQUS in "${ACQUS_ALL[@]}"; do
-    echo "Running $DATASET-$ACQUS" >> logTime.txt
-    echo -n "start at : " >> logTime.txt
-    date >> logTime.txt
-    echo "running anatolia for $DATASET-$ACQUS..."
-    ../bin/ANATOLIA ../data/$DATASET/$ACQUS/ >> log_$DATASET-$ACQUS.txt
-    echo -n "ends at  : " >> logTime.txt
-    date >> logTime.txt
-    cp ../data/$DATASET/$ACQUS/parameters.txt $DATASET-$ACQUS.txt
+    echo "Running $DATASET-$ACQUS" >> $LogTimeTxt
+    echo "running anatolia $VersionComplementText for $DATASET-$ACQUS..."
+    start_time=$(date +%s)
+    if [[ $Version -gt 1 ]]; then
+         echo "call ../bin/ANATOLIAplus ../data/$DATASET/$ACQUS/"
+        ../bin/ANATOLIAplus ../data/$DATASET/$ACQUS/ >> log_$DATASET-$ACQUS-V$Version.txt
+    else   
+         echo "call ../bin/ANATOLIA ../data/$DATASET/$ACQUS/"
+        ../bin/ANATOLIA ../data/$DATASET/$ACQUS/ >> log_$DATASET-$ACQUS.txt
+    fi
+    end_time=$(date +%s);elapsed_time=$((end_time - start_time));echo "Elapsed time: $elapsed_time seconds" >> $LogTimeTxt
+    cp ../data/$DATASET/$ACQUS/parameters.txt $DATASET-$ACQUS$VersionComplementText.txt
     # Dump some results
     echo "results in data/$DATASET/$ACQUS"
     grep "SimMode" ../data/$DATASET/$ACQUS/Input_Data.txt
@@ -47,14 +61,17 @@ for DATASET in "${DATASETS[@]}"; do
 
   for ACQUS in "${ACQUS_ALL[@]}"; do
     # Check if the dataset file exists
-    if [[ -f "./$DATASET-$ACQUS.txt" ]]; then
-      echo "Compare results for $DATASET-$ACQUS"
-      echo "diff referenceResults/$DATASET-$ACQUS.txt ./$DATASET-$ACQUS.txt"
+    if [[ $Version -gt 1 ]]; then
+    else   
+    fi
+    if [[ -f "./$DATASET-$ACQUS$VersionComplementText.txt" ]]; then
+      echo "Compare results for $DATASET-$ACQUS$VersionComplementText"
+      echo "diff referenceResults/$DATASET-$ACQUS.txt ./$DATASET-$ACQUS$VersionComplementText.txt"
       echo "===================================================="
-      diff referenceResults/$DATASET-$ACQUS.txt ./$DATASET-$ACQUS.txt
+      diff referenceResults/$DATASET-$ACQUS.txt ./$DATASET-$ACQUS$VersionComplementText.txt
       echo "===================================================="
     else
-      echo "Skipping $DATASET-$ACQUS: ./$DATASET-$ACQUS.txt does not exist."
+      echo "Skipping $DATASET-$ACQUS$VersionComplementText: ./$DATASET-$ACQUS$VersionComplementText.txt does not exist."
     fi
     echo
   done

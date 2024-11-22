@@ -1,0 +1,41 @@
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+File Input_Data.txt does not exists!
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+File Input_Data.txt does not exists!
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+File Input_Data.txt does not exists!
+Modified by DJ to test all combinations
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+File Input_Data.txt does not exists!

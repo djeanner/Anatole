@@ -1,36 +1,29 @@
-Copy for automatic run of the test samples of Anatolia
- 
-Orinig of data:  https://github.com/dcheshkov/ANATOLIA/
-
-
 # Verions of anaotolia
 
-The last version is src/anatolia.cpp
-V 0.9 200?
-V 1.0 2017
-V 1.1 2019
-V 1.2 2021
+We explored and extendent (preliminary tests only) the Anatolia software by Cheshkova,  Sheberstova, Sinitsync, and Chertkovd.
+
+In particular we worked on reproducing the results for the styrene spectrum presented in [1].
+
+Ref:
+[1] "ANATOLIA: NMR software for spectral analysis of total lineshape", D.A. Cheshkova,b*, K.F. Sheberstova, D.O. Sinitsync, V.A. Chertkovd, doi: 10.1002/mrc.4689
+
+# Versions of anaotolia
+
+```
+V 0.9 200? src/anatolia0.9.cpp
+V 1.0 2017 src/anatolia1.0.cpp
+V 1.1 2019 src/anatolia1.1.cpp
+V 1.2 2021 src/anatolia1.2.cpp
+V 1.2 2021 src/anatolia1.2plus.cpp // new version
+```
+The last version is src/anatolia.cpp and following its history shows its evolution.
 
 # Compilation
 
 MacOS GSL instalation & ANATOLIA compilation commands:
 This is for gsl version 2.8. Adjust if necessary
-```
-mkdir bin
-cd bin
-echo "bin/" >> ../.gitignore
-curl -O ftp://ftp.gnu.org/gnu/gsl/gsl-latest.tar.gz
-gzip -dc gsl-latest.tar.gz | tar xvf -
-cd gsl-2.8 
-./configure
-make
-rm gsl-latest.tar.gz
-rm -rf gsl-*
-cd ..
-g++ -std=c++11 ../src/anatolia.cpp ./gsl-2.8/.libs/libgsl.a ./gsl-2.8/cblas/.libs/libgslcblas.a -I./gsl-2.8 -o ANATOLIA
-cd ..
-```
-The binaray is bin/ANATOLIA
+[Commands for compilation](compile.md)
+The binaraies are `bin/ANATOLIA` and `bin/ANATOLIAplus`.
 Note: We skiped the make install and call the library directly at the compilation step
 
 
@@ -43,21 +36,15 @@ For consitency of the file name oupt, we changed the `OutputParameters` to param
 `data/THFCOOH/300/Input_Data.txt`
 A copy of `Input_Data.txt` as  `Input_Data_refinement.txt` was written in `data/Styrene/1/` for the optimization.
 
-To get the original version version:
+For Styrene we replaced 
 ```
-mkdir data
-cd data
-wget https://github.com/dcheshkov/ANATOLIA/archive/refs/heads/master.zip
-unzip master.zip
-cp -rp ANATOLIA-master/Examples/ODCB .
-cp -rp ANATOLIA-master/Examples/THFCOOH .
-cp -rp ANATOLIA-master/Examples/Styrene .
-cp -rp ANATOLIA-master/Examples/Naphtalene .
-cp -rp ANATOLIA-master/Examples/Azobenzene .
-rm -r ANATOLIA-master
-rm master.zip
-cd ..
+16  J{3,6}Meta,Alpha  ---->  J{3,6}Meta,Alpha        
+17  J{3,7}Meta,BettaC ---->  J{3,7}Meta,BettaC            
+18  J{3,8}Meta,BettaT ---->  J{3,8}Meta,BettaT 
 ```
+
+To get the original version version using this [script](getData.md)
+
 
 # Run the tests
 
@@ -65,11 +52,13 @@ After compilation, run tests with:
 
 ```zsh
 chmod +x demo/demo.zsh
-demo/demo.zsh
+cd demo
+./demo.zsh
+cd ..
 ```
-The results are in the `demo` folder.
+The results are in the `demo` folder but files were changed in the data folder.
 
-Note: we are missing the Input_Data.txt and parameter.txt for Naphtalene and Azobenzene.
+Note: We are missing the Input_Data.txt and parameter.txt for Naphtalene and Azobenzene.
 
 # Acknowledgements
 
@@ -102,63 +91,55 @@ Total lineshape analysis of ALPHA-tetrahydrofuroic acid 1H NMR spectra
 Total lineshape analysis of a-tetrahydrofuroic acid 1H NMR spectra - http://doi.org/10.48550/arXiv.2209.03708
 Total line shape analysis of high-resolution NMR spectra -  http://doi.org/10.1016/bs.arnmr.2019.11.001
 
- ANATOLIA: NMR software for spectral analysis of total lineshape
-D.A. Cheshkova,b*, K.F. Sheberstova, D.O. Sinitsync, V.A. Chertkovd
-  doi: 10.1002/mrc.4689
+
 
  https://www.sciencedirect.com/science/article/abs/pii/S0066410319300419?via%3Dihub#preview-section-introduction
 
+# Addition to Anatolia 
+
+A new version [src/anatolia1.2plus.cpp](src/anatolia1.2plus.cpp) was writted to
+adds the search for all combination of J's.
+It writes a proc file with the number following the one set as `CalcProcNo` parameter in the [Input_Data](data/Styrene/1/Input_Data.txt)
+It writes the results file with the name starting with `allCombiTested_` compared to the filename given as  `OutputParameters` parameter in the [Input_Data](data/Styrene/1/Input_Data.txt)
 
 # Quick run
+ 
+[see](someScript.zsh) some shell script to can the calculation used here.
 
-```
 
-echo "takes less than a second"
+# Report of Styrene
 
-cat data/ODCB/1/Input_Data.txt
-time bin/ANATOLIA data/ODCB/1
-grep "SimMode" data/ODCB/1/Input_Data.txt
-grep "InputParameters" data/ODCB/1/Input_Data.txt
-grep "OutputParameters" data/ODCB/1/Input_Data.txt
-procOutNumber=$(grep "CalcProcNo" ../data/ODCB/1/Input_Data.txt | sed 's/CalcProcNo//g' | sed 's/" "//g' | sed 's/\t//g')
-echo "results in data/$DATASET/ODCB/1/$procOutNumber/1r"
-echo "===================";
+The initial [run](data/Styrene/1/Input_Data.txtCOPY) from the [initial data](data/Styrene/1/parameters_start.txt)results in data corresponding to the first column of the paper but with different signs and some value with slightly different values 
+[optimized value](data/Styrene/1/parameters.txt). It results to R-Factor: 13.67 %
+spectrum in proc 3
+Testing all combination of signs does not improve the situation much and the values are still not with the same sign and values as the paper:
+[best of all combinations](data/Styrene/1/allCombiTested_parameters.txt) results to R-Factor: 13.50 %
+spectrum in proc 4
 
-echo "takes a couple of minute"
+Simply [restarting](data/Styrene/1/Input_Data_refinement.txt) with this "initial optimized" makes it worse [optimized value](data/Styrene/1/parameters_refinement.txt) results to R-Factor: 14.08 %
+spectrum in proc 5
 
-cat data/Styrene/1/Input_Data.txt
-time bin/ANATOLIA data/Styrene/1
-grep "SimMode" data/Styrene/1/Input_Data.txt
-grep "InputParameters" data/Styrene/1/Input_Data.txt
-grep "OutputParameters" data/Styrene/1/Input_Data.txt
-grep "CalcProcNo" data/Styrene/1/Input_Data.txt
-echo "=====Refinement==============";
-cp data/Styrene/1/Input_Data.txt data/Styrene/1/Input_Data.txtCOPY
-cp data/Styrene/1/Input_Data_refinement.txt data/Styrene/1/Input_Data.txt
-grep "SimMode" data/Styrene/1/Input_Data.txt
-grep "InputParameters" data/Styrene/1/Input_Data.txt
-grep "OutputParameters" data/Styrene/1/Input_Data.txt
-grep "CalcProcNo" data/Styrene/1/Input_Data.txt
-time bin/ANATOLIA data/Styrene/1
-cp data/Styrene/1/Input_Data.txtCOPY data/Styrene/1/Input_Data.txt
-rm data/Styrene/1/Input_Data.txtCOPY
-echo "===================";
+Starting [running](data/Styrene/1/Input_Data_refineBestCombi.txt) from the best of all combinations results in 
+[optimized value](data/Styrene/1/parameters_refinement_afterBestCombi.txt) with 12.22
+and 
+[best of all combinations](data/Styrene/1/allCombiTested_parameters_refinement_afterBestCombi.txt) with 11.52
 
-cat data/THFCOOH/300/Input_Data.txt
-time bin/ANATOLIA data/THFCOOH/300
-grep "SimMode" data/THFCOOH/300/Input_Data.txt
-grep "InputParameters" data/THFCOOH/300/Input_Data.txt
-grep "OutputParameters" data/THFCOOH/300/Input_Data.txt
-grep "CalcProcNo" data/THFCOOH/300/Input_Data.txt
+Only cheating the [input](data/Styrene/1/allCombiTested_parametersCheet2.txt) 
+[running](data/Styrene/1/Input_Data_refineBestCombiCheet2.txt) results in 
+[optimized value](data/Styrene/1/parameters_refinement_afterBestCombiCheet2.txt) with the R-Factor 5.85 % and the values of the table of the "Refined values" of the paper. The best of all combinations does not find any better match.
 
-echo "===================";
+Another step was this intermadiate results with 
+Only cheating the [input](data/Styrene/1/allCombiTested_parametersCheet1.txt) 
+[running](data/Styrene/1/Input_Data_refineBestCombiCheet1.txt) results in 
+[optimized value](data/Styrene/1/parameters_refinement_afterBestCombiCheet1.txt) with the R-Factor 8.96 % and the values of the table of the "Refined values" of the paper. The best of all combinations does not find any better match.
 
-cat data/THFCOOH/600/Input_Data.txt
-time bin/ANATOLIA data/THFCOOH/600
-grep "SimMode" data/THFCOOH/600/Input_Data.txt
-grep "InputParameters" data/THFCOOH/600/Input_Data.txt
-grep "OutputParameters" data/THFCOOH/600/Input_Data.txt
-grep "CalcProcNo" data/THFCOOH/600/Input_Data.txt
-echo "===================";
+## Conclusion
 
-```
+The alternation of the signs does not necessary finds the best combination if the mimium is not correct as after the first step.
+[comparison Table ](comparisonTableStyrene.md)
+But from the best combination we get almost the right set of signs (only a very small coupling has the sign different from the final set). Here the "cheat" was only a change J{5-6} from	0.153164to -0.23 and then if found a lower min. But his value had to be set manually, in our hands (possibly not the case for the authors of the paper.)
+
+## Speculative conclusion.
+
+It may be that some coupling are still not absolutely perfect. Some are either difficult or impossible to determine (if no manifestation in the spectrum).
+

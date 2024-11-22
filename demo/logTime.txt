@@ -1,19 +1,6 @@
 
 Running ODCB-1
-start at : Wed Nov 20 17:01:57 CET 2024
-ends at  : Wed Nov 20 17:01:57 CET 2024
+Elapsed time: 0 seconds
 Running THFCOOH-300
-start at : Wed Nov 20 17:01:57 CET 2024
-ends at  : Wed Nov 20 17:03:31 CET 2024
+Elapsed time: 25 seconds
 Running THFCOOH-600
-start at : Wed Nov 20 17:03:31 CET 2024
-ends at  : Wed Nov 20 17:04:01 CET 2024
-Running Styrene-1
-start at : Wed Nov 20 17:04:01 CET 2024
-ends at  : Wed Nov 20 17:05:37 CET 2024
-Running Naphtalene-1
-start at : Wed Nov 20 17:05:37 CET 2024
-ends at  : Wed Nov 20 17:05:37 CET 2024
-Running Azobenzene-1
-start at : Wed Nov 20 17:05:37 CET 2024
-ends at  : Wed Nov 20 17:05:37 CET 2024

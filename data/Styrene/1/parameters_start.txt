@@ -13,9 +13,9 @@
 13  J{1,8}Ortho,BettaT           0.0
 14  J{3,4}Meta,Meta',W           2.0
 15  J{3,5}Meta,Para              7.5
-16  J{3,5}Meta,Alpha             0.0
-17  J{3,6}Meta,BettaC            0.0
-18  J{3,7}Meta,BettaT            0.0
+16  J{3,6}Meta,Alpha             0.0
+17  J{3,7}Meta,BettaC            0.0
+18  J{3,8}Meta,BettaT            0.0
 19  J{5,6}Para,Alpha             0.0
 20  J{5,7}Para,BettaC            0.0
 21  J{5,8}Para,BettaT            0.0

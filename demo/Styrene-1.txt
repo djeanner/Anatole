@@ -13,9 +13,9 @@
 13  J{1,8}Ortho,BettaT          -0.159307    +-0.000616
 14  J{3,4}Meta,Meta',W           1.418898    +-0.000934
 15  J{3,5}Meta,Para              7.438388    +-0.000725
-16  J{3,5}Meta,Alpha            -0.338905    +-0.000497
-17  J{3,6}Meta,BettaC           -0.019208    +-0.000755
-18  J{3,7}Meta,BettaT            0.038035    +-0.000759
+16  J{3,6}Meta,Alpha            -0.338905    +-0.000497
+17  J{3,7}Meta,BettaC           -0.019208    +-0.000755
+18  J{3,8}Meta,BettaT            0.038035    +-0.000759
 19  J{5,6}Para,Alpha            -0.156056    +-0.000880
 20  J{5,7}Para,BettaC           -0.228198    +-0.000667
 21  J{5,8}Para,BettaT           -0.297087    +-0.000717
@@ -25,7 +25,7 @@
 25  Linewidth                    0.055772    +-0.000536
 26  Magnitude                1.629675e+08    +-8.147723e+05
 
-Analysis of STYRENE 1H NMR spectrum
+ Analysis of STYRENE 1H NMR spectrum
 
 Warning! Chemical shift no. 4 (1819.738003) does not fall into any of defined spectral intervals.
 Warning! Chemical shift no. 5 (1526.187320) does not fall into any of defined spectral intervals.

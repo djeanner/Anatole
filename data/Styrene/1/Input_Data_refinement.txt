@@ -19,7 +19,7 @@ Spectra parameters
 PathToDataSet			./
 ExpProcNo			1
 ExpBroadedProcNo		-
-CalcProcNo			3
+CalcProcNo			5
 
 Optimization parameters
 InputParameters			parameters.txt
