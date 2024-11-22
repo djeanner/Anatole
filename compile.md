@@ -19,3 +19,5 @@ echo "Compilation of the new version testing all combinations of signs for the c
 g++ -std=c++11 -O3 ../src/anatolia1.2plus.cpp ./gsl-2.8/.libs/libgsl.a ./gsl-2.8/cblas/.libs/libgslcblas.a -I./gsl-2.8 -o ANATOLIAplus
 cd ..
 ```
+
+Note: We skiped the make install and call the library directly at the compilation step

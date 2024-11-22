@@ -1,10 +1,8 @@
-# Verions of anaotolia
+# Versions of Anatolia
 
-We explored and extendent (preliminary tests only) the Anatolia software by Cheshkova,  Sheberstova, Sinitsync, and Chertkovd.
+We explored and extended (preliminary tests only) the Anatolia software by Cheshkova,  Sheberstova, Sinitsync, and Chertkovd.
 
-In particular we worked on reproducing the results for the styrene spectrum presented in [1] and analyse the trick of changing the signs of all the coupling to fine-tune the fitting of the simulated spectrum over the experimental one.
-
-
+In particular we worked on reproducing the results for the styrene spectrum presented in [1] and analyze the trick of changing the signs of all the coupling to fine-tune the fitting of the simulated spectrum over the experimental one.
 
 Ref:
 [1] "ANATOLIA: NMR software for spectral analysis of total lineshape", D.A. Cheshkova,b*, K.F. Sheberstova, D.O. Sinitsync, V.A. Chertkovd, doi: 10.1002/mrc.4689
@@ -23,7 +21,7 @@ The modification to test all combinations are [there](src/anatolia1.2plus.cpp)
 ```
 V 1.2 2024 src/anatolia1.2plus.cpp // modified version by D. Jeannerat
 ```
-Look at the [changes](https://github.com/djeanner/Anatole/commits/main/src/anatolia.cpp) :
+Look at the [changes](https://github.com/djeanner/Anatole/commits/main/src/anatolia.cpp) of version.
 
 # Compilation
 
@@ -31,8 +29,6 @@ MacOS GSL instalation & ANATOLIA compilation commands:
 This is for gsl version 2.8. Adjust if necessary
 [Commands for compilation](compile.md)
 The binaraies are `bin/ANATOLIA` and `bin/ANATOLIAplus`.
-Note: We skiped the make install and call the library directly at the compilation step
-
 
 # Update test data
 
@@ -115,15 +111,17 @@ It writes the results file with the name starting with `allCombiTested_` compare
 
 # Report of Styrene
 
+The initial [spectrum](data/Styrene/1/pdata/1/1r).
+
 The initial [run](data/Styrene/1/Input_Data.txtCOPY) from the [initial data](data/Styrene/1/parameters_start.txt)results in data corresponding to the first column of the paper but with different signs and some value with slightly different values 
 [optimized value](data/Styrene/1/parameters.txt). It results to R-Factor: 13.67 %
-spectrum in proc 3
+The initial [optimized value spectrum](data/Styrene/1/pdata/3/1r).
 Testing all combination of signs does not improve the situation much and the values are still not with the same sign and values as the paper:
 [best of all combinations](data/Styrene/1/allCombiTested_parameters.txt) results to R-Factor: 13.50 %
-spectrum in proc 4
+The initial [best of all combinations spectrum](data/Styrene/1/pdata/4/1r).
+
 
 Simply [restarting](data/Styrene/1/Input_Data_refinement.txt) with this "initial optimized" makes it worse [optimized value](data/Styrene/1/parameters_refinement.txt) results to R-Factor: 14.08 %
-spectrum in proc 5
 
 Starting [running](data/Styrene/1/Input_Data_refineBestCombi.txt) from the best of all combinations results in 
 [optimized value](data/Styrene/1/parameters_refinement_afterBestCombi.txt) with 12.22
@@ -132,20 +130,38 @@ and
 
 Only cheating the [input](data/Styrene/1/allCombiTested_parametersCheet2.txt) 
 [running](data/Styrene/1/Input_Data_refineBestCombiCheet2.txt) results in 
-[optimized value](data/Styrene/1/parameters_refinement_afterBestCombiCheet2.txt) with the R-Factor 5.85 % and the values of the table of the "Refined values" of the paper. The best of all combinations does not find any better match.
+[optimized value](data/Styrene/1/parameters_refinement_afterBestCombiCheet2.txt) with the R-Factor 5.85 % and the values of the table of the "Refined values" of the paper.
+The spectrum is [best spectrum](data/Styrene/1/pdata/7/1r)
+The best of all combinations does not find any better match.
 
 Another step was this intermadiate results with 
 Only cheating the [input](data/Styrene/1/allCombiTested_parametersCheet1.txt) 
 [running](data/Styrene/1/Input_Data_refineBestCombiCheet1.txt) results in 
-[optimized value](data/Styrene/1/parameters_refinement_afterBestCombiCheet1.txt) with the R-Factor 8.96 % and the values of the table of the "Refined values" of the paper. The best of all combinations does not find any better match.
+[optimized value](data/Styrene/1/parameters_refinement_afterBestCombiCheet1.txt) with the R-Factor 8.96 %. 
+The best of all combinations does not find any better match.
 
 [Comparison of the parameters for key set.](comparisonTableStyrene.md)
+
+
+Main proc number in [data/Styrene/1/pdata](data/Styrene/1/pdata):
+
+|procno|comment|
+|------|-------|
+|1 |inital exp spectrum|
+|3 |intial optimized value |
+|4 |intial after all combinations|
+|7 |final best spectrum|
+These four in Styrene.mnova for comparision.
+
+See the images of the [spectra](spectra.md)
+
+Note that exp numbers in the Input_Data files may cause spectrum overlap. Not all discussed here are in the repository.
 
 ## Conclusions
 
 The alternation of the signs does not necessary finds the best combination if the minimum is not correct after the first step.
 
-From the best combination we got almost the right set of signs (only a very small coupling has the sign different from the final best set). Here the "cheat" was only a change J{5-6} from0.153164 to -0.23 and then it found a better match. But this value had to be set manually, in our hands (possibly not the case for the authors of the paper).
+From the best combination we got almost the right set of signs (only a very small coupling has the sign different from the final best set). Here the "cheat" was only a change J{5-6} from 0.153164 to -0.23 and then it found a better match. But this value had to be set manually, in our hands (possibly not the case for the authors of the paper).
 
 It may be that some coupling constants are still not absolutely perfect (value/sign). Some are either difficult or impossible to determine (if they do not manifest themselves in the spectrum).
 
