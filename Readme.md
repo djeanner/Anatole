@@ -37,21 +37,23 @@ Note: We skiped the make install and call the library directly at the compilatio
 # Update test data
 
 We recommend to use the data as in this repository because some files were modified to avoid overwriting and consistency of the results.
+
 We copied the `parameter.txt` file into `parameter_start.txt` and changed `OutputParameters` in
 `data/THFCOOH/600/Input_Data.txt` accordingly.
+
 For consitency of the file name oupt, we changed the `OutputParameters` to parameter.txt in
 `data/THFCOOH/300/Input_Data.txt`
+
 A copy of `Input_Data.txt` as  `Input_Data_refinement.txt` was written in `data/Styrene/1/` for the optimization.
 
-For Styrene we replaced 
+For Styrene we replaced in all parameter files:
 ```
 16  J{3,6}Meta,Alpha  ---->  J{3,6}Meta,Alpha        
 17  J{3,7}Meta,BettaC ---->  J{3,7}Meta,BettaC            
 18  J{3,8}Meta,BettaT ---->  J{3,8}Meta,BettaT 
 ```
 
-To get the original version version using this [script](getData.md)
-
+To get the original version version of the data use this [script](getData.md)
 
 # Run the tests
 
@@ -63,13 +65,11 @@ cd demo
 ./demo.zsh
 cd ..
 ```
-The results are in the `demo` folder but files were changed in the data folder.
+
+The results are in the `demo` folder but files are also changed in the data folder.
 
 Note: We are missing the Input_Data.txt and parameter.txt for Naphtalene and Azobenzene.
 
-# Acknowledgements
-
-Many thanks to the authors for this great package!
 
 # The Input_Data.txt file
 
@@ -140,13 +140,18 @@ Only cheating the [input](data/Styrene/1/allCombiTested_parametersCheet1.txt)
 [running](data/Styrene/1/Input_Data_refineBestCombiCheet1.txt) results in 
 [optimized value](data/Styrene/1/parameters_refinement_afterBestCombiCheet1.txt) with the R-Factor 8.96 % and the values of the table of the "Refined values" of the paper. The best of all combinations does not find any better match.
 
-## Conclusion
+[Comparison of the parameters for key set.](comparisonTableStyrene.md)
+
+## Conclusions
 
 The alternation of the signs does not necessary finds the best combination if the mimium is not correct as after the first step.
-[comparison Table ](comparisonTableStyrene.md)
+
 But from the best combination we get almost the right set of signs (only a very small coupling has the sign different from the final set). Here the "cheat" was only a change J{5-6} from	0.153164to -0.23 and then if found a lower min. But his value had to be set manually, in our hands (possibly not the case for the authors of the paper.)
 
 ## Speculative conclusion.
 
 It may be that some coupling are still not absolutely perfect. Some are either difficult or impossible to determine (if no manifestation in the spectrum).
 
+# Acknowledgements
+
+Many thanks to the authors for this great package!
