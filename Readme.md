@@ -81,7 +81,6 @@ if SimMode is 1, it will only simulate (no optimization)
 
 The first broadening should correspond to twice the maximal uncertainty in J-coupling values. No indication with respect to the chemical shifts.
 
-
 # Reference
 
 https://github.com/dcheshkov/ANATOLIA/
@@ -144,14 +143,12 @@ Only cheating the [input](data/Styrene/1/allCombiTested_parametersCheet1.txt)
 
 ## Conclusions
 
-The alternation of the signs does not necessary finds the best combination if the mimium is not correct as after the first step.
+The alternation of the signs does not necessary finds the best combination if the minimum is not correct after the first step.
 
-But from the best combination we get almost the right set of signs (only a very small coupling has the sign different from the final set). Here the "cheat" was only a change J{5-6} from	0.153164to -0.23 and then if found a lower min. But his value had to be set manually, in our hands (possibly not the case for the authors of the paper.)
+From the best combination we got almost the right set of signs (only a very small coupling has the sign different from the final best set). Here the "cheat" was only a change J{5-6} from0.153164 to -0.23 and then it found a better match. But this value had to be set manually, in our hands (possibly not the case for the authors of the paper).
 
-## Speculative conclusion.
-
-It may be that some coupling are still not absolutely perfect. Some are either difficult or impossible to determine (if no manifestation in the spectrum).
+It may be that some coupling constants are still not absolutely perfect (value/sign). Some are either difficult or impossible to determine (if they do not manifest themselves in the spectrum).
 
 # Acknowledgements
 
-Many thanks to the authors for this great package!
+Many thanks to Kirill and his co-authors for this great package!
