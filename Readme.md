@@ -2,6 +2,8 @@
 
 We explored and extended (preliminary tests only) the Anatolia software by Cheshkova,  Sheberstova, Sinitsync, and Chertkovd.
 
+We produced some [technical information](doc/technicalinformation.md).
+
 In particular we worked on reproducing the results for the styrene spectrum presented in [1] and analyze the trick of changing the signs of all the coupling to fine-tune the fitting of the simulated spectrum over the experimental one.
 
 Ref:
@@ -14,7 +16,7 @@ V 0.9 200? src/anatolia0.9.cpp
 V 1.0 2017 src/anatolia1.0.cpp
 V 1.1 2019 src/anatolia1.1.cpp
 V 1.2 2021 src/anatolia1.2.cpp
-V 1.2 2021 src/anatolia1.2plus.cpp // new version
+V 1.2 2021 src/anatolia1.2plus.cpp // version testing all combinations of the signs of the J coupling
 ```
 The last version is src/anatolia.cpp and following its history shows its evolution.
 The modification to test all combinations are [there](src/anatolia1.2plus.cpp)
@@ -23,28 +25,13 @@ V 1.2 2024 src/anatolia1.2plus.cpp // modified version by D. Jeannerat
 ```
 Look at the [changes](https://github.com/djeanner/Anatole/commits/main/src/anatolia.cpp) of version.
 
-# What Anatolia does
 
-Anatolia reads:
-|File|Input|Content|
-|-|-|-|
-|acqno/acqus| BF1 |Larmor frequency|
-|acqno/acqus| O1 |  |
-|acqno/acqus| SW_h or SW_H| Spectral width in Hz|
-|acqno/pdata/procno/procs| SF |
-|acqno/pdata/procno/procs| SI |Number of points of spectra|
-|acqno/pdata/procno/integrals.txt| `Integrated Region`|  |
-|acqno/pdata/procno/1r| whole binary | Real part of the NMR spectrum |
-
-The `Integrated Region` are used to produce arrays of StartPoint-EndPoint in pt StartPoint to work only with the part of the spectrum that were integrated. (ignore the rest of the spectrum - this will probably speed up generation of spectra, comparision, etc.) The following are using compressed spectra: `ExpSpecPointsOnIntervals`, `TheorSpecPointsOnIntervals`, `FreqsOnIntervals`.
-
-It seems Anatolia is ignoring "sr", the Bruker scale adjustment param, i.e. chemical shifts will be slightly wrong if sr was used ? Or are the ranges in integrals.txt corrected??
 
 # Compilation
 
 MacOS GSL instalation & ANATOLIA compilation commands:
 This is for gsl version 2.8. Adjust if necessary
-[Commands for compilation](compile.md)
+[Commands for compilation](doc/compile.md)
 The binaraies are `bin/ANATOLIA` and `bin/ANATOLIAplus`.
 
 # Update test data

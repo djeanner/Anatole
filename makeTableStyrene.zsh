@@ -35,4 +35,4 @@ cat data/Styrene/1/parameters_refinement_afterBestCombiCheet2.txt| grep "R-Facto
 paste -d',' tableStyrene0.txt tableStyrene1.txt tableStyrene2.txt tableStyrene3.txt tableStyrene4.txt tableStyrene6.txt tableStyrene7.txt tableStyrene8.txt tableStyrene9.txt  > tableStyrene.csv
 paste -d',' tableStyrene0.txt tableStyrene1.txt tableStyrene2.txt tableStyrene3.txt tableStyrene4.txt tableStyrene8.txt tableStyrene9.txt  > tableStyrene.csv
 
-./makeMDtable.zsh tableStyrene.csv > comparisonTableStyrene.md
+./makeMDtable.zsh tableStyrene.csv > doc/comparisonTableStyrene.md
