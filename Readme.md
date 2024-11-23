@@ -26,14 +26,15 @@ Look at the [changes](https://github.com/djeanner/Anatole/commits/main/src/anato
 # What Anatolia does
 
 Anatolia reads:
-|file|content read|content|
+|File|Input|Content|
 |-|-|-|
 |acqno/acqus| BF1 |Larmor frequency|
 |acqno/acqus| O1 |  |
-|acqno/acqus| SW_h or SW_H| spectral width in Hz|
+|acqno/acqus| SW_h or SW_H| Spectral width in Hz|
 |acqno/pdata/procno/procs| SF |
-|acqno/pdata/procno/procs| SI |number of points of spectra|
+|acqno/pdata/procno/procs| SI |Number of points of spectra|
 |acqno/pdata/procno/integrals.txt| `Integrated Region`|  |
+|acqno/pdata/procno/1r| whole binary | Real part of the NMR spectrum |
 
 The `Integrated Region` are used to produce arrays of StartPoint-EndPoint in pt StartPoint to work only with the part of the spectrum that were integrated. (ignore the rest of the spectrum - this will probably speed up generation of spectra, comparision, etc.) The following are using compressed spectra: `ExpSpecPointsOnIntervals`, `TheorSpecPointsOnIntervals`, `FreqsOnIntervals`.
 
