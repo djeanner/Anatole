@@ -23,6 +23,22 @@ V 1.2 2024 src/anatolia1.2plus.cpp // modified version by D. Jeannerat
 ```
 Look at the [changes](https://github.com/djeanner/Anatole/commits/main/src/anatolia.cpp) of version.
 
+# What Anatolia does
+
+Anatolia reads:
+|file|content read|content|
+|-|-|-|
+|acqno/acqus| BF1 |Larmor frequency|
+|acqno/acqus| O1 |  |
+|acqno/acqus| SW_h or SW_H| spectral width in Hz|
+|acqno/pdata/procno/procs| SF |
+|acqno/pdata/procno/procs| SI |number of points of spectra|
+|acqno/pdata/procno/integrals.txt| `Integrated Region`|  |
+
+The `Integrated Region` are used to produce arrays of StartPoint-EndPoint in pt StartPoint to work only with the part of the spectrum that were integrated. (ignore the rest of the spectrum - this will probably speed up generation of spectra, comparision, etc.) The following are using compressed spectra: `ExpSpecPointsOnIntervals`, `TheorSpecPointsOnIntervals`, `FreqsOnIntervals`.
+
+It seems Anatolia is ignoring "sr", the Bruker scale adjustment param, i.e. chemical shifts will be slightly wrong if sr was used ? Or are the ranges in integrals.txt corrected??
+
 # Compilation
 
 MacOS GSL instalation & ANATOLIA compilation commands:
