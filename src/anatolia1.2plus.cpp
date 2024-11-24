@@ -1792,10 +1792,14 @@ int main(int argc, char* argv[])
 		int totalCombinations = (int)pow(2, numberRelevantVariables);
 		cerr << ">>>>>> Number of tested J coupling (J coupling with values > " << minJvalConsiderSignIsCorrect << ") " << numberRelevantVariables << endl;
 		cerr << ">>>>>> Number of combinations for step 0 :                  1 of " << pow(2, numberRelevantVariables) << endl;
+		cout << ">>>>>> Number of tested J coupling (J coupling with values > " << minJvalConsiderSignIsCorrect << ") " << numberRelevantVariables << endl;
+		cout << ">>>>>> Number of combinations for step 0 :                  1 of " << pow(2, numberRelevantVariables) << endl;
 		for (int numberOfSwitchedValues = 1; numberOfSwitchedValues <= trueMaxExplore; numberOfSwitchedValues++) {
 			const long long int trueNumberCombiForThisNumberOfSwitchedValues = (fact(numberRelevantVariables) / (fact(numberRelevantVariables - numberOfSwitchedValues) * fact(numberOfSwitchedValues)));
 			cerr << ">>>>>> Number of combinations for step " << numberOfSwitchedValues << " : " << (numberRelevantVariables) << "! / (" << (numberRelevantVariables - numberOfSwitchedValues)  << "! * " << (numberOfSwitchedValues) << "!) = ";
 			cerr << trueNumberCombiForThisNumberOfSwitchedValues << " of " << pow(2, numberRelevantVariables) << endl;
+			cout << ">>>>>> Number of combinations for step " << numberOfSwitchedValues << " : " << (numberRelevantVariables) << "! / (" << (numberRelevantVariables - numberOfSwitchedValues)  << "! * " << (numberOfSwitchedValues) << "!) = ";
+			cout << trueNumberCombiForThisNumberOfSwitchedValues << " of " << pow(2, numberRelevantVariables) << endl;
 			const long long int maxNumber = 10000;
 			if (trueNumberCombiForThisNumberOfSwitchedValues > maxNumber) {
 				cerr << ">>>>>> Skip this step because the number of combinations  " << trueNumberCombiForThisNumberOfSwitchedValues << " > " << maxNumber << endl;

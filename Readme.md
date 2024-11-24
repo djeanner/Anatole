@@ -2,7 +2,11 @@
 
 We explored and extended (preliminary tests only) the Anatolia software by Cheshkova,  Sheberstova, Sinitsync, and Chertkovd.
 
-We produced some [technical information](doc/technicalinformation.md).
+We produced some [technical information on the program](doc/technicalinformation.md).
+We produced some [technical information in the input file](doc/inputFile.md).
+
+
+
 
 In particular we worked on reproducing the results for the styrene spectrum presented in [1] and analyze the trick of changing the signs of all the coupling to fine-tune the fitting of the simulated spectrum over the experimental one.
 
@@ -53,7 +57,7 @@ For Styrene we replaced in all parameter files:
 18  J{3,8}Meta,BettaT ---->  J{3,8}Meta,BettaT 
 ```
 
-To get the original version version of the data use this [script](getData.md)
+To get the original version version of the data use this [script](doc/getData.md)
 
 # Run the tests
 
@@ -144,7 +148,7 @@ Only cheating the [input](data/Styrene/1/allCombiTested_parametersCheet1.txt)
 [optimized value](data/Styrene/1/parameters_refinement_afterBestCombiCheet1.txt) with the R-Factor 8.96 %. 
 The best of all combinations does not find any better match.
 
-[Comparison of the parameters for key set.](comparisonTableStyrene.md)
+[Comparison of the parameters for key set.](doc/comparisonTableStyrene.md)
 
 
 Main proc number in [data/Styrene/1/pdata](data/Styrene/1/pdata):
@@ -157,9 +161,12 @@ Main proc number in [data/Styrene/1/pdata](data/Styrene/1/pdata):
 |7 |final best spectrum|
 These four in Styrene.mnova for comparision.
 
-See the images of the [spectra](spectra.md)
+See the images of the [spectra](doc/spectra.md)
 
 Note that exp numbers in the Input_Data files may cause spectrum overlap. Not all discussed here are in the repository.
+
+# Report of Styrene
+
 
 ## Conclusions
 

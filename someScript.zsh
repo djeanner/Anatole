@@ -70,24 +70,33 @@ cp data/Styrene/1/Input_Data.txtCOPY data/Styrene/1/Input_Data.txt
 # THFCOOH
 
 ```
-cp -rp data/THFCOOH/300/pdata/3/ data/THFCOOH/300/pdata/4/
 
-cat data/THFCOOH/300/Input_Data.txt
-time bin/ANATOLIAplus data/THFCOOH/300
-grep "SimMode" data/THFCOOH/300/Input_Data.txt
-grep "InputParameters" data/THFCOOH/300/Input_Data.txt
-grep "OutputParameters" data/THFCOOH/300/Input_Data.txt
-grep "CalcProcNo" data/THFCOOH/300/Input_Data.txt
-
+date > THFCOOH.log
+echo "===================Input_Data" >> THFCOOH.log
+cat data/THFCOOH/300/Input_Data.txt >> THFCOOH.log
+echo "===================Start ANATOLIAplus" >> THFCOOH.log
+time bin/ANATOLIAplus data/THFCOOH/300 >> THFCOOH.log
+echo "===================End ANATOLIAplus" >> THFCOOH.log
+grep "SimMode" data/THFCOOH/300/Input_Data.txt >> THFCOOH.log
+grep "InputParameters" data/THFCOOH/300/Input_Data.txt >> THFCOOH.log
+grep "OutputParameters" data/THFCOOH/300/Input_Data.txt >> THFCOOH.log
+grep "CalcProcNo" data/THFCOOH/300/Input_Data.txt >> THFCOOH.log
 echo "===================";
-cp -rp data/THFCOOH/600/pdata/3/ data/THFCOOH/600/pdata/4/
+date >> THFCOOH.log
+echo "===================" >> THFCOOH.log
 
 cat data/THFCOOH/600/Input_Data.txt
-time bin/ANATOLIAplus data/THFCOOH/600
-grep "SimMode" data/THFCOOH/600/Input_Data.txt
-grep "InputParameters" data/THFCOOH/600/Input_Data.txt
-grep "OutputParameters" data/THFCOOH/600/Input_Data.txt
-grep "CalcProcNo" data/THFCOOH/600/Input_Data.txt
+echo "===================Input_Data" >> THFCOOH.log
+cat data/THFCOOH/600/Input_Data.txt >> THFCOOH.log
+echo "===================Start ANATOLIAplus" >> THFCOOH.log
+time bin/ANATOLIAplus data/THFCOOH/600 >> THFCOOH.log
+echo "===================End ANATOLIAplus" >> THFCOOH.log
+grep "SimMode" data/THFCOOH/600/Input_Data.txt >> THFCOOH.log
+grep "InputParameters" data/THFCOOH/600/Input_Data.txt >> THFCOOH.log
+grep "OutputParameters" data/THFCOOH/600/Input_Data.txt >> THFCOOH.log
+grep "CalcProcNo" data/THFCOOH/600/Input_Data.txt >> THFCOOH.log
 echo "===================";
+date >> THFCOOH.log
+echo "===================" >> THFCOOH.log
 
 ```
