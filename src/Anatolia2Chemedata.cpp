@@ -495,23 +495,7 @@ public:
 	}
 	void FixSpinOffsets(ostream& ostr)
 	{
-		if (true) { // debug list before
-			for (int j = 1; j <= nIntervals; j++) {
-					ostr << "BEFORE defined spectral intervals " << j << " ("  
-					<< " " << Offset - FreqStep * (StartPoint[j] - 1)
-					<< " .. " << Offset - FreqStep * (EndPoint[j] - 1) 
-					<< ")"
-					<< endl;
-				}
-				for (int j = 1; j <= Offs[nSpins]; j++) {
-					ostr << "BEFORE frequencies " << j << " "  
-					<< " " << SSParams[j]
-					<< ""
-					<< endl;
-				}
-		}
 		int MaxOffs = Offs[nSpins];
-
 		bool check = false;
 
 		for (int i = 1; i <= MaxOffs; i++)
@@ -560,18 +544,11 @@ public:
 						StartPoint[j] = first;
 						EndPoint[j] = last;
 					}
-					
-					ostr << "defined spectral intervals " << j << " & " << (j + 1) << " (" << CurrOffset << ") fall into the gap " 
-					<< start << " .. "
-					<< end << " "
-					<< endl;
-					ostr << "Fusing the intervals and create " 
+					ostr << "New interval region:  " 
 					<< Offset - FreqStep *(first - 1)<< " : "
 					<< Offset - FreqStep *(last - 1) << " "
 					<< endl;
 					if 	(j > 0 && j < nIntervals) {
-						ostr << " Shift array "  << endl;
-
 						for (int k = j + 1; k <= nIntervals; k++) {
 							StartPoint[k] = StartPoint[k + 1];
 							EndPoint[k] = EndPoint[k + 1];
@@ -586,15 +563,6 @@ public:
 		if (!check) {
 			for (int j = 1; j <= nIntervals; j++) {
 					ostr << "defined spectral intervals " << j << " ("  
-					<< " " << Offset - FreqStep * (StartPoint[j] - 1)
-					<< " .. " << Offset - FreqStep * (EndPoint[j] - 1) 
-					<< ")"
-					<< endl;
-				}
-		}
-		if (true) { // debug list after
-			for (int j = 1; j <= nIntervals; j++) {
-					ostr << "AFTER defined spectral intervals " << j << " ("  
 					<< " " << Offset - FreqStep * (StartPoint[j] - 1)
 					<< " .. " << Offset - FreqStep * (EndPoint[j] - 1) 
 					<< ")"

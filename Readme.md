@@ -20,7 +20,7 @@ V 0.9 200? src/anatolia0.9.cpp
 V 1.0 2017 src/anatolia1.0.cpp
 V 1.1 2019 src/anatolia1.1.cpp
 V 1.2 2021 src/anatolia1.2.cpp
-V 1.2 2021 src/anatolia1.2plus.cpp // version testing all combinations of the signs of the J coupling
+V 1.2 2021 src/anatolia1.2plus.cpp // this version
 ```
 The last version is src/anatolia.cpp and following its history shows its evolution.
 The modification to test all combinations are [there](src/anatolia1.2plus.cpp)
@@ -29,6 +29,9 @@ V 1.2 2024 src/anatolia1.2plus.cpp // modified version by D. Jeannerat
 ```
 Look at the [changes](https://github.com/djeanner/Anatole/commits/main/src/anatolia.cpp) of version.
 
+The main ganges we made:
+- Tests all combinations of the signs of the J coupling and put the results in the procno + 1
+- Fill gaps when chemical shifts are not in integral regions. This is to make sure that small transitions not picked in the regions will be taken into account.
 
 
 # Compilation
