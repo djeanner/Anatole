@@ -2,17 +2,28 @@
 
 ```
 echo "========== This is fine at first attempt =========";
-
+echo > last_log_ODCB.txt
 echo "takes less than a second"
 cp -rp data/ODCB/1/pdata/3/ data/ODCB/1/pdata/4/
+cp -rp data/ODCB/1/pdata/3/ data/ODCB/1/pdata/5/
+cp -rp data/ODCB/1/pdata/3/ data/ODCB/1/pdata/6/
 
 cat data/ODCB/1/Input_Data.txt
 time bin/ANATOLIAplus data/ODCB/1 >> last_log_ODCB.txt
 grep "SimMode" data/ODCB/1/Input_Data.txt
 grep "InputParameters" data/ODCB/1/Input_Data.txt
 grep "OutputParameters" data/ODCB/1/Input_Data.txt
-procOutNumber=$(grep "CalcProcNo" ../data/ODCB/1/Input_Data.txt | sed 's/CalcProcNo//g' | sed 's/" "//g' | sed 's/\t//g')
-echo "results in data/$DATASET/ODCB/1/$procOutNumber/1r"
+procOutNumber=$(grep "CalcProcNo" data/ODCB/1/Input_Data.txt | sed 's/CalcProcNo//g' | sed 's/" "//g' | sed 's/\t//g')
+echo "results in data/ODCB/1/$procOutNumber/1r"
+
+echo "useless refinement - good to test output"
+
+cp data/ODCB/1/Input_Data.txt data/ODCB/1/Input_Data.txtCOPY
+cp data/ODCB/1/Input_Data_refinement.txt data/ODCB/1/Input_Data.txt
+time bin/ANATOLIAplus data/ODCB/1 >> last_log_ODCB.txt
+cp data/ODCB/1/Input_Data.txtCOPY data/ODCB/1/Input_Data.txt
+rm data/ODCB/1/Input_Data.txtCOPY
+
 echo "===================";
 ```
 # Styrene
@@ -25,6 +36,8 @@ cp -rp data/Styrene/1/pdata/3/ data/Styrene/1/pdata/5/
 cp -rp data/Styrene/1/pdata/3/ data/Styrene/1/pdata/6/
 cp -rp data/Styrene/1/pdata/3/ data/Styrene/1/pdata/7/
 cp -rp data/Styrene/1/pdata/3/ data/Styrene/1/pdata/8/
+cp -rp data/Styrene/1/pdata/3/ data/Styrene/1/pdata/9/
+cp -rp data/Styrene/1/pdata/3/ data/Styrene/1/pdata/10/
 
 cat data/Styrene/1/Input_Data.txt
 time bin/ANATOLIAplus data/Styrene/1  >> last_log_Styrene.txt

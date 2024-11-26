@@ -546,7 +546,7 @@ public:
 
 	}
 
-	void FixSpinOffsets(ostream& ostr)
+	void fixSpinOffsets(ostream& ostr)
 	{
 		int MaxOffs = Offs[nSpins];
 
@@ -1327,7 +1327,7 @@ public:
 		LoadParameters();
 
 		Spec->CheckSpinOffsets(cout);
-		Spec->FixSpinOffsets(cout);
+		Spec->fixSpinOffsets(cout); // not truly tested
 
 		// Magnitude from exp. spectrum
 		bool tmp;
@@ -1550,6 +1550,263 @@ public:
 
 	}
 
+std::string generateRandomHex(int nbDigit, double s1, double s2, double s3, double s4) {
+	std::ostringstream oss;
+	const char hexDigits[] = "0123456789ABCDEF";
+	// arc4random_uniform(16)
+	srand((int)(s1 * 100));
+    for (int i = 0; i < nbDigit; i++)  oss << hexDigits[rand() % 16];
+	oss << "-";
+	srand((int)(s2 * 100));
+
+	for (int i = 0; i < 3; i++)  oss << hexDigits[rand() % 16];
+	oss << "-";
+	srand((int)(s3 * 100));
+
+	for (int i = 0; i < 3; i++)  oss << hexDigits[rand() % 16];
+	oss << "-";
+	srand((int)(s4 * 100));
+
+	for (int i = 0; i < 2; i++)  oss << hexDigits[rand() % 16];
+	return oss.str();
+}
+
+std::string openArray(const std::string& input, const bool input3 = true) {
+	    std::ostringstream oss;
+	    oss << "\"" << input << "\": [";
+		if (input3)
+			oss << endl;
+	    return oss.str();
+	}
+
+	std::string closeArray(const bool input3 = true) {
+	    std::ostringstream oss;
+	    oss << "]";
+		if (input3)
+			oss << endl;
+	    return oss.str();
+	}
+
+std::string jsonVar(const std::string& input, const std::string& inputValue, const std::string& input2, const bool input3 = true) {
+	    std::ostringstream oss;
+	    oss << "\"" << input << "\": ";
+		oss << "\"" << inputValue << "\"";
+		oss << input2;
+		if (input3)
+			oss << endl;
+	    return oss.str();
+	}
+	
+	std::string jsonVarBool(const std::string& input, const bool inputValue, const std::string& input2, const bool input3 = true) {
+	    std::ostringstream oss;
+	    oss << "\"" << input << "\": ";
+		if (inputValue)
+		oss << "true";
+		else
+		oss << "false";
+		oss << input2;
+		if (input3)
+			oss << endl;
+	    return oss.str();
+	}
+	std::string jsonVar(const std::string& input, const double inputValue, const std::string& input2, const bool input3 = true) {
+	    std::ostringstream oss;
+	    oss << "\"" << input << "\": ";
+		oss.precision(7);
+		oss << fixed;
+    	oss << std::showpoint; 
+		oss << inputValue;
+		oss << input2;
+		if (input3)
+			oss << endl;
+	    return oss.str();
+	}
+	std::string jsonVarInt(const std::string& input, const int inputValue, const std::string& input2, const bool input3 = true) {
+	    std::ostringstream oss;
+	    oss << "\"" << input << "\": ";
+		oss.precision(7);
+		oss << fixed;
+    	oss << std::showpoint; 
+		oss << inputValue;
+		oss << input2;
+		if (input3)
+			oss << endl;
+	    return oss.str();
+	}
+
+	std::string nextArrayElement(const bool notLast, const bool input3 = true) {
+	    std::ostringstream oss;
+	    if (notLast) 
+			oss << ",";
+		if (input3)
+			oss << endl;
+	    return oss.str();
+	}
+	std::string jsonCloseObj (const bool input3 = true) {
+	    std::ostringstream oss;
+	    oss << "}";
+		if (input3)
+			oss << endl;
+	    return oss.str();
+	}
+	std::string jsonOpenObj (const bool input3 = true) {
+	    std::ostringstream oss;
+	    oss << "{";
+		if (input3)
+			oss << endl;
+	    return oss.str();
+	}
+
+	
+
+	void writeCHEMeDATA(int isRefinement = 0, int theorProcNo = 0) {
+	int parnamelen = 0;
+		char* trueOutputParameters = new char[256];
+		if (isRefinement == 0)
+		  	strcpy(trueOutputParameters, "CHEMeDATA_starting");
+		if (isRefinement == 1)
+       		strcpy(trueOutputParameters, "CHEMeDATA_results");
+		if (isRefinement == 2)
+       		strcpy(trueOutputParameters, "CHEMeDATA_allSignCombi");
+  			char str[2];
+  			sprintf(str, "%d", theorProcNo);
+			strcat(trueOutputParameters, str);
+			strcat(trueOutputParameters, ".json");
+			ofstream ostr(trueOutputParameters);
+
+		for (int i = 1; i <= nSSParams + 1; i++)
+		{
+			int tmp = (int)strlen(ParNames[i]);
+			if (parnamelen < tmp) parnamelen = tmp;
+		}
+		parnamelen += 4;
+
+		if (SSParams[nSSParams] < 0) SSParams[nSSParams] *= -1;
+
+		ostr << "{";
+		ostr << openArray("optimizedVariables");
+		double forHash1 = 0;
+		double forHash2 = 0;
+		double forHash3 = 0;
+		double forHash4 = 0;
+		for (int i = 1; i <= nSSParams + 1; i++) {
+			ostr  << jsonOpenObj(false);
+			ostr  << jsonVar("name", ParNames[i], ", ", false);
+
+			if (i < nSSParams)
+				ostr << openArray("spinSystemIndices", false);
+			bool first = true;
+			bool isCHemShift = false;
+			bool isCoupling = false;
+			bool isfactor = i == nSSParams + 1;
+			bool islineWidth = i == nSSParams;
+			bool iskurtosis = false;
+			
+			double dividor = 1.0;// for chemical shift divide by larmor
+			for (int spin = 1; spin <= nSpins; spin++) {
+				if (Offs[spin] == i) {
+					if (first) {
+						first = false;
+					} else {
+						ostr  << ", " ;
+					}
+					ostr << spin ;
+					isCHemShift = true;
+					dividor = Spec->SF;
+				}
+			}
+							
+						
+			first = true;
+			for (int i1 = 1; i1 < nSpins; i1++)	{
+			for (int j1 = 1; j1 <= nSpins; j1++) {
+				if (j1 > i1) {		
+					if (JCoups[i1][j1] == i) {
+						isCoupling = true;
+					if (first) {
+						first = false;
+					} else {
+						ostr  << ", " ;
+					}
+					ostr << "[" << i1 << ", " << j1 << "]";
+					}
+				}
+			}
+			}
+			if (i < nSSParams) {
+				ostr << closeArray(false);
+				ostr << ", ";
+			}
+				
+			if (isCHemShift) {
+				ostr  << jsonVar("typeVariableString", "ChemicalShift", ", ", false);
+			} 
+			if (isCoupling) {
+				ostr  << jsonVar("typeVariableString", "Jcoupling", ", ", false);
+			}
+			if (isfactor) {
+				ostr  << jsonVar("typeVariableString", "factor", ", ", false);
+			}
+			if (islineWidth) {
+				ostr  << jsonVar("typeVariableString", "lineWidth", ", ", false);
+			}
+			if (iskurtosis) {
+				ostr  << jsonVar("typeVariableString", "kurtosis", ", ", false);
+			}
+			if (i < nSSParams + 1) {
+				if (ErrorsComputed) ostr  << jsonVar("error", ParameterErrors[i], ", ", false);
+				ostr  << jsonVar("value", SSParams[i] / dividor, "", false);
+				forHash1 += SSParams[i];
+				forHash2 += SSParams[i] * 131543;
+			} else {
+				if (ErrorsComputed) ostr  << jsonVar("error", ParameterErrors[i], ", ", false);
+				ostr  << jsonVar("value", Spec->TheoreticalSpec.Magnitude, "", false);
+				forHash2 += SSParams[i];
+				forHash3 += SSParams[i] / dividor * 131543;
+			}
+			ostr  << jsonCloseObj(false);
+			ostr << nextArrayElement(i < nSSParams + 1);
+		}
+		ostr << closeArray(false);
+		ostr << "," << endl;
+
+		if (!ErrorsComputed) ostr << jsonVar("ErrorMessage1","Errors are not calculated due to singularity of normal equations matrix!",  ", ");
+		ostr << jsonVar("Title", Title ,  ", ");
+
+		ostr << jsonVar("CheckBroadSequence", " no implemented" ,  ", ");
+		//CheckBroadSequence(ostr);
+		ostr << jsonVarBool("isOutput", isRefinement > 0, ", ");
+
+		if (isRefinement == 0) {
+
+		} else {
+			ostr << jsonVar("LineBroadening",  Spec->LB ,  ", ");
+			ostr << jsonVar("Theoreticalspectrumlinewidth",  Spec->LB + SSParams[nSSParams]  ,  ", ");
+			ostr << jsonVar("RSSValue",  Badness() ,  ", ");
+			ostr << jsonVar("R-Factor_Percent",  Spec->CalcRFactor() ,  ", ");
+			ostr << jsonVar("SpectraCorrelationCoefficient",  Spec->CalcSpectraColleration() ,  ", ");
+			ostr << jsonVar("ParametersCorrelationCoefficients", "not implemented",  ", ");
+			if (ErrorsComputed && false) {
+			ostr << "Parameters correlation coefficients:" << endl;
+			for (int i = 1; i <= nSSParams + 1; i++)
+			{
+				ostr << setw(3) << right << i << ' ';
+				for (int j = 1; j <= i; j++)
+					ostr << setw(10) << right << ParameterCorrelations[i][j];
+				ostr << endl;
+
+			}
+			ostr << endl;
+			}
+			// depends chemical shift,  J's and R-factor
+			ostr << jsonVar("AnatoliaHashFit", generateRandomHex(4, forHash1 + Spec->LB, forHash2, forHash3 + Spec->LB + Spec->CalcRFactor() * 100, forHash4 + + Spec->CalcRFactor() * 137), ", ");
+		}
+		//  only depends chemical shift and J's
+		ostr << jsonVar("AnatoliaHashNetwork", generateRandomHex(5, forHash1 + 834, forHash2 + 43, forHash3, forHash4), "");
+		ostr  << jsonCloseObj();
+		ostr.close();
+	}
+
 	void SaveParameters(const bool refine = false)
 	{
 
@@ -1591,7 +1848,6 @@ public:
 
 		ostr << Title << endl << endl;
 		Spec->CheckSpinOffsets(ostr);
-		Spec->FixSpinOffsets(ostr);
 		CheckBroadSequence(ostr);
 
 		ostr << "Line Broadening: " << fixed << Spec->LB << endl;
@@ -1814,6 +2070,7 @@ int main(int argc, char* argv[])
 	}
 
 	HamOpt->LoadVarParameters(input);
+	HamOpt->writeCHEMeDATA(0, Spec->TheorProcNo);
 
 	input.close(); // End of INPUT file parsing
 
@@ -1852,9 +2109,8 @@ int main(int argc, char* argv[])
 	Spec->ExperimentalSpecWithBroadening.SaveSpecToFile();
 	HamOpt->ComputeErrors();
 	HamOpt->SaveParameters();
-
+	HamOpt->writeCHEMeDATA(1, Spec->TheorProcNo);
 	cout << endl;
-	
 
 	if (true) {
 		const bool considerThatLargeCouplingHaveCorrectSign = true;
@@ -1964,6 +2220,8 @@ int main(int argc, char* argv[])
 					
 						Spec->TheoreticalSpec.SaveSpecToFile(true);
 						HamOpt->SaveParameters(true);
+						HamOpt->writeCHEMeDATA(2, Spec->TheorProcNo);
+						
 						cerr <<  "Saved files Final" << endl;
 					}
 
@@ -1979,6 +2237,7 @@ int main(int argc, char* argv[])
 						// intermediate save in case break search...
 						Spec->TheoreticalSpec.SaveSpecToFile();
 						HamOpt->SaveParameters(true);
+						HamOpt->writeCHEMeDATA(2, Spec->TheorProcNo);
 						cerr <<  "Saved intermediate files" << endl;
 					}
 					// set signs back (copy of above code)

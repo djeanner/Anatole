@@ -1,0 +1,48 @@
+1   FreqM      2258.252943    +-0.000285
+2   FreqO      2195.044511    +-0.000285
+3   5J12          0.334509    +-0.001699
+4   3J13          8.079641    +-0.000593
+5   4J14          1.525922    +-0.000594
+6   3J34          7.485162    +-0.002002
+7   LW            0.130840    +-0.000519
+8   Magn      2.163660e+08    +-6.441869e+05
+
+Analysis of ODCB 1H NMR spectrum
+
+Line Broadening: 0.000000
+Theoretical spectrum linewidth: 0.130840
+RSS Value: 7.091833e+16
+R-Factor: 12.04 %
+Spectra correlation coefficient: 0.992730
+
+Chemical shifts (ppm):
+     7.524     7.524     7.314     7.314
+J-coupling constants (Hz):
+              0.3345    8.0796    1.5259
+                        1.5259    8.0796
+                                  7.4852
+
+Parameters correlation coefficients:
+  1   1.000000
+  2  -0.026377  1.000000
+  3  -0.003605  0.003616  1.000000
+  4  -0.045715  0.045665  0.030050  1.000000
+  5   0.122579 -0.122542 -0.054365 -0.527272  1.000000
+  6  -0.016179  0.016097  0.099597  0.515061 -0.516877  1.000000
+  7  -0.002327  0.002323  0.159624  0.013157 -0.021121  0.019278  1.000000
+  8   0.012953  0.017849  0.659179  0.093273 -0.156182  0.104206 -0.325739  1.000000
+
+Modified by DJ to test all combinations
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+When publishing results obtained with this program, please cite:
+D.A. Cheshkov, K.F. Sheberstov, D.O. Sinitsyn, V.A. Chertkov, ANATOLIA: NMR
+software for spectral analysis of total lineshape. Magn. Reson. Chem., 2018,
+56, 449, DOI: 10.1002/mrc.4689.

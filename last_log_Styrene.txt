@@ -2671,3 +2671,549 @@ When publishing results obtained with this program, please cite:
 D.A. Cheshkov, K.F. Sheberstov, D.O. Sinitsyn, V.A. Chertkov, ANATOLIA: NMR
 software for spectral analysis of total lineshape. Magn. Reson. Chem., 2018,
 56, 449, DOI: 10.1002/mrc.4689.
+Modified by DJ to test all combinations
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+Warning! Chemical shift no. 4 (1819.74) does not fall into any of defined spectral intervals.
+Warning! Chemical shift no. 5 (1526.19) does not fall into any of defined spectral intervals.
+Warning! Chemical shift no. 6 (1366.97) does not fall into any of defined spectral intervals.
+Warning! Spectral interval no. 3 does not contain any chemical shift.
+Warning! Spectral interval no. 4 does not contain any chemical shift.
+Warning! Spectral interval no. 5 does not contain any chemical shift.
+Warning! Spectral interval no. 6 does not contain any chemical shift.
+Warning! Spectral interval no. 7 does not contain any chemical shift.
+Warning! Spectral interval no. 8 does not contain any chemical shift.
+Warning! Spectral interval no. 9 does not contain any chemical shift.
+Warning! Spectral interval no. 10 does not contain any chemical shift.
+
+Broadening:  0.2
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	2.180862e+15
+Iteration 2	RHO 1.0e-01	2.180862e+15
+Iteration 4	RHO 1.0e-02	1.707813e+15
+Iteration 6	RHO 1.0e-03	1.707813e+15
+Iteration 11	RHO 1.0e-04	1.642513e+15
+Iteration 16	RHO 1.0e-05	1.642202e+15
+Iteration 17	RHO 1.0e-06	1.642202e+15
+Iteration 20	RHO 1.0e-07	1.642202e+15
+Iteration 25	RHO 1.0e-08	1.642201e+15
+Iteration 36	RHO 1.0e-09	1.642201e+15
+Iteration 46	RHO 1.0e-10	1.642201e+15
+Iteration 55	RHO 1.0e-10	1.642201e+15
+Main optimization
+Iteration 1	RHO 1.0e+00	1.642201e+15
+Iteration 4	RHO 1.0e-01	1.642201e+15
+Iteration 30	RHO 1.0e-02	1.642201e+15
+Iteration 64	RHO 1.0e-03	1.474358e+15
+Iteration 159	RHO 1.0e-04	1.411585e+15
+Iteration 214	RHO 1.0e-05	1.410777e+15
+Iteration 329	RHO 1.0e-06	1.410632e+15
+Iteration 407	RHO 1.0e-07	1.410588e+15
+Iteration 462	RHO 1.0e-08	1.410586e+15
+Iteration 499	RHO 1.0e-09	1.410586e+15
+Iteration 537	RHO 1.0e-10	1.410586e+15
+Iteration 574	RHO 1.0e-10	1.410586e+15
+
+Broadening:  0.1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	2.617638e+15
+Iteration 2	RHO 1.0e-01	2.617638e+15
+Iteration 4	RHO 1.0e-02	2.617638e+15
+Iteration 7	RHO 1.0e-03	2.617638e+15
+Iteration 10	RHO 1.0e-04	2.615972e+15
+Iteration 12	RHO 1.0e-05	2.615107e+15
+Iteration 16	RHO 1.0e-06	2.615006e+15
+Iteration 18	RHO 1.0e-07	2.615005e+15
+Iteration 20	RHO 1.0e-08	2.615005e+15
+Iteration 33	RHO 1.0e-09	2.615005e+15
+Iteration 44	RHO 1.0e-10	2.615005e+15
+Iteration 59	RHO 1.0e-10	2.615005e+15
+Main optimization
+Iteration 1	RHO 1.0e+00	2.615005e+15
+Iteration 4	RHO 1.0e-01	2.615005e+15
+Iteration 30	RHO 1.0e-02	2.615005e+15
+Iteration 39	RHO 1.0e-03	2.615005e+15
+Iteration 116	RHO 1.0e-04	2.375174e+15
+Iteration 172	RHO 1.0e-05	2.368948e+15
+Iteration 208	RHO 1.0e-06	2.368928e+15
+Iteration 257	RHO 1.0e-07	2.368901e+15
+Iteration 293	RHO 1.0e-08	2.368899e+15
+Iteration 334	RHO 1.0e-09	2.368898e+15
+Iteration 374	RHO 1.0e-10	2.368898e+15
+Iteration 410	RHO 1.0e-10	2.368898e+15
+
+Broadening:  0.05
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.336509e+15
+Iteration 2	RHO 1.0e-01	4.336509e+15
+Iteration 4	RHO 1.0e-02	4.336509e+15
+Iteration 7	RHO 1.0e-03	4.336509e+15
+Iteration 10	RHO 1.0e-04	4.327222e+15
+Iteration 13	RHO 1.0e-05	4.327222e+15
+Iteration 17	RHO 1.0e-06	4.326939e+15
+Iteration 19	RHO 1.0e-07	4.326939e+15
+Iteration 22	RHO 1.0e-08	4.326939e+15
+Iteration 27	RHO 1.0e-09	4.326939e+15
+Iteration 30	RHO 1.0e-10	4.326939e+15
+Iteration 38	RHO 1.0e-10	4.326939e+15
+Main optimization
+Iteration 1	RHO 1.0e+00	4.326939e+15
+Iteration 4	RHO 1.0e-01	4.326939e+15
+Iteration 30	RHO 1.0e-02	4.326939e+15
+Iteration 39	RHO 1.0e-03	4.326939e+15
+Iteration 95	RHO 1.0e-04	4.049511e+15
+Iteration 156	RHO 1.0e-05	4.031486e+15
+Iteration 198	RHO 1.0e-06	4.030923e+15
+Iteration 230	RHO 1.0e-07	4.030888e+15
+Iteration 264	RHO 1.0e-08	4.030887e+15
+Iteration 313	RHO 1.0e-09	4.030886e+15
+Iteration 357	RHO 1.0e-10	4.030886e+15
+Iteration 398	RHO 1.0e-10	4.030886e+15
+
+Broadening:  0
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	1.289644e+16
+Iteration 2	RHO 1.0e-01	1.289644e+16
+Iteration 4	RHO 1.0e-02	1.289644e+16
+Iteration 8	RHO 1.0e-03	9.079327e+15
+Iteration 12	RHO 1.0e-04	8.308688e+15
+Iteration 16	RHO 1.0e-05	8.304170e+15
+Iteration 19	RHO 1.0e-06	8.304082e+15
+Iteration 21	RHO 1.0e-07	8.304082e+15
+Iteration 23	RHO 1.0e-08	8.304082e+15
+Iteration 26	RHO 1.0e-09	8.304082e+15
+Iteration 29	RHO 1.0e-10	8.304082e+15
+Iteration 32	RHO 1.0e-10	8.304082e+15
+Main optimization
+Iteration 1	RHO 1.0e+00	8.304082e+15
+Iteration 3	RHO 1.0e-01	8.304082e+15
+Iteration 29	RHO 1.0e-02	8.304082e+15
+Iteration 38	RHO 1.0e-03	8.304082e+15
+Iteration 108	RHO 1.0e-04	6.132998e+15
+Iteration 153	RHO 1.0e-05	6.093801e+15
+Iteration 285	RHO 1.0e-06	6.090506e+15
+Iteration 355	RHO 1.0e-07	6.090491e+15
+Iteration 407	RHO 1.0e-08	6.090491e+15
+Iteration 436	RHO 1.0e-09	6.090491e+15
+Iteration 460	RHO 1.0e-10	6.090491e+15
+Iteration 486	RHO 1.0e-10	6.090491e+15
+
+R-Factor: 5.85 %
+
+>>>>>> Number of tested J coupling (J coupling with values > 5.000000) 14
+>>>>>> Number of combinations for step 0 :                  1 of 16384.000000
+>>>>>> Number of combinations for step 1 : 14! / (13! * 1!) = 14 of 16384.000000
+>>>>>> Run step because the number of combinations  14 <= 10000
+>>>>>> Number of combinations for step 2 : 14! / (12! * 2!) = 91 of 16384.000000
+>>>>>> Run step because the number of combinations  91 <= 10000
+>>>>>> Number of combinations for step 3 : 14! / (11! * 3!) = 364 of 16384.000000
+>>>>>> Run step because the number of combinations  364 <= 10000
+>>>>>> Number of combinations for step 4 : 14! / (10! * 4!) = 1001 of 16384.000000
+>>>>>> Run step because the number of combinations  1001 <= 10000
+>>>>>> Number of combinations for step 5 : 14! / (9! * 5!) = 2002 of 16384.000000
+>>>>>> Run step because the number of combinations  2002 <= 10000
+>>>>>> Number of combinations for step 6 : 14! / (8! * 6!) = 3003 of 16384.000000
+>>>>>> Run step because the number of combinations  3003 <= 10000
+>>>>>> Number of combinations for step 7 : 14! / (7! * 7!) = 3432 of 16384.000000
+>>>>>> Run step because the number of combinations  3432 <= 10000
+>>>>>> Number of combinations for step 8 : 14! / (6! * 8!) = 3003 of 16384.000000
+>>>>>> Run step because the number of combinations  3003 <= 10000
+>>>>>> Number of combinations for step 9 : 14! / (5! * 9!) = 2002 of 16384.000000
+>>>>>> Run step because the number of combinations  2002 <= 10000
+>>>>>> Number of combinations for step 10 : 14! / (4! * 10!) = 1001 of 16384.000000
+>>>>>> Run step because the number of combinations  1001 <= 10000
+>>>>>> Number of combinations for step 11 : 14! / (3! * 11!) = 364 of 16384.000000
+>>>>>> Run step because the number of combinations  364 <= 10000
+>>>>>> Number of combinations for step 12 : 14! / (2! * 12!) = 91 of 16384.000000
+>>>>>> Run step because the number of combinations  91 <= 10000
+>>>>>> Number of combinations for step 13 : 14! / (1! * 13!) = 14 of 16384.000000
+>>>>>> Run step because the number of combinations  14 <= 10000
+>>>>>> Number of combinations for step 14 : 14! / (0! * 14!) = 1 of 16384.000000
+>>>>>> Run step because the number of combinations  1 <= 10000
+5.848903 is final smallest <= 5.848903 0/16384 00000000000000  J's: 1.916969 0.606049 1.244700 -0.534687 0.038968 0.158238 1.418410 0.369242 -0.041618 0.016890 -0.227909 0.234891 0.290480 1.038172 
+Modified by DJ to test all combinations
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+When publishing results obtained with this program, please cite:
+D.A. Cheshkov, K.F. Sheberstov, D.O. Sinitsyn, V.A. Chertkov, ANATOLIA: NMR
+software for spectral analysis of total lineshape. Magn. Reson. Chem., 2018,
+56, 449, DOI: 10.1002/mrc.4689.
+Modified by DJ to test all combinations
+*****************************************************
+***                ANATOLIA V1.2                  ***
+***      Free open-source software for total      ***
+***       lineshape analysis of NMR spectra       ***
+*****************************************************
+***       Copyright 2021, Dmitry Cheshkov,        ***
+***      Dmitry Sinitsyn, Kirill Sheberstov       ***
+*****************************************************
+
+Warning! Chemical shift no. 4 (1820) does not fall into any of defined spectral intervals.
+Warning! Chemical shift no. 5 (1526) does not fall into any of defined spectral intervals.
+Warning! Chemical shift no. 6 (1367) does not fall into any of defined spectral intervals.
+Warning! Spectral interval no. 3 does not contain any chemical shift.
+Warning! Spectral interval no. 4 does not contain any chemical shift.
+Warning! Spectral interval no. 5 does not contain any chemical shift.
+Warning! Spectral interval no. 6 does not contain any chemical shift.
+Warning! Spectral interval no. 7 does not contain any chemical shift.
+Warning! Spectral interval no. 8 does not contain any chemical shift.
+Warning! Spectral interval no. 9 does not contain any chemical shift.
+Warning! Spectral interval no. 10 does not contain any chemical shift.
+
+Warning! Chemical shift no. 4 (1820) does not fall into any of defined spectral intervals.
+New interval region:  1825.14 : 1815.19 
+Warning! Chemical shift no. 5 (1526) does not fall into any of defined spectral intervals.
+New interval region:  1535.81 : 1515.96 
+Warning! Chemical shift no. 6 (1367) does not fall into any of defined spectral intervals.
+New interval region:  1374.65 : 1359.3 
+defined spectral intervals 1 ( 2026.83 .. 2007.57)
+defined spectral intervals 2 ( 1989.32 .. 1947.27)
+defined spectral intervals 3 ( 1835.96 .. 1832.6)
+defined spectral intervals 4 ( 1825.14 .. 1815.19)
+defined spectral intervals 5 ( 1807.74 .. 1804.4)
+defined spectral intervals 6 ( 1535.81 .. 1515.96)
+defined spectral intervals 7 ( 1374.65 .. 1359.3)
+Warning! Spectral interval no. 3 1835.96 ..  1832.6 does not contain any chemical shift.
+chemical shifts 1 ( 2017)
+chemical shifts 2 ( 1977)
+chemical shifts 3 ( 1959)
+chemical shifts 4 ( 1820)
+chemical shifts 5 ( 1526)
+chemical shifts 6 ( 1367)
+Warning! Spectral interval no. 5 1807.74 ..  1804.4 does not contain any chemical shift.
+Broadening:  4
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	1.204733e+15
+Iteration 2	RHO 1.0e-01	1.204733e+15
+Iteration 5	RHO 1.0e-02	1.204733e+15
+Iteration 7	RHO 1.0e-03	1.204733e+15
+Iteration 10	RHO 1.0e-04	1.204659e+15
+Iteration 15	RHO 1.0e-05	1.204655e+15
+Iteration 20	RHO 1.0e-06	1.204654e+15
+Iteration 23	RHO 1.0e-07	1.204654e+15
+Iteration 28	RHO 1.0e-08	1.204654e+15
+Iteration 43	RHO 1.0e-09	1.204654e+15
+Iteration 55	RHO 1.0e-10	1.204654e+15
+Iteration 60	RHO 1.0e-10	1.204654e+15
+Main optimization
+Iteration 1	RHO 1.0e+00	1.204654e+15
+Iteration 4	RHO 1.0e-01	1.204654e+15
+Iteration 61	RHO 1.0e-02	2.631040e+14
+Iteration 190	RHO 1.0e-03	1.971512e+14
+Iteration 620	RHO 1.0e-04	1.945181e+14
+Iteration 840	RHO 1.0e-05	1.944602e+14
+Iteration 4097	RHO 1.0e-06	1.943102e+14
+Iteration 4139	RHO 1.0e-07	1.943102e+14
+Iteration 5249	RHO 1.0e-08	1.943093e+14
+Iteration 5656	RHO 1.0e-09	1.943093e+14
+Iteration 6955	RHO 1.0e-10	1.943093e+14
+Iteration 7018	RHO 1.0e-10	1.943093e+14
+
+Broadening:  3
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	3.246985e+14
+Iteration 2	RHO 1.0e-01	3.246985e+14
+Iteration 4	RHO 1.0e-02	3.246985e+14
+Iteration 5	RHO 1.0e-03	3.246985e+14
+Iteration 10	RHO 1.0e-04	3.246091e+14
+Iteration 12	RHO 1.0e-05	3.246091e+14
+Iteration 16	RHO 1.0e-06	3.246090e+14
+Iteration 19	RHO 1.0e-07	3.246090e+14
+Iteration 24	RHO 1.0e-08	3.246090e+14
+Iteration 37	RHO 1.0e-09	3.246090e+14
+Iteration 46	RHO 1.0e-10	3.246090e+14
+Iteration 51	RHO 1.0e-10	3.246090e+14
+Main optimization
+Iteration 1	RHO 1.0e+00	3.246090e+14
+Iteration 4	RHO 1.0e-01	3.246090e+14
+Iteration 46	RHO 1.0e-02	2.661981e+14
+Iteration 141	RHO 1.0e-03	2.378888e+14
+Iteration 368	RHO 1.0e-04	2.362281e+14
+Iteration 655	RHO 1.0e-05	2.361365e+14
+Iteration 706	RHO 1.0e-06	2.361355e+14
+Iteration 749	RHO 1.0e-07	2.361354e+14
+Iteration 976	RHO 1.0e-08	2.361352e+14
+Iteration 1033	RHO 1.0e-09	2.361352e+14
+Iteration 1099	RHO 1.0e-10	2.361352e+14
+Iteration 1140	RHO 1.0e-10	2.361352e+14
+
+Broadening:  2
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.086931e+14
+Iteration 2	RHO 1.0e-01	4.086931e+14
+Iteration 4	RHO 1.0e-02	4.086931e+14
+Iteration 5	RHO 1.0e-03	4.086931e+14
+Iteration 7	RHO 1.0e-04	4.086931e+14
+Iteration 10	RHO 1.0e-05	4.086930e+14
+Iteration 14	RHO 1.0e-06	4.086929e+14
+Iteration 17	RHO 1.0e-07	4.086929e+14
+Iteration 18	RHO 1.0e-08	4.086929e+14
+Iteration 20	RHO 1.0e-09	4.086929e+14
+Iteration 22	RHO 1.0e-10	4.086929e+14
+Iteration 25	RHO 1.0e-10	4.086929e+14
+Main optimization
+Iteration 1	RHO 1.0e+00	4.086929e+14
+Iteration 4	RHO 1.0e-01	4.086929e+14
+Iteration 42	RHO 1.0e-02	3.267462e+14
+Iteration 142	RHO 1.0e-03	3.085148e+14
+Iteration 197	RHO 1.0e-04	3.079957e+14
+Iteration 237	RHO 1.0e-05	3.079882e+14
+Iteration 272	RHO 1.0e-06	3.079880e+14
+Iteration 303	RHO 1.0e-07	3.079879e+14
+Iteration 341	RHO 1.0e-08	3.079879e+14
+Iteration 373	RHO 1.0e-09	3.079879e+14
+Iteration 409	RHO 1.0e-10	3.079879e+14
+Iteration 448	RHO 1.0e-10	3.079879e+14
+
+Broadening:  1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	7.154098e+14
+Iteration 2	RHO 1.0e-01	7.154098e+14
+Iteration 4	RHO 1.0e-02	7.154098e+14
+Iteration 6	RHO 1.0e-03	7.154098e+14
+Iteration 7	RHO 1.0e-04	7.154098e+14
+Iteration 11	RHO 1.0e-05	7.151561e+14
+Iteration 15	RHO 1.0e-06	7.151422e+14
+Iteration 19	RHO 1.0e-07	7.151389e+14
+Iteration 21	RHO 1.0e-08	7.151389e+14
+Iteration 23	RHO 1.0e-09	7.151388e+14
+Iteration 27	RHO 1.0e-10	7.151388e+14
+Iteration 33	RHO 1.0e-10	7.151388e+14
+Main optimization
+Iteration 1	RHO 1.0e+00	7.151388e+14
+Iteration 4	RHO 1.0e-01	7.151388e+14
+Iteration 43	RHO 1.0e-02	6.223569e+14
+Iteration 113	RHO 1.0e-03	5.036710e+14
+Iteration 161	RHO 1.0e-04	5.019435e+14
+Iteration 318	RHO 1.0e-05	5.014370e+14
+Iteration 355	RHO 1.0e-06	5.014308e+14
+Iteration 397	RHO 1.0e-07	5.014295e+14
+Iteration 432	RHO 1.0e-08	5.014295e+14
+Iteration 463	RHO 1.0e-09	5.014295e+14
+Iteration 513	RHO 1.0e-10	5.014295e+14
+Iteration 553	RHO 1.0e-10	5.014295e+14
+
+Broadening:  0.8
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	6.312811e+14
+Iteration 2	RHO 1.0e-01	6.312811e+14
+Iteration 4	RHO 1.0e-02	6.312811e+14
+Iteration 5	RHO 1.0e-03	6.312811e+14
+Iteration 10	RHO 1.0e-04	6.281967e+14
+Iteration 13	RHO 1.0e-05	6.281967e+14
+Iteration 18	RHO 1.0e-06	6.281961e+14
+Iteration 23	RHO 1.0e-07	6.281960e+14
+Iteration 26	RHO 1.0e-08	6.281960e+14
+Iteration 29	RHO 1.0e-09	6.281960e+14
+Iteration 37	RHO 1.0e-10	6.281960e+14
+Iteration 44	RHO 1.0e-10	6.281960e+14
+Main optimization
+Iteration 1	RHO 1.0e+00	6.281960e+14
+Iteration 4	RHO 1.0e-01	6.281960e+14
+Iteration 30	RHO 1.0e-02	6.281960e+14
+Iteration 87	RHO 1.0e-03	6.084329e+14
+Iteration 277	RHO 1.0e-04	6.037421e+14
+Iteration 340	RHO 1.0e-05	6.035760e+14
+Iteration 839	RHO 1.0e-06	6.034845e+14
+Iteration 910	RHO 1.0e-07	6.034837e+14
+Iteration 1069	RHO 1.0e-08	6.034828e+14
+Iteration 1158	RHO 1.0e-09	6.034828e+14
+Iteration 1533	RHO 1.0e-10	6.034827e+14
+Iteration 1566	RHO 1.0e-10	6.034827e+14
+
+Broadening:  0.6
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	7.836771e+14
+Iteration 2	RHO 1.0e-01	7.836771e+14
+Iteration 4	RHO 1.0e-02	7.836771e+14
+Iteration 6	RHO 1.0e-03	7.836771e+14
+Iteration 8	RHO 1.0e-04	7.836771e+14
+Iteration 14	RHO 1.0e-05	7.835927e+14
+Iteration 16	RHO 1.0e-06	7.835866e+14
+Iteration 30	RHO 1.0e-07	7.835779e+14
+Iteration 55	RHO 1.0e-08	7.835766e+14
+Iteration 60	RHO 1.0e-09	7.835765e+14
+Iteration 73	RHO 1.0e-10	7.835765e+14
+Iteration 84	RHO 1.0e-10	7.835765e+14
+Main optimization
+Iteration 1	RHO 1.0e+00	7.835765e+14
+Iteration 4	RHO 1.0e-01	7.835765e+14
+Iteration 33	RHO 1.0e-02	7.832225e+14
+Iteration 94	RHO 1.0e-03	7.205704e+14
+Iteration 294	RHO 1.0e-04	7.063133e+14
+Iteration 332	RHO 1.0e-05	7.061724e+14
+Iteration 375	RHO 1.0e-06	7.061582e+14
+Iteration 418	RHO 1.0e-07	7.061564e+14
+Iteration 458	RHO 1.0e-08	7.061563e+14
+Iteration 501	RHO 1.0e-09	7.061562e+14
+Iteration 541	RHO 1.0e-10	7.061562e+14
+Iteration 580	RHO 1.0e-10	7.061562e+14
+
+Broadening:  0.4
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	1.073437e+15
+Iteration 2	RHO 1.0e-01	1.073437e+15
+Iteration 4	RHO 1.0e-02	1.073437e+15
+Iteration 6	RHO 1.0e-03	1.073437e+15
+Iteration 10	RHO 1.0e-04	1.068413e+15
+Iteration 12	RHO 1.0e-05	1.068340e+15
+Iteration 16	RHO 1.0e-06	1.068315e+15
+Iteration 24	RHO 1.0e-07	1.068308e+15
+Iteration 27	RHO 1.0e-08	1.068308e+15
+Iteration 32	RHO 1.0e-09	1.068308e+15
+Iteration 47	RHO 1.0e-10	1.068308e+15
+Iteration 50	RHO 1.0e-10	1.068308e+15
+Main optimization
+Iteration 1	RHO 1.0e+00	1.068308e+15
+Iteration 4	RHO 1.0e-01	1.068308e+15
+Iteration 30	RHO 1.0e-02	1.068308e+15
+Iteration 75	RHO 1.0e-03	9.917589e+14
+Iteration 191	RHO 1.0e-04	9.771290e+14
+Iteration 260	RHO 1.0e-05	9.749059e+14
+Iteration 297	RHO 1.0e-06	9.748763e+14
+Iteration 330	RHO 1.0e-07	9.748739e+14
+Iteration 368	RHO 1.0e-08	9.748737e+14
+Iteration 392	RHO 1.0e-09	9.748737e+14
+Iteration 423	RHO 1.0e-10	9.748737e+14
+Iteration 458	RHO 1.0e-10	9.748737e+14
+
+Broadening:  0.2
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.573051e+15
+Iteration 2	RHO 1.0e-01	4.573051e+15
+Iteration 4	RHO 1.0e-02	4.573051e+15
+Iteration 6	RHO 1.0e-03	4.573051e+15
+Iteration 9	RHO 1.0e-04	4.552707e+15
+Iteration 12	RHO 1.0e-05	4.552383e+15
+Iteration 14	RHO 1.0e-06	4.552383e+15
+Iteration 19	RHO 1.0e-07	4.552382e+15
+Iteration 28	RHO 1.0e-08	4.552381e+15
+Iteration 41	RHO 1.0e-09	4.552381e+15
+Iteration 60	RHO 1.0e-10	4.552381e+15
+Iteration 69	RHO 1.0e-10	4.552381e+15
+Main optimization
+Iteration 1	RHO 1.0e+00	4.552381e+15
+Iteration 4	RHO 1.0e-01	4.552381e+15
+Iteration 30	RHO 1.0e-02	4.552381e+15
+Iteration 90	RHO 1.0e-03	3.624838e+15
+Iteration 310	RHO 1.0e-04	2.162076e+15
+Iteration 364	RHO 1.0e-05	2.160939e+15
+Iteration 439	RHO 1.0e-06	2.160766e+15
+Iteration 490	RHO 1.0e-07	2.160750e+15
+Iteration 538	RHO 1.0e-08	2.160749e+15
+Iteration 590	RHO 1.0e-09	2.160749e+15
+Iteration 654	RHO 1.0e-10	2.160749e+15
+Iteration 703	RHO 1.0e-10	2.160749e+15
+
+Broadening:  0.1
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	5.955779e+15
+Iteration 2	RHO 1.0e-01	5.955779e+15
+Iteration 4	RHO 1.0e-02	5.955779e+15
+Iteration 7	RHO 1.0e-03	5.955779e+15
+Iteration 9	RHO 1.0e-04	5.917984e+15
+Iteration 13	RHO 1.0e-05	5.916935e+15
+Iteration 15	RHO 1.0e-06	5.916935e+15
+Iteration 22	RHO 1.0e-07	5.916906e+15
+Iteration 27	RHO 1.0e-08	5.916905e+15
+Iteration 34	RHO 1.0e-09	5.916905e+15
+Iteration 37	RHO 1.0e-10	5.916905e+15
+Iteration 40	RHO 1.0e-10	5.916905e+15
+Main optimization
+Iteration 1	RHO 1.0e+00	5.916905e+15
+Iteration 4	RHO 1.0e-01	5.916905e+15
+Iteration 30	RHO 1.0e-02	5.916905e+15
+Iteration 63	RHO 1.0e-03	5.709803e+15
+Iteration 111	RHO 1.0e-04	5.659779e+15
+Iteration 153	RHO 1.0e-05	5.657668e+15
+Iteration 194	RHO 1.0e-06	5.657491e+15
+Iteration 232	RHO 1.0e-07	5.657464e+15
+Iteration 265	RHO 1.0e-08	5.657461e+15
+Iteration 307	RHO 1.0e-09	5.657461e+15
+Iteration 356	RHO 1.0e-10	5.657461e+15
+Iteration 395	RHO 1.0e-10	5.657461e+15
+
+Broadening:  0.05
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	6.956619e+17
+Iteration 2	RHO 1.0e-01	6.956619e+17
+Iteration 4	RHO 1.0e-02	6.956619e+17
+Iteration 5	RHO 1.0e-03	6.956619e+17
+Iteration 8	RHO 1.0e-04	6.956619e+17
+Iteration 11	RHO 1.0e-05	6.956619e+17
+Iteration 13	RHO 1.0e-06	6.956619e+17
+Iteration 14	RHO 1.0e-07	6.956619e+17
+Iteration 16	RHO 1.0e-08	6.956619e+17
+Iteration 17	RHO 1.0e-09	6.956619e+17
+Iteration 19	RHO 1.0e-10	6.956619e+17
+Iteration 21	RHO 1.0e-10	6.956619e+17
+Main optimization
+Iteration 1	RHO 1.0e+00	8.415527e+17
+Iteration 27	RHO 1.0e-01	8.415527e+17
+Iteration 46	RHO 1.0e-02	8.415527e+17
+Iteration 98	RHO 1.0e-03	8.351126e+17
+Iteration 161	RHO 1.0e-04	8.346955e+17
+Iteration 201	RHO 1.0e-05	8.346905e+17
+Iteration 245	RHO 1.0e-06	8.346887e+17
+Iteration 281	RHO 1.0e-07	8.346886e+17
+Iteration 328	RHO 1.0e-08	8.346886e+17
+Iteration 365	RHO 1.0e-09	8.346886e+17
+Iteration 407	RHO 1.0e-10	8.346886e+17
+Iteration 441	RHO 1.0e-10	8.346886e+17
+
+Broadening:  0
+Spectrum linewidth preoptimization
+Iteration 1	RHO 1.0e+00	4.393882e+17
+Iteration 2	RHO 1.0e-01	4.393882e+17
+Iteration 4	RHO 1.0e-02	4.393882e+17
+Iteration 7	RHO 1.0e-03	4.393882e+17
+Iteration 9	RHO 1.0e-04	4.393882e+17
+Iteration 11	RHO 1.0e-05	4.393882e+17
+Iteration 13	RHO 1.0e-06	4.393882e+17
+Iteration 14	RHO 1.0e-07	4.393882e+17
+Iteration 16	RHO 1.0e-08	4.393882e+17
+Iteration 17	RHO 1.0e-09	4.393882e+17
+Iteration 19	RHO 1.0e-10	4.393882e+17
+Iteration 21	RHO 1.0e-10	4.393882e+17
+Main optimization
+Iteration 1	RHO 1.0e+00	5.197378e+17
+Iteration 27	RHO 1.0e-01	5.197378e+17
+Iteration 46	RHO 1.0e-02	5.197378e+17
+Iteration 77	RHO 1.0e-03	5.150450e+17
+Iteration 103	RHO 1.0e-04	5.134938e+17
+Iteration 126	RHO 1.0e-05	5.134938e+17
+Iteration 138	RHO 1.0e-06	5.134938e+17
+Iteration 159	RHO 1.0e-07	5.134938e+17
+Iteration 167	RHO 1.0e-08	5.134938e+17
+Iteration 192	RHO 1.0e-09	5.134938e+17
+Iteration 217	RHO 1.0e-10	5.134938e+17
+Iteration 243	RHO 1.0e-10	5.134938e+17
+
+R-Factor: 54.06 %
+
+>>>>>> Number of tested J coupling (J coupling with values > 5.000000) 14
+>>>>>> Number of combinations for step 0 :                  1 of 16384.000000
+>>>>>> Number of combinations for step 1 : 14! / (13! * 1!) = 14 of 16384.000000
+>>>>>> Run step because the number of combinations  14 <= 10000
+54.231860 then initial < 54.372549 8/16384 00010000000000  J's: 1.922165 0.607381 1.244289 -0.528305 -0.063365 0.183693 1.417397 -0.349653 -0.014163 0.030202 -0.154420 -0.249366 -0.282453 1.022075 
+54.231860 is temporary smallest < 54.372549 8/16384 00010000000000  J's: 1.922165 0.607381 1.244289 -0.528305 -0.063365 0.183693 1.417397 -0.349653 -0.014163 0.030202 -0.154420 -0.249366 -0.282453 1.022075 
+54.003800 then initial < 54.372549 16/16384 00001000000000  J's: 1.922165 0.607381 1.244289 0.528305 0.063365 0.183693 1.417397 -0.349653 -0.014163 0.030202 -0.154420 -0.249366 -0.282453 1.022075 
+54.003800 is temporary smallest < 54.231860 16/16384 00001000000000  J's: 1.922165 0.607381 1.244289 0.528305 0.063365 0.183693 1.417397 -0.349653 -0.014163 0.030202 -0.154420 -0.249366 -0.282453 1.022075 
+54.056668 then initial < 54.372549 32/16384 00000100000000  J's: 1.922165 0.607381 1.244289 0.528305 -0.063365 -0.183693 1.417397 -0.349653 -0.014163 0.030202 -0.154420 -0.249366 -0.282453 1.022075 
+54.266290 then initial < 54.372549 8192/16384 00000000000001  J's: 1.922165 0.607381 1.244289 0.528305 -0.063365 0.183693 1.417397 -0.349653 -0.014163 0.030202 -0.154420 -0.249366 -0.282453 -1.022075 
+>>>>>> Number of combinations for step 2 : 14! / (12! * 2!) = 91 of 16384.000000
+>>>>>> Run step because the number of combinations  91 <= 10000
