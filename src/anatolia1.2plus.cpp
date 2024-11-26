@@ -546,6 +546,136 @@ public:
 
 	}
 
+	void FixSpinOffsets(ostream& ostr)
+	{
+		if (true) { // debug list before
+			for (int j = 1; j <= nIntervals; j++) {
+					ostr << "BEFORE defined spectral intervals " << j << " ("  
+					<< " " << Offset - FreqStep * (StartPoint[j] - 1)
+					<< " .. " << Offset - FreqStep * (EndPoint[j] - 1) 
+					<< ")"
+					<< endl;
+				}
+				for (int j = 1; j <= Offs[nSpins]; j++) {
+					ostr << "BEFORE frequencies " << j << " "  
+					<< " " << SSParams[j]
+					<< ""
+					<< endl;
+				}
+		}
+		int MaxOffs = Offs[nSpins];
+
+		bool check = false;
+
+		for (int i = 1; i <= MaxOffs; i++)
+		{
+			double CurrOffset = SSParams[i];
+			check = false;
+			for (int j = 1; j <= nIntervals; j++) {
+				if (CurrOffset <= (Offset - FreqStep * (StartPoint[j] - 1)) && CurrOffset >= (Offset - FreqStep * (EndPoint[j] - 1))) {
+					check = true;
+				}
+			}			
+			if (!check) {
+			ostr << "Warning! Chemical shift no. " << i << " (" << CurrOffset << ") does not fall into any of defined spectral intervals." << endl;
+			for (int j = 0; j <= nIntervals ; j++) {
+				if (j > nIntervals) continue; // just making sure value of nIntervals is not constant in the loop
+				
+				if (j > 0) 
+					if (CurrOffset <= (Offset - FreqStep * (StartPoint[j] - 1)) && CurrOffset >= (Offset - FreqStep * (EndPoint[j] - 1))) 
+						continue;
+				
+				int first;
+				int last;
+				if 	(j == 0) {
+					first = 1;
+					last = EndPoint[j + 1];
+				}
+				if 	(j == nIntervals) {
+					first = StartPoint[j];
+					last = ExperimentalSpec.nPoints;
+				}
+				if 	(j > 0 && j < nIntervals) {
+					first = StartPoint[j];
+					last = EndPoint[j + 1];
+				}
+				const double start = Offset - FreqStep * (first - 1);
+				const double end = Offset - FreqStep * (last - 1);
+
+				if (CurrOffset <= start && CurrOffset >= end) {
+					if 	(j == 0) {
+						StartPoint[j + 1] = first;
+					}
+					if 	(j == nIntervals) {
+						EndPoint[j] = last;
+					}
+					if 	(j > 0 && j < nIntervals) {
+						StartPoint[j] = first;
+						EndPoint[j] = last;
+					}
+					
+					ostr << "defined spectral intervals " << j << " & " << (j + 1) << " (" << CurrOffset << ") fall into the gap " 
+					<< start << " .. "
+					<< end << " "
+					<< endl;
+					ostr << "Fusing the intervals and create " 
+					<< Offset - FreqStep *(first - 1)<< " : "
+					<< Offset - FreqStep *(last - 1) << " "
+					<< endl;
+					if 	(j > 0 && j < nIntervals) {
+						ostr << " Shift array "  << endl;
+
+						for (int k = j + 1; k <= nIntervals; k++) {
+							StartPoint[k] = StartPoint[k + 1];
+							EndPoint[k] = EndPoint[k + 1];
+						}
+						nIntervals -= 1;
+					}
+					break;
+				}				
+			}
+			}
+		}
+		if (!check) {
+			for (int j = 1; j <= nIntervals; j++) {
+					ostr << "defined spectral intervals " << j << " ("  
+					<< " " << Offset - FreqStep * (StartPoint[j] - 1)
+					<< " .. " << Offset - FreqStep * (EndPoint[j] - 1) 
+					<< ")"
+					<< endl;
+				}
+		}
+		if (true) { // debug list after
+			for (int j = 1; j <= nIntervals; j++) {
+					ostr << "AFTER defined spectral intervals " << j << " ("  
+					<< " " << Offset - FreqStep * (StartPoint[j] - 1)
+					<< " .. " << Offset - FreqStep * (EndPoint[j] - 1) 
+					<< ")"
+					<< endl;
+				}
+		}
+		bool firstTime = true;
+		for (int i = 1; i <= nIntervals; i++)
+		{
+			double StrartFreq = Offset - FreqStep * (StartPoint[i] - 1);
+			double EndFreq = Offset - FreqStep * (EndPoint[i] - 1);
+			check = false;
+			for (int j = 1; j <= MaxOffs; j++)
+				if (SSParams[j] <= StrartFreq && SSParams[j] >= EndFreq) check = true;
+			if (!check) {
+				ostr << "Warning! Spectral interval no. " << i << " " << StrartFreq << " ..  " << EndFreq << " does not contain any chemical shift." << endl;
+				if (firstTime) for (int j = 1; j <= MaxOffs; j++) {
+					ostr << "chemical shifts " << j << " ("  
+					<< " " << SSParams[j]
+					<< ")"
+					<< endl;
+					firstTime = false;
+				}
+			} 
+		}
+		if (!check) ostr << endl;
+	}
+
 	void InitBroadening(double MaxLb)
 	{
 
@@ -1229,6 +1359,7 @@ public:
 		LoadParameters();
 
 		Spec->CheckSpinOffsets(cout);
+		Spec->FixSpinOffsets(cout);
 
 		// Magnitude from exp. spectrum
 		bool tmp;
@@ -1492,6 +1623,7 @@ public:
 
 		ostr << Title << endl << endl;
 		Spec->CheckSpinOffsets(ostr);
+		Spec->FixSpinOffsets(ostr);
 		CheckBroadSequence(ostr);
 
 		ostr << "Line Broadening: " << fixed << Spec->LB << endl;
