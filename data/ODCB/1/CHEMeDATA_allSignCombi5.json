@@ -1,12 +1,12 @@
 {"optimizedVariables": [
-{"name": "FreqM", "spinSystemIndices": [1, 2], "typeVariableString": "ChemicalShift", "error": 0.0002852, "value": 7.5242493},
-{"name": "FreqO", "spinSystemIndices": [3, 4], "typeVariableString": "ChemicalShift", "error": 0.0002852, "value": 7.3136458},
-{"name": "5J12", "spinSystemIndices": [[1, 2]], "typeVariableString": "Jcoupling", "error": 0.0016989, "value": 0.3345091},
-{"name": "3J13", "spinSystemIndices": [[1, 3], [2, 4]], "typeVariableString": "Jcoupling", "error": 0.0005929, "value": 8.0796407},
-{"name": "4J14", "spinSystemIndices": [[1, 4], [2, 3]], "typeVariableString": "Jcoupling", "error": 0.0005941, "value": 1.5259219},
-{"name": "3J34", "spinSystemIndices": [[3, 4]], "typeVariableString": "Jcoupling", "error": 0.0020015, "value": 7.4851622},
-{"name": "LW", "typeVariableString": "lineWidth", "error": 0.0005191, "value": 0.1308403},
-{"name": "Magn", "typeVariableString": "factor", "error": 644186.9205644, "value": 216366004.8922189}
+{"name": "FreqM", "spinSystemIndices": [1, 2], "typeVariableString": "ChemicalShift", "error": 0.0002852, "value": 7.5242493, "checked": true},
+{"name": "FreqO", "spinSystemIndices": [3, 4], "typeVariableString": "ChemicalShift", "error": 0.0002852, "value": 7.3136458, "checked": true},
+{"name": "5J12", "spinSystemIndices": [[1, 2]], "typeVariableString": "Jcoupling", "error": 0.0016989, "value": 0.3345091, "checked": true},
+{"name": "3J13", "spinSystemIndices": [[1, 3], [2, 4]], "typeVariableString": "Jcoupling", "error": 0.0005929, "value": 8.0796407, "checked": true},
+{"name": "4J14", "spinSystemIndices": [[1, 4], [2, 3]], "typeVariableString": "Jcoupling", "error": 0.0005941, "value": 1.5259219, "checked": true},
+{"name": "3J34", "spinSystemIndices": [[3, 4]], "typeVariableString": "Jcoupling", "error": 0.0020015, "value": 7.4851622, "checked": true},
+{"name": "LW", "typeVariableString": "lineWidth", "error": 0.0005191, "value": 0.1308403, "checked": true},
+{"name": "Magn", "typeVariableString": "factor", "error": 644186.9205644, "value": 216366004.8922189, "checked": true}
 ],
 "Title": "Analysis of ODCB 1H NMR spectrum", 
 "CheckBroadSequence": " no implemented", 

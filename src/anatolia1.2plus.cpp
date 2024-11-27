@@ -335,6 +335,7 @@ public:
 	double SumOfExpSquaresOnIntervals;
 	char* SpectraTextOutputFilename;
 	bool ScaleOpt;
+	bool ScaleOptInit;
 	bool FineCalc;
 
 	Spectrum(ifstream& istr)
@@ -1414,7 +1415,7 @@ public:
 			if (VarParamsIndx[i] <= VarParamsIndx[i - 1]) { cout << "Wrong index of varied parameter " << i << "." << endl; exit_; }
 
 		if (VarParamsIndx[nVarParams] == nSSParams + 1) { Spec->ScaleOpt = true; nVarParams--; } // By default Spec->ScaleOpt is false.
-
+		Spec->ScaleOptInit = Spec->ScaleOpt;
 		if (nVarParams == 0) { cout << "Nothing to optimize!" << endl; exit_; }
 
 		LWPreOpt = VarParamsIndx[nVarParams] == nSSParams && nVarParams > 1;
@@ -1701,7 +1702,16 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 			bool isfactor = i == nSSParams + 1;
 			bool islineWidth = i == nSSParams;
 			bool iskurtosis = false;
-			
+
+			// see if optimized
+			bool optimized = false;
+			for (int indOpt = 1; indOpt <= nVarParams ; indOpt++) {
+				if (VarParamsIndx[indOpt] == i) {
+				 optimized= true;
+				break;}
+			}
+
+
 			double dividor = 1.0;// for chemical shift divide by larmor
 			for (int spin = 1; spin <= nSpins; spin++) {
 				if (Offs[spin] == i) {
@@ -1754,15 +1764,19 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 				ostr  << jsonVar("typeVariableString", "kurtosis", ", ", false);
 			}
 			if (i < nSSParams + 1) {
+				// all except Magnitude
 				if (ErrorsComputed) ostr  << jsonVar("error", ParameterErrors[i], ", ", false);
-				ostr  << jsonVar("value", SSParams[i] / dividor, "", false);
+				ostr  << jsonVar("value", SSParams[i] / dividor, ", ", false);
 				forHash1 += SSParams[i] * 1001;
 				forHash2 += SSParams[i] * 13;
 				forHash3 += SSParams[i] * 123;
 				forHash4 += SSParams[i] * 17;
+				ostr  << jsonVarBool("checked", optimized, "", false);
 			} else {
+				// VarParamsIndx
 				if (ErrorsComputed) ostr  << jsonVar("error", ParameterErrors[i], ", ", false);
-				ostr  << jsonVar("value", Spec->TheoreticalSpec.Magnitude, "", false);
+				ostr  << jsonVar("value", Spec->TheoreticalSpec.Magnitude, ", ", false);
+				ostr  << jsonVarBool("checked", Spec->ScaleOptInit, "", false);
 			}
 			ostr  << jsonCloseObj(false);
 			ostr << nextArrayElement(i < nSSParams + 1);
