@@ -56,10 +56,8 @@ grep "OutputParameters" data/Styrene/1/Input_Data.txt
 grep "CalcProcNo" data/Styrene/1/Input_Data.txt
 time bin/ANATOLIA data/Styrene/1 >> last_log_Styrene.txt
 cp data/Styrene/1/Input_Data.txtCOPY data/Styrene/1/Input_Data.txt
-rm data/Styrene/1/Input_Data.txtCOPY
 
 echo "=====Refinement after all combi from result above = Does find a real min but not the best one ==============";
-cp data/Styrene/1/Input_Data.txt data/Styrene/1/Input_Data.txtCOPY
 
 cp data/Styrene/1/Input_Data_refineBestCombi.txt data/Styrene/1/Input_Data.txt
 

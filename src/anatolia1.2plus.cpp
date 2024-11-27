@@ -1327,7 +1327,7 @@ public:
 		LoadParameters();
 
 		Spec->CheckSpinOffsets(cout);
-		Spec->fixSpinOffsets(cout); // not truly tested
+		// Spec->fixSpinOffsets(cout); // not truly tested
 
 		// Magnitude from exp. spectrum
 		bool tmp;
@@ -1567,7 +1567,7 @@ std::string generateRandomHex(int nbDigit, double s1, double s2, double s3, doub
 	oss << "-";
 	srand((int)(s4 * 100));
 
-	for (int i = 0; i < 2; i++)  oss << hexDigits[rand() % 16];
+	for (int i = 0; i < 3; i++)  oss << hexDigits[rand() % 16];
 	return oss.str();
 }
 
@@ -1756,13 +1756,13 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 			if (i < nSSParams + 1) {
 				if (ErrorsComputed) ostr  << jsonVar("error", ParameterErrors[i], ", ", false);
 				ostr  << jsonVar("value", SSParams[i] / dividor, "", false);
-				forHash1 += SSParams[i];
-				forHash2 += SSParams[i] * 131543;
+				forHash1 += SSParams[i] * 1001;
+				forHash2 += SSParams[i] * 13;
+				forHash3 += SSParams[i] * 123;
+				forHash4 += SSParams[i] * 17;
 			} else {
 				if (ErrorsComputed) ostr  << jsonVar("error", ParameterErrors[i], ", ", false);
 				ostr  << jsonVar("value", Spec->TheoreticalSpec.Magnitude, "", false);
-				forHash2 += SSParams[i];
-				forHash3 += SSParams[i] / dividor * 131543;
 			}
 			ostr  << jsonCloseObj(false);
 			ostr << nextArrayElement(i < nSSParams + 1);
@@ -1799,7 +1799,7 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 			ostr << endl;
 			}
 			// depends chemical shift,  J's and R-factor
-			ostr << jsonVar("AnatoliaHashFit", generateRandomHex(4, forHash1 + Spec->LB, forHash2, forHash3 + Spec->LB + Spec->CalcRFactor() * 100, forHash4 + + Spec->CalcRFactor() * 137), ", ");
+			ostr << jsonVar("AnatoliaHashFit", generateRandomHex(4, forHash1 + Spec->LB, forHash2, forHash3 + Spec->LB + Spec->CalcRFactor() , forHash4 + Spec->CalcRFactor() + Spec->TheoreticalSpec.Magnitude / 1000), ", ");
 		}
 		//  only depends chemical shift and J's
 		ostr << jsonVar("AnatoliaHashNetwork", generateRandomHex(5, forHash1 + 834, forHash2 + 43, forHash3, forHash4), "");
