@@ -1,7 +1,7 @@
 Analysis of ODCB 1H NMR spectrum
 
 SimMode	0
-
+testAllCombiSignsAfterMainFit 1
 Spin System
 NSpins 4
 Chemical shift indices

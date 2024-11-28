@@ -2081,6 +2081,7 @@ int main(int argc, char* argv[])
 	if (argc > 2) { cout << "Wrong command line argument!" << endl; exit_; }
 
 	bool SimMode = true;
+	bool allCombiSigns = true;
 
 	// Parsing input control file and initialize relevant data structures.
 	ifstream input("Input_Data.txt");
@@ -2088,11 +2089,20 @@ int main(int argc, char* argv[])
 	input.getline(Title, 256);    // Title
 	input.getline(textline, 256); // Empty line
 	if (!isemptyline(textline)) { cout << "Empty line should follow the title!" << endl; exit_; }
+
 	input >> textline >> SimMode; // Sim mode
 	if (input.fail()) { cout << "Wrong simulation mode value, sould be 0 or 1." << endl; exit_; }
 	input.getline(textline, 256); // Rest of sim mode line
-	input.getline(textline, 256); // Empty line
-	if (!isemptyline(textline)) { cout << "Empty line should follow the SimMode line!" << endl; exit_; }
+
+	// replaced an empty line with the allCombiSigns
+	input.getline(textline, 256); // allCombiSigns line
+	if (!isemptyline(textline)) {
+		char str[250]; int intVal;
+		sscanf(textline,"%s%d", str, &intVal);
+			if (sscanf(textline, "%249s %d", str, &intVal) == 2) {
+				if (intVal == 0) allCombiSigns = false;
+			}
+	}
 
 	LoadSpinSystem(input);
 
@@ -2160,7 +2170,7 @@ int main(int argc, char* argv[])
 	HamOpt->writeCHEMeDATA(1, Spec->TheorProcNo);
 	cout << endl;
 
-	if (true) {
+	if (allCombiSigns) {
 		const bool considerThatLargeCouplingHaveCorrectSign = true;
 		const double initialRfactor = Spec->CalcRFactor();
 		const double minJvalConsiderSignIsCorrect = 5.0;

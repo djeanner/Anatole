@@ -31,7 +31,19 @@ Look at the [changes](https://github.com/djeanner/Anatole/commits/main/src/anato
 
 The main ganges we made:
 - Tests all combinations of the signs of the J coupling and put the results in the procno + 1
-- Fill gaps when chemical shifts are not in integral regions. This is to make sure that small transitions not picked in the regions will be taken into account.
+
+The `testAllCombiSignsAfterMainFit` option is set in the (normally empty) line between the `SimMode` and the `Spin System`:
+```
+SimMode	0
+testAllCombiSignsAfterMainFit 0
+Spin System
+```
+By default (emptly line) testAllCombiSignsAfterMainFit is true (1).
+
+
+
+- Fill gaps when chemical shifts are not in integral regions. This is to make sure that small transitions not picked in the regions will be taken into account. (This is not working properly and currently disabled.)
+
 
 
 # Compilation
