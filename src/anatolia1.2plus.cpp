@@ -1328,7 +1328,7 @@ public:
 		LoadParameters();
 
 		Spec->CheckSpinOffsets(cout);
-		// Spec->fixSpinOffsets(cout); // not truly tested
+		Spec->fixSpinOffsets(cout); // not truly tested
 
 		// Magnitude from exp. spectrum
 		bool tmp;
