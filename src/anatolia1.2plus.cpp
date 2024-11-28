@@ -1328,7 +1328,7 @@ public:
 		LoadParameters();
 
 		Spec->CheckSpinOffsets(cout);
-		Spec->fixSpinOffsets(cout); // not truly tested
+		//Spec->fixSpinOffsets(cout); // not working for styrene final calculation Possilby because not all spectra use the same fixed data...
 
 		// Magnitude from exp. spectrum
 		bool tmp;
