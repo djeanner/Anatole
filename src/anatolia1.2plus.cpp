@@ -2111,19 +2111,22 @@ int main(int argc, char* argv[])
 
 	if (SimMode)
 	{
-		const double lineWidth = 0.1308400; //LBs[1];
-		cout << "Single point calculation LB : " << lineWidth  << endl;
-		Spec->BroadOnIntervals(lineWidth);
+		Spec->BroadOnIntervals(0.0);
 		Spec->ExperimentalSpecWithBroadening.SaveSpecToFile();
 		Hami->ComputeFreqIntens();
 		Spec->CalcSpecOnIntervals();
+		if (Spec->ScaleOpt)
+		{
+			Spec->UpdateTheorSpecMagnitude();
+			Spec->ScaleOpt = false;
+		}
+		HamOpt->ComputeErrors();  // for errors
+		HamOpt->writeCHEMeDATA(1, Spec->TheorProcNo);
 		Spec->SaveSpecsOnIntervalsTXT();
 		Spec->LB = 0;
 		Spec->CalcFullSpectrum();
 		Spec->TheoreticalSpec.SaveSpecToFile();
 		print_citation(cout);
-		
-		HamOpt->writeCHEMeDATA(1, Spec->TheorProcNo);
 
 		input.close();
 		exit_;
