@@ -1622,6 +1622,16 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 			oss << endl;
 	    return oss.str();
 	}
+	std::string jsonVarSc(const std::string& input, const double inputValue, const std::string& input2, const bool input3 = true) {
+	    std::ostringstream oss;
+	    oss << "\"" << input << "\": ";
+		oss << scientific;
+		oss << inputValue;
+		oss << input2;
+		if (input3)
+			oss << endl;
+	    return oss.str();
+	}
 	std::string jsonVarInt(const std::string& input, const int inputValue, const std::string& input2, const bool input3 = true) {
 	    std::ostringstream oss;
 	    oss << "\"" << input << "\": ";
@@ -1794,9 +1804,33 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 		if (isRefinement == 0) {
 
 		} else {
+			// addRegions
+			if (Spec->nIntervals > 0) {
+				ostr << openArray("spectralRegions", false);
+				for (int iInter = 1; iInter <= Spec->nIntervals; iInter++) {
+									ostr  << jsonOpenObj(false);
+
+
+
+					// Could discuss the way ppm from integral.txt are converted into point. Probably should consider ppm are in the middle of points for Bruker, here probably read as at the side
+					const double fromPPM = (Spec->Offset - Spec->FreqStep * ((double)Spec->StartPoint[iInter] - 1.0)) / Spec->SF;
+					//const double  fromPPM1 = (Spec->Offset - Spec->FreqStep * ((double)Spec->StartPoint[iInter] + 1.5)) / Spec->SF;
+					const double toPPM = (Spec->Offset - Spec->FreqStep * ((double)Spec->EndPoint[iInter] - 1.0)) / Spec->SF;
+					ostr  << jsonVar("fromPPM", fromPPM, ", ", false);
+					ostr  << jsonVar("toPPM", toPPM, ", ", false);
+					ostr  << jsonVarInt("fromIndex", (int)(Spec->StartPoint[iInter] - 1), ", ", false);
+					ostr  << jsonVarInt("toIndex", (int)(Spec->EndPoint[iInter] - 1), "", false);
+									ostr  << jsonCloseObj(false);
+
+					ostr << nextArrayElement(iInter < Spec->nIntervals);
+				}
+				ostr << closeArray(false);
+				ostr << "," << endl;
+			}
 			ostr << jsonVar("LineBroadening",  Spec->LB ,  ", ");
 			ostr << jsonVar("Theoreticalspectrumlinewidth",  Spec->LB + SSParams[nSSParams]  ,  ", ");
-			ostr << jsonVar("RSSValue",  Badness() ,  ", ");
+			ostr << scientific;
+			ostr << jsonVarSc("RSSValue",  Badness() ,  ", ");
 			ostr << jsonVar("R-Factor_Percent",  Spec->CalcRFactor() ,  ", ");
 			ostr << jsonVar("SpectraCorrelationCoefficient",  Spec->CalcSpectraColleration() ,  ", ");
 			ostr << jsonVar("ParametersCorrelationCoefficients", "not implemented",  ", ");

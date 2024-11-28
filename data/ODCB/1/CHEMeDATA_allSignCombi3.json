@@ -11,9 +11,12 @@
 "Title": "Analysis of ODCB 1H NMR spectrum", 
 "CheckBroadSequence": " no implemented", 
 "isOutput": true, 
+"spectralRegions": [{"fromPPM": 7.5620919, "toPPM": 7.4860086, "fromIndex": 214655, "toIndex": 216968},
+{"fromPPM": 7.3520981, "toPPM": 7.2750280, "fromIndex": 221039, "toIndex": 223382}
+],
 "LineBroadening": 0.0000000, 
 "Theoreticalspectrumlinewidth": 0.1308405, 
-"RSSValue": 70918330404849728.0000000, 
+"RSSValue": 7.091833e+16, 
 "R-Factor_Percent": 12.0359602, 
 "SpectraCorrelationCoefficient": 0.9927304, 
 "ParametersCorrelationCoefficients": "not implemented", 
