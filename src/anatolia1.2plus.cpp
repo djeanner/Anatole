@@ -1613,7 +1613,7 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 	std::string jsonVar(const std::string& input, const double inputValue, const std::string& input2, const bool input3 = true) {
 	    std::ostringstream oss;
 	    oss << "\"" << input << "\": ";
-		oss.precision(7);
+		oss.precision(9);
 		oss << fixed;
     	oss << std::showpoint; 
 		oss << inputValue;
@@ -1635,9 +1635,6 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 	std::string jsonVarInt(const std::string& input, const int inputValue, const std::string& input2, const bool input3 = true) {
 	    std::ostringstream oss;
 	    oss << "\"" << input << "\": ";
-		oss.precision(7);
-		oss << fixed;
-    	oss << std::showpoint; 
 		oss << inputValue;
 		oss << input2;
 		if (input3)
@@ -2114,7 +2111,9 @@ int main(int argc, char* argv[])
 
 	if (SimMode)
 	{
-		Spec->BroadOnIntervals(LBs[1]);
+		const double lineWidth = 0.1308400; //LBs[1];
+		cout << "Single point calculation LB : " << lineWidth  << endl;
+		Spec->BroadOnIntervals(lineWidth);
 		Spec->ExperimentalSpecWithBroadening.SaveSpecToFile();
 		Hami->ComputeFreqIntens();
 		Spec->CalcSpecOnIntervals();
@@ -2123,6 +2122,9 @@ int main(int argc, char* argv[])
 		Spec->CalcFullSpectrum();
 		Spec->TheoreticalSpec.SaveSpecToFile();
 		print_citation(cout);
+		
+		HamOpt->writeCHEMeDATA(1, Spec->TheorProcNo);
+
 		input.close();
 		exit_;
 	}
