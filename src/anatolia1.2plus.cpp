@@ -1613,7 +1613,7 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 	std::string jsonVar(const std::string& input, const double inputValue, const std::string& input2, const bool input3 = true) {
 	    std::ostringstream oss;
 	    oss << "\"" << input << "\": ";
-		oss.precision(9);
+		oss.precision(6);
 		oss << fixed;
     	oss << std::showpoint; 
 		oss << inputValue;
