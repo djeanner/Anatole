@@ -1,24 +1,24 @@
 {"optimizedVariables": [
-{"name": "FreqM", "spinSystemIndices": [1, 2], "typeVariableString": "ChemicalShift", "error": 0.000285210, "value": 7.524249302, "checked": true},
-{"name": "FreqO", "spinSystemIndices": [3, 4], "typeVariableString": "ChemicalShift", "error": 0.000285212, "value": 7.313645790, "checked": true},
-{"name": "5J12", "spinSystemIndices": [[1, 2]], "typeVariableString": "Jcoupling", "error": 0.001698945, "value": 0.334509793, "checked": true},
-{"name": "3J13", "spinSystemIndices": [[1, 3], [2, 4]], "typeVariableString": "Jcoupling", "error": 0.000592866, "value": 8.079641000, "checked": true},
-{"name": "4J14", "spinSystemIndices": [[1, 4], [2, 3]], "typeVariableString": "Jcoupling", "error": 0.000594144, "value": 1.525921614, "checked": true},
-{"name": "3J34", "spinSystemIndices": [[3, 4]], "typeVariableString": "Jcoupling", "error": 0.002001522, "value": 7.485163362, "checked": true},
-{"name": "LW", "typeVariableString": "lineWidth", "error": 0.000519100, "value": 0.130840452, "checked": true},
-{"name": "Magn", "typeVariableString": "factor", "error": 644145.629601127, "value": 216366130.574655414, "checked": true}
+{"name": "FreqM", "spinSystemIndices": [1, 2], "typeVariableString": "ChemicalShift", "error": 0.000285, "value": 7.524249, "checked": true},
+{"name": "FreqO", "spinSystemIndices": [3, 4], "typeVariableString": "ChemicalShift", "error": 0.000285, "value": 7.313646, "checked": true},
+{"name": "5J12", "spinSystemIndices": [[1, 2]], "typeVariableString": "Jcoupling", "error": 0.001699, "value": 0.334510, "checked": true},
+{"name": "3J13", "spinSystemIndices": [[1, 3], [2, 4]], "typeVariableString": "Jcoupling", "error": 0.000593, "value": 8.079641, "checked": true},
+{"name": "4J14", "spinSystemIndices": [[1, 4], [2, 3]], "typeVariableString": "Jcoupling", "error": 0.000594, "value": 1.525922, "checked": true},
+{"name": "3J34", "spinSystemIndices": [[3, 4]], "typeVariableString": "Jcoupling", "error": 0.002002, "value": 7.485163, "checked": true},
+{"name": "LW", "typeVariableString": "lineWidth", "error": 0.000519, "value": 0.130840, "checked": true},
+{"name": "Magn", "typeVariableString": "factor", "error": 644145.629601, "value": 216366130.574655, "checked": true}
 ],
 "Title": "Analysis of ODCB 1H NMR spectrum", 
 "CheckBroadSequence": " no implemented", 
 "isOutput": true, 
-"spectralRegions": [{"fromPPM": 7.562091886, "toPPM": 7.486008614, "fromIndex": 214655, "toIndex": 216968},
-{"fromPPM": 7.352098107, "toPPM": 7.275028021, "fromIndex": 221039, "toIndex": 223382}
+"spectralRegions": [{"fromPPM": 7.562092, "toPPM": 7.486009, "fromIndex": 214655, "toIndex": 216968},
+{"fromPPM": 7.352098, "toPPM": 7.275028, "fromIndex": 221039, "toIndex": 223382}
 ],
-"LineBroadening": 0.000000000, 
-"Theoreticalspectrumlinewidth": 0.130840452, 
+"LineBroadening": 0.000000, 
+"Theoreticalspectrumlinewidth": 0.130840, 
 "RSSValue": 7.091833e+16, 
-"R-Factor_Percent": 12.035960245, 
-"SpectraCorrelationCoefficient": 0.992730359, 
+"R-Factor_Percent": 12.035960, 
+"SpectraCorrelationCoefficient": 0.992730, 
 "ParametersCorrelationCoefficients": "not implemented", 
 "AnatoliaHashFit": "89A7-8C1-008-1B1", 
 "AnatoliaHashNetwork": "1BB39-CEE-4E6-058"

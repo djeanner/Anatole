@@ -1,6 +1,6 @@
 Analysis of ODCB 1H NMR spectrum
 
-SimMode	1
+SimMode	0
 testAllCombiSignsAfterMainFit 1
 Spin System
 NSpins 4
@@ -18,10 +18,10 @@ ExpBroadedProcNo		-
 CalcProcNo			3
 
 Optimization parameters
-InputParameters			parameters.txt
-OutputParameters		parameters3.txt
+InputParameters			parameters_start.txt
+OutputParameters		parameters.txt
 SpectraTextOutput		-
-LBs				0.130840  0.1 0.0
+LBs				3.0 2.0 1.0 0.8 0.6 0.4 0.2 0.1 0.0
 MagnitudeFromExpSpec		1
 
 List of optimized parameters
