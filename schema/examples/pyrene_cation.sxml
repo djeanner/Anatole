@@ -162,82 +162,82 @@
   <interaction kind="gtensor" id="26" units="Bohr magneton" spin_a="26">
     <tensor xx="2.00264" xy="0" xz="0" yx="0" yy="2.00233" yz="0" zx="0" zy="0" zz="2.0032" />
   </interaction>
-  <interaction kind="hfc" id="27" units="Gauss" spin_a="0" spin_b="26">
+  <interaction kind="hfc" id="27" units="gauss" spin_a="0" spin_b="26">
     <tensor xx="-10.46265" xy="0" xz="0" yx="0" yy="-4.03365" yz="0" zx="0" zy="0" zz="-4.57065" />
   </interaction>
-  <interaction kind="hfc" id="28" units="Gauss" spin_a="1" spin_b="26">
+  <interaction kind="hfc" id="28" units="gauss" spin_a="1" spin_b="26">
     <tensor xx="19.55596" xy="0" xz="0" yx="0" yy="0.57707" yz="0.13887" zx="0" zy="0.13887" zz="0.51307" />
   </interaction>
-  <interaction kind="hfc" id="29" units="Gauss" spin_a="2" spin_b="26">
+  <interaction kind="hfc" id="29" units="gauss" spin_a="2" spin_b="26">
     <tensor xx="-3.18147" xy="0" xz="0" yx="0" yy="-3.38954" yz="-0.16245" zx="0" zy="-0.16245" zz="-2.9224" />
   </interaction>
-  <interaction kind="hfc" id="30" units="Gauss" spin_a="3" spin_b="26">
+  <interaction kind="hfc" id="30" units="gauss" spin_a="3" spin_b="26">
     <tensor xx="-0.73793" xy="0" xz="0" yx="0" yy="-0.04993" yz="0" zx="0" zy="0" zz="0.07307" />
   </interaction>
-  <interaction kind="hfc" id="31" units="Gauss" spin_a="4" spin_b="26">
+  <interaction kind="hfc" id="31" units="gauss" spin_a="4" spin_b="26">
     <tensor xx="-3.18147" xy="0" xz="0" yx="0" yy="-3.38954" yz="0.16245" zx="0" zy="0.16245" zz="-2.9224" />
   </interaction>
-  <interaction kind="hfc" id="32" units="Gauss" spin_a="5" spin_b="26">
+  <interaction kind="hfc" id="32" units="gauss" spin_a="5" spin_b="26">
     <tensor xx="19.55596" xy="0" xz="0" yx="0" yy="0.57707" yz="-0.13887" zx="0" zy="-0.13887" zz="0.51307" />
   </interaction>
-  <interaction kind="hfc" id="33" units="Gauss" spin_a="6" spin_b="26">
+  <interaction kind="hfc" id="33" units="gauss" spin_a="6" spin_b="26">
     <tensor xx="6.16989" xy="0" xz="0" yx="0" yy="-1.33797" yz="-0.07208" zx="0" zy="-0.07208" zz="-0.91699" />
   </interaction>
-  <interaction kind="hfc" id="34" units="Gauss" spin_a="7" spin_b="26">
+  <interaction kind="hfc" id="34" units="gauss" spin_a="7" spin_b="26">
     <tensor xx="-0.73793" xy="0" xz="0" yx="0" yy="-0.04993" yz="0" zx="0" zy="0" zz="0.07307" />
   </interaction>
-  <interaction kind="hfc" id="35" units="Gauss" spin_a="8" spin_b="26">
+  <interaction kind="hfc" id="35" units="gauss" spin_a="8" spin_b="26">
     <tensor xx="-3.18147" xy="0" xz="0" yx="0" yy="-3.38954" yz="0.16245" zx="0" zy="0.16245" zz="-2.9224" />
   </interaction>
-  <interaction kind="hfc" id="36" units="Gauss" spin_a="9" spin_b="26">
+  <interaction kind="hfc" id="36" units="gauss" spin_a="9" spin_b="26">
     <tensor xx="6.16989" xy="0" xz="0" yx="0" yy="-1.33797" yz="0.07208" zx="0" zy="0.07208" zz="-0.91699" />
   </interaction>
-  <interaction kind="hfc" id="37" units="Gauss" spin_a="10" spin_b="26">
+  <interaction kind="hfc" id="37" units="gauss" spin_a="10" spin_b="26">
     <tensor xx="19.55596" xy="0" xz="0" yx="0" yy="0.57707" yz="-0.13887" zx="0" zy="-0.13887" zz="0.51307" />
   </interaction>
-  <interaction kind="hfc" id="38" units="Gauss" spin_a="11" spin_b="26">
+  <interaction kind="hfc" id="38" units="gauss" spin_a="11" spin_b="26">
     <tensor xx="-6.25247" xy="0" xz="0" yx="0" yy="-4.20905" yz="-3.09823" zx="0" zy="-3.09823" zz="-6.90992" />
   </interaction>
-  <interaction kind="hfc" id="39" units="Gauss" spin_a="12" spin_b="26">
+  <interaction kind="hfc" id="39" units="gauss" spin_a="12" spin_b="26">
     <tensor xx="-10.46265" xy="0" xz="0" yx="0" yy="-4.03365" yz="0" zx="0" zy="0" zz="-4.57065" />
   </interaction>
-  <interaction kind="hfc" id="40" units="Gauss" spin_a="13" spin_b="26">
+  <interaction kind="hfc" id="40" units="gauss" spin_a="13" spin_b="26">
     <tensor xx="19.55596" xy="0" xz="0" yx="0" yy="0.57707" yz="0.13887" zx="0" zy="0.13887" zz="0.51307" />
   </interaction>
-  <interaction kind="hfc" id="41" units="Gauss" spin_a="14" spin_b="26">
+  <interaction kind="hfc" id="41" units="gauss" spin_a="14" spin_b="26">
     <tensor xx="-3.18147" xy="0" xz="0" yx="0" yy="-3.38954" yz="-0.16245" zx="0" zy="-0.16245" zz="-2.9224" />
   </interaction>
-  <interaction kind="hfc" id="42" units="Gauss" spin_a="15" spin_b="26">
+  <interaction kind="hfc" id="42" units="gauss" spin_a="15" spin_b="26">
     <tensor xx="6.16989" xy="0" xz="0" yx="0" yy="-1.33797" yz="-0.07208" zx="0" zy="-0.07208" zz="-0.91699" />
   </interaction>
-  <interaction kind="hfc" id="43" units="Gauss" spin_a="16" spin_b="26">
+  <interaction kind="hfc" id="43" units="gauss" spin_a="16" spin_b="26">
     <tensor xx="6.16989" xy="0" xz="0" yx="0" yy="-1.33797" yz="0.07208" zx="0" zy="0.07208" zz="-0.91699" />
   </interaction>
-  <interaction kind="hfc" id="44" units="Gauss" spin_a="17" spin_b="26">
+  <interaction kind="hfc" id="44" units="gauss" spin_a="17" spin_b="26">
     <tensor xx="-2.78766" xy="0" xz="0" yx="0" yy="-1.61719" yz="-1.21741" zx="0" zy="-1.21741" zz="-2.08313" />
   </interaction>
-  <interaction kind="hfc" id="45" units="Gauss" spin_a="18" spin_b="26">
+  <interaction kind="hfc" id="45" units="gauss" spin_a="18" spin_b="26">
     <tensor xx="-2.78766" xy="0" xz="0" yx="0" yy="-1.61719" yz="1.21741" zx="0" zy="1.21741" zz="-2.08313" />
   </interaction>
-  <interaction kind="hfc" id="46" units="Gauss" spin_a="19" spin_b="26">
+  <interaction kind="hfc" id="46" units="gauss" spin_a="19" spin_b="26">
     <tensor xx="-2.78766" xy="0" xz="0" yx="0" yy="-1.61719" yz="1.21741" zx="0" zy="1.21741" zz="-2.08313" />
   </interaction>
-  <interaction kind="hfc" id="47" units="Gauss" spin_a="20" spin_b="26">
+  <interaction kind="hfc" id="47" units="gauss" spin_a="20" spin_b="26">
     <tensor xx="1.02961" xy="0" xz="0" yx="0" yy="2.57661" yz="0" zx="0" zy="0" zz="1.52261" />
   </interaction>
-  <interaction kind="hfc" id="48" units="Gauss" spin_a="21" spin_b="26">
+  <interaction kind="hfc" id="48" units="gauss" spin_a="21" spin_b="26">
     <tensor xx="-6.25247" xy="0" xz="0" yx="0" yy="-4.20905" yz="3.09823" zx="0" zy="3.09823" zz="-6.90992" />
   </interaction>
-  <interaction kind="hfc" id="49" units="Gauss" spin_a="22" spin_b="26">
+  <interaction kind="hfc" id="49" units="gauss" spin_a="22" spin_b="26">
     <tensor xx="-6.25247" xy="0" xz="0" yx="0" yy="-4.20905" yz="-3.09823" zx="0" zy="-3.09823" zz="-6.90992" />
   </interaction>
-  <interaction kind="hfc" id="50" units="Gauss" spin_a="23" spin_b="26">
+  <interaction kind="hfc" id="50" units="gauss" spin_a="23" spin_b="26">
     <tensor xx="-2.78766" xy="0" xz="0" yx="0" yy="-1.61719" yz="-1.21741" zx="0" zy="-1.21741" zz="-2.08313" />
   </interaction>
-  <interaction kind="hfc" id="51" units="Gauss" spin_a="24" spin_b="26">
+  <interaction kind="hfc" id="51" units="gauss" spin_a="24" spin_b="26">
     <tensor xx="1.02961" xy="0" xz="0" yx="0" yy="2.57661" yz="0" zx="0" zy="0" zz="1.52261" />
   </interaction>
-  <interaction kind="hfc" id="52" units="Gauss" spin_a="25" spin_b="26">
+  <interaction kind="hfc" id="52" units="gauss" spin_a="25" spin_b="26">
     <tensor xx="-6.25247" xy="0" xz="0" yx="0" yy="-4.20905" yz="3.09823" zx="0" zy="3.09823" zz="-6.90992" />
   </interaction>
 </spin_system>

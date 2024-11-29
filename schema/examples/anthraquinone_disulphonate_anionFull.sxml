@@ -191,94 +191,94 @@
   <interaction kind="gtensor" id="31" units="Bohr magneton" spin_a="31" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="2.0053" xy="0.00034" xz="0" yx="0.00034" yy="2.00635" yz="0" zx="0" zy="0" zz="2.00209" />
   </interaction>
-  <interaction kind="hfc" id="32" units="Gauss" spin_a="1" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="32" units="gauss" spin_a="1" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="-0.28947" xy="0.00412" xz="0" yx="0.00412" yy="-0.38612" yz="0" zx="0" zy="0" zz="2.49271" />
   </interaction>
-  <interaction kind="hfc" id="33" units="Gauss" spin_a="2" spin_b="31" reference_frame_id="3" label="ref">
+  <interaction kind="hfc" id="33" units="gauss" spin_a="2" spin_b="31" reference_frame_id="3" label="ref">
     <tensor xx="-0.94573" xy="-0.12016" xz="0" yx="-0.12016" yy="-1.24135" yz="0" zx="0" zy="0" zz="-1.06904" />
   </interaction>
-  <interaction kind="hfc" id="34" units="Gauss" spin_a="3" spin_b="31" reference_frame_id="2" label="ref">
+  <interaction kind="hfc" id="34" units="gauss" spin_a="3" spin_b="31" reference_frame_id="2" label="ref">
     <tensor xx="-2.55679" xy="-0.09246" xz="0" yx="-0.09246" yy="-2.56252" yz="0.00032" zx="0" zy="0.00032" zz="2.19697" />
   </interaction>
-  <interaction kind="hfc" id="35" units="Gauss" spin_a="4" spin_b="31" reference_frame_id="4" label="ref">
+  <interaction kind="hfc" id="35" units="gauss" spin_a="4" spin_b="31" reference_frame_id="4" label="ref">
     <tensor xx="-2.33021" xy="0.04774" xz="0.00057" yx="0.04774" yy="-2.4945" yz="5E-05" zx="0.00057" zy="5E-05" zz="3.48582" />
   </interaction>
-  <interaction kind="hfc" id="36" units="Gauss" spin_a="5" spin_b="31" reference_frame_id="3" label="ref">
+  <interaction kind="hfc" id="36" units="gauss" spin_a="5" spin_b="31" reference_frame_id="3" label="ref">
     <tensor xx="-1.1394" xy="-0.07844" xz="1E-05" yx="-0.07844" yy="-1.54301" yz="-3E-05" zx="1E-05" zy="-3E-05" zz="-1.3187" />
   </interaction>
-  <interaction kind="hfc" id="37" units="Gauss" spin_a="6" spin_b="31" reference_frame_id="2" label="ref">
+  <interaction kind="hfc" id="37" units="gauss" spin_a="6" spin_b="31" reference_frame_id="2" label="ref">
     <tensor xx="-0.38544" xy="-0.03865" xz="0" yx="-0.03865" yy="-0.4746" yz="0" zx="0" zy="0" zz="3.12798" />
   </interaction>
-  <interaction kind="hfc" id="38" units="Gauss" spin_a="7" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="38" units="gauss" spin_a="7" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="0.56353" xy="-0.14827" xz="0" yx="-0.14827" yy="-0.29569" yz="0" zx="0" zy="0" zz="-0.87356" />
   </interaction>
-  <interaction kind="hfc" id="39" units="Gauss" spin_a="8" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="39" units="gauss" spin_a="8" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="0.51303" xy="-0.29626" xz="0" yx="-0.29626" yy="-0.23088" yz="0" zx="0" zy="0" zz="-0.91744" />
   </interaction>
-  <interaction kind="hfc" id="40" units="Gauss" spin_a="9" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="40" units="gauss" spin_a="9" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="-0.76436" xy="-0.80698" xz="0" yx="-0.80698" yy="-1.42009" yz="0" zx="0" zy="0" zz="-1.45523" />
   </interaction>
-  <interaction kind="hfc" id="41" units="Gauss" spin_a="10" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="41" units="gauss" spin_a="10" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="-4.7718" xy="0.26363" xz="0" yx="0.26363" yy="-3.84882" yz="0" zx="0" zy="0" zz="6.72706" />
   </interaction>
-  <interaction kind="hfc" id="42" units="Gauss" spin_a="11" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="42" units="gauss" spin_a="11" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="-4.77157" xy="0.26363" xz="0" yx="0.26363" yy="-3.84859" yz="0" zx="0" zy="0" zz="6.72829" />
   </interaction>
-  <interaction kind="hfc" id="43" units="Gauss" spin_a="12" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="43" units="gauss" spin_a="12" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="5.04583" xy="0.05414" xz="0.00327" yx="0.05414" yy="5.24989" yz="-0.00026" zx="0.00327" zy="-0.00026" zz="-28.02462" />
   </interaction>
-  <interaction kind="hfc" id="44" units="Gauss" spin_a="13" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="44" units="gauss" spin_a="13" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="5.04574" xy="0.05414" xz="-0.00327" yx="0.05414" yy="5.2498" yz="0.00026" zx="-0.00327" zy="0.00026" zz="-28.02471" />
   </interaction>
-  <interaction kind="hfc" id="45" units="Gauss" spin_a="14" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="45" units="gauss" spin_a="14" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="-2.55644" xy="-0.09246" xz="0" yx="-0.09246" yy="-2.56217" yz="0" zx="0" zy="0" zz="2.19832" />
   </interaction>
-  <interaction kind="hfc" id="46" units="Gauss" spin_a="15" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="46" units="gauss" spin_a="15" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="-2.33005" xy="0.04773" xz="-0.00018" yx="0.04773" yy="-2.4943" yz="-5E-05" zx="-0.00018" zy="-5E-05" zz="3.48562" />
   </interaction>
-  <interaction kind="hfc" id="47" units="Gauss" spin_a="16" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="47" units="gauss" spin_a="16" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="-0.94604" xy="-0.12016" xz="-1E-05" yx="-0.12016" yy="-1.24166" yz="1E-05" zx="-1E-05" zy="1E-05" zz="-1.06935" />
   </interaction>
-  <interaction kind="hfc" id="48" units="Gauss" spin_a="17" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="48" units="gauss" spin_a="17" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="-1.14024" xy="-0.07826" xz="-1E-05" yx="-0.07826" yy="-1.54292" yz="3E-05" zx="-1E-05" zy="3E-05" zz="-1.31858" />
   </interaction>
-  <interaction kind="hfc" id="49" units="Gauss" spin_a="18" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="49" units="gauss" spin_a="18" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="-0.28916" xy="0.00413" xz="0" yx="0.00413" yy="-0.38581" yz="0" zx="0" zy="0" zz="2.49303" />
   </interaction>
-  <interaction kind="hfc" id="50" units="Gauss" spin_a="19" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="50" units="gauss" spin_a="19" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="0.56367" xy="-0.14827" xz="0" yx="-0.14827" yy="-0.29555" yz="0" zx="0" zy="0" zz="-0.87342" />
   </interaction>
-  <interaction kind="hfc" id="51" units="Gauss" spin_a="20" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="51" units="gauss" spin_a="20" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="-0.38554" xy="-0.03864" xz="0" yx="-0.03864" yy="-0.4747" yz="0" zx="0" zy="0" zz="3.1278" />
   </interaction>
-  <interaction kind="hfc" id="52" units="Gauss" spin_a="21" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="52" units="gauss" spin_a="21" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="0.51293" xy="-0.29626" xz="0" yx="-0.29626" yy="-0.23098" yz="0" zx="0" zy="0" zz="-0.91754" />
   </interaction>
-  <interaction kind="hfc" id="53" units="Gauss" spin_a="22" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="53" units="gauss" spin_a="22" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="-0.76429" xy="-0.80698" xz="0" yx="-0.80698" yy="-1.42002" yz="0" zx="0" zy="0" zz="-1.45516" />
   </interaction>
-  <interaction kind="hfc" id="54" units="Gauss" spin_a="23" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="54" units="gauss" spin_a="23" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="-0.29466" xy="-0.01527" xz="0" yx="-0.01527" yy="-0.2538" yz="0" zx="0" zy="0" zz="-0.24973" />
   </interaction>
-  <interaction kind="hfc" id="55" units="Gauss" spin_a="24" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="55" units="gauss" spin_a="24" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="-0.29462" xy="-0.01527" xz="0" yx="-0.01527" yy="-0.25376" yz="0" zx="0" zy="0" zz="-0.24969" />
   </interaction>
-  <interaction kind="hfc" id="56" units="Gauss" spin_a="25" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="56" units="gauss" spin_a="25" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="0.03197" xy="-0.00044" xz="0" yx="-0.00044" yy="0.03151" yz="0" zx="0" zy="0" zz="0.05424" />
   </interaction>
-  <interaction kind="hfc" id="57" units="Gauss" spin_a="26" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="57" units="gauss" spin_a="26" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="-0.48489" xy="-0.13101" xz="0.00193" yx="-0.13101" yy="-0.15758" yz="0.00698" zx="0.00193" zy="0.00698" zz="-0.10424" />
   </interaction>
-  <interaction kind="hfc" id="58" units="Gauss" spin_a="27" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="58" units="gauss" spin_a="27" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="-0.48482" xy="-0.13102" xz="-0.00193" yx="-0.13102" yy="-0.15752" yz="-0.00698" zx="-0.00193" zy="-0.00698" zz="-0.10418" />
   </interaction>
-  <interaction kind="hfc" id="59" units="Gauss" spin_a="28" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="59" units="gauss" spin_a="28" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="0.03197" xy="-0.00045" xz="0" yx="-0.00045" yy="0.03151" yz="0" zx="0" zy="0" zz="0.05424" />
   </interaction>
-  <interaction kind="hfc" id="60" units="Gauss" spin_a="29" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="60" units="gauss" spin_a="29" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="-0.48485" xy="-0.13094" xz="0.00204" yx="-0.13094" yy="-0.15771" yz="0.00656" zx="0.00204" zy="0.00656" zz="-0.10494" />
   </interaction>
-  <interaction kind="hfc" id="61" units="Gauss" spin_a="30" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="hfc" id="61" units="gauss" spin_a="30" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="-0.4849" xy="-0.13094" xz="-0.00206" yx="-0.13094" yy="-0.15778" yz="-0.00657" zx="-0.00206" zy="-0.00657" zz="-0.10498" />
   </interaction>
   <interaction kind="zfs" id="62" units="Bohr magneton" spin_a="32" spin_b="32" reference_frame_id="1" label="ref">
