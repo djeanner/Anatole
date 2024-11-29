@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<spin_system>
+  <spin id="1" isotope="14N">
+    <coordinates x="1.15473" y="-1.21563" z="0.07508" />
+  </spin>
+  <spin id="2" isotope="1H">
+    <coordinates x="0.19854" y="-1.6765" z="-0.19715" />
+  </spin>
+  <spin id="3" isotope="13C">
+    <coordinates x="0.60703" y="0.14501" z="0.41153" />
+  </spin>
+  <spin id="4" isotope="1H">
+    <coordinates x="0.68612" y="0.27051" z="1.50097" />
+  </spin>
+  <spin id="5" isotope="13C">
+    <coordinates x="1.32413" y="1.27782" z="-0.30652" />
+  </spin>
+  <spin id="6" isotope="13C">
+    <coordinates x="-0.91555" y="0.03412" z="0.04292" />
+  </spin>
+  <spin id="7" isotope="1H">
+    <coordinates x="1.30773" y="1.1298" z="-1.39931" />
+  </spin>
+  <spin id="8" isotope="1H">
+    <coordinates x="0.79053" y="2.2125" z="-0.08602" />
+  </spin>
+  <spin id="9" isotope="1H">
+    <coordinates x="2.36934" y="1.37982" z="0.02334" />
+  </spin>
+  <spin id="10" isotope="17O">
+    <coordinates x="-1.26147" y="-1.13729" z="-0.32251" />
+  </spin>
+  <spin id="11" isotope="17O">
+    <coordinates x="-1.60577" y="1.0572" z="0.14916" />
+  </spin>
+  <spin id="12" isotope="1H">
+    <coordinates x="1.61183" y="-1.69454" z="0.85428" />
+  </spin>
+  <spin id="13" isotope="1H">
+    <coordinates x="1.79706" y="-1.21315" z="-0.72243" />
+  </spin>
+  <interaction kind="shift" id="1" units="ppm" spin_a="1" spin_b="1" reference_frame_id="1" reference="label">
+    <tensor xx="-337.031" xy="3.4981" xz="9.35175" yx="3.4981" yy="-363.1222" yz="-12.104" zx="9.35175" zy="-12.104" zz="-321.0424" />
+  </interaction>
+  <interaction kind="shift" id="2" units="ppm" spin_a="2" spin_b="2" reference_frame_id="1" reference="label">
+    <tensor xx="1.5357" xy="-3.9488" xz="-4.8282" yx="-3.9488" yy="20.4598" yz="-1.1177" zx="-4.8282" zy="-1.1177" zz="25.1706" />
+  </interaction>
+  <interaction kind="shift" id="3" units="ppm" spin_a="3" spin_b="3" reference_frame_id="1" reference="label">
+    <tensor xx="36.6929" xy="14.5084" xz="8.51655" yx="14.5084" yy="36.4281" yz="-5.3867" zx="8.51655" zy="-5.3867" zz="73.3187" />
+  </interaction>
+  <interaction kind="shift" id="4" units="ppm" spin_a="4" spin_b="4" reference_frame_id="1" reference="label">
+    <tensor xx="8.4708" xy="1.0427" xz="0.4453" yx="1.0427" yy="5.4674" yz="-0.6529" zx="0.4453" zy="-0.6529" zz="1.4631" />
+  </interaction>
+  <interaction kind="shift" id="5" units="ppm" spin_a="5" spin_b="5" reference_frame_id="1" reference="label">
+    <tensor xx="16.3663" xy="-4.39295" xz="10.2075" yx="-4.39295" yy="3.0804" yz="8.47165" zx="10.2075" zy="8.47165" zz="17.3387" />
+  </interaction>
+  <interaction kind="shift" id="6" units="ppm" spin_a="6" spin_b="6" reference_frame_id="1" reference="label">
+    <tensor xx="225.2473" xy="19.04095" xz="32.37505" yx="19.04095" yy="140.573" yz="17.2297" zx="32.37505" zy="17.2297" zz="110.327" />
+  </interaction>
+  <interaction kind="shift" id="7" units="ppm" spin_a="7" spin_b="7" reference_frame_id="1" reference="label">
+    <tensor xx="5.6741" xy="-1.01225" xz="1.63545" yx="-1.01225" yy="4.5011" yz="1.5366" zx="1.63545" zy="1.5366" zz="-1.194" />
+  </interaction>
+  <interaction kind="shift" id="8" units="ppm" spin_a="8" spin_b="8" reference_frame_id="1" reference="label">
+    <tensor xx="4.7046" xy="1.6793" xz="1.04975" yx="1.6793" yy="-1.3504" yz="-0.7551" zx="1.04975" zy="-0.7551" zz="8.2245" />
+  </interaction>
+  <interaction kind="shift" id="9" units="ppm" spin_a="9" spin_b="9" reference_frame_id="1" reference="label">
+    <tensor xx="-0.8798" xy="-2.9553" xz="-1.1697" yx="-2.9553" yy="4.5274" yz="0.2641" zx="-1.1697" zy="0.2641" zz="6.7048" />
+  </interaction>
+  <interaction kind="shift" id="10" units="ppm" spin_a="10" spin_b="10" reference_frame_id="1" reference="label">
+    <tensor xx="331.7177" xy="-100.131" xz="49.6598" yx="-100.131" yy="349.4681" yz="81.9058" zx="49.6598" zy="81.9058" zz="9.7531" />
+  </interaction>
+  <interaction kind="shift" id="11" units="ppm" spin_a="11" spin_b="11" reference_frame_id="1" reference="label">
+    <tensor xx="343.5763" xy="4.4799" xz="87.0395" yx="4.4799" yy="438.0583" yz="110.1293" zx="87.0395" zy="110.1293" zz="-21.5914" />
+  </interaction>
+  <interaction kind="shift" id="12" units="ppm" spin_a="12" spin_b="12" reference_frame_id="1" reference="label">
+    <tensor xx="8.5438" xy="4.5591" xz="-4.6552" yx="4.5591" yy="4.7722" yz="4.99575" zx="-4.6552" zy="4.99575" zz="4.7682" />
+  </interaction>
+  <interaction kind="shift" id="13" units="ppm" spin_a="13" spin_b="13" reference_frame_id="1" reference="label">
+    <tensor xx="4.2616" xy="1.71765" xz="6.7763" yx="1.71765" yy="7.0567" yz="-1.509" zx="6.7763" zy="-1.509" zz="4.0501" />
+  </interaction>
+  <interaction kind="jcoupling" id="14" units="Hz" spin_a="2" spin_b="1" reference_frame_id="1">
+    <tensor xx="43.8548" xy="0" xz="0" yx="0" yy="43.8548" yz="0" zx="0" zy="0" zz="43.8548" />
+  </interaction>
+  <interaction kind="jcoupling" id="15" units="Hz" spin_a="3" spin_b="1" reference_frame_id="1">
+    <tensor xx="2.8282" xy="0" xz="0" yx="0" yy="2.8282" yz="0" zx="0" zy="0" zz="2.8282" />
+  </interaction>
+  <interaction kind="jcoupling" id="16" units="Hz" spin_a="3" spin_b="2" reference_frame_id="1">
+    <tensor xx="-3.46301" xy="0" xz="0" yx="0" yy="-3.46301" yz="0" zx="0" zy="0" zz="-3.46301" />
+  </interaction>
+  <interaction kind="jcoupling" id="17" units="Hz" spin_a="4" spin_b="1" reference_frame_id="1">
+    <tensor xx="0.61409" xy="0" xz="0" yx="0" yy="0.61409" yz="0" zx="0" zy="0" zz="0.61409" />
+  </interaction>
+  <interaction kind="jcoupling" id="18" units="Hz" spin_a="4" spin_b="2" reference_frame_id="1">
+    <tensor xx="1.39784" xy="0" xz="0" yx="0" yy="1.39784" yz="0" zx="0" zy="0" zz="1.39784" />
+  </interaction>
+  <interaction kind="jcoupling" id="19" units="Hz" spin_a="4" spin_b="3" reference_frame_id="1">
+    <tensor xx="148.575" xy="0" xz="0" yx="0" yy="148.575" yz="0" zx="0" zy="0" zz="148.575" />
+  </interaction>
+  <interaction kind="jcoupling" id="20" units="Hz" spin_a="5" spin_b="1" reference_frame_id="1">
+    <tensor xx="0.32352" xy="0" xz="0" yx="0" yy="0.32352" yz="0" zx="0" zy="0" zz="0.32352" />
+  </interaction>
+  <interaction kind="jcoupling" id="21" units="Hz" spin_a="5" spin_b="2" reference_frame_id="1">
+    <tensor xx="2.41018" xy="0" xz="0" yx="0" yy="2.41018" yz="0" zx="0" zy="0" zz="2.41018" />
+  </interaction>
+  <interaction kind="jcoupling" id="22" units="Hz" spin_a="5" spin_b="3" reference_frame_id="1">
+    <tensor xx="308.4895" xy="0" xz="0" yx="0" yy="308.4895" yz="0" zx="0" zy="0" zz="308.4895" />
+  </interaction>
+  <interaction kind="jcoupling" id="23" units="Hz" spin_a="5" spin_b="4" reference_frame_id="1">
+    <tensor xx="-3.11312" xy="0" xz="0" yx="0" yy="-3.11312" yz="0" zx="0" zy="0" zz="-3.11312" />
+  </interaction>
+  <interaction kind="jcoupling" id="24" units="Hz" spin_a="6" spin_b="1" reference_frame_id="1">
+    <tensor xx="0.50785" xy="0" xz="0" yx="0" yy="0.50785" yz="0" zx="0" zy="0" zz="0.50785" />
+  </interaction>
+  <interaction kind="jcoupling" id="25" units="Hz" spin_a="6" spin_b="2" reference_frame_id="1">
+    <tensor xx="4.46954" xy="0" xz="0" yx="0" yy="4.46954" yz="0" zx="0" zy="0" zz="4.46954" />
+  </interaction>
+  <interaction kind="jcoupling" id="26" units="Hz" spin_a="6" spin_b="3" reference_frame_id="1">
+    <tensor xx="45.4789" xy="0" xz="0" yx="0" yy="45.4789" yz="0" zx="0" zy="0" zz="45.4789" />
+  </interaction>
+  <interaction kind="jcoupling" id="27" units="Hz" spin_a="6" spin_b="4" reference_frame_id="1">
+    <tensor xx="-4.23553" xy="0" xz="0" yx="0" yy="-4.23553" yz="0" zx="0" zy="0" zz="-4.23553" />
+  </interaction>
+  <interaction kind="jcoupling" id="28" units="Hz" spin_a="6" spin_b="5" reference_frame_id="1">
+    <tensor xx="-0.78562" xy="0" xz="0" yx="0" yy="-0.78562" yz="0" zx="0" zy="0" zz="-0.78562" />
+  </interaction>
+  <interaction kind="jcoupling" id="29" units="Hz" spin_a="7" spin_b="1" reference_frame_id="1">
+    <tensor xx="1.58434" xy="0" xz="0" yx="0" yy="1.58434" yz="0" zx="0" zy="0" zz="1.58434" />
+  </interaction>
+  <interaction kind="jcoupling" id="30" units="Hz" spin_a="7" spin_b="2" reference_frame_id="1">
+    <tensor xx="-0.27001" xy="0" xz="0" yx="0" yy="-0.27001" yz="0" zx="0" zy="0" zz="-0.27001" />
+  </interaction>
+  <interaction kind="jcoupling" id="31" units="Hz" spin_a="7" spin_b="3" reference_frame_id="1">
+    <tensor xx="-4.8419" xy="0" xz="0" yx="0" yy="-4.8419" yz="0" zx="0" zy="0" zz="-4.8419" />
+  </interaction>
+  <interaction kind="jcoupling" id="32" units="Hz" spin_a="7" spin_b="4" reference_frame_id="1">
+    <tensor xx="14.2187" xy="0" xz="0" yx="0" yy="14.2187" yz="0" zx="0" zy="0" zz="14.2187" />
+  </interaction>
+  <interaction kind="jcoupling" id="33" units="Hz" spin_a="7" spin_b="5" reference_frame_id="1">
+    <tensor xx="131.157" xy="0" xz="0" yx="0" yy="131.157" yz="0" zx="0" zy="0" zz="131.157" />
+  </interaction>
+  <interaction kind="jcoupling" id="34" units="Hz" spin_a="8" spin_b="1" reference_frame_id="1">
+    <tensor xx="4.81957" xy="0" xz="0" yx="0" yy="4.81957" yz="0" zx="0" zy="0" zz="4.81957" />
+  </interaction>
+  <interaction kind="jcoupling" id="35" units="Hz" spin_a="8" spin_b="2" reference_frame_id="1">
+    <tensor xx="-0.69623" xy="0" xz="0" yx="0" yy="-0.69623" yz="0" zx="0" zy="0" zz="-0.69623" />
+  </interaction>
+  <interaction kind="jcoupling" id="36" units="Hz" spin_a="8" spin_b="3" reference_frame_id="1">
+    <tensor xx="-1.31431" xy="0" xz="0" yx="0" yy="-1.31431" yz="0" zx="0" zy="0" zz="-1.31431" />
+  </interaction>
+  <interaction kind="jcoupling" id="37" units="Hz" spin_a="8" spin_b="4" reference_frame_id="1">
+    <tensor xx="2.53515" xy="0" xz="0" yx="0" yy="2.53515" yz="0" zx="0" zy="0" zz="2.53515" />
+  </interaction>
+  <interaction kind="jcoupling" id="38" units="Hz" spin_a="8" spin_b="5" reference_frame_id="1">
+    <tensor xx="135.592" xy="0" xz="0" yx="0" yy="135.592" yz="0" zx="0" zy="0" zz="135.592" />
+  </interaction>
+  <interaction kind="jcoupling" id="39" units="Hz" spin_a="9" spin_b="1" reference_frame_id="1">
+    <tensor xx="0.20165" xy="0" xz="0" yx="0" yy="0.20165" yz="0" zx="0" zy="0" zz="0.20165" />
+  </interaction>
+  <interaction kind="jcoupling" id="40" units="Hz" spin_a="9" spin_b="2" reference_frame_id="1">
+    <tensor xx="-0.90852" xy="0" xz="0" yx="0" yy="-0.90852" yz="0" zx="0" zy="0" zz="-0.90852" />
+  </interaction>
+  <interaction kind="jcoupling" id="41" units="Hz" spin_a="9" spin_b="3" reference_frame_id="1">
+    <tensor xx="-4.46497" xy="0" xz="0" yx="0" yy="-4.46497" yz="0" zx="0" zy="0" zz="-4.46497" />
+  </interaction>
+  <interaction kind="jcoupling" id="42" units="Hz" spin_a="9" spin_b="4" reference_frame_id="1">
+    <tensor xx="6.17828" xy="0" xz="0" yx="0" yy="6.17828" yz="0" zx="0" zy="0" zz="6.17828" />
+  </interaction>
+  <interaction kind="jcoupling" id="43" units="Hz" spin_a="9" spin_b="5" reference_frame_id="1">
+    <tensor xx="135.304" xy="0" xz="0" yx="0" yy="135.304" yz="0" zx="0" zy="0" zz="135.304" />
+  </interaction>
+  <interaction kind="jcoupling" id="44" units="Hz" spin_a="10" spin_b="1" reference_frame_id="1">
+    <tensor xx="-3.1785" xy="0" xz="0" yx="0" yy="-3.1785" yz="0" zx="0" zy="0" zz="-3.1785" />
+  </interaction>
+  <interaction kind="jcoupling" id="45" units="Hz" spin_a="10" spin_b="2" reference_frame_id="1">
+    <tensor xx="6.00323" xy="0" xz="0" yx="0" yy="6.00323" yz="0" zx="0" zy="0" zz="6.00323" />
+  </interaction>
+  <interaction kind="jcoupling" id="46" units="Hz" spin_a="10" spin_b="3" reference_frame_id="1">
+    <tensor xx="-3.84711" xy="0" xz="0" yx="0" yy="-3.84711" yz="0" zx="0" zy="0" zz="-3.84711" />
+  </interaction>
+  <interaction kind="jcoupling" id="47" units="Hz" spin_a="10" spin_b="4" reference_frame_id="1">
+    <tensor xx="-0.10796" xy="0" xz="0" yx="0" yy="-0.10796" yz="0" zx="0" zy="0" zz="-0.10796" />
+  </interaction>
+  <interaction kind="jcoupling" id="48" units="Hz" spin_a="10" spin_b="5" reference_frame_id="1">
+    <tensor xx="0.10364" xy="0" xz="0" yx="0" yy="0.10364" yz="0" zx="0" zy="0" zz="0.10364" />
+  </interaction>
+  <interaction kind="jcoupling" id="49" units="Hz" spin_a="11" spin_b="1" reference_frame_id="1">
+    <tensor xx="-0.05333" xy="0" xz="0" yx="0" yy="-0.05333" yz="0" zx="0" zy="0" zz="-0.05333" />
+  </interaction>
+  <interaction kind="jcoupling" id="50" units="Hz" spin_a="11" spin_b="2" reference_frame_id="1">
+    <tensor xx="0.19776" xy="0" xz="0" yx="0" yy="0.19776" yz="0" zx="0" zy="0" zz="0.19776" />
+  </interaction>
+  <interaction kind="jcoupling" id="51" units="Hz" spin_a="11" spin_b="3" reference_frame_id="1">
+    <tensor xx="-6.58671" xy="0" xz="0" yx="0" yy="-6.58671" yz="0" zx="0" zy="0" zz="-6.58671" />
+  </interaction>
+  <interaction kind="jcoupling" id="52" units="Hz" spin_a="11" spin_b="4" reference_frame_id="1">
+    <tensor xx="-0.04288" xy="0" xz="0" yx="0" yy="-0.04288" yz="0" zx="0" zy="0" zz="-0.04288" />
+  </interaction>
+  <interaction kind="jcoupling" id="53" units="Hz" spin_a="11" spin_b="5" reference_frame_id="1">
+    <tensor xx="-0.52238" xy="0" xz="0" yx="0" yy="-0.52238" yz="0" zx="0" zy="0" zz="-0.52238" />
+  </interaction>
+  <interaction kind="jcoupling" id="54" units="Hz" spin_a="12" spin_b="1" reference_frame_id="1">
+    <tensor xx="56.0705" xy="0" xz="0" yx="0" yy="56.0705" yz="0" zx="0" zy="0" zz="56.0705" />
+  </interaction>
+  <interaction kind="jcoupling" id="55" units="Hz" spin_a="12" spin_b="2" reference_frame_id="1">
+    <tensor xx="-9.82529" xy="0" xz="0" yx="0" yy="-9.82529" yz="0" zx="0" zy="0" zz="-9.82529" />
+  </interaction>
+  <interaction kind="jcoupling" id="56" units="Hz" spin_a="12" spin_b="3" reference_frame_id="1">
+    <tensor xx="-1.57394" xy="0" xz="0" yx="0" yy="-1.57394" yz="0" zx="0" zy="0" zz="-1.57394" />
+  </interaction>
+  <interaction kind="jcoupling" id="57" units="Hz" spin_a="12" spin_b="4" reference_frame_id="1">
+    <tensor xx="9.64087" xy="0" xz="0" yx="0" yy="9.64087" yz="0" zx="0" zy="0" zz="9.64087" />
+  </interaction>
+  <interaction kind="jcoupling" id="58" units="Hz" spin_a="12" spin_b="5" reference_frame_id="1">
+    <tensor xx="1.69123" xy="0" xz="0" yx="0" yy="1.69123" yz="0" zx="0" zy="0" zz="1.69123" />
+  </interaction>
+  <interaction kind="jcoupling" id="59" units="Hz" spin_a="13" spin_b="1" reference_frame_id="1">
+    <tensor xx="54.4545" xy="0" xz="0" yx="0" yy="54.4545" yz="0" zx="0" zy="0" zz="54.4545" />
+  </interaction>
+  <interaction kind="jcoupling" id="60" units="Hz" spin_a="13" spin_b="2" reference_frame_id="1">
+    <tensor xx="-11.0206" xy="0" xz="0" yx="0" yy="-11.0206" yz="0" zx="0" zy="0" zz="-11.0206" />
+  </interaction>
+  <interaction kind="jcoupling" id="61" units="Hz" spin_a="13" spin_b="3" reference_frame_id="1">
+    <tensor xx="-1.69019" xy="0" xz="0" yx="0" yy="-1.69019" yz="0" zx="0" zy="0" zz="-1.69019" />
+  </interaction>
+  <interaction kind="jcoupling" id="62" units="Hz" spin_a="13" spin_b="4" reference_frame_id="1">
+    <tensor xx="6.32217" xy="0" xz="0" yx="0" yy="6.32217" yz="0" zx="0" zy="0" zz="6.32217" />
+  </interaction>
+  <interaction kind="jcoupling" id="63" units="Hz" spin_a="13" spin_b="5" reference_frame_id="1">
+    <tensor xx="4.35404" xy="0" xz="0" yx="0" yy="4.35404" yz="0" zx="0" zy="0" zz="4.35404" />
+  </interaction>
+  <interaction kind="jcoupling" id="64" units="Hz" spin_a="7" spin_b="6" reference_frame_id="1">
+    <tensor xx="1.95838" xy="0" xz="0" yx="0" yy="1.95838" yz="0" zx="0" zy="0" zz="1.95838" />
+  </interaction>
+  <interaction kind="jcoupling" id="65" units="Hz" spin_a="8" spin_b="6" reference_frame_id="1">
+    <tensor xx="1.4972" xy="0" xz="0" yx="0" yy="1.4972" yz="0" zx="0" zy="0" zz="1.4972" />
+  </interaction>
+  <interaction kind="jcoupling" id="66" units="Hz" spin_a="8" spin_b="7" reference_frame_id="1">
+    <tensor xx="-15.7744" xy="0" xz="0" yx="0" yy="-15.7744" yz="0" zx="0" zy="0" zz="-15.7744" />
+  </interaction>
+  <interaction kind="jcoupling" id="67" units="Hz" spin_a="9" spin_b="6" reference_frame_id="1">
+    <tensor xx="8.86141" xy="0" xz="0" yx="0" yy="8.86141" yz="0" zx="0" zy="0" zz="8.86141" />
+  </interaction>
+  <interaction kind="jcoupling" id="68" units="Hz" spin_a="9" spin_b="7" reference_frame_id="1">
+    <tensor xx="-11.7022" xy="0" xz="0" yx="0" yy="-11.7022" yz="0" zx="0" zy="0" zz="-11.7022" />
+  </interaction>
+  <interaction kind="jcoupling" id="69" units="Hz" spin_a="9" spin_b="8" reference_frame_id="1">
+    <tensor xx="-14.5184" xy="0" xz="0" yx="0" yy="-14.5184" yz="0" zx="0" zy="0" zz="-14.5184" />
+  </interaction>
+  <interaction kind="jcoupling" id="70" units="Hz" spin_a="10" spin_b="6" reference_frame_id="1">
+    <tensor xx="34.0326" xy="0" xz="0" yx="0" yy="34.0326" yz="0" zx="0" zy="0" zz="34.0326" />
+  </interaction>
+  <interaction kind="jcoupling" id="71" units="Hz" spin_a="10" spin_b="7" reference_frame_id="1">
+    <tensor xx="-0.02918" xy="0" xz="0" yx="0" yy="-0.02918" yz="0" zx="0" zy="0" zz="-0.02918" />
+  </interaction>
+  <interaction kind="jcoupling" id="72" units="Hz" spin_a="10" spin_b="8" reference_frame_id="1">
+    <tensor xx="0.12603" xy="0" xz="0" yx="0" yy="0.12603" yz="0" zx="0" zy="0" zz="0.12603" />
+  </interaction>
+  <interaction kind="jcoupling" id="73" units="Hz" spin_a="10" spin_b="9" reference_frame_id="1">
+    <tensor xx="-0.34471" xy="0" xz="0" yx="0" yy="-0.34471" yz="0" zx="0" zy="0" zz="-0.34471" />
+  </interaction>
+  <interaction kind="jcoupling" id="74" units="Hz" spin_a="11" spin_b="6" reference_frame_id="1">
+    <tensor xx="31.2384" xy="0" xz="0" yx="0" yy="31.2384" yz="0" zx="0" zy="0" zz="31.2384" />
+  </interaction>
+  <interaction kind="jcoupling" id="75" units="Hz" spin_a="11" spin_b="7" reference_frame_id="1">
+    <tensor xx="-0.07416" xy="0" xz="0" yx="0" yy="-0.07416" yz="0" zx="0" zy="0" zz="-0.07416" />
+  </interaction>
+  <interaction kind="jcoupling" id="76" units="Hz" spin_a="11" spin_b="8" reference_frame_id="1">
+    <tensor xx="-0.00201" xy="0" xz="0" yx="0" yy="-0.00201" yz="0" zx="0" zy="0" zz="-0.00201" />
+  </interaction>
+  <interaction kind="jcoupling" id="77" units="Hz" spin_a="11" spin_b="9" reference_frame_id="1">
+    <tensor xx="0.06175" xy="0" xz="0" yx="0" yy="0.06175" yz="0" zx="0" zy="0" zz="0.06175" />
+  </interaction>
+  <interaction kind="jcoupling" id="78" units="Hz" spin_a="11" spin_b="10" reference_frame_id="1">
+    <tensor xx="-4.10967" xy="0" xz="0" yx="0" yy="-4.10967" yz="0" zx="0" zy="0" zz="-4.10967" />
+  </interaction>
+  <interaction kind="jcoupling" id="79" units="Hz" spin_a="12" spin_b="6" reference_frame_id="1">
+    <tensor xx="3.03822" xy="0" xz="0" yx="0" yy="3.03822" yz="0" zx="0" zy="0" zz="3.03822" />
+  </interaction>
+  <interaction kind="jcoupling" id="80" units="Hz" spin_a="12" spin_b="7" reference_frame_id="1">
+    <tensor xx="-0.8434" xy="0" xz="0" yx="0" yy="-0.8434" yz="0" zx="0" zy="0" zz="-0.8434" />
+  </interaction>
+  <interaction kind="jcoupling" id="81" units="Hz" spin_a="12" spin_b="8" reference_frame_id="1">
+    <tensor xx="-0.40953" xy="0" xz="0" yx="0" yy="-0.40953" yz="0" zx="0" zy="0" zz="-0.40953" />
+  </interaction>
+  <interaction kind="jcoupling" id="82" units="Hz" spin_a="12" spin_b="9" reference_frame_id="1">
+    <tensor xx="-0.41882" xy="0" xz="0" yx="0" yy="-0.41882" yz="0" zx="0" zy="0" zz="-0.41882" />
+  </interaction>
+  <interaction kind="jcoupling" id="83" units="Hz" spin_a="12" spin_b="10" reference_frame_id="1">
+    <tensor xx="0.68391" xy="0" xz="0" yx="0" yy="0.68391" yz="0" zx="0" zy="0" zz="0.68391" />
+  </interaction>
+  <interaction kind="jcoupling" id="84" units="Hz" spin_a="13" spin_b="6" reference_frame_id="1">
+    <tensor xx="1.00844" xy="0" xz="0" yx="0" yy="1.00844" yz="0" zx="0" zy="0" zz="1.00844" />
+  </interaction>
+  <interaction kind="jcoupling" id="85" units="Hz" spin_a="13" spin_b="7" reference_frame_id="1">
+    <tensor xx="0.27204" xy="0" xz="0" yx="0" yy="0.27204" yz="0" zx="0" zy="0" zz="0.27204" />
+  </interaction>
+  <interaction kind="jcoupling" id="86" units="Hz" spin_a="13" spin_b="8" reference_frame_id="1">
+    <tensor xx="-1.14444" xy="0" xz="0" yx="0" yy="-1.14444" yz="0" zx="0" zy="0" zz="-1.14444" />
+  </interaction>
+  <interaction kind="jcoupling" id="87" units="Hz" spin_a="13" spin_b="9" reference_frame_id="1">
+    <tensor xx="-0.13397" xy="0" xz="0" yx="0" yy="-0.13397" yz="0" zx="0" zy="0" zz="-0.13397" />
+  </interaction>
+  <interaction kind="jcoupling" id="88" units="Hz" spin_a="13" spin_b="10" reference_frame_id="1">
+    <tensor xx="0.7563" xy="0" xz="0" yx="0" yy="0.7563" yz="0" zx="0" zy="0" zz="0.7563" />
+  </interaction>
+  <interaction kind="jcoupling" id="89" units="Hz" spin_a="12" spin_b="11" reference_frame_id="1">
+    <tensor xx="0.02471" xy="0" xz="0" yx="0" yy="0.02471" yz="0" zx="0" zy="0" zz="0.02471" />
+  </interaction>
+  <interaction kind="jcoupling" id="90" units="Hz" spin_a="13" spin_b="11" reference_frame_id="1">
+    <tensor xx="0.0471" xy="0" xz="0" yx="0" yy="0.0471" yz="0" zx="0" zy="0" zz="0.0471" />
+  </interaction>
+  <interaction kind="jcoupling" id="91" units="Hz" spin_a="13" spin_b="12" reference_frame_id="1">
+    <tensor xx="-12.7768" xy="0" xz="0" yx="0" yy="-12.7768" yz="0" zx="0" zy="0" zz="-12.7768" />
+  </interaction>
+  <reference_frame id="1" label="Lab Frame">
+    <direction>
+      <dcm xx="1" xy="0" xz="0" yx="0" yy="1" yz="0" zx="0" zy="0" zz="1" />
+    </direction>
+  </reference_frame>
+</spin_system>

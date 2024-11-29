@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<spin_system>
+  <spin id="1" isotope="13C">
+    <coordinates x="-3.76367" y="0.27069" z="0" />
+  </spin>
+  <spin id="2" isotope="13C">
+    <coordinates x="-2.78222" y="-0.71532" z="0" />
+  </spin>
+  <spin id="3" isotope="13C">
+    <coordinates x="-1.39936" y="-0.37548" z="0" />
+  </spin>
+  <spin id="4" isotope="13C">
+    <coordinates x="-1.01922" y="1.00923" z="0" />
+  </spin>
+  <spin id="5" isotope="13C">
+    <coordinates x="-2.04697" y="1.9903" z="0" />
+  </spin>
+  <spin id="6" isotope="13C">
+    <coordinates x="-3.39213" y="1.64117" z="0" />
+  </spin>
+  <spin id="7" isotope="1H">
+    <coordinates x="-3.04789" y="-1.76718" z="0" />
+  </spin>
+  <spin id="8" isotope="1H">
+    <coordinates x="-1.73732" y="3.0322" z="0" />
+  </spin>
+  <spin id="9" isotope="1H">
+    <coordinates x="-4.17922" y="2.38864" z="0" />
+  </spin>
+  <spin id="10" isotope="13C">
+    <coordinates x="0.38769" y="1.44569" z="0" />
+  </spin>
+  <spin id="11" isotope="13C">
+    <coordinates x="-0.38769" y="-1.44569" z="0" />
+  </spin>
+  <spin id="12" isotope="17O">
+    <coordinates x="0.70283" y="2.6726" z="-1E-05" />
+  </spin>
+  <spin id="13" isotope="17O">
+    <coordinates x="-0.70283" y="-2.6726" z="0" />
+  </spin>
+  <spin id="14" isotope="13C">
+    <coordinates x="1.39936" y="0.37548" z="0" />
+  </spin>
+  <spin id="15" isotope="13C">
+    <coordinates x="1.01922" y="-1.00922" z="0" />
+  </spin>
+  <spin id="16" isotope="13C">
+    <coordinates x="2.78222" y="0.71532" z="0" />
+  </spin>
+  <spin id="17" isotope="13C">
+    <coordinates x="2.04697" y="-1.9903" z="0" />
+  </spin>
+  <spin id="18" isotope="13C">
+    <coordinates x="3.76367" y="-0.27069" z="0" />
+  </spin>
+  <spin id="19" isotope="1H">
+    <coordinates x="3.04789" y="1.76718" z="0" />
+  </spin>
+  <spin id="20" isotope="13C">
+    <coordinates x="3.39213" y="-1.64117" z="0" />
+  </spin>
+  <spin id="21" isotope="1H">
+    <coordinates x="1.73731" y="-3.0322" z="0" />
+  </spin>
+  <spin id="22" isotope="1H">
+    <coordinates x="4.17922" y="-2.38864" z="0" />
+  </spin>
+  <spin id="23" isotope="33S">
+    <coordinates x="5.55155" y="0.16836" z="0" />
+  </spin>
+  <spin id="24" isotope="33S">
+    <coordinates x="-5.55155" y="-0.16836" z="0" />
+  </spin>
+  <spin id="25" isotope="17O">
+    <coordinates x="6.28802" y="-1.16035" z="0" />
+  </spin>
+  <spin id="26" isotope="17O">
+    <coordinates x="5.7853" y="0.97152" z="1.2634" />
+  </spin>
+  <spin id="27" isotope="17O">
+    <coordinates x="5.78531" y="0.97152" z="-1.2634" />
+  </spin>
+  <spin id="28" isotope="17O">
+    <coordinates x="-6.28802" y="1.16035" z="1E-05" />
+  </spin>
+  <spin id="29" isotope="17O">
+    <coordinates x="-5.78531" y="-0.97151" z="-1.2634" />
+  </spin>
+  <spin id="30" isotope="17O">
+    <coordinates x="-5.7853" y="-0.97152" z="1.2634" />
+  </spin>
+  <spin id="31" isotope="0e">
+    <coordinates x="0" y="0" z="0" />
+  </spin>
+  <interaction kind="shift" id="1" units="ppm" spin_a="1" spin_b="1" reference_frame_id="1" reference="label">
+    <tensor xx="209.6542" xy="18.1428" xz="-0.0001" yx="18.1428" yy="185.1522" yz="0.00055" zx="-0.0001" zy="0.00055" zz="64.0331" />
+  </interaction>
+  <interaction kind="shift" id="2" units="ppm" spin_a="2" spin_b="2" reference_frame_id="1" reference="label">
+    <tensor xx="166.4059" xy="24.0778" xz="0.00095" yx="24.0778" yy="200.4303" yz="-0.0005" zx="0.00095" zy="-0.0005" zz="4.3712" />
+  </interaction>
+  <interaction kind="shift" id="3" units="ppm" spin_a="3" spin_b="3" reference_frame_id="1" reference="label">
+    <tensor xx="177.4604" xy="-4.0262" xz="0.00055" yx="-4.0262" yy="194.7003" yz="0.00035" zx="0.00055" zy="0.00035" zz="21.5416" />
+  </interaction>
+  <interaction kind="shift" id="4" units="ppm" spin_a="4" spin_b="4" reference_frame_id="1" reference="label">
+    <tensor xx="188.758" xy="11.25215" xz="-0.00045" yx="11.25215" yy="187.6078" yz="0.00125" zx="-0.00045" zy="0.00125" zz="18.7725" />
+  </interaction>
+  <interaction kind="shift" id="5" units="ppm" spin_a="5" spin_b="5" reference_frame_id="1" reference="label">
+    <tensor xx="152.0738" xy="10.88185" xz="-0.00225" yx="10.88185" yy="223.2227" yz="-0.0002" zx="-0.00225" zy="-0.0002" zz="4.8366" />
+  </interaction>
+  <interaction kind="shift" id="6" units="ppm" spin_a="6" spin_b="6" reference_frame_id="1" reference="label">
+    <tensor xx="169.5033" xy="-34.0161" xz="0.00035" yx="-34.0161" yy="185.297" yz="-5E-05" zx="0.00035" zy="-5E-05" zz="17.153" />
+  </interaction>
+  <interaction kind="shift" id="7" units="ppm" spin_a="7" spin_b="7" reference_frame_id="1" reference="label">
+    <tensor xx="4.1092" xy="2.88675" xz="-0.0001" yx="2.88675" yy="11.7133" yz="0" zx="-0.0001" zy="0" zz="16.2058" />
+  </interaction>
+  <interaction kind="shift" id="8" units="ppm" spin_a="8" spin_b="8" reference_frame_id="1" reference="label">
+    <tensor xx="4.58" xy="0.47855" xz="0.0002" yx="0.47855" yy="10.8671" yz="-5E-05" zx="0.0002" zy="-5E-05" zz="15.5834" />
+  </interaction>
+  <interaction kind="shift" id="9" units="ppm" spin_a="9" spin_b="9" reference_frame_id="1" reference="label">
+    <tensor xx="6.2713" xy="-3.85625" xz="-0.0001" yx="-3.85625" yy="8.7072" yz="-5E-05" zx="-0.0001" zy="-5E-05" zz="14.4129" />
+  </interaction>
+  <interaction kind="shift" id="10" units="ppm" spin_a="10" spin_b="10" reference_frame_id="1" reference="label">
+    <tensor xx="228.4075" xy="-5.77865" xz="0.00255" yx="-5.77865" yy="204.5318" yz="5E-05" zx="0.00255" zy="5E-05" zz="74.4194" />
+  </interaction>
+  <interaction kind="shift" id="11" units="ppm" spin_a="11" spin_b="11" reference_frame_id="1" reference="label">
+    <tensor xx="228.4064" xy="-5.77745" xz="-0.0018" yx="-5.77745" yy="204.5312" yz="-0.0009" zx="-0.0018" zy="-0.0009" zz="74.4192" />
+  </interaction>
+  <interaction kind="shift" id="12" units="ppm" spin_a="12" spin_b="12" reference_frame_id="1" reference="label">
+    <tensor xx="443.3331" xy="74.83885" xz="0.02725" yx="74.83885" yy="718.6326" yz="0.0029" zx="0.02725" zy="0.0029" zz="-109.7537" />
+  </interaction>
+  <interaction kind="shift" id="13" units="ppm" spin_a="13" spin_b="13" reference_frame_id="1" reference="label">
+    <tensor xx="443.3221" xy="74.83275" xz="-0.0257" yx="74.83275" yy="718.6179" yz="-0.0068" zx="-0.0257" zy="-0.0068" zz="-109.7537" />
+  </interaction>
+  <interaction kind="shift" id="14" units="ppm" spin_a="14" spin_b="14" reference_frame_id="1" reference="label">
+    <tensor xx="177.4597" xy="-4.0262" xz="-0.00035" yx="-4.0262" yy="194.6998" yz="-5E-05" zx="-0.00035" zy="-5E-05" zz="21.5417" />
+  </interaction>
+  <interaction kind="shift" id="15" units="ppm" spin_a="15" spin_b="15" reference_frame_id="1" reference="label">
+    <tensor xx="188.7567" xy="11.25165" xz="0.00085" yx="11.25165" yy="187.6076" yz="-0.00155" zx="0.00085" zy="-0.00155" zz="18.7728" />
+  </interaction>
+  <interaction kind="shift" id="16" units="ppm" spin_a="16" spin_b="16" reference_frame_id="1" reference="label">
+    <tensor xx="166.4051" xy="24.07795" xz="-0.0013" yx="24.07795" yy="200.4304" yz="-0.0004" zx="-0.0013" zy="-0.0004" zz="4.3708" />
+  </interaction>
+  <interaction kind="shift" id="17" units="ppm" spin_a="17" spin_b="17" reference_frame_id="1" reference="label">
+    <tensor xx="152.0724" xy="10.8817" xz="0.00195" yx="10.8817" yy="223.2218" yz="0.0005" zx="0.00195" zy="0.0005" zz="4.8356" />
+  </interaction>
+  <interaction kind="shift" id="18" units="ppm" spin_a="18" spin_b="18" reference_frame_id="1" reference="label">
+    <tensor xx="209.6533" xy="18.1425" xz="0.0001" yx="18.1425" yy="185.1522" yz="-0.0012" zx="0.0001" zy="-0.0012" zz="64.0328" />
+  </interaction>
+  <interaction kind="shift" id="19" units="ppm" spin_a="19" spin_b="19" reference_frame_id="1" reference="label">
+    <tensor xx="4.1092" xy="2.8867" xz="0.0001" yx="2.8867" yy="11.7132" yz="0" zx="0.0001" zy="0" zz="16.2057" />
+  </interaction>
+  <interaction kind="shift" id="20" units="ppm" spin_a="20" spin_b="20" reference_frame_id="1" reference="label">
+    <tensor xx="169.503" xy="-34.01635" xz="-0.0006" yx="-34.01635" yy="185.2965" yz="-0.0001" zx="-0.0006" zy="-0.0001" zz="17.1536" />
+  </interaction>
+  <interaction kind="shift" id="21" units="ppm" spin_a="21" spin_b="21" reference_frame_id="1" reference="label">
+    <tensor xx="4.5801" xy="0.47855" xz="-0.0002" yx="0.47855" yy="10.8671" yz="5E-05" zx="-0.0002" zy="5E-05" zz="15.5834" />
+  </interaction>
+  <interaction kind="shift" id="22" units="ppm" spin_a="22" spin_b="22" reference_frame_id="1" reference="label">
+    <tensor xx="6.2713" xy="-3.85625" xz="0.0001" yx="-3.85625" yy="8.7071" yz="5E-05" zx="0.0001" zy="5E-05" zz="14.4128" />
+  </interaction>
+  <interaction kind="shift" id="23" units="ppm" spin_a="23" spin_b="23" reference_frame_id="1" reference="label">
+    <tensor xx="110.7588" xy="52.345" xz="-0.0007" yx="52.345" yy="-67.3091" yz="-0.00415" zx="-0.0007" zy="-0.00415" zz="-64.1643" />
+  </interaction>
+  <interaction kind="shift" id="24" units="ppm" spin_a="24" spin_b="24" reference_frame_id="1" reference="label">
+    <tensor xx="110.7582" xy="52.34505" xz="0.001" yx="52.34505" yy="-67.3094" yz="0.00425" zx="0.001" zy="0.00425" zz="-64.1639" />
+  </interaction>
+  <interaction kind="shift" id="25" units="ppm" spin_a="25" spin_b="25" reference_frame_id="1" reference="label">
+    <tensor xx="228.2666" xy="52.08105" xz="-0.0015" yx="52.08105" yy="146.1266" yz="0.00995" zx="-0.0015" zy="0.00995" zz="199.0988" />
+  </interaction>
+  <interaction kind="shift" id="26" units="ppm" spin_a="26" spin_b="26" reference_frame_id="1" reference="label">
+    <tensor xx="250.4094" xy="-12.41535" xz="-15.14415" yx="-12.41535" yy="220.0369" yz="-43.22695" zx="-15.14415" zy="-43.22695" zz="162.5039" />
+  </interaction>
+  <interaction kind="shift" id="27" units="ppm" spin_a="27" spin_b="27" reference_frame_id="1" reference="label">
+    <tensor xx="250.4199" xy="-12.41205" xz="15.15125" yx="-12.41205" yy="220.0307" yz="43.2333" zx="15.15125" zy="43.2333" zz="162.5092" />
+  </interaction>
+  <interaction kind="shift" id="28" units="ppm" spin_a="28" spin_b="28" reference_frame_id="1" reference="label">
+    <tensor xx="228.2663" xy="52.0807" xz="0.0017" yx="52.0807" yy="146.1261" yz="-0.0095" zx="0.0017" zy="-0.0095" zz="199.0989" />
+  </interaction>
+  <interaction kind="shift" id="29" units="ppm" spin_a="29" spin_b="29" reference_frame_id="1" reference="label">
+    <tensor xx="250.4186" xy="-12.4122" xz="-15.15125" yx="-12.4122" yy="220.031" yz="-43.23315" zx="-15.15125" zy="-43.23315" zz="162.5079" />
+  </interaction>
+  <interaction kind="shift" id="30" units="ppm" spin_a="30" spin_b="30" reference_frame_id="1" reference="label">
+    <tensor xx="250.4094" xy="-12.4151" xz="15.1441" yx="-12.4151" yy="220.0348" yz="43.2274" zx="15.1441" zy="43.2274" zz="162.5047" />
+  </interaction>
+  <interaction kind="gtensor" id="31" units="Bohr magneton" spin_a="31" spin_b="31" reference_frame_id="1">
+    <tensor xx="2.0053" xy="0.00034" xz="0" yx="0.00034" yy="2.00635" yz="0" zx="0" zy="0" zz="2.00209" />
+  </interaction>
+  <interaction kind="hfc" id="32" units="Gauss" spin_a="1" spin_b="31" reference_frame_id="1">
+    <tensor xx="-0.28947" xy="0.00412" xz="0" yx="0.00412" yy="-0.38612" yz="0" zx="0" zy="0" zz="2.49271" />
+  </interaction>
+  <interaction kind="hfc" id="33" units="Gauss" spin_a="2" spin_b="31" reference_frame_id="1">
+    <tensor xx="-0.94573" xy="-0.12016" xz="0" yx="-0.12016" yy="-1.24135" yz="0" zx="0" zy="0" zz="-1.06904" />
+  </interaction>
+  <interaction kind="hfc" id="34" units="Gauss" spin_a="3" spin_b="31" reference_frame_id="1">
+    <tensor xx="-2.55679" xy="-0.09246" xz="0" yx="-0.09246" yy="-2.56252" yz="0.00032" zx="0" zy="0.00032" zz="2.19697" />
+  </interaction>
+  <interaction kind="hfc" id="35" units="Gauss" spin_a="4" spin_b="31" reference_frame_id="1">
+    <tensor xx="-2.33021" xy="0.04774" xz="0.00057" yx="0.04774" yy="-2.4945" yz="5E-05" zx="0.00057" zy="5E-05" zz="3.48582" />
+  </interaction>
+  <interaction kind="hfc" id="36" units="Gauss" spin_a="5" spin_b="31" reference_frame_id="1">
+    <tensor xx="-1.1394" xy="-0.07844" xz="1E-05" yx="-0.07844" yy="-1.54301" yz="-3E-05" zx="1E-05" zy="-3E-05" zz="-1.3187" />
+  </interaction>
+  <interaction kind="hfc" id="37" units="Gauss" spin_a="6" spin_b="31" reference_frame_id="1">
+    <tensor xx="-0.38544" xy="-0.03865" xz="0" yx="-0.03865" yy="-0.4746" yz="0" zx="0" zy="0" zz="3.12798" />
+  </interaction>
+  <interaction kind="hfc" id="38" units="Gauss" spin_a="7" spin_b="31" reference_frame_id="1">
+    <tensor xx="0.56353" xy="-0.14827" xz="0" yx="-0.14827" yy="-0.29569" yz="0" zx="0" zy="0" zz="-0.87356" />
+  </interaction>
+  <interaction kind="hfc" id="39" units="Gauss" spin_a="8" spin_b="31" reference_frame_id="1">
+    <tensor xx="0.51303" xy="-0.29626" xz="0" yx="-0.29626" yy="-0.23088" yz="0" zx="0" zy="0" zz="-0.91744" />
+  </interaction>
+  <interaction kind="hfc" id="40" units="Gauss" spin_a="9" spin_b="31" reference_frame_id="1">
+    <tensor xx="-0.76436" xy="-0.80698" xz="0" yx="-0.80698" yy="-1.42009" yz="0" zx="0" zy="0" zz="-1.45523" />
+  </interaction>
+  <interaction kind="hfc" id="41" units="Gauss" spin_a="10" spin_b="31" reference_frame_id="1">
+    <tensor xx="-4.7718" xy="0.26363" xz="0" yx="0.26363" yy="-3.84882" yz="0" zx="0" zy="0" zz="6.72706" />
+  </interaction>
+  <interaction kind="hfc" id="42" units="Gauss" spin_a="11" spin_b="31" reference_frame_id="1">
+    <tensor xx="-4.77157" xy="0.26363" xz="0" yx="0.26363" yy="-3.84859" yz="0" zx="0" zy="0" zz="6.72829" />
+  </interaction>
+  <interaction kind="hfc" id="43" units="Gauss" spin_a="12" spin_b="31" reference_frame_id="1">
+    <tensor xx="5.04583" xy="0.05414" xz="0.00327" yx="0.05414" yy="5.24989" yz="-0.00026" zx="0.00327" zy="-0.00026" zz="-28.02462" />
+  </interaction>
+  <interaction kind="hfc" id="44" units="Gauss" spin_a="13" spin_b="31" reference_frame_id="1">
+    <tensor xx="5.04574" xy="0.05414" xz="-0.00327" yx="0.05414" yy="5.2498" yz="0.00026" zx="-0.00327" zy="0.00026" zz="-28.02471" />
+  </interaction>
+  <interaction kind="hfc" id="45" units="Gauss" spin_a="14" spin_b="31" reference_frame_id="1">
+    <tensor xx="-2.55644" xy="-0.09246" xz="0" yx="-0.09246" yy="-2.56217" yz="0" zx="0" zy="0" zz="2.19832" />
+  </interaction>
+  <interaction kind="hfc" id="46" units="Gauss" spin_a="15" spin_b="31" reference_frame_id="1">
+    <tensor xx="-2.33005" xy="0.04773" xz="-0.00018" yx="0.04773" yy="-2.4943" yz="-5E-05" zx="-0.00018" zy="-5E-05" zz="3.48562" />
+  </interaction>
+  <interaction kind="hfc" id="47" units="Gauss" spin_a="16" spin_b="31" reference_frame_id="1">
+    <tensor xx="-0.94604" xy="-0.12016" xz="-1E-05" yx="-0.12016" yy="-1.24166" yz="1E-05" zx="-1E-05" zy="1E-05" zz="-1.06935" />
+  </interaction>
+  <interaction kind="hfc" id="48" units="Gauss" spin_a="17" spin_b="31" reference_frame_id="1">
+    <tensor xx="-1.14024" xy="-0.07826" xz="-1E-05" yx="-0.07826" yy="-1.54292" yz="3E-05" zx="-1E-05" zy="3E-05" zz="-1.31858" />
+  </interaction>
+  <interaction kind="hfc" id="49" units="Gauss" spin_a="18" spin_b="31" reference_frame_id="1">
+    <tensor xx="-0.28916" xy="0.00413" xz="0" yx="0.00413" yy="-0.38581" yz="0" zx="0" zy="0" zz="2.49303" />
+  </interaction>
+  <interaction kind="hfc" id="50" units="Gauss" spin_a="19" spin_b="31" reference_frame_id="1">
+    <tensor xx="0.56367" xy="-0.14827" xz="0" yx="-0.14827" yy="-0.29555" yz="0" zx="0" zy="0" zz="-0.87342" />
+  </interaction>
+  <interaction kind="hfc" id="51" units="Gauss" spin_a="20" spin_b="31" reference_frame_id="1">
+    <tensor xx="-0.38554" xy="-0.03864" xz="0" yx="-0.03864" yy="-0.4747" yz="0" zx="0" zy="0" zz="3.1278" />
+  </interaction>
+  <interaction kind="hfc" id="52" units="Gauss" spin_a="21" spin_b="31" reference_frame_id="1">
+    <tensor xx="0.51293" xy="-0.29626" xz="0" yx="-0.29626" yy="-0.23098" yz="0" zx="0" zy="0" zz="-0.91754" />
+  </interaction>
+  <interaction kind="hfc" id="53" units="Gauss" spin_a="22" spin_b="31" reference_frame_id="1">
+    <tensor xx="-0.76429" xy="-0.80698" xz="0" yx="-0.80698" yy="-1.42002" yz="0" zx="0" zy="0" zz="-1.45516" />
+  </interaction>
+  <interaction kind="hfc" id="54" units="Gauss" spin_a="23" spin_b="31" reference_frame_id="1">
+    <tensor xx="-0.29466" xy="-0.01527" xz="0" yx="-0.01527" yy="-0.2538" yz="0" zx="0" zy="0" zz="-0.24973" />
+  </interaction>
+  <interaction kind="hfc" id="55" units="Gauss" spin_a="24" spin_b="31" reference_frame_id="1">
+    <tensor xx="-0.29462" xy="-0.01527" xz="0" yx="-0.01527" yy="-0.25376" yz="0" zx="0" zy="0" zz="-0.24969" />
+  </interaction>
+  <interaction kind="hfc" id="56" units="Gauss" spin_a="25" spin_b="31" reference_frame_id="1">
+    <tensor xx="0.03197" xy="-0.00044" xz="0" yx="-0.00044" yy="0.03151" yz="0" zx="0" zy="0" zz="0.05424" />
+  </interaction>
+  <interaction kind="hfc" id="57" units="Gauss" spin_a="26" spin_b="31" reference_frame_id="1">
+    <tensor xx="-0.48489" xy="-0.13101" xz="0.00193" yx="-0.13101" yy="-0.15758" yz="0.00698" zx="0.00193" zy="0.00698" zz="-0.10424" />
+  </interaction>
+  <interaction kind="hfc" id="58" units="Gauss" spin_a="27" spin_b="31" reference_frame_id="1">
+    <tensor xx="-0.48482" xy="-0.13102" xz="-0.00193" yx="-0.13102" yy="-0.15752" yz="-0.00698" zx="-0.00193" zy="-0.00698" zz="-0.10418" />
+  </interaction>
+  <interaction kind="hfc" id="59" units="Gauss" spin_a="28" spin_b="31" reference_frame_id="1">
+    <tensor xx="0.03197" xy="-0.00045" xz="0" yx="-0.00045" yy="0.03151" yz="0" zx="0" zy="0" zz="0.05424" />
+  </interaction>
+  <interaction kind="hfc" id="60" units="Gauss" spin_a="29" spin_b="31" reference_frame_id="1">
+    <tensor xx="-0.48485" xy="-0.13094" xz="0.00204" yx="-0.13094" yy="-0.15771" yz="0.00656" zx="0.00204" zy="0.00656" zz="-0.10494" />
+  </interaction>
+  <interaction kind="hfc" id="61" units="Gauss" spin_a="30" spin_b="31" reference_frame_id="1">
+    <tensor xx="-0.4849" xy="-0.13094" xz="-0.00206" yx="-0.13094" yy="-0.15778" yz="-0.00657" zx="-0.00206" zy="-0.00657" zz="-0.10498" />
+  </interaction>
+  <reference_frame id="1" label="Lab Frame">
+    <direction>
+      <dcm xx="1" xy="0" xz="0" yx="0" yy="1" yz="0" zx="0" zy="0" zz="1" />
+    </direction>
+  </reference_frame>
+  <reference_frame id="2" parent_reference_frame_id="1" label="Ref. Frame">
+    <direction>
+      <dcm xx="1" xy="0" xz="0" yx="0" yy="1" yz="0" zx="0" zy="0" zz="1" />
+    </direction>
+  </reference_frame>
+</spin_system>

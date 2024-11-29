@@ -1,0 +1,55 @@
+﻿<spin_system>
+  <spin id="1" isotope="1H" label="Proton A">
+    <coordinates x="-3.763" y="0.270" z="0.000" />
+  </spin>
+  <spin id="2" isotope="1H" label="Proton B">
+    <coordinates x="-2.782" y="-0.715" z="0.000" />
+  </spin>
+  <spin id="3" isotope="13C" label="Carbon">
+    <coordinates x="-1.399" y="-0.375" z="0.000" />
+  </spin>
+  <spin id="4" isotope="16O" label="Oxygen">
+    <coordinates x="-1.019" y="1.009" z="0.000" />
+  </spin>
+  <interaction kind="shift" id="1" units="ppm" spin_a="1" reference="absolute" reference_frame_id="1">
+    <tensor xx="209.6542" xy="18.1428"  xz="-0.0001"
+            yx="18.1428"  yy="185.1522" yz="0.00055"
+            zx="-0.0001"  zy="0.00055"  zz="64.0331" />
+  </interaction>
+  <interaction kind="shift" id="2" units="ppm" spin_a="2" reference="absolute" reference_frame_id="2">
+    <eigenvalues xx="20.2" yy="21.8" zz="22.2" />
+    <orientation>
+      <euler_angles alpha="230.4" beta="0.0" gamma="0.0" />
+    </orientation>
+  </interaction>
+  <interaction kind="shift" id="3" units="ppm" spin_a="3" reference="absolute" reference_frame_id="3">
+    <span_skew iso="-25.31" span="214.70" skew="0.135" />
+    <orientation>
+      <euler_angles alpha="180.0" beta="0.0" gamma="0.0" />
+    </orientation>
+  </interaction>
+  <interaction kind="jcoupling" id="4" units="Hz" spin_a="1" spin_b="2">
+    <scalar>29.13</scalar>
+  </interaction>
+  <reference_frame id="1" >
+    <direction>
+      <dcm xx="1.0" xy="0.0" xz="0.0"
+           yx="0.0" yy="1.0" yz="0.0"
+           zx="0.0" zy="0.0" zz="1.0" />
+    </direction>
+  </reference_frame>
+  <reference_frame id="2" parent_reference_frame_id="1" >
+    <direction>
+      <dcm xx="0.0" xy="-1.0" xz="0.0"
+           yx="1.0" yy="0.0"  yz="0.0"
+           zx="0.0" zy="0.0"  zz="1.0" />
+    </direction>
+  </reference_frame>
+  <reference_frame id="3" parent_reference_frame_id="2" >
+    <direction>
+      <dcm xx="0.0"  xy="0.0" xz="1.0"
+           yx="0.0"  yy="1.0" yz="0.0"
+           zx="-1.0" zy="0.0" zz="0.0" />
+    </direction>
+  </reference_frame>
+</spin_system>

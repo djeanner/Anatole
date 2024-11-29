@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<spin_system>
+  <spin id="1" isotope="13C" label="">
+    <coordinates x="0" y="0" z="3.55361" />
+  </spin>
+  <spin id="2" isotope="13C" label="">
+    <coordinates x="0" y="1.21303" z="2.85441" />
+  </spin>
+  <spin id="3" isotope="13C" label="">
+    <coordinates x="0" y="1.23718" z="1.4255" />
+  </spin>
+  <spin id="4" isotope="13C" label="">
+    <coordinates x="0" y="0" z="0.71065" />
+  </spin>
+  <spin id="5" isotope="13C" label="">
+    <coordinates x="0" y="-1.23718" z="1.4255" />
+  </spin>
+  <spin id="6" isotope="13C" label="">
+    <coordinates x="0" y="-1.21303" z="2.85441" />
+  </spin>
+  <spin id="7" isotope="13C" label="">
+    <coordinates x="0" y="2.46082" z="0.69598" />
+  </spin>
+  <spin id="8" isotope="13C" label="">
+    <coordinates x="0" y="0" z="-0.71065" />
+  </spin>
+  <spin id="9" isotope="13C" label="">
+    <coordinates x="0" y="1.23718" z="-1.4255" />
+  </spin>
+  <spin id="10" isotope="13C" label="">
+    <coordinates x="0" y="2.46082" z="-0.69598" />
+  </spin>
+  <spin id="11" isotope="13C" label="">
+    <coordinates x="0" y="1.21303" z="-2.85441" />
+  </spin>
+  <spin id="12" isotope="1H" label="">
+    <coordinates x="0" y="2.15366" z="-3.39828" />
+  </spin>
+  <spin id="13" isotope="13C" label="">
+    <coordinates x="0" y="0" z="-3.55361" />
+  </spin>
+  <spin id="14" isotope="13C" label="">
+    <coordinates x="0" y="-1.21303" z="-2.85441" />
+  </spin>
+  <spin id="15" isotope="13C" label="">
+    <coordinates x="0" y="-1.23718" z="-1.4255" />
+  </spin>
+  <spin id="16" isotope="13C" label="">
+    <coordinates x="0" y="-2.46082" z="-0.69598" />
+  </spin>
+  <spin id="17" isotope="13C" label="">
+    <coordinates x="0" y="-2.46082" z="0.69598" />
+  </spin>
+  <spin id="18" isotope="1H" label="">
+    <coordinates x="0" y="-3.40182" z="1.23818" />
+  </spin>
+  <spin id="19" isotope="1H" label="">
+    <coordinates x="0" y="-3.40182" z="-1.23818" />
+  </spin>
+  <spin id="20" isotope="1H" label="">
+    <coordinates x="0" y="3.40182" z="1.23818" />
+  </spin>
+  <spin id="21" isotope="1H" label="">
+    <coordinates x="0" y="0" z="4.63827" />
+  </spin>
+  <spin id="22" isotope="1H" label="">
+    <coordinates x="0" y="2.15366" z="3.39828" />
+  </spin>
+  <spin id="23" isotope="1H" label="">
+    <coordinates x="0" y="-2.15366" z="3.39828" />
+  </spin>
+  <spin id="24" isotope="1H" label="">
+    <coordinates x="0" y="3.40182" z="-1.23818" />
+  </spin>
+  <spin id="25" isotope="1H" label="">
+    <coordinates x="0" y="0" z="-4.63827" />
+  </spin>
+  <spin id="26" isotope="1H" label="">
+    <coordinates x="0" y="-2.15366" z="-3.39828" />
+  </spin>
+  <interaction kind="shift" id="1" units="ppm" spin_a="1" spin_b="1" reference="TMS">
+    <tensor xx="16.6069" xy="0" xz="0" yx="0" yy="151.6821" yz="0" zx="0" zy="0" zz="229.4407" />
+  </interaction>
+  <interaction kind="shift" id="2" units="ppm" spin_a="2" spin_b="2" reference="TMS">
+    <tensor xx="30.1642" xy="0" xz="0" yx="0" yy="217.0678" yz="-33.62025" zx="0" zy="-33.62025" zz="204.4211" />
+  </interaction>
+  <interaction kind="shift" id="3" units="ppm" spin_a="3" spin_b="3" reference="TMS">
+    <tensor xx="8.272" xy="0" xz="0" yx="0" yy="200.9261" yz="-1.11465" zx="0" zy="-1.11465" zz="205.9118" />
+  </interaction>
+  <interaction kind="shift" id="4" units="ppm" spin_a="4" spin_b="4" reference="TMS">
+    <tensor xx="-0.7593" xy="0" xz="0" yx="0" yy="190.4602" yz="0" zx="0" zy="0" zz="189.6737" />
+  </interaction>
+  <interaction kind="shift" id="5" units="ppm" spin_a="5" spin_b="5" reference="TMS">
+    <tensor xx="8.272" xy="0" xz="0" yx="0" yy="200.9261" yz="1.11465" zx="0" zy="1.11465" zz="205.9118" />
+  </interaction>
+  <interaction kind="shift" id="6" units="ppm" spin_a="6" spin_b="6" reference="TMS">
+    <tensor xx="30.1642" xy="0" xz="0" yx="0" yy="217.0678" yz="33.62025" zx="0" zy="33.62025" zz="204.4211" />
+  </interaction>
+  <interaction kind="shift" id="7" units="ppm" spin_a="7" spin_b="7" reference="TMS">
+    <tensor xx="26.4851" xy="0" xz="0" yx="0" yy="227.2737" yz="-23.9529" zx="0" zy="-23.9529" zz="174.6843" />
+  </interaction>
+  <interaction kind="shift" id="8" units="ppm" spin_a="8" spin_b="8" reference="TMS">
+    <tensor xx="-0.7593" xy="0" xz="0" yx="0" yy="190.4602" yz="0" zx="0" zy="0" zz="189.6737" />
+  </interaction>
+  <interaction kind="shift" id="9" units="ppm" spin_a="9" spin_b="9" reference="TMS">
+    <tensor xx="8.272" xy="0" xz="0" yx="0" yy="200.9261" yz="1.11465" zx="0" zy="1.11465" zz="205.9118" />
+  </interaction>
+  <interaction kind="shift" id="10" units="ppm" spin_a="10" spin_b="10" reference="TMS">
+    <tensor xx="26.4851" xy="0" xz="0" yx="0" yy="227.2737" yz="23.9529" zx="0" zy="23.9529" zz="174.6843" />
+  </interaction>
+  <interaction kind="shift" id="11" units="ppm" spin_a="11" spin_b="11" reference="TMS">
+    <tensor xx="30.1642" xy="0" xz="0" yx="0" yy="217.0678" yz="33.62025" zx="0" zy="33.62025" zz="204.4211" />
+  </interaction>
+  <interaction kind="shift" id="12" units="ppm" spin_a="12" spin_b="12" reference="TMS">
+    <tensor xx="12.3547" xy="0" xz="0" yx="0" yy="10.0649" yz="2.8859" zx="0" zy="2.8859" zz="7.1136" />
+  </interaction>
+  <interaction kind="shift" id="13" units="ppm" spin_a="13" spin_b="13" reference="TMS">
+    <tensor xx="16.6069" xy="0" xz="0" yx="0" yy="151.6821" yz="0" zx="0" zy="0" zz="229.4407" />
+  </interaction>
+  <interaction kind="shift" id="14" units="ppm" spin_a="14" spin_b="14" reference="TMS">
+    <tensor xx="30.1642" xy="0" xz="0" yx="0" yy="217.0678" yz="-33.62025" zx="0" zy="-33.62025" zz="204.4211" />
+  </interaction>
+  <interaction kind="shift" id="15" units="ppm" spin_a="15" spin_b="15" reference="TMS">
+    <tensor xx="8.272" xy="0" xz="0" yx="0" yy="200.9261" yz="-1.11465" zx="0" zy="-1.11465" zz="205.9118" />
+  </interaction>
+  <interaction kind="shift" id="16" units="ppm" spin_a="16" spin_b="16" reference="TMS">
+    <tensor xx="26.4851" xy="0" xz="0" yx="0" yy="227.2737" yz="-23.9529" zx="0" zy="-23.9529" zz="174.6843" />
+  </interaction>
+  <interaction kind="shift" id="17" units="ppm" spin_a="17" spin_b="17" reference="TMS">
+    <tensor xx="26.4851" xy="0" xz="0" yx="0" yy="227.2737" yz="23.9529" zx="0" zy="23.9529" zz="174.6843" />
+  </interaction>
+  <interaction kind="shift" id="18" units="ppm" spin_a="18" spin_b="18" reference="TMS">
+    <tensor xx="12.9705" xy="0" xz="0" yx="0" yy="9.8893" yz="2.3088" zx="0" zy="2.3088" zz="6.551" />
+  </interaction>
+  <interaction kind="shift" id="19" units="ppm" spin_a="19" spin_b="19" reference="TMS">
+    <tensor xx="12.9705" xy="0" xz="0" yx="0" yy="9.8893" yz="-2.3088" zx="0" zy="-2.3088" zz="6.551" />
+  </interaction>
+  <interaction kind="shift" id="20" units="ppm" spin_a="20" spin_b="20" reference="TMS">
+    <tensor xx="12.9705" xy="0" xz="0" yx="0" yy="9.8893" yz="-2.3088" zx="0" zy="-2.3088" zz="6.551" />
+  </interaction>
+  <interaction kind="shift" id="21" units="ppm" spin_a="21" spin_b="21" reference="TMS">
+    <tensor xx="11.6974" xy="0" xz="0" yx="0" yy="6.1266" yz="0" zx="0" zy="0" zz="10.1492" />
+  </interaction>
+  <interaction kind="shift" id="22" units="ppm" spin_a="22" spin_b="22" reference="TMS">
+    <tensor xx="12.3547" xy="0" xz="0" yx="0" yy="10.0649" yz="-2.8859" zx="0" zy="-2.8859" zz="7.1136" />
+  </interaction>
+  <interaction kind="shift" id="23" units="ppm" spin_a="23" spin_b="23" reference="TMS">
+    <tensor xx="12.3547" xy="0" xz="0" yx="0" yy="10.0649" yz="2.8859" zx="0" zy="2.8859" zz="7.1136" />
+  </interaction>
+  <interaction kind="shift" id="24" units="ppm" spin_a="24" spin_b="24" reference="TMS">
+    <tensor xx="12.9705" xy="0" xz="0" yx="0" yy="9.8893" yz="2.3088" zx="0" zy="2.3088" zz="6.551" />
+  </interaction>
+  <interaction kind="shift" id="25" units="ppm" spin_a="25" spin_b="25" reference="TMS">
+    <tensor xx="11.6974" xy="0" xz="0" yx="0" yy="6.1266" yz="0" zx="0" zy="0" zz="10.1492" />
+  </interaction>
+  <interaction kind="shift" id="26" units="ppm" spin_a="26" spin_b="26" reference="TMS">
+    <tensor xx="12.3547" xy="0" xz="0" yx="0" yy="10.0649" yz="-2.8859" zx="0" zy="-2.8859" zz="7.1136" />
+  </interaction>
+</spin_system>

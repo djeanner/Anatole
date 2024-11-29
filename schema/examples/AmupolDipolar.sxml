@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<spin_system>
+  <spin id="1" isotope="14N">
+    <coordinates x="-1.88734" y="-7.12604" z="-2.15074" />
+  </spin>
+  <spin id="2" isotope="13C">
+    <coordinates x="-1.23183" y="-7.69264" z="-0.91085" />
+  </spin>
+  <spin id="3" isotope="13C">
+    <coordinates x="-3.21526" y="-6.40182" z="-2.16431" />
+  </spin>
+  <spin id="4" isotope="13C">
+    <coordinates x="-1.57643" y="-6.831" z="0.31653" />
+  </spin>
+  <spin id="5" isotope="13C">
+    <coordinates x="-3.41463" y="-5.62011" z="-0.85245" />
+  </spin>
+  <spin id="6" isotope="13C">
+    <coordinates x="-3.05677" y="-6.43897" z="0.38762" />
+  </spin>
+  <spin id="7" isotope="14N">
+    <coordinates x="-3.42394" y="-5.78201" z="1.65966" />
+  </spin>
+  <spin id="8" isotope="13C">
+    <coordinates x="-4.3392" y="-7.44446" z="-2.41868" />
+  </spin>
+  <spin id="9" isotope="13C">
+    <coordinates x="-3.19468" y="-5.42725" z="-3.36496" />
+  </spin>
+  <spin id="10" isotope="13C">
+    <coordinates x="0.29456" y="-7.68831" z="-1.15834" />
+  </spin>
+  <spin id="11" isotope="13C">
+    <coordinates x="-1.68155" y="-9.17131" z="-0.74841" />
+  </spin>
+  <spin id="12" isotope="17O">
+    <coordinates x="-1.52378" y="-7.65225" z="-3.26836" />
+  </spin>
+  <spin id="13" isotope="13C">
+    <coordinates x="-3.45281" y="-1.44041" z="2.6361" />
+  </spin>
+  <spin id="14" isotope="13C">
+    <coordinates x="-3.18738" y="-2.60936" z="3.59235" />
+  </spin>
+  <spin id="15" isotope="13C">
+    <coordinates x="-3.25518" y="-0.06754" z="3.30296" />
+  </spin>
+  <spin id="16" isotope="13C">
+    <coordinates x="-1.72668" y="-2.54622" z="4.04339" />
+  </spin>
+  <spin id="17" isotope="14N">
+    <coordinates x="-1.96133" y="-0.05039" z="4.08551" />
+  </spin>
+  <spin id="18" isotope="13C">
+    <coordinates x="-1.37956" y="-1.25071" z="4.79845" />
+  </spin>
+  <spin id="19" isotope="17O">
+    <coordinates x="-1.58066" y="1.10057" z="4.52006" />
+  </spin>
+  <spin id="20" isotope="13C">
+    <coordinates x="-4.41559" y="0.30618" z="4.26812" />
+  </spin>
+  <spin id="21" isotope="13C">
+    <coordinates x="-3.16103" y="1.04158" z="2.22976" />
+  </spin>
+  <spin id="22" isotope="13C">
+    <coordinates x="-1.90459" y="-1.25994" z="6.26129" />
+  </spin>
+  <spin id="23" isotope="13C">
+    <coordinates x="0.15341" y="-1.0548" z="4.85158" />
+  </spin>
+  <spin id="24" isotope="1H">
+    <coordinates x="-1.29047" y="-7.37975" z="1.22586" />
+  </spin>
+  <spin id="25" isotope="1H">
+    <coordinates x="-0.9811" y="-5.90686" z="0.30168" />
+  </spin>
+  <spin id="26" isotope="1H">
+    <coordinates x="-2.79547" y="-4.71306" z="-0.87081" />
+  </spin>
+  <spin id="27" isotope="1H">
+    <coordinates x="-4.46177" y="-5.28939" z="-0.79083" />
+  </spin>
+  <spin id="28" isotope="1H">
+    <coordinates x="-3.66895" y="-7.35488" z="0.37657" />
+  </spin>
+  <spin id="29" isotope="1H">
+    <coordinates x="-4.51021" y="-8.06643" z="-1.52704" />
+  </spin>
+  <spin id="30" isotope="13C">
+    <coordinates x="-5.6623" y="-6.78912" z="-2.81991" />
+  </spin>
+  <spin id="31" isotope="1H">
+    <coordinates x="-4.00607" y="-8.10817" z="-3.23061" />
+  </spin>
+  <spin id="32" isotope="1H">
+    <coordinates x="-4.47786" y="-1.5008" z="2.24285" />
+  </spin>
+  <spin id="33" isotope="1H">
+    <coordinates x="-2.77494" y="-1.53611" z="1.77546" />
+  </spin>
+  <spin id="34" isotope="1H">
+    <coordinates x="-1.50686" y="-3.40467" z="4.69378" />
+  </spin>
+  <spin id="35" isotope="1H">
+    <coordinates x="-1.08087" y="-2.63894" z="3.15847" />
+  </spin>
+  <spin id="36" isotope="13C">
+    <coordinates x="-2.9762" y="-4.49703" z="1.94597" />
+  </spin>
+  <spin id="37" isotope="14N">
+    <coordinates x="-3.55371" y="-3.92139" z="3.05277" />
+  </spin>
+  <spin id="38" isotope="17O">
+    <coordinates x="-2.11429" y="-3.92148" z="1.25246" />
+  </spin>
+  <spin id="39" isotope="1H">
+    <coordinates x="-4.46321" y="-4.29301" z="3.33584" />
+  </spin>
+  <spin id="40" isotope="13C">
+    <coordinates x="-3.99533" y="-6.65508" z="2.6954" />
+  </spin>
+  <spin id="41" isotope="1H">
+    <coordinates x="-3.83283" y="-2.49765" z="4.47689" />
+  </spin>
+  <spin id="42" isotope="13C">
+    <coordinates x="-5.51735" y="-6.71017" z="2.74239" />
+  </spin>
+  <spin id="43" isotope="1H">
+    <coordinates x="-3.61357" y="-6.34884" z="3.68044" />
+  </spin>
+  <spin id="44" isotope="1H">
+    <coordinates x="-3.62681" y="-7.67714" z="2.51956" />
+  </spin>
+  <spin id="45" isotope="17O">
+    <coordinates x="-6.0136" y="-5.47463" z="3.26689" />
+  </spin>
+  <spin id="46" isotope="1H">
+    <coordinates x="-5.93567" y="-6.88742" z="1.73347" />
+  </spin>
+  <spin id="47" isotope="1H">
+    <coordinates x="-5.83198" y="-7.54788" z="3.39358" />
+  </spin>
+  <spin id="48" isotope="13C">
+    <coordinates x="-7.44144" y="-5.40565" z="3.2593" />
+  </spin>
+  <spin id="49" isotope="1H">
+    <coordinates x="-7.83603" y="-5.48465" z="2.23124" />
+  </spin>
+  <spin id="50" isotope="1H">
+    <coordinates x="-7.72133" y="-4.43407" z="3.68363" />
+  </spin>
+  <spin id="51" isotope="1H">
+    <coordinates x="-7.87807" y="-6.2125" z="3.87349" />
+  </spin>
+  <spin id="52" isotope="13C">
+    <coordinates x="-5.69831" y="0.68139" z="3.52291" />
+  </spin>
+  <spin id="53" isotope="13C">
+    <coordinates x="-4.51755" y="1.34026" z="1.5927" />
+  </spin>
+  <spin id="54" isotope="17O">
+    <coordinates x="-5.48662" y="1.73723" z="2.57671" />
+  </spin>
+  <spin id="55" isotope="13C">
+    <coordinates x="-1.10635" y="-2.21107" z="7.1557" />
+  </spin>
+  <spin id="56" isotope="1H">
+    <coordinates x="-2.96662" y="-1.54651" z="6.30183" />
+  </spin>
+  <spin id="57" isotope="1H">
+    <coordinates x="-1.81791" y="-0.23699" z="6.65758" />
+  </spin>
+  <spin id="58" isotope="13C">
+    <coordinates x="0.82643" y="-2.03371" z="5.81294" />
+  </spin>
+  <spin id="59" isotope="17O">
+    <coordinates x="0.29698" y="-1.91655" z="7.14343" />
+  </spin>
+  <spin id="60" isotope="1H">
+    <coordinates x="-1.43347" y="-2.10939" z="8.19982" />
+  </spin>
+  <spin id="61" isotope="1H">
+    <coordinates x="-1.26242" y="-3.26496" z="6.85293" />
+  </spin>
+  <spin id="62" isotope="13C">
+    <coordinates x="-0.80262" y="-9.94155" z="0.2395" />
+  </spin>
+  <spin id="63" isotope="17O">
+    <coordinates x="0.58627" y="-9.88613" z="-0.11113" />
+  </spin>
+  <spin id="64" isotope="13C">
+    <coordinates x="1.0487" y="-8.5258" z="-0.12687" />
+  </spin>
+  <spin id="65" isotope="13C">
+    <coordinates x="-4.58428" y="-4.87737" z="-3.68399" />
+  </spin>
+  <spin id="66" isotope="17O">
+    <coordinates x="-5.5196" y="-5.93225" z="-3.96022" />
+  </spin>
+  <spin id="67" isotope="1H">
+    <coordinates x="-1.61837" y="-9.65109" z="-1.73663" />
+  </spin>
+  <spin id="68" isotope="1H">
+    <coordinates x="-2.72772" y="-9.23645" z="-0.41166" />
+  </spin>
+  <spin id="69" isotope="1H">
+    <coordinates x="-0.93486" y="-9.55816" z="1.27016" />
+  </spin>
+  <spin id="70" isotope="1H">
+    <coordinates x="-1.07929" y="-11.00499" z="0.23909" />
+  </spin>
+  <spin id="71" isotope="1H">
+    <coordinates x="0.67111" y="-6.65349" z="-1.1418" />
+  </spin>
+  <spin id="72" isotope="1H">
+    <coordinates x="0.48404" y="-8.10284" z="-2.15776" />
+  </spin>
+  <spin id="73" isotope="1H">
+    <coordinates x="0.58066" y="-1.17347" z="3.84337" />
+  </spin>
+  <spin id="74" isotope="1H">
+    <coordinates x="0.35869" y="-0.0302" z="5.18967" />
+  </spin>
+  <spin id="75" isotope="1H">
+    <coordinates x="1.89928" y="-1.80993" z="5.88984" />
+  </spin>
+  <spin id="76" isotope="1H">
+    <coordinates x="0.72299" y="-3.0802" z="5.46664" />
+  </spin>
+  <spin id="77" isotope="1H">
+    <coordinates x="-4.43026" y="2.18079" z="0.89087" />
+  </spin>
+  <spin id="78" isotope="1H">
+    <coordinates x="-4.90373" y="0.46656" z="1.03298" />
+  </spin>
+  <spin id="79" isotope="1H">
+    <coordinates x="-2.78588" y="1.95644" z="2.70809" />
+  </spin>
+  <spin id="80" isotope="1H">
+    <coordinates x="-2.44203" y="0.74533" z="1.44983" />
+  </spin>
+  <spin id="81" isotope="1H">
+    <coordinates x="-6.4525" y="1.04807" z="4.23295" />
+  </spin>
+  <spin id="82" isotope="1H">
+    <coordinates x="-6.12458" y="-0.19668" z="2.99968" />
+  </spin>
+  <spin id="83" isotope="1H">
+    <coordinates x="-4.08585" y="1.16593" z="4.87062" />
+  </spin>
+  <spin id="84" isotope="1H">
+    <coordinates x="-4.6421" y="-0.51815" z="4.96155" />
+  </spin>
+  <spin id="85" isotope="1H">
+    <coordinates x="-4.97192" y="-4.25013" z="-2.85819" />
+  </spin>
+  <spin id="86" isotope="1H">
+    <coordinates x="-2.50612" y="-4.5929" z="-3.15742" />
+  </spin>
+  <spin id="87" isotope="1H">
+    <coordinates x="-2.8172" y="-5.96728" z="-4.2436" />
+  </spin>
+  <spin id="88" isotope="1H">
+    <coordinates x="-6.08848" y="-6.20898" z="-1.97829" />
+  </spin>
+  <spin id="89" isotope="1H">
+    <coordinates x="-6.39409" y="-7.55904" z="-3.10122" />
+  </spin>
+  <spin id="90" isotope="1H">
+    <coordinates x="-4.54649" y="-4.25649" z="-4.58945" />
+  </spin>
+  <spin id="91" isotope="1H">
+    <coordinates x="0.96004" y="-8.09575" z="0.88953" />
+  </spin>
+  <spin id="92" isotope="1H">
+    <coordinates x="2.1164" y="-8.56822" z="-0.38199" />
+  </spin>
+  <spin id="93" isotope="0e">
+    <coordinates x="0" y="0" z="0" />
+  </spin>
+  <interaction kind="zfs" id="1" units="cm^-1" spin_a="93" spin_b="93" reference_frame_id="1">
+    <tensor xx="0.0008" xy="1E-05" xz="1E-05" yx="1E-05" yy="-0.00054" yz="-0.00119" zx="1E-05" zy="-0.00119" zz="-0.00025" />
+  </interaction>
+  <reference_frame id="1" label="Lab Frame">
+    <direction>
+      <dcm xx="1" xy="0" xz="0" yx="0" yy="1" yz="0" zx="0" zy="0" zz="1" />
+    </direction>
+  </reference_frame>
+</spin_system>

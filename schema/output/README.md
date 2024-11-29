@@ -1,0 +1,1 @@
+most example come from https://github.com/IlyaKuprov/SpinachGUI/blob/501c15faa81fb549b7db03f0b608850c3fb3f5cb/examples/SpinXML

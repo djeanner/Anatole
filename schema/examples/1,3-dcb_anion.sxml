@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<spin_system>
+  <spin id="1" isotope="13C">
+    <coordinates x="0" y="1.23017" z="1.39479" />
+  </spin>
+  <spin id="2" isotope="13C">
+    <coordinates x="0" y="0" z="2.06496" />
+  </spin>
+  <spin id="3" isotope="13C">
+    <coordinates x="0" y="-1.23017" z="1.39479" />
+  </spin>
+  <spin id="4" isotope="13C">
+    <coordinates x="0" y="-1.2295" z="-0.0693" />
+  </spin>
+  <spin id="5" isotope="13C">
+    <coordinates x="0" y="0" z="-0.75567" />
+  </spin>
+  <spin id="6" isotope="13C">
+    <coordinates x="0" y="1.2295" z="-0.0693" />
+  </spin>
+  <spin id="7" isotope="1H">
+    <coordinates x="0" y="2.17159" z="1.93419" />
+  </spin>
+  <spin id="8" isotope="1H">
+    <coordinates x="0" y="0" z="3.15553" />
+  </spin>
+  <spin id="9" isotope="1H">
+    <coordinates x="0" y="-2.17159" z="1.93419" />
+  </spin>
+  <spin id="10" isotope="1H">
+    <coordinates x="0" y="0" z="-1.8428" />
+  </spin>
+  <spin id="11" isotope="13C">
+    <coordinates x="0" y="-2.44918" z="-0.79849" />
+  </spin>
+  <spin id="12" isotope="13C">
+    <coordinates x="0" y="2.44918" z="-0.79849" />
+  </spin>
+  <interaction kind="shift" id="1" units="ppm" spin_a="1" spin_b="1" reference_frame_id="1" reference="label">
+    <tensor xx="58.1695" xy="0" xz="0" yx="0" yy="143.0065" yz="45.186" zx="0" zy="45.186" zz="146.466" />
+  </interaction>
+  <interaction kind="shift" id="2" units="ppm" spin_a="2" spin_b="2" reference_frame_id="1" reference="label">
+    <tensor xx="50.9476" xy="0" xz="0" yx="0" yy="144.5874" yz="0" zx="0" zy="0" zz="265.5724" />
+  </interaction>
+  <interaction kind="shift" id="3" units="ppm" spin_a="3" spin_b="3" reference_frame_id="1" reference="label">
+    <tensor xx="58.1695" xy="0" xz="0" yx="0" yy="143.0065" yz="-45.186" zx="0" zy="-45.186" zz="146.466" />
+  </interaction>
+  <interaction kind="shift" id="4" units="ppm" spin_a="4" spin_b="4" reference_frame_id="1" reference="label">
+    <tensor xx="60.7161" xy="0" xz="0" yx="0" yy="138.5773" yz="36.9787" zx="0" zy="36.9787" zz="133.0262" />
+  </interaction>
+  <interaction kind="shift" id="5" units="ppm" spin_a="5" spin_b="5" reference_frame_id="1" reference="label">
+    <tensor xx="62.5021" xy="0" xz="0" yx="0" yy="168.3073" yz="0" zx="0" zy="0" zz="277.7355" />
+  </interaction>
+  <interaction kind="shift" id="6" units="ppm" spin_a="6" spin_b="6" reference_frame_id="1" reference="label">
+    <tensor xx="60.7161" xy="0" xz="0" yx="0" yy="138.5773" yz="-36.9787" zx="0" zy="-36.9787" zz="133.0262" />
+  </interaction>
+  <interaction kind="shift" id="7" units="ppm" spin_a="7" spin_b="7" reference_frame_id="1" reference="label">
+    <tensor xx="4.2615" xy="0" xz="0" yx="0" yy="6.2669" yz="1.7013" zx="0" zy="1.7013" zz="4.7323" />
+  </interaction>
+  <interaction kind="shift" id="8" units="ppm" spin_a="8" spin_b="8" reference_frame_id="1" reference="label">
+    <tensor xx="5.2154" xy="0" xz="0" yx="0" yy="5.7987" yz="0" zx="0" zy="0" zz="9.9092" />
+  </interaction>
+  <interaction kind="shift" id="9" units="ppm" spin_a="9" spin_b="9" reference_frame_id="1" reference="label">
+    <tensor xx="4.2615" xy="0" xz="0" yx="0" yy="6.2669" yz="-1.7013" zx="0" zy="-1.7013" zz="4.7323" />
+  </interaction>
+  <interaction kind="shift" id="10" units="ppm" spin_a="10" spin_b="10" reference_frame_id="1" reference="label">
+    <tensor xx="5.2533" xy="0" xz="0" yx="0" yy="5.0955" yz="0" zx="0" zy="0" zz="11.849" />
+  </interaction>
+  <interaction kind="shift" id="11" units="ppm" spin_a="11" spin_b="11" reference_frame_id="1" reference="label">
+    <tensor xx="264.2682" xy="0" xz="0" yx="0" yy="3.1009" yz="-135.1605" zx="0" zy="-135.1605" zz="172.2615" />
+  </interaction>
+  <interaction kind="shift" id="12" units="ppm" spin_a="12" spin_b="12" reference_frame_id="1" reference="label">
+    <tensor xx="264.2682" xy="0" xz="0" yx="0" yy="3.1009" yz="135.1605" zx="0" zy="135.1605" zz="172.2615" />
+  </interaction>
+  <reference_frame id="1" label="Lab Frame">
+    <direction>
+      <dcm xx="1" xy="0" xz="0" yx="0" yy="1" yz="0" zx="0" zy="0" zz="1" />
+    </direction>
+  </reference_frame>
+</spin_system>

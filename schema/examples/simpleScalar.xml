@@ -1,0 +1,7 @@
+<spin_system>
+  <spin id="1" isotope="1H" label="H1" />
+  <spin id="2" isotope="1H" label="H2" />
+  <interaction kind="dipolar" id="101" units="Hz" spin_a="1" spin_b="2">
+    <scalar iso="123.45" />
+  </interaction>
+</spin_system>

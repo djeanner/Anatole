@@ -40,7 +40,7 @@ Spin System
 ```
 By default (emptly line) testAllCombiSignsAfterMainFit is true (1).
 
-
+- We modified the simulation mode so that it reproduces the spectrum from the parameter set more closely and provides quality data in the json.
 
 - Fill gaps when chemical shifts are not in integral regions. This is to make sure that small transitions not picked in the regions will be taken into account. (This is not working properly and currently disabled.)
 
