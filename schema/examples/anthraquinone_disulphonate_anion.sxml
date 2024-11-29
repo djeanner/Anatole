@@ -183,7 +183,7 @@
   <interaction kind="shift" id="30" units="ppm" spin_a="30" spin_b="30" reference_frame_id="1" reference="label">
     <tensor xx="250.4094" xy="-12.4151" xz="15.1441" yx="-12.4151" yy="220.0348" yz="43.2274" zx="15.1441" zy="43.2274" zz="162.5047" />
   </interaction>
-  <interaction kind="gtensor" id="31" units="Bohr magneton" spin_a="31" spin_b="31" reference_frame_id="1">
+  <interaction kind="gtensor" id="31" units="bohr" spin_a="31" spin_b="31" reference_frame_id="1">
     <tensor xx="2.0053" xy="0.00034" xz="0" yx="0.00034" yy="2.00635" yz="0" zx="0" zy="0" zz="2.00209" />
   </interaction>
   <interaction kind="hfc" id="32" units="gauss" spin_a="1" spin_b="31" reference_frame_id="1">

@@ -159,7 +159,7 @@
   <interaction kind="shift" id="25" units="ppm" spin_a="25" reference="TMS">
     <tensor xx="12.3547" xy="0" xz="0" yx="0" yy="10.0649" yz="-2.8859" zx="0" zy="-2.8859" zz="7.1136" />
   </interaction>
-  <interaction kind="gtensor" id="26" units="Bohr magneton" spin_a="26">
+  <interaction kind="gtensor" id="26" units="bohr" spin_a="26">
     <tensor xx="2.00264" xy="0" xz="0" yx="0" yy="2.00233" yz="0" zx="0" zy="0" zz="2.0032" />
   </interaction>
   <interaction kind="hfc" id="27" units="gauss" spin_a="0" spin_b="26">

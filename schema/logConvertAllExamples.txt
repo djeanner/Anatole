@@ -1259,22 +1259,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     line: 183,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Bohr magneton' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 186,
-    str1: 'Bohr magneton',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -1289,22 +1273,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     column: 0,
     line: 186,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 189,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -1321,22 +1289,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     line: 189,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 192,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -1351,22 +1303,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     column: 0,
     line: 192,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 195,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -1383,22 +1319,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     line: 195,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 198,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -1413,22 +1333,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     column: 0,
     line: 198,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 201,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -1445,22 +1349,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     line: 201,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 204,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -1475,22 +1363,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     column: 0,
     line: 204,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 207,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -1507,22 +1379,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     line: 207,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 210,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -1537,22 +1393,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     column: 0,
     line: 210,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 213,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -1569,22 +1409,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     line: 213,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 216,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -1599,22 +1423,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     column: 0,
     line: 216,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 219,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -1631,22 +1439,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     line: 219,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 222,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -1661,22 +1453,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     column: 0,
     line: 222,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 225,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -1693,22 +1469,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     line: 225,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 228,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -1723,22 +1483,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     column: 0,
     line: 228,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 231,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -1755,22 +1499,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     line: 231,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 234,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -1785,22 +1513,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     column: 0,
     line: 234,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 237,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -1817,22 +1529,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     line: 237,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 240,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -1847,22 +1543,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     column: 0,
     line: 240,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 243,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -1879,22 +1559,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     line: 243,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 246,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -1909,22 +1573,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     column: 0,
     line: 246,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 249,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -1941,22 +1589,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     line: 249,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 252,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -1971,22 +1603,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     column: 0,
     line: 252,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 255,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -2003,22 +1619,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     line: 255,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 258,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -2033,22 +1633,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     column: 0,
     line: 258,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 261,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -2065,22 +1649,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     line: 261,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 264,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -2095,22 +1663,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     column: 0,
     line: 264,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 267,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -2127,22 +1679,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     line: 267,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 270,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -2158,22 +1694,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     line: 270,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 273,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -2188,22 +1708,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anion.s
     column: 0,
     line: 273,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 276,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -2690,22 +2194,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 188,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Bohr magneton' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 191,
-    str1: 'Bohr magneton',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -2720,22 +2208,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 191,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 194,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -2752,22 +2224,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 194,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 197,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -2782,22 +2238,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 197,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 200,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -2814,22 +2254,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 200,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 203,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -2844,22 +2268,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 203,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 206,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -2876,22 +2284,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 206,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 209,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -2906,22 +2298,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 209,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 212,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -2938,22 +2314,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 212,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 215,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -2968,22 +2328,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 215,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 218,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -3000,22 +2344,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 218,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 221,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -3030,22 +2358,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 221,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 224,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -3062,22 +2374,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 224,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 227,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -3092,22 +2388,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 227,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 230,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -3124,22 +2404,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 230,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 233,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -3154,22 +2418,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 233,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 236,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -3186,22 +2434,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 236,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 239,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -3216,22 +2448,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 239,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 242,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -3248,22 +2464,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 242,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 245,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -3278,22 +2478,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 245,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 248,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -3310,22 +2494,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 248,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 251,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -3340,22 +2508,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 251,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 254,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -3372,22 +2524,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 254,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 257,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -3402,22 +2538,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 257,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 260,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -3434,22 +2554,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 260,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 263,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -3464,22 +2568,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 263,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 266,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -3496,22 +2584,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 266,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 269,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -3526,22 +2598,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 269,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 272,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -3558,22 +2614,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 272,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 275,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -3588,22 +2628,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 275,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 278,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -3620,22 +2644,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 278,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 281,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -3650,22 +2658,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 281,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Bohr magneton' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 284,
-    str1: 'Bohr magneton',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -3682,22 +2674,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 284,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Bohr magneton' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 287,
-    str1: 'Bohr magneton',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -3712,22 +2688,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 287,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Bohr magneton' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 290,
-    str1: 'Bohr magneton',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -3744,22 +2704,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 290,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Bohr magneton' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 293,
-    str1: 'Bohr magneton',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -3775,7 +2719,532 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 293,
     str1: 'reference_frame_id'
   },
-  ... 40 more items
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 296,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 299,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 302,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 305,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 308,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 311,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 314,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 317,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 320,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 323,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 326,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 329,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 332,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 335,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 338,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 341,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 344,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 347,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 350,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 353,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 356,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 359,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 362,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 365,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 368,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 371,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 374,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 377,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 380,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 383,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 386,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 389,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 392,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 395,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 398,
+    str1: 'reference_frame_id'
+  },
+  ... 1 more item
 ]
 ==========================================================
 Skipping file examples/anthraquinone_disulphonate_anionFull.sxml due to schema validation errors.
@@ -4232,22 +3701,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 189,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Bohr magneton' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 192,
-    str1: 'Bohr magneton',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -4262,22 +3715,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 192,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 195,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -4294,22 +3731,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 195,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 198,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -4324,22 +3745,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 198,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 201,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -4356,22 +3761,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 201,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 204,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -4386,22 +3775,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 204,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 207,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -4418,22 +3791,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 207,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 210,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -4448,22 +3805,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 210,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 213,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -4480,22 +3821,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 213,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 216,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -4510,22 +3835,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 216,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 219,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -4542,22 +3851,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 219,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 222,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -4572,22 +3865,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 222,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 225,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -4604,22 +3881,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 225,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 228,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -4634,22 +3895,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 228,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 231,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -4666,22 +3911,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 231,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 234,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -4696,22 +3925,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 234,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 237,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -4728,22 +3941,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 237,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 240,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -4758,22 +3955,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 240,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 243,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -4790,22 +3971,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 243,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 246,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -4820,22 +3985,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 246,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 249,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -4852,22 +4001,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 249,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 252,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -4882,22 +4015,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 252,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 255,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -4914,22 +4031,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 255,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 258,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -4944,22 +4045,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 258,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 261,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -4976,22 +4061,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 261,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 264,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -5006,22 +4075,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 264,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 267,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -5038,22 +4091,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 267,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 270,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -5068,22 +4105,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 270,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 273,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -5100,22 +4121,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 273,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 276,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -5130,22 +4135,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 276,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 279,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -5162,22 +4151,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 279,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 282,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -5192,22 +4165,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 282,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Bohr magneton' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 285,
-    str1: 'Bohr magneton',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -5224,22 +4181,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 285,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Bohr magneton' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 288,
-    str1: 'Bohr magneton',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -5254,22 +4195,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     column: 0,
     line: 288,
     str1: 'reference_frame_id'
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Bohr magneton' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 291,
-    str1: 'Bohr magneton',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
   },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
@@ -5286,22 +4211,6 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 291,
     str1: 'reference_frame_id'
   },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Bohr magneton' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 294,
-    str1: 'Bohr magneton',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
   Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
   
       at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
@@ -5317,7 +4226,532 @@ ERROR Validation failed for XML file examples/anthraquinone_disulphonate_anionFu
     line: 294,
     str1: 'reference_frame_id'
   },
-  ... 40 more items
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 297,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 300,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 303,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 306,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 309,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 312,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 315,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 318,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 321,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 324,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 327,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 330,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 333,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 336,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 339,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 342,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 345,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 348,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 351,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 354,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 357,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 360,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 363,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 366,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 369,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 372,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 375,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 378,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 381,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 384,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 387,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 390,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 393,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 396,
+    str1: 'reference_frame_id'
+  },
+  Error: Element 'interaction', attribute 'reference_frame_id': The attribute 'reference_frame_id' is not allowed.
+  
+      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
+      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
+      at Array.map (<anonymous>)
+      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
+      at FSReqCallback.oncomplete (node:fs:200:23) {
+    domain: 17,
+    code: 1866,
+    level: 2,
+    column: 0,
+    line: 399,
+    str1: 'reference_frame_id'
+  },
+  ... 1 more item
 ]
 ==========================================================
 Skipping file examples/anthraquinone_disulphonate_anionFull1.sxml due to schema validation errors.
@@ -5893,459 +5327,24 @@ ERROR Validation failed for XML file examples/glucose.sxml:
 Skipping file examples/glucose.sxml due to schema validation errors.
 XML schema validation passed for XML version of examples/methylaziridine.sxml
 XML schema validation passed for XML version of examples/nitroxide.sxml
-ERROR Validation failed for XML file examples/pyrene_cation.sxml:
-==========================================================
-[
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Bohr magneton' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 162,
-    str1: 'Bohr magneton',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 165,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 168,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 171,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 174,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 177,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 180,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 183,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 186,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 189,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 192,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 195,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 198,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 201,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 204,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 207,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 210,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 213,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 216,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 219,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 222,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 225,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 228,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 231,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 234,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 237,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  },
-  Error: Element 'interaction', attribute 'units': [facet 'enumeration'] The value 'Gauss' is not an element of the set {'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'}.
-  
-      at validateXMLWithSchema (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:23:28)
-      at convertXMLToJSON (/Users/djeanner/git/Anatole/schema/convertXmlToJson.js:41:10)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:331:11
-      at Array.map (<anonymous>)
-      at /Users/djeanner/git/Anatole/schema/convertXmlToJson.js:327:12
-      at FSReqCallback.oncomplete (node:fs:200:23) {
-    domain: 17,
-    code: 1840,
-    level: 2,
-    column: 0,
-    line: 240,
-    str1: 'Gauss',
-    str2: "'Hz', 'kHz', 'MHz', 'GHz', 'ppm', 'bohr', 'gauss'"
-  }
-]
-==========================================================
-Skipping file examples/pyrene_cation.sxml due to schema validation errors.
+XML schema validation passed for XML version of examples/pyrene_cation.sxml
 XML schema validation passed for XML version of examples/pyrene_cation1.sxml
 XML schema validation passed for XML version of examples/simpleScalar.xml
 
-Summary: 7 files passed, 10 files failed.
+Summary: 8 files passed, 9 files failed.
 Validation passed for json version of examples/BA034122-AA_0039_Cl_FIX_D_t.sxml
-Validation passed for json version of examples/alanine.sxml
-Validation passed for json version of examples/complete_test.sxml
 Validation passed for json version of examples/methylaziridine.sxml
+Validation passed for json version of examples/complete_test.sxml
 Validation passed for json version of examples/nitroxide.sxml
+Validation passed for json version of examples/pyrene_cation.sxml
+Validation passed for json version of examples/alanine.sxml
 Validation passed for json version of examples/pyrene_cation1.sxml
 Validation passed for json version of examples/simpleScalar.xml
-Converted examples/complete_test.sxml -> output/complete_test.json
-Converted examples/nitroxide.sxml -> output/nitroxide.json
+Converted examples/pyrene_cation.sxml -> output/pyrene_cation.json
 Converted examples/BA034122-AA_0039_Cl_FIX_D_t.sxml -> output/BA034122-AA_0039_Cl_FIX_D_t.json
 Converted examples/pyrene_cation1.sxml -> output/pyrene_cation1.json
 Converted examples/alanine.sxml -> output/alanine.json
 Converted examples/simpleScalar.xml -> output/simpleScalar.json
+Converted examples/complete_test.sxml -> output/complete_test.json
 Converted examples/methylaziridine.sxml -> output/methylaziridine.json
+Converted examples/nitroxide.sxml -> output/nitroxide.json

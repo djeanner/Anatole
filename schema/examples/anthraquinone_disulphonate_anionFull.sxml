@@ -188,7 +188,7 @@
   <interaction kind="shift" id="30" units="ppm" spin_a="30" spin_b="30" reference_frame_id="1" label="ref">
     <tensor xx="40.2506" xy="12.4151" xz="-15.1441" yx="12.4151" yy="70.6252" yz="-43.2274" zx="-15.1441" zy="-43.2274" zz="128.1553" />
   </interaction>
-  <interaction kind="gtensor" id="31" units="Bohr magneton" spin_a="31" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="gtensor" id="31" units="bohr" spin_a="31" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="2.0053" xy="0.00034" xz="0" yx="0.00034" yy="2.00635" yz="0" zx="0" zy="0" zz="2.00209" />
   </interaction>
   <interaction kind="hfc" id="32" units="gauss" spin_a="1" spin_b="31" reference_frame_id="1" label="ref">
@@ -281,19 +281,19 @@
   <interaction kind="hfc" id="61" units="gauss" spin_a="30" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="-0.4849" xy="-0.13094" xz="-0.00206" yx="-0.13094" yy="-0.15778" yz="-0.00657" zx="-0.00206" zy="-0.00657" zz="-0.10498" />
   </interaction>
-  <interaction kind="zfs" id="62" units="Bohr magneton" spin_a="32" spin_b="32" reference_frame_id="1" label="ref">
+  <interaction kind="zfs" id="62" units="bohr" spin_a="32" spin_b="32" reference_frame_id="1" label="ref">
     <tensor xx="2.0053" xy="0.03442" xz="0" yx="0.00034" yy="2.00635" yz="0" zx="0" zy="0" zz="2.00209" />
   </interaction>
-  <interaction kind="zfs" id="63" units="Bohr magneton" spin_a="33" spin_b="33" reference_frame_id="1" label="ref">
+  <interaction kind="zfs" id="63" units="bohr" spin_a="33" spin_b="33" reference_frame_id="1" label="ref">
     <tensor xx="2.0053" xy="0.00034" xz="-0.90317" yx="0.00034" yy="2.00635" yz="0" zx="0" zy="0" zz="2.00209" />
   </interaction>
-  <interaction kind="exchange" id="64" units="Bohr magneton" spin_a="31" spin_b="32" reference_frame_id="1" label="ref">
+  <interaction kind="exchange" id="64" units="bohr" spin_a="31" spin_b="32" reference_frame_id="1" label="ref">
     <tensor xx="2.0053" xy="0.00034" xz="0" yx="0.00034" yy="2.00635" yz="0" zx="0" zy="0" zz="2.00209" />
   </interaction>
-  <interaction kind="exchange" id="65" units="Bohr magneton" spin_a="31" spin_b="33" reference_frame_id="1" label="ref">
+  <interaction kind="exchange" id="65" units="bohr" spin_a="31" spin_b="33" reference_frame_id="1" label="ref">
     <tensor xx="4.0053" xy="0.00034" xz="0" yx="0.00034" yy="2.00635" yz="0" zx="0" zy="0" zz="2.00209" />
   </interaction>
-  <interaction kind="exchange" id="66" units="Bohr magneton" spin_a="32" spin_b="33" reference_frame_id="1" label="ref">
+  <interaction kind="exchange" id="66" units="bohr" spin_a="32" spin_b="33" reference_frame_id="1" label="ref">
     <tensor xx="10.0053" xy="0.00034" xz="0" yx="0.00034" yy="2.00635" yz="0" zx="0" zy="0" zz="2.00209" />
   </interaction>
   <interaction kind="jcoupling" id="67" units="Hz" spin_a="2" spin_b="1" reference_frame_id="1">
@@ -377,13 +377,13 @@
   <interaction kind="jcoupling" id="93" units="Hz" spin_a="10" spin_b="12" reference_frame_id="1">
     <tensor xx="9.82051" xy="0" xz="0" yx="0" yy="9.82051" yz="0" zx="0" zy="0" zz="9.82051" />
   </interaction>
-  <interaction kind="zfs" id="94" units="Bohr magneton" spin_a="31" spin_b="31" reference_frame_id="1" label="ref">
+  <interaction kind="zfs" id="94" units="bohr" spin_a="31" spin_b="31" reference_frame_id="1" label="ref">
     <tensor xx="2.0053" xy="0.00034" xz="0" yx="0.00034" yy="2.00635" yz="0" zx="0" zy="0" zz="2.00209" />
   </interaction>
-  <interaction kind="gtensor" id="95" units="Bohr magneton" spin_a="32" spin_b="32" reference_frame_id="1" label="ref">
+  <interaction kind="gtensor" id="95" units="bohr" spin_a="32" spin_b="32" reference_frame_id="1" label="ref">
     <tensor xx="2.0053" xy="0.00034" xz="-9.03174" yx="0.00034" yy="2.00635" yz="5.24496" zx="-9.03174" zy="0" zz="2.00209" />
   </interaction>
-  <interaction kind="gtensor" id="96" units="Bohr magneton" spin_a="33" spin_b="33" reference_frame_id="1" label="ref">
+  <interaction kind="gtensor" id="96" units="bohr" spin_a="33" spin_b="33" reference_frame_id="1" label="ref">
     <tensor xx="2.0053" xy="3.34424" xz="-9.03174" yx="3.00034" yy="2.00635" yz="0" zx="0" zy="0" zz="2.00209" />
   </interaction>
   <interaction kind="quadrupolar" id="97" units="MHz" spin_a="26" spin_b="26" reference_frame_id="1" label="ref">
