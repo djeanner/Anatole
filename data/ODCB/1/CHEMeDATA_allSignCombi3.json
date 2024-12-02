@@ -1,6 +1,7 @@
-{"optimizedVariables": [
+{"spins": [
 {"name": "FreqM", "spinSystemIndices": [1, 2], "typeVariableString": "ChemicalShift", "error": 0.000285, "value": 7.524249, "checked": true},
-{"name": "FreqO", "spinSystemIndices": [3, 4], "typeVariableString": "ChemicalShift", "error": 0.000285, "value": 7.313646, "checked": true},
+{"name": "FreqO", "spinSystemIndices": [3, 4], "typeVariableString": "ChemicalShift", "error": 0.000285, "value": 7.313646, "checked": true}
+], "interactions": [
 {"name": "5J12", "spinSystemIndices": [[1, 2]], "typeVariableString": "Jcoupling", "error": 0.001699, "value": 0.334510, "checked": true},
 {"name": "3J13", "spinSystemIndices": [[1, 3], [2, 4]], "typeVariableString": "Jcoupling", "error": 0.000593, "value": 8.079641, "checked": true},
 {"name": "4J14", "spinSystemIndices": [[1, 4], [2, 3]], "typeVariableString": "Jcoupling", "error": 0.000594, "value": 1.525922, "checked": true},

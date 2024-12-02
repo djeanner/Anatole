@@ -1692,12 +1692,24 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 		if (SSParams[nSSParams] < 0) SSParams[nSSParams] *= -1;
 
 		ostr << "{";
-		ostr << openArray("optimizedVariables");
+/// ostr  << jsonOpenObj(false);
+/// ostr << openArray("spinSystems");
+
 		double forHash1 = 0;
 		double forHash2 = 0;
 		double forHash3 = 0;
 		double forHash4 = 0;
 		for (int i = 1; i <= nSSParams + 1; i++) {
+
+			if (i == 1) { // open list of spins
+				ostr << openArray("spins");
+			}
+			if (i + 1 == nSpins)  {// first time false start coupling
+				ostr << closeArray(false);
+				ostr << ", ";
+				ostr << openArray("interactions");
+			}
+
 			ostr  << jsonOpenObj(false);
 			ostr  << jsonVar("name", ParNames[i], ", ", false);
 
@@ -1709,6 +1721,8 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 			bool isfactor = i == nSSParams + 1;
 			bool islineWidth = i == nSSParams;
 			bool iskurtosis = false;
+
+			
 
 			// see if optimized
 			bool optimized = false;
@@ -1732,8 +1746,9 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 					dividor = Spec->SF;
 				}
 			}
-							
-						
+
+			
+
 			first = true;
 			for (int i1 = 1; i1 < nSpins; i1++)	{
 			for (int j1 = 1; j1 <= nSpins; j1++) {
@@ -1786,7 +1801,10 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 				ostr  << jsonVarBool("checked", Spec->ScaleOptInit, "", false);
 			}
 			ostr  << jsonCloseObj(false);
-			ostr << nextArrayElement(i < nSSParams + 1);
+			ostr << nextArrayElement(i < nSSParams + 1  && (i + 1 != nSpins - 1));
+
+/// if (i + 1 != nSpins - 1) ostr << closeArray(false);
+
 		}
 		ostr << closeArray(false);
 		ostr << "," << endl;
