@@ -1,4 +1,6 @@
-{"spins": [
+{"spinSystems": [{
+"version": "0.1", 
+"spins": [
 {"name": "FreqM", "spinSystemIndices": [1, 2], "typeVariableString": "ChemicalShift", "error": 0.000285, "value": 7.524249, "checked": true},
 {"name": "FreqO", "spinSystemIndices": [3, 4], "typeVariableString": "ChemicalShift", "error": 0.000285, "value": 7.313646, "checked": true}
 ], "interactions": [
@@ -8,7 +10,9 @@
 {"name": "3J34", "spinSystemIndices": [[3, 4]], "typeVariableString": "Jcoupling", "error": 0.002002, "value": 7.485163, "checked": true},
 {"name": "LW", "typeVariableString": "lineWidth", "error": 0.000519, "value": 0.130840, "checked": true},
 {"name": "Magn", "typeVariableString": "factor", "error": 644145.629601, "value": 216366130.574655, "checked": true}
-],
+], 
+"AnatoliaHashNetwork": "1BB39-CEE-4E6-058"
+}],
 "Title": "Analysis of ODCB 1H NMR spectrum", 
 "CheckBroadSequence": " no implemented", 
 "isOutput": true, 
@@ -21,6 +25,5 @@
 "R-Factor_Percent": 12.035960, 
 "SpectraCorrelationCoefficient": 0.992730, 
 "ParametersCorrelationCoefficients": "not implemented", 
-"AnatoliaHashFit": "89A7-8C1-008-1B1", 
-"AnatoliaHashNetwork": "1BB39-CEE-4E6-058"
+"AnatoliaHashFit": "89A7-8C1-008-1B1"
 }

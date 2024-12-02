@@ -1,4 +1,6 @@
-{"spins": [
+{"spinSystems": [{
+"version": "0.1", 
+"spins": [
 {"name": "FreqM", "spinSystemIndices": [1, 2], "typeVariableString": "ChemicalShift", "value": 7.524249, "checked": true},
 {"name": "FreqO", "spinSystemIndices": [3, 4], "typeVariableString": "ChemicalShift", "value": 7.313646, "checked": true}
 ], "interactions": [
@@ -8,10 +10,11 @@
 {"name": "3J34", "spinSystemIndices": [[3, 4]], "typeVariableString": "Jcoupling", "value": 7.485163, "checked": true},
 {"name": "LW", "typeVariableString": "lineWidth", "value": 0.130840, "checked": true},
 {"name": "Magn", "typeVariableString": "factor", "value": 213647988.000000, "checked": true}
-],
+], 
+"AnatoliaHashNetwork": "1BB39-CEE-4E6-058"
+}],
 "ErrorMessage1": "Errors are not calculated due to singularity of normal equations matrix!", 
 "Title": "Analysis of ODCB 1H NMR spectrum", 
 "CheckBroadSequence": " no implemented", 
-"isOutput": false, 
-"AnatoliaHashNetwork": "1BB39-CEE-4E6-058"
+"isOutput": false
 }

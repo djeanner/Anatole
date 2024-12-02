@@ -1692,9 +1692,6 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 		if (SSParams[nSSParams] < 0) SSParams[nSSParams] *= -1;
 
 		ostr << "{";
-/// ostr  << jsonOpenObj(false);
-/// ostr << openArray("spinSystems");
-
 		double forHash1 = 0;
 		double forHash2 = 0;
 		double forHash3 = 0;
@@ -1702,6 +1699,9 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 		for (int i = 1; i <= nSSParams + 1; i++) {
 
 			if (i == 1) { // open list of spins
+				ostr << openArray("spinSystems", false);
+				ostr << jsonOpenObj();
+				ostr  << jsonVar("version", "0.1", ", ");
 				ostr << openArray("spins");
 			}
 			if (i + 1 == nSpins)  {// first time false start coupling
@@ -1803,7 +1803,12 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 			ostr  << jsonCloseObj(false);
 			ostr << nextArrayElement(i < nSSParams + 1  && (i + 1 != nSpins - 1));
 
-/// if (i + 1 != nSpins - 1) ostr << closeArray(false);
+			if (i  == nSSParams + 1) {
+				ostr << closeArray(false);
+				ostr  << ", " << endl;
+				ostr << jsonVar("AnatoliaHashNetwork", generateRandomHex(5, forHash1 + 834, forHash2 + 43, forHash3, forHash4), "");
+				ostr  << jsonCloseObj(false);
+			}
 
 		}
 		ostr << closeArray(false);
@@ -1813,19 +1818,17 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 		ostr << jsonVar("Title", Title ,  ", ");
 
 		ostr << jsonVar("CheckBroadSequence", " no implemented" ,  ", ");
-		//CheckBroadSequence(ostr);
-		ostr << jsonVarBool("isOutput", isRefinement > 0, ", ");
 
 		if (isRefinement == 0) {
-
+			ostr << jsonVarBool("isOutput", isRefinement > 0, "");
 		} else {
+			ostr << jsonVarBool("isOutput", isRefinement > 0, ", ");
+
 			// addRegions
 			if (Spec->nIntervals > 0) {
 				ostr << openArray("spectralRegions", false);
 				for (int iInter = 1; iInter <= Spec->nIntervals; iInter++) {
 									ostr  << jsonOpenObj(false);
-
-
 
 					// Could discuss the way ppm from integral.txt are converted into point. Probably should consider ppm are in the middle of points for Bruker, here probably read as at the side
 					const double fromPPM = (Spec->Offset - Spec->FreqStep * ((double)Spec->StartPoint[iInter] - 1.0)) / Spec->SF;
@@ -1862,10 +1865,9 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 			ostr << endl;
 			}
 			// depends chemical shift,  J's and R-factor
-			ostr << jsonVar("AnatoliaHashFit", generateRandomHex(4, forHash1 + Spec->LB, forHash2, forHash3 + Spec->LB + Spec->CalcRFactor() , forHash4 + Spec->CalcRFactor() + Spec->TheoreticalSpec.Magnitude / 1000), ", ");
+			ostr << jsonVar("AnatoliaHashFit", generateRandomHex(4, forHash1 + Spec->LB, forHash2, forHash3 + Spec->LB + Spec->CalcRFactor() , forHash4 + Spec->CalcRFactor() + Spec->TheoreticalSpec.Magnitude / 1000), "");
 		}
 		//  only depends chemical shift and J's
-		ostr << jsonVar("AnatoliaHashNetwork", generateRandomHex(5, forHash1 + 834, forHash2 + 43, forHash3, forHash4), "");
 		ostr  << jsonCloseObj();
 		ostr.close();
 	}
