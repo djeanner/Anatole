@@ -1718,6 +1718,8 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 				}
 			}
 			ostr  << jsonOpenObj(false);
+			ostr  << jsonVar("CHEMeDATAtype", "NMRparameter", ", ", false);
+			ostr  << jsonVar("version", "0.101", ", ", false);
 			ostr  << jsonVar("name", ParNames[i], ", ", false);
 
 			if (i < nSSParams)
@@ -1776,7 +1778,9 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 				ostr << closeArray(false);
 				ostr << ", ";
 			}
-				
+			
+			//ostr  << "\"version\"] = \"0.101\" ,"; // CHEMeDATA version
+			//ostr  << "\"CHEMeDATAtype\"] = \"NMRparameter\" ,"; // CHEMeDATA version
 			if (isCHemShift) {
 				ostr  << jsonVar("typeVariableString", "ChemicalShift", ", ", false);
 			} 
