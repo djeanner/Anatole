@@ -1,19 +1,19 @@
 {"spinSystems": [{
 "version": "0.1", 
 "spins": [
-{"CHEMeDATAtype": "NMRparameter", "version": "0.101", "name": "FreqM", "spinSystemIndices": [1, 2], "typeVariableString": "ChemicalShift", "error": 0.000285, "value": 7.524249, "checked": true},
-{"CHEMeDATAtype": "NMRparameter", "version": "0.101", "name": "FreqO", "spinSystemIndices": [3, 4], "typeVariableString": "ChemicalShift", "error": 0.000285, "value": 7.313646, "checked": true}
+{"name": "FreqM", "spinSystemIndices": [1, 2], "typeVariableString": "ChemicalShift", "error": 0.000285, "value": 7.524249, "checked": true},
+{"name": "FreqO", "spinSystemIndices": [3, 4], "typeVariableString": "ChemicalShift", "error": 0.000285, "value": 7.313646, "checked": true}
 ], "interactions": [
-{"CHEMeDATAtype": "NMRparameter", "version": "0.101", "name": "5J12", "spinSystemIndices": [[1, 2]], "typeVariableString": "Jcoupling", "error": 0.001699, "value": 0.334510, "checked": true},
-{"CHEMeDATAtype": "NMRparameter", "version": "0.101", "name": "3J13", "spinSystemIndices": [[1, 3], [2, 4]], "typeVariableString": "Jcoupling", "error": 0.000593, "value": 8.079641, "checked": true},
-{"CHEMeDATAtype": "NMRparameter", "version": "0.101", "name": "4J14", "spinSystemIndices": [[1, 4], [2, 3]], "typeVariableString": "Jcoupling", "error": 0.000594, "value": 1.525922, "checked": true},
-{"CHEMeDATAtype": "NMRparameter", "version": "0.101", "name": "3J34", "spinSystemIndices": [[3, 4]], "typeVariableString": "Jcoupling", "error": 0.002002, "value": 7.485163, "checked": true}
+{"name": "5J12", "spinSystemIndices": [[1, 2]], "typeVariableString": "Jcoupling", "error": 0.001699, "value": 0.334510, "checked": true},
+{"name": "3J13", "spinSystemIndices": [[1, 3], [2, 4]], "typeVariableString": "Jcoupling", "error": 0.000593, "value": 8.079641, "checked": true},
+{"name": "4J14", "spinSystemIndices": [[1, 4], [2, 3]], "typeVariableString": "Jcoupling", "error": 0.000594, "value": 1.525922, "checked": true},
+{"name": "3J34", "spinSystemIndices": [[3, 4]], "typeVariableString": "Jcoupling", "error": 0.002002, "value": 7.485163, "checked": true}
 ], 
 "AnatoliaHashNetwork": "27225-6E4-515-798", 
 "lineshapeVariables": [
-{"CHEMeDATAtype": "NMRparameter", "version": "0.101", "name": "LW", "typeVariableString": "lineWidth", "error": 0.000519, "value": 0.130840, "checked": true}],
+{"name": "LW", "typeVariableString": "lineWidth", "error": 0.000519, "value": 0.130840, "checked": true}],
 "quantityVariables": [
-{"CHEMeDATAtype": "NMRparameter", "version": "0.101", "name": "Magn", "typeVariableString": "factor", "error": 644145.629601, "value": 216366130.574655, "checked": true}],
+{"name": "Magn", "typeVariableString": "factor", "error": 644145.629601, "value": 216366130.574655, "checked": true}],
 "Title": "Analysis of ODCB 1H NMR spectrum", 
 "CheckBroadSequence": " no implemented", 
 "isOutput": true, 

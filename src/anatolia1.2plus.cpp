@@ -1718,8 +1718,9 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 				}
 			}
 			ostr  << jsonOpenObj(false);
-			ostr  << jsonVar("CHEMeDATAtype", "NMRparameter", ", ", false);
-			ostr  << jsonVar("version", "0.101", ", ", false);
+			const bool addCHEMeDATAtoParameters = false;
+			if (addCHEMeDATAtoParameters) ostr  << jsonVar("CHEMeDATAtype", "NMRparameter", ", ", false);
+			if (addCHEMeDATAtoParameters) ostr  << jsonVar("version", "0.101", ", ", false);
 			ostr  << jsonVar("name", ParNames[i], ", ", false);
 
 			if (i < nSSParams)
