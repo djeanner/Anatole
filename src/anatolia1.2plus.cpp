@@ -1709,7 +1709,14 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 				ostr << ", ";
 				ostr << openArray("interactions");
 			}
-
+			if (i >= nSSParams - 2) {
+				if (i == nSSParams + 1) {
+					ostr << openArray("quantityVariables");
+				}
+				if (i == nSSParams - 0) {
+					ostr << openArray("lineshapeVariables");
+				}
+			}
 			ostr  << jsonOpenObj(false);
 			ostr  << jsonVar("name", ParNames[i], ", ", false);
 
@@ -1786,6 +1793,7 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 				ostr  << jsonVar("typeVariableString", "kurtosis", ", ", false);
 			}
 			if (i < nSSParams + 1) {
+				
 				// all except Magnitude
 				if (ErrorsComputed) ostr  << jsonVar("error", ParameterErrors[i], ", ", false);
 				ostr  << jsonVar("value", SSParams[i] / dividor, ", ", false);
@@ -1793,26 +1801,33 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 				forHash2 += SSParams[i] * 13;
 				forHash3 += SSParams[i] * 123;
 				forHash4 += SSParams[i] * 17;
-				ostr  << jsonVarBool("checked", optimized, "", false);
+				ostr << jsonVarBool("checked", optimized, "", false);
+				ostr  << jsonCloseObj(false);
+				if (i == nSSParams - 0) {
+					ostr << closeArray(false);
+				}
+
 			} else {
+			
 				// VarParamsIndx
 				if (ErrorsComputed) ostr  << jsonVar("error", ParameterErrors[i], ", ", false);
 				ostr  << jsonVar("value", Spec->TheoreticalSpec.Magnitude, ", ", false);
 				ostr  << jsonVarBool("checked", Spec->ScaleOptInit, "", false);
+				ostr  << jsonCloseObj(false);
+				if (i == nSSParams + 1) {
+						ostr << closeArray(false);
+					}
 			}
-			ostr  << jsonCloseObj(false);
-			ostr << nextArrayElement(i < nSSParams + 1  && (i + 1 != nSpins - 1));
+			
+			ostr << nextArrayElement( (i + 1 != nSpins - 1) && !(i == nSSParams - 1) );
 
-			if (i  == nSSParams + 1) {
+			if (i  == nSSParams - 1) {	
 				ostr << closeArray(false);
 				ostr  << ", " << endl;
-				ostr << jsonVar("AnatoliaHashNetwork", generateRandomHex(5, forHash1 + 834, forHash2 + 43, forHash3, forHash4), "");
-				ostr  << jsonCloseObj(false);
+				ostr << jsonVar("AnatoliaHashNetwork", generateRandomHex(5, forHash1 + 834, forHash2 + 43, forHash3, forHash4), ", ");
 			}
-
 		}
-		ostr << closeArray(false);
-		ostr << "," << endl;
+		//ostr << closeArray(false);
 
 		if (!ErrorsComputed) ostr << jsonVar("ErrorMessage1","Errors are not calculated due to singularity of normal equations matrix!",  ", ");
 		ostr << jsonVar("Title", Title ,  ", ");
@@ -1828,7 +1843,7 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 			if (Spec->nIntervals > 0) {
 				ostr << openArray("spectralRegions", false);
 				for (int iInter = 1; iInter <= Spec->nIntervals; iInter++) {
-									ostr  << jsonOpenObj(false);
+					ostr  << jsonOpenObj(false);
 
 					// Could discuss the way ppm from integral.txt are converted into point. Probably should consider ppm are in the middle of points for Bruker, here probably read as at the side
 					const double fromPPM = (Spec->Offset - Spec->FreqStep * ((double)Spec->StartPoint[iInter] - 1.0)) / Spec->SF;
@@ -1853,7 +1868,7 @@ std::string jsonVar(const std::string& input, const std::string& inputValue, con
 			ostr << jsonVar("SpectraCorrelationCoefficient",  Spec->CalcSpectraColleration() ,  ", ");
 			ostr << jsonVar("ParametersCorrelationCoefficients", "not implemented",  ", ");
 			if (ErrorsComputed && false) {
-			ostr << "Parameters correlation coefficients:" << endl;
+				ostr << "Parameters correlation coefficients:" << endl;
 			for (int i = 1; i <= nSSParams + 1; i++)
 			{
 				ostr << setw(3) << right << i << ' ';
