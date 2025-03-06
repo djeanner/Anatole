@@ -1,6 +1,6 @@
 # Versions of Anatolia
 
-We explored and extended (preliminary tests only) the Anatolia software by Cheshkova,  Sheberstova, Sinitsync, and Chertkovd.
+We explored and extended (preliminary tests only) the Anatolia software by Cheshkov,  Sheberstov, Sinitsyn, and Chertkov.
 
 We produced some [technical information on the program](doc/technicalinformation.md).
 We produced some [technical information in the input file](doc/inputFile.md).
